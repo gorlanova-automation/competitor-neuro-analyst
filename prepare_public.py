@@ -6,8 +6,7 @@ import shutil
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
-SOURCE=ROOT.parent/'stage_2'
-if not SOURCE.exists(): SOURCE=ROOT/'stage_2'
+SOURCE=ROOT/'stage_2'
 
 def read(path): return json.loads(path.read_text(encoding='utf-8-sig'))
 
@@ -39,7 +38,7 @@ def main():
         if any(pattern.search(text) for pattern in patterns): bad.append(path.relative_to(ROOT).as_posix())
     if bad: raise ValueError('Potential credentials in files: '+', '.join(bad))
     manifest=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(copied)]
-    (ROOT/'migration_manifest.json').write_text(json.dumps({'source':'Approved stage_2 package','visibility':'public_confirmed_by_user_2026-10-22','facts':len(snapshot['facts']),'files':manifest,'excluded':['chat memory','runtime dependencies','caches','screenshots','private keys','environment files'],'google_cleanup_status':'deferred_until_stage_acceptance'},ensure_ascii=False,indent=2),encoding='utf-8')
+    (ROOT/'research_manifest.json').write_text(json.dumps({'description':'Research files: sizes and SHA256 for reproducibility','facts':len(snapshot['facts']),'files':manifest},ensure_ascii=False,indent=2),encoding='utf-8')
     print('Prepared public project:',len(copied),'research files;',len(snapshot['facts']),'facts;',len(cards),'experiments. Credential-pattern scan passed.')
 
 if __name__=='__main__': main()

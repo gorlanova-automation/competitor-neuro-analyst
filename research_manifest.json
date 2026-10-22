@@ -1,6 +1,5 @@
 {
-  "source": "Approved stage_2 package",
-  "visibility": "public_confirmed_by_user_2026-10-22",
+  "description": "Research files: sizes and SHA256 for reproducibility",
   "facts": 175,
   "files": [
     {
@@ -115,8 +114,8 @@
     },
     {
       "path": "stage_2/code/Шаг_1_профиль_и_поисковые_запросы.ipynb",
-      "bytes": 46520,
-      "sha256": "2bf3bbbdbc0fa3df4df66c542e5eaa862d4f61d68fff6e75db7dd43c0a7d05bf"
+      "bytes": 46519,
+      "sha256": "a5311a7a10498c7af1a440665379883dfeba7c43f7a03b411ac4c015f46eeeef"
     },
     {
       "path": "stage_2/code/Этап_2_исследование_по_сохранённым_опытам.ipynb",
@@ -125,8 +124,8 @@
     },
     {
       "path": "stage_2/code/Этап_2_сбор_и_эксперименты.ipynb",
-      "bytes": 117686,
-      "sha256": "6491e699a7b2e19cb67bb25a82da406912a95fa8e8e2842825a00e565c7df500"
+      "bytes": 117642,
+      "sha256": "9a5ea31020a15aaf39a24e2ec2ceb9b649024baf8f7015b3eddf1323f81e665e"
     },
     {
       "path": "stage_2/code_versions/b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584/collector.py",
@@ -275,28 +274,23 @@
     },
     {
       "path": "stage_2/docs/course_mapping.md",
-      "bytes": 3624,
-      "sha256": "dd7d4fa5aa54849ecf2a2aec266da38b55c9849fde0108a25cee72977227c126"
-    },
-    {
-      "path": "stage_2/docs/curator_report.md",
-      "bytes": 13016,
-      "sha256": "35939c7a95601c477652ae3154a2c07e52a21bdb8fdf05a66735aa2451b1da6f"
+      "bytes": 3590,
+      "sha256": "d064d071fe81bf9b78e8d368e48bde4cdb9cdb0366b5d2dbf36a289dced987e3"
     },
     {
       "path": "stage_2/docs/experiment_log.md",
-      "bytes": 10277,
-      "sha256": "e0a639a0c0cf36e735aec2c490f7b654c5fb3922387f7b24a307d9e5f2123a37"
+      "bytes": 8496,
+      "sha256": "ad53a435517fce7556412f35bd9170af4f24159d8f7ba5f7a13947baaccc1f71"
     },
     {
       "path": "stage_2/docs/methodology.md",
-      "bytes": 10419,
-      "sha256": "a6e33c60fcc5a43097d25c94d863a614503da3c1cebe997dddb46970de36aa9f"
+      "bytes": 10985,
+      "sha256": "b6c6da1992d21e6dea5a3943a393fbcdb412455c5d413b999a77bf95196ebd74"
     },
     {
       "path": "stage_2/docs/model_selection.md",
-      "bytes": 10013,
-      "sha256": "06811563d5e9ea2cb937332e51a7ade39d2e6922329a11cf675dff555de14909"
+      "bytes": 10055,
+      "sha256": "8f3ab61a36bdbcf12275db919cbd17556a0f39f00307b4918860caebcc101717"
     },
     {
       "path": "stage_2/knowledge_base/dataset_card.json",
@@ -340,8 +334,8 @@
     },
     {
       "path": "stage_2/README.md",
-      "bytes": 6904,
-      "sha256": "f54f13d4551890ffd2747d81e512eb503b38f69b6e1e7d372c168300b64a155a"
+      "bytes": 6922,
+      "sha256": "d64c3a2bb86f3f64650c975f295c027665d19e342240a5803b2c1d2699ee42f9"
     },
     {
       "path": "stage_2/research/audit.json",
@@ -387,11 +381,6 @@
       "path": "stage_2/review/reference.json",
       "bytes": 3156,
       "sha256": "6ceb43662a7d77807174827c338f3df53801ce576d4d7bbe4a5cb684a5f1b061"
-    },
-    {
-      "path": "stage_2/review/ноутбук_первой_загрузки_до_числовой_валидации.ipynb",
-      "bytes": 68507,
-      "sha256": "d6122b7e078db06aa719cdda7fb1253d8c1c9d4f7fb415cd7dda14273c1c8ffb"
     },
     {
       "path": "stage_2/runs/20261021T191729Z_4005ca/chunks.json",
@@ -1053,14 +1042,5 @@
       "bytes": 2207616,
       "sha256": "0254051bfe33d1c6d448b6bec5f1b8a75527af5539d446452773c533ce494e8a"
     }
-  ],
-  "excluded": [
-    "chat memory",
-    "runtime dependencies",
-    "caches",
-    "screenshots",
-    "private keys",
-    "environment files"
-  ],
-  "google_cleanup_status": "deferred_until_stage_acceptance"
+  ]
 }

@@ -24,8 +24,9 @@
 | Время, результаты и тарифные оценки | [experiment_register.csv](stage_2/research/experiment_register.csv) |
 | Сырые страницы, тексты, запросы и ответы | [`stage_2/runs/`](stage_2/runs/) |
 | Восстановленные исторические версии кода | [`stage_2/code_versions/`](stage_2/code_versions/) |
-| Отчёт куратору | [curator_report.md](stage_2/docs/curator_report.md) |
-| Контроль переноса | [migration_manifest.json](migration_manifest.json) |
+| Методика и ограничения | [methodology.md](stage_2/docs/methodology.md) |
+| Выбор моделей по этапам | [model_selection.md](stage_2/docs/model_selection.md) |
+| Хэши исследовательских файлов | [research_manifest.json](research_manifest.json) |
 
 ## Что делает интерфейс
 
@@ -39,7 +40,7 @@ Python получает и очищает исходники. LLM извлека
 - [Исходные модельные исполнения](https://colab.research.google.com/drive/1wWOfqx-i27wJDFxnG0SPkai_XFgwIqiN)
 - [Исследование этапа 2 по сохранённым ответам, без платных вызовов](https://colab.research.google.com/drive/1mVexuQeTSestJ1rhNh0rDVtq2kL9hrUf)
 
-Исследования этапов остаются отдельными ноутбуками. Объединение этапов в итоговое приложение — последующая работа. До приёмки этапа Google-материалы сохранены; после приёмки планируется оставить там Colab. Удаление из Google не выполнено.
+Исследования этапов остаются отдельными ноутбуками. Объединение этапов в итоговое приложение — последующая работа.
 
 ## Локальный просмотр
 
@@ -49,7 +50,7 @@ python -m http.server 8765 --directory docs
 
 Открыть `http://localhost:8765/`. Статические файлы также можно открыть напрямую через `docs/index.html`.
 
-Для обновления публичного снимка из исходной рабочей папки: `python prepare_public.py`. После клонирования репозиторий уже содержит все необходимые для просмотра данные. Установка зависимостей нужна только для коллектора: `pip install -r stage_2/code/requirements.txt`.
+Для обновления публичного снимка из данных репозитория: `python prepare_public.py`. После клонирования репозиторий уже содержит все необходимые для просмотра данные. Установка зависимостей нужна только для коллектора: `pip install -r stage_2/code/requirements.txt`.
 
 ## Проверки и воспроизведение исследований
 

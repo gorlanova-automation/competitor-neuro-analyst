@@ -11,3 +11,12 @@ memory.md
 *.key
 .DS_Store
 Thumbs.db
+
+# Generated exports and retired internal publication materials
+stage_2/artifacts/
+stage_2/review/index.html
+stage_2/review/*.zip
+stage_2/*.zip
+stage_2/docs/curator_report.md
+migration_manifest.json
+review/

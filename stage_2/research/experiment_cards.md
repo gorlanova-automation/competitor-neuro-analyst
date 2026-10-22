@@ -10,7 +10,7 @@
 
 UTC: 2026-10-22T11:19:47.794693+00:00 → 2026-10-22T11:21:24.818555+00:00. Время обработки опыта: 97.024 с; индивидуальная задержка запросов не записана.
 
-Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "snapshot": "review/colab_all_models_20261022.zip", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash"}.
+Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash", "source_archive_name": "colab_all_models_20261022.zip"}.
 
 Настройки: `{"base_url": "https://api.proxyapi.ru/v1", "response_format": "json_schema", "parameters": {}, "chunk_ids": ["immigration_relocator_a317a051e73c04_c000", "migrun_374ee81f00c9b3_c000"]}`.
 
@@ -36,7 +36,7 @@ UTC: 2026-10-22T11:19:47.794693+00:00 → 2026-10-22T11:21:24.818555+00:00. Вр
 
 UTC: 2026-10-22T11:21:26.173468+00:00 → 2026-10-22T11:22:40.503409+00:00. Время обработки опыта: 74.33 с; индивидуальная задержка запросов не записана.
 
-Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "snapshot": "review/colab_all_models_20261022.zip", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash"}.
+Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash", "source_archive_name": "colab_all_models_20261022.zip"}.
 
 Настройки: `{"base_url": "https://api.proxyapi.ru/v1", "response_format": "json_schema", "parameters": {}, "chunk_ids": ["immigration_relocator_a317a051e73c04_c000", "migrun_374ee81f00c9b3_c000"]}`.
 
@@ -62,7 +62,7 @@ UTC: 2026-10-22T11:21:26.173468+00:00 → 2026-10-22T11:22:40.503409+00:00. Вр
 
 UTC: 2026-10-22T11:26:55.417162+00:00 → 2026-10-22T11:28:03.857774+00:00. Время обработки опыта: 68.441 с; индивидуальная задержка запросов не записана.
 
-Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "snapshot": "review/colab_all_models_20261022.zip", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash"}.
+Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash", "source_archive_name": "colab_all_models_20261022.zip"}.
 
 Настройки: `{"base_url": "https://api.proxyapi.ru/v1", "response_format": "json_schema", "parameters": {}, "chunk_ids": ["immigration_relocator_a317a051e73c04_c000", "migrun_374ee81f00c9b3_c000"]}`.
 
@@ -88,7 +88,7 @@ UTC: 2026-10-22T11:26:55.417162+00:00 → 2026-10-22T11:28:03.857774+00:00. Вр
 
 UTC: 2026-10-22T11:26:55.398438+00:00 → 2026-10-22T11:27:17.834561+00:00. Время обработки опыта: 22.436 с; индивидуальная задержка запросов не записана.
 
-Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "snapshot": "review/colab_all_models_20261022.zip", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash"}.
+Версия кода: {"collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc", "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py", "evidence": "recovered_runtime_snapshot_no_runtime_hash", "source_archive_name": "colab_all_models_20261022.zip"}.
 
 Настройки: `{"base_url": "https://api.proxyapi.ru/v1", "response_format": "json_schema", "parameters": {}, "chunk_ids": ["immigration_relocator_a317a051e73c04_c000", "migrun_374ee81f00c9b3_c000"]}`.
 
@@ -114,7 +114,7 @@ UTC: 2026-10-22T11:26:55.398438+00:00 → 2026-10-22T11:27:17.834561+00:00. Вр
 
 UTC: 2026-10-22T11:30:37.467953+00:00 → 2026-10-22T11:32:52.332482+00:00. Время обработки опыта: 134.865 с; индивидуальная задержка запросов не записана.
 
-Версия кода: {"collector_sha256": "b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584", "snapshot": "review/colab_final_pilot_20261022.zip", "path": "code_versions/b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584/collector.py", "evidence": "runtime_logged_hash_matches_recovered_file"}.
+Версия кода: {"collector_sha256": "b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584", "path": "code_versions/b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584/collector.py", "evidence": "runtime_logged_hash_matches_recovered_file", "source_archive_name": "colab_final_pilot_20261022.zip"}.
 
 Настройки: `{"base_url": "https://api.proxyapi.ru/v1", "response_format": "json_schema", "parameters": {}, "chunk_ids": ["immigration_relocator_a317a051e73c04_c000", "migrun_374ee81f00c9b3_c000"]}`.
 

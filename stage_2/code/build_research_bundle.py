@@ -17,26 +17,13 @@ def save(path,data):
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 
 def build():
-    index={}
+    # Historical runtime code is already preserved as individual source files.
+    # Validate it directly; full Colab environment archives are unnecessary.
+    index=read(ROOT/'code_versions/index.json')
     main_run=ROOT/'runs/20261022T111451Z_0f8116'
-    snapshots=[('review/colab_all_models_20261022.zip',False),('review/colab_final_pilot_20261022.zip',True)]
-    for archive_name,is_v3 in snapshots:
-        with ZipFile(ROOT/archive_name) as archive:
-            data=archive.read('code/collector.py')
-            version=sha(data)
-            target=ROOT/'code_versions'/version
-            target.mkdir(parents=True,exist_ok=True)
-            for name in archive.namelist():
-                if name.startswith('code/') and name.endswith(('.py','.json','.txt')) and '/' not in name[5:]:
-                    (target/Path(name).name).write_bytes(archive.read(name))
-        for exp in sorted((main_run/'experiments').iterdir()):
-            meta=read(exp/'experiment.json')
-            if bool(meta.get('collector_sha256'))!=is_v3:
-                continue
-            if is_v3:
-                assert meta['collector_sha256']==version
-            index[exp.name]={'collector_sha256':version,'snapshot':archive_name,'path':f'code_versions/{version}/collector.py','evidence':'runtime_logged_hash_matches_recovered_file' if is_v3 else 'recovered_runtime_snapshot_no_runtime_hash'}
-    save(ROOT/'code_versions/index.json',index)
+    for version in index.values():
+        path=ROOT/version['path']
+        assert sha(path.read_bytes())==version['collector_sha256'], path
     result=audit(ROOT)
     assert result['checks_passed'],result['integrity_errors']
     kb=ROOT/'knowledge_base'; kb.mkdir(exist_ok=True)
@@ -79,7 +66,9 @@ def build():
         z.writestr('dataset_manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
         z.writestr('research_audit.py',(ROOT/'code/research_audit.py').read_text(encoding='utf-8'))
     dataset=payload.getvalue()
-    (ROOT/'Этап_2_база_и_эксперименты.zip').write_bytes(dataset)
+    artifacts=ROOT/'artifacts'
+    artifacts.mkdir(exist_ok=True)
+    (artifacts/'Этап_2_база_и_эксперименты.zip').write_bytes(dataset)
     cells=[]
     def md(s): cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(True)})
     def py(s):

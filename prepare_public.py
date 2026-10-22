@@ -1,8 +1,7 @@
-"""Copy the approved research package and create a static review UI snapshot."""
+"""Build the static UI snapshot and file manifest from repository research."""
 import hashlib
 import json
 import re
-import shutil
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
@@ -15,13 +14,11 @@ def main():
     for path in SOURCE.rglob('*'):
         if not path.is_file(): continue
         relative=path.relative_to(SOURCE)
-        if any(part.startswith('.') or part=='__pycache__' for part in relative.parts): continue
-        if path.suffix.lower() in ('.png','.jpg','.jpeg','.webp','.pem','.key'): continue
-        if path.name in ('manifest.json','memory.md'): continue
-        target=ROOT/'stage_2'/relative
-        target.parent.mkdir(parents=True,exist_ok=True)
-        if path.resolve()!=target.resolve(): shutil.copy2(path,target)
-        copied.append(target)
+        if any(part.startswith('.') or part in ('__pycache__','artifacts') for part in relative.parts): continue
+        if path.suffix.lower() in ('.png','.jpg','.jpeg','.webp','.pem','.key','.zip'): continue
+        if path.name in ('manifest.json','memory.md','curator_report.md'): continue
+        if relative.as_posix()=='review/index.html': continue
+        copied.append(path)
     stage=ROOT/'stage_2'
     cards=read(stage/'research/audit.json')['experiments']
     labels={'20261022T111947Z_adab53':'baseline_v1','20261022T112126Z_2421a6':'evidence_v2','20261022T112655Z_3a2e17':'evidence_v2','20261022T112655Z_fabfd2':'evidence_v2','20261022T113037Z_be7ea6':'atomic_coverage_v3'}

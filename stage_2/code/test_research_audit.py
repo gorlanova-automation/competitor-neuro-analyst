@@ -3,7 +3,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from zipfile import ZipFile
+import shutil
 from research_audit import audit
 
 class ResearchAuditTests(unittest.TestCase):
@@ -11,8 +11,9 @@ class ResearchAuditTests(unittest.TestCase):
         self.temp=tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name)
-        bundle=Path(__file__).resolve().parents[1]/'Этап_2_база_и_эксперименты.zip'
-        with ZipFile(bundle) as z: z.extractall(self.root)
+        source=Path(__file__).resolve().parents[1]
+        for folder in ('runs','code_versions'):
+            shutil.copytree(source/folder,self.root/folder)
 
     def test_changed_request_is_detected(self):
         path=next((self.root/'runs/20261022T111451Z_0f8116/experiments').glob('*/*_request.json'))

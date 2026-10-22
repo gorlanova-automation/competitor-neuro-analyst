@@ -28,8 +28,8 @@
     "note": "User preferred baseline; availability checked via /models; stage-specific selection requires measured quality and total cost."
   },
   "drive": {
-    "parent_folder_id": "1klBH_6C0gxmfdO6k8Ms1fa6cqMXe5VWe",
-    "expected_email": "gorlanova.elena@gmail.com",
+    "parent_folder_id": "",
+    "expected_email": "",
     "stage_folder_name": "Этап 2 — воспроизводимый сбор"
   },
   "model_policy": {

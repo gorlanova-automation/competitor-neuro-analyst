@@ -111,9 +111,9 @@
       "prompt_sha256": "c3f81f330331a54efd4d957394e2790f2fc53a5b8bb0a323fd36dc549b8b3423",
       "code_version": {
         "collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc",
-        "snapshot": "review/colab_all_models_20261022.zip",
         "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py",
-        "evidence": "recovered_runtime_snapshot_no_runtime_hash"
+        "evidence": "recovered_runtime_snapshot_no_runtime_hash",
+        "source_archive_name": "colab_all_models_20261022.zip"
       },
       "runtime_collector_sha256": null,
       "corpus_sha256": "17db2c2f0540653e28bded877d08777b9e77d09e04c72115e7280a2ae417581f",
@@ -497,9 +497,9 @@
       "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
       "code_version": {
         "collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc",
-        "snapshot": "review/colab_all_models_20261022.zip",
         "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py",
-        "evidence": "recovered_runtime_snapshot_no_runtime_hash"
+        "evidence": "recovered_runtime_snapshot_no_runtime_hash",
+        "source_archive_name": "colab_all_models_20261022.zip"
       },
       "runtime_collector_sha256": null,
       "corpus_sha256": "17db2c2f0540653e28bded877d08777b9e77d09e04c72115e7280a2ae417581f",
@@ -881,9 +881,9 @@
       "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
       "code_version": {
         "collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc",
-        "snapshot": "review/colab_all_models_20261022.zip",
         "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py",
-        "evidence": "recovered_runtime_snapshot_no_runtime_hash"
+        "evidence": "recovered_runtime_snapshot_no_runtime_hash",
+        "source_archive_name": "colab_all_models_20261022.zip"
       },
       "runtime_collector_sha256": null,
       "corpus_sha256": "17db2c2f0540653e28bded877d08777b9e77d09e04c72115e7280a2ae417581f",
@@ -1413,9 +1413,9 @@
       "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
       "code_version": {
         "collector_sha256": "efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc",
-        "snapshot": "review/colab_all_models_20261022.zip",
         "path": "code_versions/efa273fb213d9dc5d6c49f10e29c8a0ab8789c325e19761da3befd704a0f1cfc/collector.py",
-        "evidence": "recovered_runtime_snapshot_no_runtime_hash"
+        "evidence": "recovered_runtime_snapshot_no_runtime_hash",
+        "source_archive_name": "colab_all_models_20261022.zip"
       },
       "runtime_collector_sha256": null,
       "corpus_sha256": "17db2c2f0540653e28bded877d08777b9e77d09e04c72115e7280a2ae417581f",
@@ -3019,9 +3019,9 @@
       "prompt_sha256": "85b433b15d8b39b2edfe2a581750058aba1d02eb60e6644c77fdfa6ad6de4f2d",
       "code_version": {
         "collector_sha256": "b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584",
-        "snapshot": "review/colab_final_pilot_20261022.zip",
         "path": "code_versions/b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584/collector.py",
-        "evidence": "runtime_logged_hash_matches_recovered_file"
+        "evidence": "runtime_logged_hash_matches_recovered_file",
+        "source_archive_name": "colab_final_pilot_20261022.zip"
       },
       "runtime_collector_sha256": "b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584",
       "corpus_sha256": "17db2c2f0540653e28bded877d08777b9e77d09e04c72115e7280a2ae417581f",

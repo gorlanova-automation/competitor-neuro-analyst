@@ -114,8 +114,8 @@
     },
     {
       "path": "stage_2/code/Шаг_1_профиль_и_поисковые_запросы.ipynb",
-      "bytes": 46519,
-      "sha256": "a5311a7a10498c7af1a440665379883dfeba7c43f7a03b411ac4c015f46eeeef"
+      "bytes": 46424,
+      "sha256": "6a57f399a899f6ef84c6b13ec4b209baf470cf083f0b87c21015b6b115e50a20"
     },
     {
       "path": "stage_2/code/Этап_2_исследование_по_сохранённым_опытам.ipynb",
@@ -124,8 +124,8 @@
     },
     {
       "path": "stage_2/code/Этап_2_сбор_и_эксперименты.ipynb",
-      "bytes": 117642,
-      "sha256": "9a5ea31020a15aaf39a24e2ec2ceb9b649024baf8f7015b3eddf1323f81e665e"
+      "bytes": 117415,
+      "sha256": "051ee0af49458a3c58dcb1a60e59ab7e2428d63b678d481fe0ce7e8ccc1cc9c4"
     },
     {
       "path": "stage_2/code_versions/b48e934ef08849ec3b98affd4ee2b452fd968414daaa421373f7861c243fe584/collector.py",
@@ -274,23 +274,23 @@
     },
     {
       "path": "stage_2/docs/course_mapping.md",
-      "bytes": 3590,
-      "sha256": "d064d071fe81bf9b78e8d368e48bde4cdb9cdb0366b5d2dbf36a289dced987e3"
+      "bytes": 3576,
+      "sha256": "7dfaab8b95bee0eef279c9fe0d03251bf7f8b19d8f9321e8197f8010480fe43f"
     },
     {
       "path": "stage_2/docs/experiment_log.md",
-      "bytes": 8496,
-      "sha256": "ad53a435517fce7556412f35bd9170af4f24159d8f7ba5f7a13947baaccc1f71"
+      "bytes": 8448,
+      "sha256": "c16fbfdadf09e0002802b898ca0d383711a6a2dec537f8437ec6899c8cdf6662"
     },
     {
       "path": "stage_2/docs/methodology.md",
-      "bytes": 10985,
-      "sha256": "b6c6da1992d21e6dea5a3943a393fbcdb412455c5d413b999a77bf95196ebd74"
+      "bytes": 10942,
+      "sha256": "874313ca1deab57062e1a3289aa9598305a8d9b163bb6c3683fb8f8ed41d6776"
     },
     {
       "path": "stage_2/docs/model_selection.md",
-      "bytes": 10055,
-      "sha256": "8f3ab61a36bdbcf12275db919cbd17556a0f39f00307b4918860caebcc101717"
+      "bytes": 9991,
+      "sha256": "015635f5c7a36dbf33147a93512742044332adb3e3b596bd266d1e5122d86d01"
     },
     {
       "path": "stage_2/knowledge_base/dataset_card.json",
@@ -334,8 +334,8 @@
     },
     {
       "path": "stage_2/README.md",
-      "bytes": 6922,
-      "sha256": "d64c3a2bb86f3f64650c975f295c027665d19e342240a5803b2c1d2699ee42f9"
+      "bytes": 6883,
+      "sha256": "d709a288799086b057192ebedc23e6536d298a66d76702456f400bb726bec5a1"
     },
     {
       "path": "stage_2/research/audit.json",

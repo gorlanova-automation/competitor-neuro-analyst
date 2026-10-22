@@ -1,0 +1,78 @@
+[
+  {
+    "id": "immigration_relocator",
+    "name": "Immigration Relocator",
+    "role": "own_company",
+    "seed_urls": [
+      "https://immigration-relocator.com/",
+      "https://immigration-relocator.com/pt-otherservices",
+      "https://immigration-relocator.com/about"
+    ]
+  },
+  {
+    "id": "migrun",
+    "name": "Migrun",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://www.migrun.tech/ru",
+      "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "https://www.migrun.tech/ru/relocation-for-teams-and-companies"
+    ]
+  },
+  {
+    "id": "migran",
+    "name": "Migran",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://www.migran.es/"
+    ]
+  },
+  {
+    "id": "relotus",
+    "name": "Relotus",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://relotus-relocation.com/"
+    ]
+  },
+  {
+    "id": "relocate_group",
+    "name": "Релокейт Групп",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://relocate-legal.com/"
+    ]
+  },
+  {
+    "id": "e_residence",
+    "name": "e-residence",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://e-residence.com/ru/"
+    ]
+  },
+  {
+    "id": "dh_private",
+    "name": "DISCUS HOLDINGS PRIVATE CLIENTS",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://dhprivate.com/"
+    ]
+  },
+  {
+    "id": "migrall",
+    "name": "MigrAll Portugal",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://www.migrall.com/"
+    ]
+  },
+  {
+    "id": "movetocascais",
+    "name": "MoveToCascais",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://movetocascais.com/ru/"
+    ]
+  }
+]

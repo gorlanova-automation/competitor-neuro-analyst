@@ -1,0 +1,74 @@
+[
+  {
+    "field": "price",
+    "value": "1 мес. ставка",
+    "evidence": "Персональный подбор и сопровождение аренды\n1 мес. ставка",
+    "kind": "published_offer",
+    "country": "Portugal",
+    "offer_name": "Персональный подбор и сопровождение аренды",
+    "amount": null,
+    "currency": null,
+    "price_basis": "1 мес. ставка",
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+    "url": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-22T11:14:54.602842+00:00",
+    "extracted_at": "2026-10-22T11:32:16.957479+00:00",
+    "evidence_start": 6359,
+    "review_status": "pending_human_review",
+    "origin": "llm_extraction",
+    "fact_id": "8cbd0d4df0a4d6791389",
+    "validation_errors": [
+      "price_missing_offer_amount_currency"
+    ]
+  },
+  {
+    "field": "price",
+    "value": "Стандартный NIF — €109",
+    "evidence": "Стандартный NIF\nМы оформим NIF в течение двух недель.\nСтоимость\n€109",
+    "kind": "published_offer",
+    "country": "Португалия",
+    "offer_name": "Стандартный NIF",
+    "amount": 109,
+    "currency": "EUR",
+    "price_basis": null,
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "chunk_id": "migrun_374ee81f00c9b3_c000",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-22T11:15:02.895335+00:00",
+    "extracted_at": "2026-10-22T11:32:52.321860+00:00",
+    "evidence_start": null,
+    "review_status": "pending_human_review",
+    "origin": "llm_extraction",
+    "fact_id": "65f416b342c3a952e289",
+    "validation_errors": [
+      "quote_not_found_or_too_short"
+    ]
+  },
+  {
+    "field": "price",
+    "value": "Услуга «Самозанятость» — €180",
+    "evidence": "Самозанятость\nНачните процесс самозанятости в Португалии, что позволит вам заниматься коммерческой деятельностью в стране.\nСтоимость\n€180",
+    "kind": "published_offer",
+    "country": "Португалия",
+    "offer_name": "Самозанятость",
+    "amount": 180,
+    "currency": "EUR",
+    "price_basis": null,
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "chunk_id": "migrun_374ee81f00c9b3_c000",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-22T11:15:02.895335+00:00",
+    "extracted_at": "2026-10-22T11:32:52.321975+00:00",
+    "evidence_start": null,
+    "review_status": "pending_human_review",
+    "origin": "llm_extraction",
+    "fact_id": "aec379731633b102aa80",
+    "validation_errors": [
+      "quote_not_found_or_too_short"
+    ]
+  }
+]

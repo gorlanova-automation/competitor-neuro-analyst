@@ -1,0 +1,296 @@
+{
+  "company_id": "immigration_relocator",
+  "channel_url": "https://t.me/immigration_relocator",
+  "found_on": "https://immigration-relocator.com/pt",
+  "ownership_status": "pending_human_review",
+  "window_start": "2026-07-24",
+  "window_end": "2026-10-21",
+  "max_posts": 20,
+  "max_pages": 2,
+  "count": 15,
+  "actual_first": "2026-10-01T13:46:56+00:00",
+  "actual_last": "2026-10-21T08:00:16+00:00",
+  "reached_window_start": false,
+  "coverage": "bounded_preview_not_proven_complete",
+  "pages": [
+    {
+      "url": "https://t.me/s/immigration_relocator",
+      "collected_at": "2026-10-21T19:32:09.927783+00:00",
+      "sha256": "7e0913c27427bb3c5bceb0cc482b242748fd7e5c7ea0d98474a4451111899c90",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_00.html",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://t.me/s/immigration_relocator",
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8"
+    },
+    {
+      "url": "https://t.me/s/immigration_relocator?before=613",
+      "collected_at": "2026-10-21T19:32:10.891576+00:00",
+      "sha256": "dc1f048f7ae727baee4666cfcd7ae41fe1ef3079bae1bc437ca6d476d589028d",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://t.me/s/immigration_relocator?before=613",
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8"
+    }
+  ],
+  "posts": [
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/631",
+      "published_at": "2026-10-21T08:00:16+00:00",
+      "collected_at": "2026-10-21T19:32:10.071781+00:00",
+      "text": "🇵🇹\nAIMA открыла запись на получение ВНЖ по статье 90.2 для высококвалифицированных специалистов без визы\nНа сайте AIMA появилась возможность подать заявку на запись для получения вида на жительство по статье 90.2 (высококвалифицированная деятельность) без наличия резидентской визы.\n📌\nКак подать заявку?\nНеобходимо заполнить контактную форму AIMA, выбрав:\nTipo de Assunto:Autorização de Residência\nSubtipo de Assunto:Pedido de Agendamento para Cidadão Altamente Qualificado sem Visto\n📄\nОбязательные документы:\n• Сканированная копия паспорта;\n• Подтверждение осуществления высококвалифицированной профессиональной деятельности (например, трудовой договор или декларация от работодателя, подтверждающая соответствующую деятельность).\nВажно:AIMA предупреждает, что заявки, не соответствующие требованиям данной категории ВНЖ, будут автоматически отклонены.\nОткрытие формы позволяет направить запрос на назначение даты посещения AIMA, однако не гарантирует получение слота или одобрение ВНЖ.\nСсылка на форму:\nhttps://contactenos.aima.gov.pt/contact-form\nНа скриншотах - необходимые настройки формы и официальный список документов.\n#Португалия\n#AIMA\n#ВНЖПортугалии",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_00.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/630",
+      "published_at": "2026-10-21T08:00:10+00:00",
+      "collected_at": "2026-10-21T19:32:10.065781+00:00",
+      "text": "🔥\nНаш сооснователь Immigration Relocator Ксения Бурлака запустила собственный Telegram-канал!\nНовости об оформлении ВНЖ в Португалии и Испании, реальные кейсы и объяснения сложных миграционных вопросов - всё это в одном месте\n🇵🇹\n🇪🇸\nПодписывайтесь, чтобы\nне пропускать\nважные изменения и узнавать о новых возможностях получения ВНЖ!\n💬\nПодписаться!\n👇\nА в публикации ниже -\nактуальная информация об открытии записи в AIMA\nдля высококвалифицированных специалистов без резидентской визы.",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_00.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/621",
+      "published_at": "2026-10-20T14:50:25+00:00",
+      "collected_at": "2026-10-21T19:32:10.059780+00:00",
+      "text": "🚨\nСрочный переезд из СНГ: что делать, когда ждать уже нельзя?\nКогда нужно уехать «вчера», а времени на раскачку нет, начинается паника: какая страна оформит ВНЖ быстрее? Хватит ли денег? А может, вообще ждать год, как в Португалии?\nМы собрали\nпошаговую инструкцию\n, как получить ВНЖ в Европе за 2-3 месяца.\nСкорость решает не страна, а ваша форма дохода и правильная подготовка документов!\nЛистайте\nкарусель\n, чтобы увидеть 3 шага, которые решают всё\n👉\n💬\nХотите разбор всех программ и городов? Напишите «КОНСУЛЬТАЦИЯ» в комментариях!",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_00.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/613",
+      "published_at": "2026-10-15T11:13:04+00:00",
+      "collected_at": "2026-10-21T19:32:10.053778+00:00",
+      "text": "Сколько останется от зарплаты после\nаренды\nв Испании? Считаем на реальных объявлениях!\n🇪🇸\nМы сравнили 5 городов и посчитали, сколько останется после оплаты жилья.\nСпойлер:\nразница почти в 1000 €!\nЛистайте карусель, чтобы увидеть цифры\n👉\nХотите разбор всех программ? Пишите «ИСПАНИЯ» в комментариях!\n👇",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_00.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/612",
+      "published_at": "2026-10-14T06:52:05+00:00",
+      "collected_at": "2026-10-21T19:32:11.057573+00:00",
+      "text": "🗞\nНОВОСТИ ИСПАНИИ\n🇪🇸\nИспания начала сама записывать иностранцев на отпечатки для карты резидента\nКто оформлял ВНЖ в Испании, тот помнит, как это бывает: одобрение уже есть, а записи на отпечатки нет. Слоты разбирают за минуты, и люди неделями обновляют страницу.\nС 9 октября полиция Испании расширила пилотный проект, в котором записывает заявителей на отпечатки автоматически.\n📍\nГде уже работает:\n▪️\nМадрид\n▪️\nБарселона\n▪️\nВаленсия\n▪️\nАликанте\n▪️\nМалага\n▪️\nМурсия\n▪️\nЖирона, Таррагона и Льейда, где проект запустили раньше\n⚙️\nКак это работает:\n▪️\nпосле одобрения ВНЖ вам приходит СМС или письмо с датой, временем и адресом полицейского участка\n▪️\nесли вас ведёт юрист, уведомление получит и он\n▪️\nпри выборе даты учитывают ваш адрес и свободные окна\n⚠️\nЕсть нюанс:\nпока это эксперимент, и он охватывает примерно 10% заявок. Если через 20 дней после одобрения запись так и не пришла, записывайтесь сами, как раньше. А если пропустите приём, не отменив его, запись придётся искать заново.\nТак что после одобрения проверяйте почту и телефон и не пропускайте сообщения от полиции.\n🇪🇸\nХотите понять, по какой программе вы можете получить ВНЖ в Испании?\nМы собрали разбор всех программ, смотрите по ссылке\n🎬",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/610",
+      "published_at": "2026-10-09T15:00:55+00:00",
+      "collected_at": "2026-10-21T19:32:11.053575+00:00",
+      "text": "",
+      "format": [
+        "text"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/609",
+      "published_at": "2026-10-09T10:24:48+00:00",
+      "collected_at": "2026-10-21T19:32:11.050574+00:00",
+      "text": "😭\n🫠\nГосподи, 27 октября в Лиссабоне концерт «Касты»\nНо, вы туда не попадёте\n…\nИ дело даже не в билетах.\nПортугалия славится не самой быстрой бюрократией: слоты в консульство можно ждать месяцами, а рассмотрение документов затягивается на полгода.\nТак что концерт «Касты» в Лиссабоне вы увидите разве что в сторис. Или уже в следующем году\n🥲\nНо хватит кусать локти!\nЕсли вы хотите переехать в Европу не через полтора года, а в ближайшие месяцы, присмотритесь к Испании\n🇪🇸\nВсё зависит от программы и вашей ситуации, но некоторые варианты переезда позволяют получить ВНЖ значительно быстрее, чем вы могли ожидать.\n🎬\nСрочно включайте вебинар Алекса про Испанию!\nТам он по полочкам разбирает программы переезда и объясняет, как легально переехать в Европу в 2026 году.\n👉\nСсылка на вебинар\nПереходите и забирайте свой рабочий план переезда\n🚀",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/599",
+      "published_at": "2026-10-08T08:21:34+00:00",
+      "collected_at": "2026-10-21T19:32:11.046574+00:00",
+      "text": "🌍\nВыбрать страну для переезда - это вам не выбрать, где провести отпуск\n🫠\nМы собрали для вас\n7 программ по характеру\n- у каждой свои пороги, сроки и запреты.\nЛистайте\n👉\nи узнавайте себя.\nА потом пишите в комментариях\n: кто вы из них?\n👀\nИ отправьте эту карусель другу, который уже третий год говорит:\n«Вот-вот уеду».\nПусть хотя бы наконец поймёт,\nкакой он эмигрант\n😂",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/598",
+      "published_at": "2026-10-07T11:04:29+00:00",
+      "collected_at": "2026-10-21T19:32:11.040578+00:00",
+      "text": "🪪\nВЫ ПОЛУЧИЛИ NO LUCRATIVA, ВНЖ ИСПАНИИ БЕЗ ПРАВА РАБОТЫ. ДАЛЬШЕ НАЧИНАЕТСЯ САМОЕ ВАЖНОЕ\nВ прошлом посте мы разобрали, как получить No Lucrativa. Теперь поговорим о том, что происходит, когда карта резидента у вас на руках. Карта резидента, это пластиковая карточка, которая подтверждает ваш статус в Испании.\nМногие думают, что самое сложное это получить ВНЖ. Но подача случается один раз, а дальше вы живёте по правилам, которые придётся соблюдать каждый год.\n📅\nПервую карту дают на год.\nПотом её продлевают сразу на 2 года, но накоплений к этому моменту нужно вдвое больше: сумму подтверждают на весь срок новой карты, а не на один год.\n🇪🇸\nЖить в Испании придётся по-настоящему.\nУезжать больше чем на 183 дня в году нельзя. При продлении смотрят не только на документы, но и на то, как вы живёте: прописку, действующий договор аренды, движение денег по счёту, школу детей, налоговые декларации, поданные в Испании.\n⚠️\nНА ЧЁМ ЧАЩЕ ВСЕГО СПОТЫКАЮТСЯ ПРИ ПРОДЛЕНИИ:\n▪️\nпрожили в стране меньше, чем нужно\n▪️\nдоход за год просел\n▪️\nстали налоговым резидентом Испании и не разобрались с налогами (налоговый резидент, это тот, кто провёл в стране больше половины года)\n▪️\nзакончилась аренда, а нового жилья нет\n▪️\nне смогли объяснить, откуда пришли деньги\n💼\nЧерез год можно начать работать.\nДля этого No Lucrativa меняют на ВНЖ с правом работы, эта процедура называется модификацией. Проще всего устроиться по найму. Если же хотите открыть своё дело, понадобятся бизнес-план и одобрение от уполномоченной организации.\n👨‍👩‍👧‍👦\nСемью можно взять с собой.\nВ заявление включают супруга, детей до 18 лет, детей от 18 до 21, если они живут с вами, учатся и не состоят в браке, а также родителей-пенсионеров, которых вы содержите. Кстати, в отличие от основного заявителя, члены семьи могут работать сразу.\n🇪🇸\nДальше паспорт.\nЧерез 5 лет легального проживания в Испании можно получить ПМЖ, для этого нужен испанский на уровне А2. Через 10 лет можно получить гражданство, тут уже нужен B1 и экзамен по культуре и истории. Отсчёт идёт не с того дня, когда вы решили уехать, а с того дня, когда получили карту.\n🤝\nТеперь про нас.\nУ нас свой отдел юристов внутри компании, а не подрядчики со стороны. На практике это значит вот что.\nМы считаем ваш доход так, как его будет считать консульство. Собираем папку в правильном порядке, пишем анкеты и письма на испанском, записываем вас в консульство и отвечаем на дозапрос, если он придёт.\nА потом ведём продление и модификацию.\nМы не отправляем вам список документов с пожеланием удачи, мы остаёмся с вами до получения карты и после.\n💬\nРасскажите, какая у вас ситуация, и мы посмотрим, что у вас уже готово, а что нужно выстроить до подачи\n⬇️",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/597",
+      "published_at": "2026-10-06T05:05:14+00:00",
+      "collected_at": "2026-10-21T19:32:11.035579+00:00",
+      "text": "🧭\nВНЖ ИСПАНИИ БЕЗ ПРАВА РАБОТЫ: КОМУ ПОДХОДИТ И КАК ЕГО ПОЛУЧИТЬ\nЭту визу берут те, кто живёт на пенсию, сдаёт квартиру, получает дивиденды или проценты по вкладу. В Испании вы не работаете, а просто живёте.\n👤\nКому подходит:\nпенсионерам, рантье, инвесторам, авторам\n🚫\nКому не подходит:\nнаёмным сотрудникам, фрилансерам и собственникам бизнеса, которые платят себе зарплату директора. Зарплату здесь, к сожалению, не учитывают. Для таких случаев у нас есть другая программа.\n💶\nСКОЛЬКО ДЕНЕГ НУЖНО ПОКАЗАТЬ:\n🇪🇸\nесли едете один,\n2 400 евро в месяц и от 28 800 на счёте\n👫\nесли вдвоём,\n3 000 евро в месяц и от 36 600\n👨‍👩‍👧‍👦\nесли вдвоём с двумя детьми,\n4 200 евро в месяц и от 44 400\n➕\nза каждого следующего члена семьи ещё\n600 евро в месяц и 7 800 на счёте\nКстати, консульство смотрит не только на то, сколько у вас на счёте. Там запрашивают выписки за период от года до трёх лет и проверяют, приходили ли деньги регулярно и откуда они вообще взялись. Так что\nкрупное пополнение прямо перед подачей скорее навредит, чем поможет.\n⏳\nВ СРЕДНЕМ ВЕСЬ ПУТЬ ЗАНИМАЕТ 6-9 МЕСЯЦЕВ.\n1️⃣\nРАЗБИРАЕМ ВАШУ СИТУАЦИЮ\nСмотрим, откуда у вас деньги, и под этот источник составляем список документов. У пенсионера и у того, кто сдаёт квартиру, бумаги будут совсем разные.\n2️⃣\nЗАПИСЫВАЕМСЯ В КОНСУЛЬСТВО\nЭто первое, что мы делаем, ещё до сбора документов. Очередь бывает от двух недель до четырёх месяцев, и дату переезда обычно определяет именно она, а не то, как быстро вы соберёте папку.\n3️⃣\nГОТОВИМ ДОКУМЕНТЫ, 1-2 МЕСЯЦА\nАнкеты, мотивационное письмо на испанском, апостиль, присяжные переводы, страховка без франшизы. Ещё понадобится\nдоговор аренды жилья в Испании на 12 месяцев:\nбез жилья заявление не примут. Справку о несудимости заказываем в самом конце, потому что она действует всего три месяца.\n4️⃣\nПОДАЧА\nВы приходите в консульство, подписываете документы и платите визовый сбор\n80-90 евро\n. Дальше консульство рассматривает дело, на это уходит до 90 рабочих дней. Если придёт дозапрос, не переживайте, на него отвечаем мы.\n5️⃣\nВИЗА\nВизу дают на три месяца. За это время нужно въехать в Испанию и начать оформлять карту резидента.\n6️⃣\nПРОПИСКА И КАРТА\nСначала прописываетесь в муниципалитете, потом записываетесь на отпечатки. Ждать этой записи придётся от одной до восьми недель, смотря в каком вы регионе. Саму карту делают за 30-45 дней после сдачи отпечатков.\n🚨\nГлавное ограничение: работать основному заявителю нельзя совсем.\nМы говорим об этом сразу, а не после оплаты.\n➡️\nВ следующем посте расскажем, что начинается после того, как карта у вас на руках. Там нюансов даже больше, чем при подаче.\n💬\nА если хотите понять, хватит ли вашего дохода на вашу семью, напишите нам. Мы посмотрим вашу ситуацию и скажем,\nкакие программы вам реально подходят.\nЭто бесплатно и ни к чему вас не обязывает\n⬇️",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/595",
+      "published_at": "2026-10-03T12:20:21+00:00",
+      "collected_at": "2026-10-21T19:32:11.026578+00:00",
+      "text": "Не знаете, чем заняться в выходные?\nА мы знаем\n🤍\nЕсли переезд в Европу крутится у вас в голове уже не первый месяц, но руки никак не доходят сесть и разобраться, вот вам план на выходные. Сварите кофе, откройте ноутбук и просто посмотрите по порядку подборку о переезде у нас на Ютубе!\n🎬\nСколько нужно денег для ВНЖ Европы\nНачинаем с главного вопроса, из-за которого большинство даже не начинает. Спойлер: пороги отличаются в три раза\n🎬\nИспания или Португалия: сравниваем требования\nДве самые популярные страны рядом, по суммам, срокам и условиям\n🎬\nСамая простая страна в Европе\nГде меньше всего требований и ниже порог входа. Не всегда та страна, о которой все думают…\nА если после просмотра захочется посчитать уже свою ситуацию, напишите нам, разберём, какие программы открыты именно вам\n💬\nПриятного просмотра и хороших выходных!\n🤍",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/594",
+      "published_at": "2026-10-03T01:27:32+00:00",
+      "collected_at": "2026-10-21T19:32:11.022585+00:00",
+      "text": "",
+      "format": [
+        "text"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/593",
+      "published_at": "2026-10-02T09:09:57+00:00",
+      "collected_at": "2026-10-21T19:32:11.020576+00:00",
+      "text": "А если вы уже точно знаете, какая страна и программа вам нужна, приглашаем вас на бесплатную экспресс-консультацию\n🤍\nВы поговорите с нашим миграционным экспертом и поймёте, какой у вас следующий шаг:\n☑\nс чего начать\n☑\nкакие документы готовить\n☑\nкак всё будет проходить и сколько это займёт времени\nНа следующую неделю у нас всего 5 мест\n‼️",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/591",
+      "published_at": "2026-10-02T06:06:20+00:00",
+      "collected_at": "2026-10-21T19:32:11.017581+00:00",
+      "text": "Ну что, обещали - показываем\n🎉\nМы сделали\nтест\n, который за пару минут подскажет, куда вы можете переехать\n🌍\nВсё очень просто:\n1️⃣\nОтвечаете на несколько вопросов о себе\n2️⃣\nИ сразу видите,\nкакая страна и программа подходят именно вам\nНе надо никому звонить, ничего читать и спрашивать у знакомых: «А как у вас было?»\n🙈\nПросто отвечаете на вопросы\nпро себя\n✨\nИ, возможно, вариантов у вас\nбольше, чем вы думаете\n😉\n👉\nПройти тест\nЭто\nбесплатно\nи быстрее, чем выпить чашку кофе\n☕️",
+      "format": [
+        "photo"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "channel_url": "https://t.me/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/pt",
+      "ownership_status": "pending_human_review",
+      "post_url": "https://t.me/immigration_relocator/590",
+      "published_at": "2026-10-01T13:46:56+00:00",
+      "collected_at": "2026-10-21T19:32:11.011577+00:00",
+      "text": "Признайтесь честно\n🙈\nУ вас в телефоне сохранены посты про Испанию\n🇪🇸\nВидео про Португалию\n🇵🇹\nСтатья про Италию\n🇮🇹\n, которую вы так и не дочитали.\nВы читаете, загораетесь… а потом закрываете и думаете:\n«Так а мне-то куда?»\n🤯\nИ это нормально.\nПотому что везде пишут про всех сразу. А вам нужно знать одно:\nкуда могу переехать именно я?\nС моей семьёй, моими детьми, моим доходом.\nЭтот вопрос нам задают на каждой консультации. И мы подумали: а что, если на него можно ответить ещё до консультации?\n💭\nПоследние недели наша команда делала для вас одну вещь\n🤫\nЧто это, пока секрет. Только две подсказки:\n📵\nчитать ничего не придётся.\n🎯\nОтвет будет\nтолько про вас.\nПокажем совсем скоро, здесь, в канале\n👀\nХотите узнать первыми?\nСтавьте\n🔥",
+      "format": [
+        "text"
+      ],
+      "topic": null,
+      "topic_origin": "not_yet_extracted",
+      "method": "python_public_telegram_preview",
+      "raw_path": "social\\immigration_relocator_immigration_relocator_01.html"
+    }
+  ]
+}

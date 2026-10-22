@@ -1,0 +1,6 @@
+﻿experiment,model,prompt_sha256,matched_prices,reference_total,accepted,quarantine,failed_calls,elapsed_pipeline_seconds,tariff_estimate_rub,actual_billed_rub
+20261022T111947Z_adab53,openai/gpt-6-luna,c3f81f330331a54efd4d957394e2790f2fc53a5b8bb0a323fd36dc549b8b3423,8,8,158,7,0,97.024,2.40309,not_recorded
+20261022T112126Z_2421a6,openai/gpt-6-luna,1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a,8,8,76,7,0,74.33,1.65024,not_recorded
+20261022T112655Z_3a2e17,anthropic/claude-haiku-4-5,1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a,3,8,11,12,1,68.441,13.18816,not_recorded
+20261022T112655Z_fabfd2,google/gemini-3.5-flash-lite,1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a,0,8,7,58,0,22.436,7.929751,not_recorded
+20261022T113037Z_be7ea6,openai/gpt-6-luna,85b433b15d8b39b2edfe2a581750058aba1d02eb60e6644c77fdfa6ad6de4f2d,8,8,175,3,0,134.865,2.90517,not_recorded

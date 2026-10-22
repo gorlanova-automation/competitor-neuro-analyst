@@ -1,0 +1,18 @@
+﻿reference_id,company_id,field,amount,kind,evidence,manual_note
+IR01,immigration_relocator,price,500,published_offer,"Продление ВНЖ
+€500,00","Опубликованная цена услуги; проверена по сохранённому тексту, не коммерческое предложение."
+IR02,immigration_relocator,price,150,published_offer,"Иммиграционная консультация
+€150,00",Не смешивать с налоговой консультацией.
+IR03,immigration_relocator,price,170,published_offer,"Консультация по налогообложению в Португалии
+€170,00",Первый блок. На той же странице есть 350 EUR; сохранить обе версии и отметить конфликт.
+IR04,immigration_relocator,price,350,published_offer,"Консультация по налогообложению в Португалии
+€350,00",Второй блок той же страницы; не выбирать актуальную цену без подтверждения.
+IR05,immigration_relocator,price,150,published_offer,"Дистанционное оформление налогового номера (NIF)
+€150,00","Цена услуги, не налоговый платёж."
+MR01,migrun,price,530,published_offer,"Check-up
+€530",Пакет проверки; не равно полному сопровождению.
+MR02,migrun,price,1290,published_offer,"Standard Assistance
+Популярно
+€1290",Цена пакета на португальской странице.
+MR03,migrun,price,3490,published_offer,"Premium Assistance
+€3490",Цена пакета на португальской странице.

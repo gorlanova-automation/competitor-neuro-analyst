@@ -1,0 +1,16 @@
+﻿fact_id,company_id,field,value,country,offer_name,amount,currency,price_basis,kind,url,collected_at,evidence,review_status
+06a03d7d4eca54d69095,migrun,service,Вводная консультация (15 мин.),PT,Вводная консультация,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Вводная консультация (15 мин./бесплатно),pending_human_review
+5feeb2c15a127df45567,migrun,service,Разбор кейса (30 мин.),PT,Разбор кейса,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,🔥 Разбор кейса (30 мин./€40) 🔥,pending_human_review
+9f76dcff0ffe817135e2,migrun,price,Разбор кейса (30 мин./€40),PT,Разбор кейса,40,EUR,разовый,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,🔥 Разбор кейса (30 мин./€40) 🔥,pending_human_review
+755df7c63838863152f4,migrun,service,План переезда (60 мин.),PT,План переезда,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,План переезда (60 мин./€70),pending_human_review
+3837bc0a650bb05fb1c2,migrun,price,План переезда (60 мин./€70),PT,План переезда,70,EUR,разовый,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,План переезда (60 мин./€70),pending_human_review
+543a2072a3252083c1f0,migrun,price,Check-up €530,PT,Check-up,530,EUR,разовый,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Check-up
+€530",pending_human_review
+85050151a289bd1d5d82,migrun,price,Standard Assistance €1290,PT,Standard Assistance,1290,EUR,разовый,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Standard Assistance
+Популярно
+€1290",pending_human_review
+af56f9f443376d233cc7,migrun,price,Premium Assistance €3490,PT,Premium Assistance,3490,EUR,разовый,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Premium Assistance
+€3490",pending_human_review
+24d7eb45d4f0633ff894,migrun,service,Оформление виз и вида на жительство (ВНЖ) в Португалии,PT,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Оформление визы и вида на жительство (ВНЖ) в Португалии 🇵🇹,pending_human_review
+fe98400a420bf27301ca,migrun,audience,"Поддержка при оформлении виз: Digital Nomad (D8), пассивный доход (D7), бизнес-виза (D2) и High Tech (D3)",PT,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Полная поддержка при оформлении виз: Digital Nomad (D8), пассивный доход (D7), бизнес-виза (D2) и High Tech (D3)",pending_human_review
+cbe9c8327eb70da2a1fd,migrun,geography,Португалия,PT,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Оформление визы и вида на жительство (ВНЖ) в Португалии 🇵🇹,pending_human_review

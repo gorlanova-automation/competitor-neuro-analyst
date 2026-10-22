@@ -1,0 +1,22 @@
+[
+  {
+    "id": "immigration_relocator",
+    "name": "Immigration Relocator",
+    "role": "own_company",
+    "seed_urls": [
+      "https://immigration-relocator.com/",
+      "https://immigration-relocator.com/pt-otherservices",
+      "https://immigration-relocator.com/about"
+    ]
+  },
+  {
+    "id": "migrun",
+    "name": "Migrun",
+    "role": "confirmed_competitor",
+    "seed_urls": [
+      "https://www.migrun.tech/ru",
+      "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "https://www.migrun.tech/ru/relocation-for-teams-and-companies"
+    ]
+  }
+]

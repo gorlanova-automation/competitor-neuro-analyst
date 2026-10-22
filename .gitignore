@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.runtime_deps/
+.research_notebook_check*/
+.venv/
+.env
+.env.*
+!.env.example
+memory.md
+*.pem
+*.key
+.DS_Store
+Thumbs.db

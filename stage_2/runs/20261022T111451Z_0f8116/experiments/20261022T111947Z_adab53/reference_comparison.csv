@@ -1,0 +1,18 @@
+﻿reference_id,company_id,field,amount,evidence,status,candidate_fact_ids
+IR01,immigration_relocator,price,500,"Продление ВНЖ
+€500,00",matched_rule_requires_semantic_review,"[""8f34e0bbb65d5436aed6""]"
+IR02,immigration_relocator,price,150,"Иммиграционная консультация
+€150,00",matched_rule_requires_semantic_review,"[""1328fdb52de5b76ce43a""]"
+IR03,immigration_relocator,price,170,"Консультация по налогообложению в Португалии
+€170,00",matched_rule_requires_semantic_review,"[""fbcb878912ba1a517cf9""]"
+IR04,immigration_relocator,price,350,"Консультация по налогообложению в Португалии
+€350,00",matched_rule_requires_semantic_review,"[""d16bf568da704bb9e4a2""]"
+IR05,immigration_relocator,price,150,"Дистанционное оформление налогового номера (NIF)
+€150,00",matched_rule_requires_semantic_review,"[""af408440d6870b09039b""]"
+MR01,migrun,price,530,"Check-up
+€530",matched_rule_requires_semantic_review,"[""4b1a95cafa7e5d88a823""]"
+MR02,migrun,price,1290,"Standard Assistance
+Популярно
+€1290",matched_rule_requires_semantic_review,"[""b1bbc6eabe1ed58e2498""]"
+MR03,migrun,price,3490,"Premium Assistance
+€3490",matched_rule_requires_semantic_review,"[""79532cbc72017095893c""]"

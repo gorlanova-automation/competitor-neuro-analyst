@@ -1,0 +1,301 @@
+{
+  "company_id": "immigration_relocator",
+  "created_at": "2026-10-22T11:29:01.254448+00:00",
+  "model": "openai/gpt-6-luna",
+  "prompt_sha256": "c1be4be533ce7c77364d24b234e8486cdb5b98322f157cdf761fd0faf6f3c859",
+  "fields": {
+    "services": [
+      {
+        "value": "Сопровождение релокации",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "сопровождение релокации «под ключ»",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Бухгалтерские и налоговые услуги",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "Ведение бухгалтерского учета",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Помощь в открытии банковских счетов",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "Открытие счета компании в банке Португалии с личным сопровождением",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Подбор и сопровождение аренды или покупки недвижимости",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "Персональный подбор и сопровождение аренды",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Помощь с оформлением документов, переводом и заверением",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "Переводы и заверения",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Воссоединение семьи",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Воссоединение семьи",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Оформление программ гражданства",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Программы гражданства",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      }
+    ],
+    "audience": [
+      {
+        "value": "Фрилансеры, индивидуальные предприниматели и люди, работающие удалённо",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для фрилансеров,ИП, удалённой работы",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Арендаторы, рантье и пенсионеры",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для арендаторов, рантье, пенсионеров",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Высококвалифицированные специалисты",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для высококвалифицированных специалистов",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Инвесторы",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для инвесторов от €280 000",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Финансово независимые лица",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для финансово независимых лиц, без права на работу",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Люди, желающие запустить инновационный бизнес",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для тех, кто хочет запустить инновационный бизнес",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Люди, желающие вести бизнес во Франции",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для тех кто хочет вести бизнес во Франции",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Люди, желающие быть рядом с семьёй",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "для тех кто хочет быть рядом с семьей",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Дети в возрасте 14–18 лет, оформляющие ВНЖ через учёбу",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "ВНЖ для детей (14-18 лет) через учебу по статье 91.2",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Лица с действующим ВНЖ ЕС, которым требуется помощь с открытием банковского счёта",
+        "source_id": "immigration_relocator_a317a051e73c04",
+        "evidence": "для лиц имеющих действительный ВНЖ ЕС",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      }
+    ],
+    "geography": [
+      {
+        "value": "Португалия",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Португалия",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Парагвай",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Парагвай",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Сан-Томе и Принсипи",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Сан-Томе и Принсипи",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      }
+    ],
+    "positioning": [
+      {
+        "value": "Лицензированный провайдер государственных программ",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Лицензированный провайдер госпрограмм",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Сопровождение релокации «под ключ» с работой по договору и возможностью оплаты частями",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Работаем по договору, оплата частями, сопровождение релокации «под ключ»",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Компания позиционирует себя как персональный навигатор, а не агентство",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Для наших клиентов мы не агентство. Мы — личный навигатор",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Заявлено локальное представительство в каждой стране",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "Локальное представительство в каждой стране",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      },
+      {
+        "value": "Заявлена экспертиза в Европе",
+        "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+        "evidence": "У нас есть большая экспертиза в Европе",
+        "url": "https://immigration-relocator.com/",
+        "origin": "llm_company_website_extraction",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "quarantine": [
+    {
+      "field": "services",
+      "value": "Иммиграционные консультации и диагностика миграционного кейса",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Диагностика миграционного кейса (30 мин, бесплатной)",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "services",
+      "value": "Оформление вида на жительство и гражданства",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Оформляем ВНЖ и гражданство в Португалии, Испании и Франции",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "services",
+      "value": "Открытие компаний, филиалов и индивидуальных предприятий",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "evidence": "Дистанционное открытие компании (LDA)",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Испания",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Испания",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Франция",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Франция",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Греция",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Греция",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Италия",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Италия",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Венгрия",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Венгрия",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Вануату",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "Вануату",
+      "reason": "invalid_source_or_evidence"
+    },
+    {
+      "field": "geography",
+      "value": "Программы инвестиционного гражданства по всему миру",
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "evidence": "есть программы инвестиционного гражданства по всему миру",
+      "reason": "invalid_source_or_evidence"
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+      "chars_sent": 25543,
+      "original_chars": 25543
+    },
+    {
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chars_sent": 19457,
+      "original_chars": 20881
+    }
+  ],
+  "confirmed": false
+}

@@ -1,0 +1,20 @@
+{
+  "profile_confirmed": true,
+  "competitors_confirmed": true,
+  "confirmation_date": "2026-10-21",
+  "selected_ids": [
+    "immigration_relocator",
+    "migrun"
+  ],
+  "pages_per_company": 4,
+  "timeout": 25,
+  "max_bytes": 5000000,
+  "delay_seconds": 1,
+  "user_agent": "CompetitorResearchStudent/0.1 (+public-source academic pilot)",
+  "chunk_size": 7000,
+  "chunk_overlap": 600,
+  "follow_pattern": "portugal|spain|pt-|es-|services|услуги|португал|испан|about|contact|price|pricing",
+  "social_days": 90,
+  "social_max_posts": 20,
+  "search_region": "Portugal (gl=pt Google); Yandex region not fixed, must record actual browser setting"
+}

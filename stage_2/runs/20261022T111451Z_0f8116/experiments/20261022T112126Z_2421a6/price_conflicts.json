@@ -1,0 +1,15 @@
+[
+  {
+    "company_id": "immigration_relocator",
+    "offer_key": "консультацияпоналогообложениювпортугалии",
+    "fact_ids": [
+      "794b44b434f73237dc73",
+      "285e8d0500e499fa57c3"
+    ],
+    "amounts": [
+      170,
+      350
+    ],
+    "status": "potential_conflict_requires_context_review"
+  }
+]

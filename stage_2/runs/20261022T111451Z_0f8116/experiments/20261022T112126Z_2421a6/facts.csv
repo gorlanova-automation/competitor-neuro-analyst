@@ -1,0 +1,190 @@
+﻿fact_id,company_id,field,value,country,offer_name,amount,currency,price_basis,kind,url,collected_at,evidence,review_status
+056dacca1e7b5d9331b1,immigration_relocator,contact,"Головной офис: Av. Elias Garcia 76 1G, 1050-100 Лиссабон; доступна онлайн-консультация.",Португалия,,,,,company_claim,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Головной офис
+Av. Elias Garcia 76 1G, 1050-100 Лиссабон
+Онлайн-консультация",pending_human_review
+6c71b29dc332d3b67d00,immigration_relocator,price,"Дистанционное открытие компании (LDA): €950,00, государственные сборы включены.",Португалия,Дистанционное открытие компании (LDA),950,EUR,гос. сборы включены,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное открытие
+компании (LDA)
+€950,00
+(гос. сборы включены)",pending_human_review
+d1c6f03ddf75fd0f27ce,immigration_relocator,price,"Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста: €1 100,00.",Португалия,Запись в AIMA при отсутствии слотов с помощью юриста,1100,EUR,срок: 6-8 мес.,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста
+€1 100,00",pending_human_review
+de6026094a12f38ad33b,immigration_relocator,price,"Продление ВНЖ: €500,00.",Португалия,Продление ВНЖ,500,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Продление ВНЖ
+€500,00",pending_human_review
+f3c6aed90a1460606cd0,immigration_relocator,price,"Иммиграционная консультация: €150,00.",Португалия,Иммиграционная консультация,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Иммиграционная консультация
+€150,00",pending_human_review
+794b44b434f73237dc73,immigration_relocator,price,"Консультация по налогообложению в Португалии: €170,00.",Португалия,Консультация по налогообложению в Португалии,170,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по налогообложению в Португалии
+€170,00",pending_human_review
+d22b37f08d0c6176d4da,immigration_relocator,price,"Дистанционное оформление налогового номера (NIF): €150,00.",Португалия,Дистанционное оформление NIF,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное оформление налогового номера (NIF)
+€150,00",pending_human_review
+2b97866c95288cbe8dcc,immigration_relocator,price,"Дистанционное открытие ИП без IBAN: €270,00.",Португалия,Дистанционное открытие ИП без IBAN,270,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное открытие
+ИП без IBAN
+€270,00",pending_human_review
+5472b0d689838fe47bb2,immigration_relocator,price,"Открытие банковского счета с личным сопровождением для лиц, имеющих действительный ВНЖ ЕС, с истребованием NIF: €1 150,00.",Португалия,Открытие банковского счета с сопровождением и истребованием NIF для лиц с действительным ВНЖ ЕС,1150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Открытие банковского счета с личным сопровождением для лиц имеющих действительный ВНЖ ЕС (с истребованием NIF)
+Выбрать
+€1 150,00",pending_human_review
+06f3e86283f0358e8101,immigration_relocator,price,"ВНЖ для детей 14–18 лет через учебу по статье 91.2: €1 800,00.",Португалия,ВНЖ для детей через учебу по статье 91.2,1800,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"ВНЖ для детей (14-18 лет) через учебу по статье 91.2
+€1 800,00",pending_human_review
+6a6775b075b29c8628bf,immigration_relocator,price,"Воссоединение с гражданином ЕС: €2 200,00.",Португалия,Воссоединение с гражданином ЕС,2200,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Воссоединение
+с гражданином ЕС
+€2 200,00",pending_human_review
+ede9162e0ec61ad88703,immigration_relocator,price,"Подача на ПМЖ: €550,00.",Португалия,Подача на ПМЖ,550,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Подача на ПМЖ
+€550,00",pending_human_review
+f00d796648483dac364a,immigration_relocator,price,"Подача на гражданство: €1 000,00 + €250 государственной пошлины.",Португалия,Подача на гражданство,1000,EUR,"€1 000,00 за услугу + €250 гос. пошлина отдельно",published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Подача на Гражданство
+€1 000,00+€250 (гос. пошлина)",pending_human_review
+204127916f272192e746,immigration_relocator,price,"Дистанционное открытие филиала компании: €2 500,00, государственные сборы включены.",Португалия,Дистанционное открытие филиала компании,2500,EUR,гос. сборы включены,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное открытие
+филиала компании
+€2 500,00
+(гос. сборы включены)",pending_human_review
+ddd93ecab2b84bbd7d4f,immigration_relocator,price,"Регистрация компании с низконалоговым режимом IBCM на Мадейре: €5 000,00, государственные сборы включены.",Португалия,Регистрация компании IBCM на Мадейре,5000,EUR,гос. сборы включены,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Регистрация компании с низконалоговым режимом IBCM на Мадейре
+€5 000,00
+(гос. сборы включены)",pending_human_review
+c9f6094f1f255cac134e,immigration_relocator,price,"Юридический адрес для компании и корреспондентское обслуживание: от €1 200,00 в год; зависит от регулярности корреспонденции и активности компании.",Португалия,Юридический адрес и корреспондентское обслуживание,1200,EUR,"от €1 200,00 в год; зависит от регулярности корреспонденции и активности компании",published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Юридический адрес для компании
++ корреспондентское обслуживание
+от €1 200,00 в год
+Выбрать
+(зависит от регулярности корреспонденции и активности компании)",pending_human_review
+951be63039f5d8e8c057,immigration_relocator,price,"Дистанционное открытие ИП с IBAN: €170,00.",Португалия,Дистанционное открытие ИП с IBAN,170,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное открытие
+ИП с IBAN
+€170,00",pending_human_review
+6d26b2cf9c15fdd563f0,immigration_relocator,price,"Ведение бухгалтерского учета: от €150,00; зависит от регулярности корреспонденции и активности компании.",Португалия,Ведение бухгалтерского учета,150,EUR,от; зависит от регулярности корреспонденции и активности компании,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Ведение бухгалтерского учета
+от €150,00
+Выбрать
+(зависит от регулярности корреспонденции и активности компании)",pending_human_review
+299a60a2408dc9bdb7e0,immigration_relocator,price,"Открытие счета компании в банке Португалии с личным сопровождением: €1 000,00 за первый час, каждый последующий час по €100,00.",Португалия,Открытие счета компании в банке Португалии с личным сопровождением,1000,EUR,"за первый час; каждый последующий час по €100,00",published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Открытие счета компании
+в банке Португалии с личным сопровождением
+€1 000,00
+Выбрать
+за первый час, каждый последующий час по €100,00",pending_human_review
+3ff93136b0f1b0cc6f78,immigration_relocator,price,"Помощь в открытии банковского счета с личным сопровождением для лиц, имеющих действительный ВНЖ ЕС, без истребования NIF: €1 000,00.",Португалия,Открытие банковского счета с сопровождением без истребования NIF для лиц с действительным ВНЖ ЕС,1000,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Помощь в открытии банковского счета с личным сопровождением для лиц имеющих действительный ВНЖ ЕС (без истребования NIF)
+€1 000,00",pending_human_review
+bc6e673f579b7f918609,immigration_relocator,price,"Информационное обслуживание счета после открытия (коммуникация с банком, отправка запросов и представление интересов клиента): от €150,00.",Португалия,Информационное обслуживание счета после открытия,150,EUR,от,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Информационное обслуживание счета после его открытия (коммуникация с банком, отправка запросов и представление интересов Клиента)
+от €150,00",pending_human_review
+285e8d0500e499fa57c3,immigration_relocator,price,"Консультация по налогообложению в Португалии: €350,00.",Португалия,Консультация по налогообложению в Португалии,350,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по налогообложению в Португалии
+€350,00",pending_human_review
+23570123b45aef2eec68,immigration_relocator,price,"Налоговый представитель для налоговых нерезидентов ЕС за 1 взрослого за 12 месяцев: €170,00.",Португалия,Налоговый представитель для налоговых нерезидентов ЕС — взрослый,170,EUR,за 12 месяцев,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Налоговый представитель для налоговых нерезидентов ЕС за 1 -го взрослого за 12 месяцев
+€170,00",pending_human_review
+a073fbec00019fd3c9eb,immigration_relocator,price,"Налоговый представитель для налоговых нерезидентов ЕС за 1 несовершеннолетнего ребенка за 12 месяцев: €130,00.",Португалия,Налоговый представитель для налоговых нерезидентов ЕС — несовершеннолетний ребенок,130,EUR,за 12 месяцев; ребенок младше 18 лет на момент окончания 12-месячного периода,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Налоговый представитель для налоговых нерезидентов ЕС за 1-го несовершеннолетнего ребенка (младше 18 лет на момент окончания 12 месячного периода) за 12 месяцев
+€130,00",pending_human_review
+a149bae49e3896c51aa4,immigration_relocator,price,"Подача налоговой декларации: от €150,00; зависит от структуры доходов и объема налоговой отчетности.",Португалия,Подача налоговой декларации,150,EUR,от; зависит от структуры доходов и объема налоговой отчетности,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Подача налоговой декларации
+от €150,00
+(зависит от структуры доходов
+и объема налоговой отчетности)",pending_human_review
+cb5dc7db60edc1f7eff3,immigration_relocator,price,"Номер системы здравоохранения (Número de Utente): €150,00.",Португалия,Оформление номера системы здравоохранения,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Номер системы здравоохранения (Número de Utente)
+€150,00",pending_human_review
+5113a8f387c9b50b2a52,immigration_relocator,price,"Подготовка повторных или дополнительных документов для банка, Миграционной службы Португалии и/или иных государственных и коммерческих структур: от €150,00 за один документ; далее цена зависит от объема документов.",Португалия,Подготовка повторных или дополнительных документов,150,EUR,от за один документ; дальнейшая цена зависит от объема документов,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Подготовка повторных или дополнительных документов для предоставления в банк, Миграционную Службу Португалии и/или иные государственные и коммерческие структуры, задействованные в иммиграционном процессе
+за один документ (далее цена зависит от объема документов)
+от €150,00",pending_human_review
+3580a9e1f061518636f2,immigration_relocator,price,"Смена адреса налогоплательщика в налоговом номере (NIF): €300,00.",Португалия,Смена адреса налогоплательщика в NIF,300,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Смена адреса налогоплательщика в налоговом номере (NIF)
+€300,00",pending_human_review
+05c00731c5fd72690414,immigration_relocator,price,"Дистанционное оформление номера социального страхования (NISS): €170,00.",Португалия,Дистанционное оформление NISS,170,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Дистанционное оформление номер социального страхования (NISS)
+€170,00",pending_human_review
+fee95186dead6bbc529d,immigration_relocator,price,"Запись в Консульство Португалии в стране запроса визы: €150,00.",Португалия,Запись в Консульство Португалии,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Запись в Консульство Португалии
+в стране запроса визы
+€150,00",pending_human_review
+8a764ba89f5cd885329e,immigration_relocator,price,"Составление мотивационного письма: €150,00.",Португалия,Составление мотивационного письма,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Составление
+мотивационного письма
+€150,00",pending_human_review
+f44cd5cd0994cce9cbce,immigration_relocator,price,"Подготовка полного комплекта документов для подачи заявления в Консульство: €1 000,00.",Португалия,Подготовка полного комплекта документов для подачи заявления в Консульство,1000,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Подготовка полного комплекта документов для подачи заявления в Консульство
+€1 000,00",pending_human_review
+85748470ad136eee54fc,immigration_relocator,price,"Запись в Миграционную службу (AIMA) при доступных слотах: €500,00.",Португалия,Запись в AIMA при доступных слотах,500,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Запись в Миграционную службу (AIMA) при доступных слотах
+€500,00",pending_human_review
+f63d2621acbb6ba1ddeb,immigration_relocator,price,"Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста: €1 100,00.",Португалия,Запись в AIMA при отсутствии слотов с помощью юриста,1100,EUR,срок: 6-8 мес.,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Запись в Миграционную службу (AIMA) при отсутствии слотов
+с помощью юриста
+€1 100,00",pending_human_review
+c8bc37a943c1a1e94e01,immigration_relocator,price,"Личное сопровождение при подаче заявки в AIMA: €500,00.",Португалия,Личное сопровождение при подаче заявки в AIMA,500,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Личное сопровождение
+при подаче заявки в AIMA
+€500,00",pending_human_review
+c295481ee18c06e1bb11,immigration_relocator,price,"Отслеживание статуса заявки и реагирование на дозапросы юристом: €150,00.",Португалия,Отслеживание статуса заявки и реагирование на дозапросы юристом,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Отслеживание статуса заявки
+и реагирование на дозапросы юристом
+€150,00",pending_human_review
+46ed2e981789c3dddb9d,immigration_relocator,price,"Административная апелляция или повторная подача в случае отказа (подача португальского адвокатского запроса по кейсу): €700,00.",Португалия,Административная апелляция или повторная подача в случае отказа,700,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Административная апелляция или повторная подача в случае отказа (Подача португальского адвокатского запроса по кейсу)
+€700,00",pending_human_review
+f0eda3a9cb775491c1d1,immigration_relocator,price,"Отправка запроса в прокуратуру по статусу кейса (предсудебная претензия): €500,00.",Португалия,Запрос в прокуратуру по статусу кейса,500,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Отправка запроса в прокуратуру по статусу кейса (предсудебная претензия)
+€500,00",pending_human_review
+6ad1bc0700e0d5a0087e,immigration_relocator,price,"Открытие ускоренного судебного процесса против Миграционной службы (AIMA), преимущественно для Golden Visa: €5 000,00.",Португалия,Ускоренный судебный процесс против AIMA,5000,EUR,разовый; преимущественно для Golden Visa,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Открытие ускоренного судебного процесса против Миграционной службы (AIMA), преимущественно для Golden Visa
+€5000,00",pending_human_review
+cd756cd5e1d8c62f9202,immigration_relocator,price,"Личное получение карты ВНЖ адвокатом: €300,00.",Португалия,Личное получение карты ВНЖ адвокатом,300,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Личное получение карты ВНЖ адвокатом
+€300,00",pending_human_review
+bd9422dddf59953bcce6,immigration_relocator,price,"Стоимость одного переведенного листа: €25,00.",Португалия,Перевод одного листа,25,EUR,за один лист,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Стоимость одного переведенного листа
+€25,00",pending_human_review
+299fbde3f47d87b5cf04,immigration_relocator,price,"Стоимость одного заверенного листа: €25,00.",Португалия,Заверение одного листа,25,EUR,за один лист,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Стоимость одного заверенного листа
+€25,00",pending_human_review
+10afca06e5d89bd44bd7,immigration_relocator,price,"Подготовка дополнительных доверенностей и заверение доверенностей для банка и государственных учреждений: от €150,00.",Португалия,Подготовка и заверение дополнительных доверенностей,150,EUR,от,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Стоимость подготовки дополнительных доверенностей и заверения доверенностей для банка и государственных учреждений
+от €150,00",pending_human_review
+5a8f59989de41a667342,immigration_relocator,price,"Заполнение и структурирование всех документов, включая формуляры, заявления и сопроводительные файлы, с личной консультацией в офисе: €150,00.",Португалия,Заполнение и структурирование документов с личной консультацией в офисе,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Заполнение и структурирование всех документов (включая формуляры, заявления и сопроводительные файлы): личная консультация в нашем офисе
+€150,00",pending_human_review
+df9dde75d66e8276f3d1,immigration_relocator,price,"Консультация по организации бизнеса в Португалии / консультация по налогам: €250,00.",Португалия,Консультация по организации бизнеса в Португалии / консультация по налогам,250,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по организации бизнеса в Португалии / Консультация по налогам
+€250,00",pending_human_review
+649eaac6e13030443b88,immigration_relocator,price,"Консультация по прочим вопросам, связанным с релокацией: €150,00.",Португалия,Консультация по прочим вопросам релокации,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по прочим вопросам, связанным с релокацией
+€150,00",pending_human_review
+442c4ec34e8041b5482f,immigration_relocator,price,"Консультация по учебным заведениям для детей в Португалии: €150,00.",Португалия,Консультация по учебным заведениям для детей в Португалии,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по учебным заведениям для детей в Португалии
+€150,00",pending_human_review
+d876b2df757e01a3ad76,immigration_relocator,price,"Консультация по аренде или покупке недвижимости, в том числе по ипотеке: €150,00.",Португалия,Консультация по аренде или покупке недвижимости,150,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Консультация по аренде / покупке недвижимости (в том числе по ипотеке)
+€150,00",pending_human_review
+2831c395a2a4316dcc09,immigration_relocator,price,"Комплексное сопровождение покупки недвижимости по договору: €2 000,00.",Португалия,Комплексное сопровождение покупки недвижимости по договору,2000,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Комплексное сопровождение покупки недвижимости по договору
+€2 000,00",pending_human_review
+dbe19dba84dc00adf509,immigration_relocator,price,"Нотариальное сопровождение сделки купли-продажи недвижимости: €1 800,00.",Португалия,Нотариальное сопровождение сделки купли-продажи недвижимости,1800,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Нотариальное сопровождение сделки купли-продажи недвижимости
+€1 800,00",pending_human_review
+aef95aa1accbc0e16926,immigration_relocator,price,"Замена иностранного водительского удостоверения: €350,00.",Португалия,Замена иностранного водительского удостоверения,350,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Замена иностранного водительского удостоверения
+€350,00",pending_human_review
+dccb1196d6af75c7a713,immigration_relocator,price,"Регистрация брака в Португалии для резидентов: €1 500,00.",Португалия,Регистрация брака в Португалии для резидентов,1500,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Регистрация брака в Португалии для резидентов
+€1 500,00",pending_human_review
+184838a01f9346a6f059,immigration_relocator,price,"Регистрация брака в Португалии для нерезидентов: €2 000,00.",Португалия,Регистрация брака в Португалии для нерезидентов,2000,EUR,разовый,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Регистрация брака в Португалии для нерезидентов
+€2 000,00",pending_human_review
+3b2b460e0fc6bfd68b87,immigration_relocator,service,"Компания перечисляет услуги для релокационного процесса, включая истребование документов, переводы и заверения.",Португалия,Услуги релокационного процесса,,,,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Услуги релокационного процесса
+Истребование документов
+Переводы и заверения",pending_human_review
+71607822294db7a50a2d,migrun,service,"Оформление визы и вида на жительство (ВНЖ) в Португалии; сопровождение по визам Digital Nomad (D8), пассивный доход (D7), бизнес-виза (D2) и High Tech (D3).",Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Оформление визы и вида на жительство (ВНЖ) в Португалии 🇵🇹,pending_human_review
+f6dce4d3f434003955c3,migrun,price,Разбор кейса — €40 за 30 минут.,,Разбор кейса,40,EUR,30 мин.,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Разбор кейса (30 мин./€40),pending_human_review
+e0e035f52f1f5812562b,migrun,price,План переезда — €70 за 60 минут.,,План переезда,70,EUR,60 мин.,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,План переезда (60 мин./€70),pending_human_review
+7d9d61c51a0c24d8da80,migrun,price,Пакет Check-up стоит €530.,Португалия,Check-up,530,EUR,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Check-up
+€530
+Вы готовите всё сами — мы проверяем документы перед подачей.",pending_human_review
+80acd3c663434367caad,migrun,composition,"Check-up включает 30-минутный звонок с кейс-менеджером, проверку пакета документов и письменный отзыв эксперта с комментариями.",Португалия,Check-up,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"30-минутный звонок с кейс-менеджером по вашим вопросам
+Проверка пакета документов
+Отзыв эксперта с комментариями, написанными в письменном виде",pending_human_review
+cd6b0a44baa49b4c0c2e,migrun,condition,В Check-up клиент самостоятельно готовит документы; компания проверяет их перед подачей и подключается на финальном этапе.,Португалия,Check-up,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Вы готовите всё сами — мы проверяем документы перед подачей. Для тех, кто уверен в своём кейсе и готов самостоятельно разобраться в требованиях. Мы подключаемся на финальном этапе — проверяем документы",pending_human_review
+c151bd774012a4c0b6e1,migrun,condition,"Для Check-up не предусмотрены чат с экспертом и исправление отмеченных ошибок; государственные сборы, переводы, снятие отпечатков, апелляции и последующие действия с органами власти не включены. Если документы не готовы к подаче после финальной проверки, компания их не отправляет; возврат не предусмотрен.",Португалия,Check-up,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Нет чата с экспертом - только проверяем документы
+Отмечаем ошибки, но их не исправляем
+Государственные сборы, переводы и снятие отпечатков пальцев не включены
+Апелляции и последующие действия с органами власти не покрываются
+Документы не готовы к подаче после нашей финальной проверки?
+Мы не будем их отправлять. Поменяйте пакет до Standard или отправьте самостоятельно. Возврат не предусмотрен",pending_human_review
+f2abbf512d18e4af5e07,migrun,price,Пакет Standard Assistance стоит €1290.,Португалия,Standard Assistance,1290,EUR,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Standard Assistance
+Популярно
+€1290",pending_human_review
+08f23c059e64e14bfd2b,migrun,composition,"Standard Assistance включает всё из Check-Up, дополнительно 30 минут (всего один час разговора) для разработки стратегии и пошагового планирования, доступ к платформе, личному чату кейс-менеджера и гайдам, доступ к лицензированному адвокату через кейс-менеджера, а также проверку пакета документов перед подачей. NIF не входит.",Португалия,Standard Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Включено всё, что в
+Check-Up
+плюс...
+Дополнительные 30 минут (всего 1 час разговора) для разработки стратегии и пошагового планирования
+Доступ к платформе и личному чату кейс-менеджера, гайдам
+Доступ к лицензированному адвокату
+через вашего кейс-менеджера
+Проверка пакета документов перед подачей
+NIF не входит в пакет",pending_human_review
+26e99d7c2cf4a603ee66,migrun,audience,"Standard Assistance предназначен для тех, кто хочет пройти процесс без стресса и лишних сложностей.",Португалия,Standard Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Для тех, кто хочет пройти процесс без стресса и лишних сложностей.",pending_human_review
+0b9ab6b918b62578b706,migrun,price,Пакет Premium Assistance стоит €3490.,Португалия,Premium Assistance,3490,EUR,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Premium Assistance
+€3490",pending_human_review
+517645cbb63a39066cb9,migrun,composition,"Premium Assistance включает всё из Standard, консьерж-услуги по всем вопросам, редактирование мотивационного письма, помощь в сборе необходимых документов, представление NHR, NIF для основного заявителя и регистрацию самозанятых, если это применимо к выбранному типу визы или разрешения.",Португалия,Premium Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Включено всё, что в
+Standard
+плюс...
+Консьерж-услуги по всем вопросам
+Редактирование мотивационного письма
+Помощь в сборе необходимых документов
+Представление NHR
+NIF для основного заявителя
+Регистрация самозанятых (если применимо к выбранному типу визы/разрешения)",pending_human_review
+2a331c2f9937e343887d,migrun,condition,"Premium Assistance выполняет за клиента действия, не требующие его участия; там, где требуется личное участие клиента, компания сопровождает и подсказывает, что делать.",Португалия,Premium Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Мы сделаем за вас всё, что не требует вашего участия. Там, где нужны вы лично — будем рядом на каждом шаге и подскажем что и как сделать правильно",pending_human_review
+8a77571419d16aff4abf,migrun,service,Дополнительная услуга оформления стандартного NIF; компания указывает срок оформления в течение двух недель.,Португалия,Стандартный NIF,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Стандартный NIF
+Мы оформим NIF в течение двух недель.",pending_human_review
+92c568ad5bcf85aefc94,migrun,service,"Услуга начала процесса самозанятости в Португалии; в тексте указано, что её можно оформить онлайн и что она позволяет подать заявление на визу D3 или D2.",Португалия,Самозанятость,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Самозанятость
+Начните процесс самозанятости в Португалии, что позволит вам заниматься коммерческой деятельностью в стране. Эта возможность открыта для граждан ЕС и стран, не входящих в ЕС, и все они могут быть заполнены онлайн. Кроме того, она позволяет подать заявление на получение визы D3 или D2",pending_human_review
+8f3f92611ca676704445,migrun,audience,"Услуга самозанятости указана как доступная гражданам ЕС и стран, не входящих в ЕС.",Португалия,Самозанятость,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Эта возможность открыта для граждан ЕС и стран, не входящих в ЕС",pending_human_review
+9a27700c49e39e2c7e5b,migrun,composition,"Компания заявляет, что предоставляет персональный личный кабинет с персонализированным трекером и неограниченным доступом к чату с кейс-менеджером.",Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Мы создаем индивидуальный личный кабинет специально для вас
+Оснащенный персонализированным трекером и неограниченным доступом к чату с кейс-менеджером",pending_human_review
+33ecf2fedf8fa1f14eba,migrun,composition,Клиенту предоставляется доступ к подробному гайду с инструкциями по подаче заявки из своей страны и возможность уточнить у кейс-менеджера порядок действий в конкретном случае.,Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"У вас есть доступ к подробному гайду со всеми инструкциями по подаче заявки из вашей страны. Однако вы можете уточнить у кейс-менеджера, как лучше всего поступить в вашем конкретном случае",pending_human_review
+839d681ad87a86a2a360,migrun,composition,"Перед подачей заявки кейс-менеджер изучает документы, помогает отредактировать мотивационное письмо и рассказывает, чего ожидать при подаче заявления на визу или ВНЖ.",Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Перед подачей заявки ваш кейс-менеджер внимательно изучит все документы, поможет отредактировать мотивационное письмо и подробно расскажет, чего следует ожидать при подаче заявления на получение визы (или вида на жительство)",pending_human_review
+09be8fc5cdc8d64c1849,migrun,positioning,Компания позиционирует своё предложение как экспертное сопровождение от первой консультации до получения ВНЖ.,Португалия,,,,,company_claim,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Экспертное сопровождение: от первой консультации до получения ВНЖ,pending_human_review
+16dbf9973eadcc7e7a96,migrun,positioning,"Компания заявляет, что её платформа и экспертная поддержка помогают получить ВНЖ в Португалии быстрее.",Португалия,,,,,company_claim,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Получите ВНЖ в Португалии быстрее с нашей уникальной платформой и экспертной поддержкой,pending_human_review
+148a1515737f47a7151a,migrun,contact,support@migrun.tech,,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Остались вопросы? Свяжитесь с
+support@migrun.tech",pending_human_review

@@ -1,0 +1,8 @@
+[
+  {
+    "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+    "error_type": "ValueError",
+    "status": "not_extracted",
+    "detail": "incomplete_response"
+  }
+]

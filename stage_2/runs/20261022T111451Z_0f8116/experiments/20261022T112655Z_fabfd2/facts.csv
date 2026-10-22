@@ -1,0 +1,28 @@
+﻿fact_id,company_id,field,value,country,offer_name,amount,currency,price_basis,kind,url,collected_at,evidence,review_status
+91db010eb249f73f1b6c,immigration_relocator,service,Персональный подбор и сопровождение аренды,Португалия,Персональный подбор и сопровождение аренды,,,1 мес. ставка,published_offer,https://immigration-relocator.com/pt-otherservices,2026-10-22T11:14:54.602842+00:00,"Персональный подбор и сопровождение аренды
+1 мес. ставка
+Выбрать",pending_human_review
+8c1c0a5a7dbd2ed2c981,migrun,service,Оформление визы и вида на жительство (ВНЖ) в Португалии,Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,Оформление визы и вида на жительство (ВНЖ) в Португалии 🇵🇹,pending_human_review
+2f3b09438a8019def197,migrun,composition,"30-минутный звонок с кейс-менеджером по вашим вопросам, проверка пакета документов, отзыв эксперта с комментариями, написанными в письменном виде",Португалия,Check-up,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"30-минутный звонок с кейс-менеджером по вашим вопросам
+Проверка пакета документов
+Отзыв эксперта с комментариями, написанными в письменном виде",pending_human_review
+6642bba1dbc6a216d2c1,migrun,composition,"Включено всё, что в Check-Up плюс дополнительные 30 минут (всего 1 час разговора) для разработки стратегии и пошагового планирования, доступ к платформе и личному чату кейс-менеджера, гайдам, доступ к лицензированному адвокату через вашего кейс-менеджера, проверка пакета документов перед подачей. NIF не входит в пакет",Португалия,Standard Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Включено всё, что в
+Check-Up
+плюс...
+Дополнительные 30 минут (всего 1 час разговора) для разработки стратегии и пошагового планирования
+Доступ к платформе и личному чату кейс-менеджера, гайдам
+Доступ к лицензированному адвокату
+через вашего кейс-менеджера
+Проверка пакета документов перед подачей
+NIF не входит в пакет",pending_human_review
+4459c0ed9930b038dd99,migrun,composition,"Включено всё, что в Standard плюс консьерж-услуги по всем вопросам, редактирование мотивационного письма, помощь в сборе необходимых документов, представление NHR, NIF для основного заявителя, регистрация самозанятых (если применимо к выбранному типу визы/разрешения)",Португалия,Premium Assistance,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Включено всё, что в
+Standard
+плюс...
+Консьерж-услуги по всем вопросам
+Редактирование мотивационного письма
+Помощь в сборе необходимых документов
+Представление NHR
+NIF для основного заявителя
+Регистрация самозанятых (если применимо к выбранному типу визы/разрешения)",pending_human_review
+833270bc5a7f4cb7567e,migrun,service,"Полная поддержка при оформлении виз: Digital Nomad (D8), пассивный доход (D7), бизнес-виза (D2) и High Tech (D3)",Португалия,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,"Полная поддержка при оформлении виз: Digital Nomad (D8), пассивный доход (D7), бизнес-виза (D2) и High Tech (D3)",pending_human_review
+117a2f45c6756b41ecf1,migrun,contact,support@migrun.tech,,,,,,published_offer,https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages,2026-10-22T11:15:02.895335+00:00,support@migrun.tech,pending_human_review

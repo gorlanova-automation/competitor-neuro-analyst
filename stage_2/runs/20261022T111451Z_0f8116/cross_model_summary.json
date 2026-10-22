@@ -1,0 +1,34 @@
+[
+  {
+    "experiment": "/content/competitor_stage2/runs/20261022T111451Z_0f8116/experiments/20261022T112655Z_fabfd2",
+    "at": "2026-10-22T11:27:17.837590+00:00",
+    "model": "google/gemini-3.5-flash-lite",
+    "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
+    "reference_total": 8,
+    "reference_in_tested_chunks": 8,
+    "matched_by_rules": 0,
+    "subset_recall_rule": 0.0,
+    "accepted_facts": 7,
+    "quarantined": 58,
+    "failed_calls": 0,
+    "semantic_precision": null,
+    "semantic_precision_status": "pending_manual_review_of_accepted_facts",
+    "limitation": "Rule match is an aid to manual review, not proof of semantic correctness or full-corpus recall."
+  },
+  {
+    "experiment": "/content/competitor_stage2/runs/20261022T111451Z_0f8116/experiments/20261022T112655Z_3a2e17",
+    "at": "2026-10-22T11:28:03.860724+00:00",
+    "model": "anthropic/claude-haiku-4-5",
+    "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
+    "reference_total": 8,
+    "reference_in_tested_chunks": 8,
+    "matched_by_rules": 3,
+    "subset_recall_rule": 0.375,
+    "accepted_facts": 11,
+    "quarantined": 12,
+    "failed_calls": 1,
+    "semantic_precision": null,
+    "semantic_precision_status": "pending_manual_review_of_accepted_facts",
+    "limitation": "Rule match is an aid to manual review, not proof of semantic correctness or full-corpus recall."
+  }
+]

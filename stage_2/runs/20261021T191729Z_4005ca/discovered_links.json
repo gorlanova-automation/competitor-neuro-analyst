@@ -1,0 +1,4662 @@
+[
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": "Whatsapp"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635",
+    "label": "Связаться через WhatsApp"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912858635",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+34662675462",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/en",
+    "label": "En"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/2mNaRz4HHyF11CqT8",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Lisboa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/+351913098628",
+    "label": "Telegram"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt",
+    "label": "Португалия"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d2",
+    "label": "Visa D2"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d3",
+    "label": "Visa D3"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d4",
+    "label": "Visa D4"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d7",
+    "label": "Visa D7"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-hqa",
+    "label": "HQA"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-reunion",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-otherservices",
+    "label": "Онлайн-услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es",
+    "label": "Испания"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-no-lucrativa",
+    "label": "ВНЖ без права на работу (No Lucrativa)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/et-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr",
+    "label": "Франция"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-talent",
+    "label": "ВНЖ Открытие предприятия (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-startup",
+    "label": "ВНЖ Инновационный проект (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-wcard",
+    "label": "Д"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/citizenship",
+    "label": "Программы гражданства"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/vu-citizenship",
+    "label": "Вануату"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/st-citizenship",
+    "label": "Сан-Томе и Принсипи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/about",
+    "label": "О нас"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/partners",
+    "label": "Партнерам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/cases",
+    "label": "Кейсы по странам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-viziteur",
+    "label": "Виза Визитер (Visa Visiteur)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/gr-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/privacy",
+    "label": "условия обработки персональных данных"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://tilda.ru/fr-reunion",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/other",
+    "label": "Все варианты →"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.yell.ru/moscow/com/immigration-relocator_14487697/",
+    "label": "Yell.ru"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://ru.otzyv.com/immigration-relocator",
+    "label": "Otzyv.com"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/immigration_relocator",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/immigrationrelocator.fb",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351 912 465 563",
+    "label": "+351 912 858 635"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+34 662 675 462",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/ase",
+    "label": "Все статьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/ghv",
+    "label": "Все статьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "mailto:office@immigration-relocator.com",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912465563",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/kwqd",
+    "label": "IMMIGRATION RELOCATOR © All Right Reserved 2026"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/mbox",
+    "label": "Migration Box"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://planerka.app/immigration-relocator/mini",
+    "label": "Консультация"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_bfe2c80ac8a0fc",
+    "found_on": "https://immigration-relocator.com/",
+    "collected_at": "2026-10-21T19:17:29.351621+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://docs.google.com/document/d/1AK_qlfHmfYKJ9LLbKc9t37oRuzr8zOjuw6ZvVTiQpf8/edit?usp=sharing",
+    "label": "политикой использования файлов cookies"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/UvjUBrUEDrHMFbL57",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Lisboa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-otherservices",
+    "label": "Италия"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt",
+    "label": "Португалия"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d2",
+    "label": "Visa D2"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d3",
+    "label": "Visa D3"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d4",
+    "label": "Visa D4"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d7",
+    "label": "Visa D7"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-hqa",
+    "label": "HQA"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-reunion",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es",
+    "label": "Испания"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-no-lucrativa",
+    "label": "ВНЖ без права на работу (No Lucrativa)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/et-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr",
+    "label": "Франция"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-talent",
+    "label": "ВНЖ Открытие предприятия (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-startup",
+    "label": "ВНЖ Инновационный проект (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-wcard",
+    "label": "Д"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/citizenship",
+    "label": "Программы гражданства"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/vu-citizenship",
+    "label": "Вануату"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/st-citizenship",
+    "label": "Сан-Томе и Принсипи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/about",
+    "label": "О нас"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/partners",
+    "label": "Партнерам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/cases",
+    "label": "Все истории наших клиентов"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/2mNaRz4HHyF11CqT8",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Лиссабон"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-viziteur",
+    "label": "Виза Визитер (Visa Visiteur)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/gr-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/privacy",
+    "label": "политикой конфиденциальности"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/immigrationrelocatorbot",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/USERNAME_BOT",
+    "label": "Организуем переезд из любой страны Более 8 лет в легализации Ваш переезд уже через 3 месяца после консультации"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "mailto:office@immigration-relocator.com",
+    "label": "office@immigration-relocator.com"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912465563",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912858635",
+    "label": "+351 912 858 635"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/immigration_relocator",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/immigrationrelocator.fb",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/kwqd",
+    "label": "Открытие корпоративного банковского счета"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/error",
+    "label": "Программы гражданства"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "found_on": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-21T19:17:32.892606+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://docs.google.com/document/d/1AK_qlfHmfYKJ9LLbKc9t37oRuzr8zOjuw6ZvVTiQpf8/edit?usp=sharing",
+    "label": "политикой использования файлов cookies"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/UvjUBrUEDrHMFbL57",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Лиссабон"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/",
+    "label": "immigration Relocator"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/about",
+    "label": "Парагвай"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt",
+    "label": "Португалия"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d2",
+    "label": "Visa D2"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d3",
+    "label": "Visa D3"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d4",
+    "label": "Visa D4"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d7",
+    "label": "Visa D7"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-hqa",
+    "label": "HQA"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-reunion",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-otherservices",
+    "label": "Онлайн-услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es",
+    "label": "Испания"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-no-lucrativa",
+    "label": "ВНЖ без права на работу (No Lucrativa)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/et-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr",
+    "label": "Франция"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-talent",
+    "label": "ВНЖ Открытие предприятия (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-startup",
+    "label": "ВНЖ Инновационный проект (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-wcard",
+    "label": "Д"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/citizenship",
+    "label": "Программы гражданства"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/vu-citizenship",
+    "label": "Вануату"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/st-citizenship",
+    "label": "Сан-Томе и Принсипи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/partners",
+    "label": "Партнерам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/cases",
+    "label": "Кейсы по странам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/2mNaRz4HHyF11CqT8",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Lisboa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-viziteur",
+    "label": "Виза Визитер (Visa Visiteur)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/gr-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912858635",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+34662675462",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/en",
+    "label": "En"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "mailto:office@immigration-relocator.com",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/immigration_relocator",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/immigrationrelocator.fb",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912465563",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/kwqd",
+    "label": "IMMIGRATION RELOCATOR © All Right Reserved 2026"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d30ff3f9864a6f",
+    "found_on": "https://immigration-relocator.com/about",
+    "collected_at": "2026-10-21T19:17:36.270611+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/privacy",
+    "label": "Политика обработки персональных данных"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt",
+    "label": "Парагвай"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": "Whatsapp"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635",
+    "label": "Связаться через WhatsApp"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912858635",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/+351913098628",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+34662675462",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/en",
+    "label": "En"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "map_candidate",
+    "ownership_status": "not_reviewed",
+    "url": "https://maps.app.goo.gl/2mNaRz4HHyF11CqT8",
+    "label": "Av. Elias Garcia 76 1G, 1050-100 Lisboa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/",
+    "label": "immigration Relocator"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/+351913098628",
+    "label": "Telegram"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d2",
+    "label": "Visa D2"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d3",
+    "label": "Visa D3"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d4",
+    "label": "Visa D4"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-d7",
+    "label": "Visa D7"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-hqa",
+    "label": "HQA"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-reunion",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/pt-otherservices",
+    "label": "Онлайн-услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es",
+    "label": "Испания"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-no-lucrativa",
+    "label": "ВНЖ без права на работу (No Lucrativa)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-startup",
+    "label": "StartUp Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/es-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/et-dn",
+    "label": "Visa Digital Nomad"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr",
+    "label": "Франция"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-talent",
+    "label": "ВНЖ Открытие предприятия (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-startup",
+    "label": "ВНЖ Инновационный проект (Passeport Talent)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-wcard",
+    "label": "Д"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/hu-otherservices",
+    "label": "Дополнительные услуги"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/citizenship",
+    "label": "Программы гражданства"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/vu-citizenship",
+    "label": "Вануату"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/st-citizenship",
+    "label": "Сан-Томе и Принсипи"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/about",
+    "label": "О нас"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/partners",
+    "label": "Партнерам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/cases",
+    "label": "Кейсы по странам"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20...",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/privacy",
+    "label": "условия обработки персональных данных"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/fr-viziteur",
+    "label": "Виза Визитер (Visa Visiteur)"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/gr-gv",
+    "label": "Golden Visa"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/immigration_relocator",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/immigrationrelocator.fb",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://t.me/immigration_relocator",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912465563?text=",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351 912 465 563",
+    "label": "+351 912 858 635"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+34 662 675 462",
+    "label": "+34 662 675 462"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "https://wa.me/351912858635?text=",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "mailto:office@immigration-relocator.com",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "contact",
+    "ownership_status": "not_reviewed",
+    "url": "tel:+351912465563",
+    "label": ""
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/kwqd",
+    "label": "IMMIGRATION RELOCATOR © All Right Reserved 2026"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://immigration-relocator.com/mbox",
+    "label": "Migration Box"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://planerka.app/immigration-relocator/mini",
+    "label": "Консультация"
+  },
+  {
+    "company_id": "immigration_relocator",
+    "source_id": "immigration_relocator_d59f2df7149444",
+    "found_on": "https://immigration-relocator.com/pt",
+    "collected_at": "2026-10-21T19:17:38.446624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://docs.google.com/document/d/1AK_qlfHmfYKJ9LLbKc9t37oRuzr8zOjuw6ZvVTiQpf8/edit?usp=sharing",
+    "label": "политикой использования файлов cookies"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru",
+    "label": "Отклонить"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+    "label": "План переезда (60 мин./€70 )"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-portugal-consultation?click_source=modal%20country%20portugal",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-28a606bd816f4bd69c316111d66f3a90",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-e58c95260f92493389e9bd8be114bf45",
+    "label": "План переезда (60 мин./€70)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal",
+    "label": "Португалия 🇵🇹: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain",
+    "label": "Все гайды →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/digital-nomad-visa",
+    "label": "Португалия 🇵🇹: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d7",
+    "label": "При пассивном доходе (D7)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d3",
+    "label": "Для высококвалов (D3)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/90-2",
+    "label": "Для высококвалов (90.2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d4-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d2",
+    "label": "Для предпринимателей (D2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/family-reunion-d6",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/secondary-school",
+    "label": "Для школьников и родителей"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-digital-nomad-visa",
+    "label": "Испания 🇪🇸: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-student-visa",
+    "label": "Студенческая С этой визой можно и учиться, и работать (право на работу автоматически даётся тем, кто учится на университетских программах или профессиональных курсах) легко получить 3-4.5 месяца подача откуда угодно можно работать неполный рабочий де"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-non-lucrative-visa",
+    "label": "При пассивном доходе"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-freelance-visa-for-germany",
+    "label": "Фриланс виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-blue-card-for-germany",
+    "label": "Голубая карта"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-germany-opportunity-card",
+    "label": "Карта шансов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/italy/guide-italy-digital-nomad",
+    "label": "Digital Nomad виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/to-portugal-through-serbia-with-standard-assistance",
+    "label": "Португалия через Сербию"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/tax-consultation-thomas-30-min",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/nif-number-online-portugal",
+    "label": "NIF / Налоговый номер"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/self-employment-registration-portugal",
+    "label": "Открытие ИП"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/work-in-portugal-90-2",
+    "label": "Пейролл найм"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/autofill-documents",
+    "label": "Автозаполнение документов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/anna-d-2",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/consular-support",
+    "label": "Подача через консульство Для тех, кто только планирует переезд в Испанию и будет подаваться в испанском консульстве только из-за границы записываем на приём подскажем по документам"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/modificationtocuentapropia",
+    "label": "Модификация на Cuenta Propia"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/prolongationdnresidence",
+    "label": "Продление ВНЖ цифрового кочевника Заканчивается карта или поменялись условия — сменили работодателя, перешли на автономо. Продлим и переоформим легко продлить 1-3 месяца подаём в Испании"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "label": "Релокация для команд"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/immigration-attorneys-and-experts",
+    "label": "Маркетплейс экспертов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/blog",
+    "label": "Блог"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/",
+    "label": "English"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/login",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&entry_point=hero_page&placement=screen_1&creative_version=free_plan_v1",
+    "label": "Начать переезд бесплатно"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.trustpilot.com/review/migrun.tech?utm_medium=trustbox&utm_source=TrustBoxReviewCollector",
+    "label": "Оставить отзыв"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/appealwithmartareinagrau2",
+    "label": "Отказ Адвокат изучит вашу ситуацию, документы и основания отказа, подготовит юридическую аргументацию и подаст апелляцию в испанские органы месяц на обжалование испанский адвокат из Испании или из-за границы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "Прикрепление семьи Присоединим родственников к вашему ВНЖ — цифрового кочевника, стартап или ВКС. Сразу с вашей подачей или позже, процедура одна и та же. Тут важны детали, поэтому советуем начать с консультации"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&entry_point=hero_page&placement=screen_5&creative_version=free_plan_v1",
+    "label": "Начать переезд бесплатно"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/runningenia",
+    "label": "Ekaterina Gribanova Благодарю Евгению за помощь в получении внж Испании Digital Nomad. Получила одобрение через 14 календарных дней после подачи. Потрясающий специалист, она проверила все документы, провела отличную консультацию. 10 из 10, спасибо ог"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/kamilla",
+    "label": "Aliaksei Хочу поблагодарить Камиллу за консультации в чате и профессиональном содействии в получении резидента Испании на 3 года для меня и моей семьи из еще двух человек! Помогли максимально правильно подготовить весь пакет документов который одобри"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/polinamorozova",
+    "label": "Vladimir Podolian У меня был не самый обычный кейс, который хотелось обсудить. Полина рассказала, как его можно решить и какой план действий лучше выбрать. Спасибо!"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/terms",
+    "label": "Условия предоставления услуг"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/about-us",
+    "label": "О нас"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/jobs",
+    "label": "Вакансии"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/spain",
+    "label": "Испания 🇪🇸: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/privacy",
+    "label": "Политика конфиденциальности"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/migrun_spain",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.youtube.com/@migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.linkedin.com/company/migrun/",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_f8d960ee0790f2",
+    "found_on": "https://www.migrun.tech/ru",
+    "collected_at": "2026-10-21T19:17:41.192613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/migrun.tech",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "label": "Отклонить"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+    "label": "План переезда (60 мин./€70 )"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-portugal-consultation?click_source=modal%20country%20portugal",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-28a606bd816f4bd69c316111d66f3a90",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-e58c95260f92493389e9bd8be114bf45",
+    "label": "План переезда (60 мин./€70)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal",
+    "label": "Португалия 🇵🇹: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain",
+    "label": "Все гайды →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/digital-nomad-visa",
+    "label": "Португалия 🇵🇹: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d7",
+    "label": "При пассивном доходе (D7)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d3",
+    "label": "Для высококвалов (D3)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/90-2",
+    "label": "Для высококвалов (90.2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d4-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d2",
+    "label": "Для предпринимателей (D2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/family-reunion-d6",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/secondary-school",
+    "label": "Для школьников и родителей"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-digital-nomad-visa",
+    "label": "Испания 🇪🇸: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-non-lucrative-visa",
+    "label": "При пассивном доходе"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-freelance-visa-for-germany",
+    "label": "Фриланс виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-blue-card-for-germany",
+    "label": "Голубая карта"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-germany-opportunity-card",
+    "label": "Карта шансов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/italy/guide-italy-digital-nomad",
+    "label": "Digital Nomad виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/to-portugal-through-serbia-with-standard-assistance",
+    "label": "Португалия через Сербию"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/tax-consultation-thomas-30-min",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/nif-number-online-portugal",
+    "label": "NIF / Налоговый номер"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/self-employment-registration-portugal",
+    "label": "Открытие ИП"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/work-in-portugal-90-2",
+    "label": "Пейролл найм"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/autofill-documents",
+    "label": "Автозаполнение документов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/anna-d-2",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/consular-support",
+    "label": "Консульское сопровождение"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/modificationtocuentapropia",
+    "label": "Модификация на Cuenta Propia"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/prolongationdnresidence",
+    "label": "Продление/переподача"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "label": "Релокация для команд"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/immigration-attorneys-and-experts",
+    "label": "Маркетплейс экспертов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/blog",
+    "label": "Блог"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/portugal/services-in-portugal/assistance-packages",
+    "label": "English"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/login",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-portugal-consultation",
+    "label": "Бесплатная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.trustpilot.com/review/migrun.tech",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://techcrunch.com/2023/09/19/migrun-wants-to-simplify-the-process-of-immigrating-to-a-new-country/",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.trustpilot.com/review/migrun.tech?utm_medium=trustbox&utm_source=TrustBoxReviewCollector",
+    "label": "Оставить отзыв"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/about-us",
+    "label": "О нас"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/jobs",
+    "label": "Вакансии"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/spain",
+    "label": "Испания 🇪🇸: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/privacy",
+    "label": "Политика конфиденциальности"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/terms",
+    "label": "Условия предоставления услуг"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/migrun_spain",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.youtube.com/@migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.linkedin.com/company/migrun/",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_374ee81f00c9b3",
+    "found_on": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-21T19:17:43.367624+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/migrun.tech",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "label": "Отклонить"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+    "label": "План переезда (60 мин./€70)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-portugal-consultation?click_source=modal%20country%20portugal",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-28a606bd816f4bd69c316111d66f3a90",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-e58c95260f92493389e9bd8be114bf45",
+    "label": "План переезда (60 мин./€70)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal",
+    "label": "Португалия 🇵🇹: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain",
+    "label": "Все гайды →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/digital-nomad-visa",
+    "label": "Португалия 🇵🇹: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d7",
+    "label": "При пассивном доходе (D7)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d3",
+    "label": "Для высококвалов (D3)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/90-2",
+    "label": "Для высококвалов (90.2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d4-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d2",
+    "label": "Для предпринимателей (D2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/family-reunion-d6",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/secondary-school",
+    "label": "Для школьников и родителей"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-digital-nomad-visa",
+    "label": "Испания 🇪🇸: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-non-lucrative-visa",
+    "label": "При пассивном доходе"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-freelance-visa-for-germany",
+    "label": "Фриланс виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-blue-card-for-germany",
+    "label": "Голубая карта"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-germany-opportunity-card",
+    "label": "Карта шансов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/italy/guide-italy-digital-nomad",
+    "label": "Digital Nomad виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/to-portugal-through-serbia-with-standard-assistance",
+    "label": "Португалия через Сербию"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/tax-consultation-thomas-30-min",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/nif-number-online-portugal",
+    "label": "NIF / Налоговый номер"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/self-employment-registration-portugal",
+    "label": "Открытие ИП"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/work-in-portugal-90-2",
+    "label": "Пейролл найм"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/autofill-documents",
+    "label": "Автозаполнение документов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/anna-d-2",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/consular-support",
+    "label": "Консульское сопровождение"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/modificationtocuentapropia",
+    "label": "Модификация на Cuenta Propia"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/prolongationdnresidence",
+    "label": "Продление/переподача"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/immigration-attorneys-and-experts",
+    "label": "Маркетплейс экспертов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/blog",
+    "label": "Блог"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/relocation-for-teams-and-companies",
+    "label": "English"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/login",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.trustpilot.com/review/migrun.tech?utm_medium=trustbox&utm_source=TrustBoxReviewCollector",
+    "label": "Оставить отзыв"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/privacy",
+    "label": "Политика конфиденциальности"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/about-us",
+    "label": "О нас"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/jobs",
+    "label": "Вакансии"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/spain",
+    "label": "Испания 🇪🇸: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/terms",
+    "label": "Условия предоставления услуг"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/migrun_spain",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.youtube.com/@migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.linkedin.com/company/migrun/",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_6022474c09ed33",
+    "found_on": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "collected_at": "2026-10-21T19:17:45.024613+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/migrun.tech",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "label": "Отклонить"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+    "label": "План переезда (60 мин./€70 )"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-portugal-consultation?click_source=modal%20country%20portugal",
+    "label": "Вводная консультация (15 мин./бесплатно)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-28a606bd816f4bd69c316111d66f3a90",
+    "label": "🔥 Разбор кейса (30 мин./€40) 🔥"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/consultation-portugal-e58c95260f92493389e9bd8be114bf45",
+    "label": "План переезда (60 мин./€70)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal",
+    "label": "Португалия 🇵🇹: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain",
+    "label": "Испания 🇪🇸: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/digital-nomad-visa",
+    "label": "Португалия 🇵🇹: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d7",
+    "label": "При пассивном доходе (D7)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d3",
+    "label": "Для высококвалов (D3)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/90-2",
+    "label": "Для высококвалов (90.2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d4-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/d2",
+    "label": "Для предпринимателей (D2)"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/family-reunion-d6",
+    "label": "Воссоединение семьи"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/secondary-school",
+    "label": "Для школьников и родителей"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-digital-nomad-visa",
+    "label": "Испания 🇪🇸: Digital Nomad"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-student-visa",
+    "label": "Студенческая виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-startup-visa",
+    "label": "Стартап виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/guide-non-lucrative-visa",
+    "label": "При пассивном доходе"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-freelance-visa-for-germany",
+    "label": "Фриланс виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-blue-card-for-germany",
+    "label": "Голубая карта"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany/guide-germany-opportunity-card",
+    "label": "Карта шансов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/italy/guide-italy-digital-nomad",
+    "label": "Digital Nomad виза"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/to-portugal-through-serbia-with-standard-assistance",
+    "label": "Португалия через Сербию"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/tax-consultation-thomas-30-min",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/nif-number-online-portugal",
+    "label": "NIF / Налоговый номер"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/self-employment-registration-portugal",
+    "label": "Открытие ИП"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/work-in-portugal-90-2",
+    "label": "Пейролл найм"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain",
+    "label": "Все услуги →"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/assistance-packages",
+    "label": "Пакеты сопровождения"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/autofill-documents",
+    "label": "Автозаполнение документов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/individual-consultation",
+    "label": "Личная консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/anna-d-2",
+    "label": "Налоговая консультация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/consular-support",
+    "label": "Консульское сопровождение"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/modificationtocuentapropia",
+    "label": "Модификация на Cuenta Propia"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/spain/services-in-spain/prolongationdnresidence",
+    "label": "Продление/переподача"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+    "label": "Релокация для команд"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/immigration-attorneys-and-experts",
+    "label": "Маркетплейс экспертов"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/blog",
+    "label": "Блог"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/ru/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d",
+    "label": "English"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d",
+    "label": "Русский"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/login",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://app.migrun.tech/diy-digital-nomad?registration_source=webflow&placement=header&creative_version=free_plan_v1",
+    "label": "Регистрация"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/experts/free-consultation-spain",
+    "label": "Вернуться в профиль"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/germany",
+    "label": "Германия 🇩🇪: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/italy",
+    "label": "Италия 🇮🇹: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/expert-services/spain-migrun-60-min-consultation",
+    "label": "Book a meeting"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/expert-services/consultation-spain-d9f6982227d84031adb168cc1a457bc4",
+    "label": "Book a meeting"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/about-us",
+    "label": "О нас"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/jobs",
+    "label": "Вакансии"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/spain",
+    "label": "Испания 🇪🇸: Все визы"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/privacy",
+    "label": "Политика конфиденциальности"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.migrun.tech/ru/legal/terms",
+    "label": "Условия предоставления услуг"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "website",
+    "ownership_status": "not_reviewed",
+    "url": "https://www.trustpilot.com/review/migrun.tech?utm_medium=trustbox&utm_source=TrustBoxReviewCollector",
+    "label": "Оставить отзыв"
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.instagram.com/migrun_spain",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://telegram.me/migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.youtube.com/@migrun",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.linkedin.com/company/migrun/",
+    "label": ""
+  },
+  {
+    "company_id": "migrun",
+    "source_id": "migrun_495fc79e4e91db",
+    "found_on": "https://www.migrun.tech/ru/expert-services/free-consultation-spain-3d17b52288024a218f2632bb7fd2e40d?click_source=modal%20country%20spain",
+    "collected_at": "2026-10-21T19:17:46.834615+00:00",
+    "type": "social",
+    "ownership_status": "site_link_only",
+    "url": "https://www.facebook.com/migrun.tech",
+    "label": ""
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "at": "2026-10-22T11:27:17.837590+00:00",
+    "model": "google/gemini-3.5-flash-lite",
+    "prompt_sha256": "1433f69527ae84fcea2f658b8dea8eaa9f8f3804ef0ee8255d13977a3c838b4a",
+    "reference_total": 8,
+    "reference_in_tested_chunks": 8,
+    "matched_by_rules": 0,
+    "subset_recall_rule": 0.0,
+    "accepted_facts": 7,
+    "quarantined": 58,
+    "failed_calls": 0,
+    "semantic_precision": null,
+    "semantic_precision_status": "pending_manual_review_of_accepted_facts",
+    "limitation": "Rule match is an aid to manual review, not proof of semantic correctness or full-corpus recall."
+  },
+  "rows": [
+    {
+      "reference_id": "IR01",
+      "company_id": "immigration_relocator",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "field": "price",
+      "amount": 500,
+      "kind": "published_offer",
+      "evidence": "Продление ВНЖ\n€500,00",
+      "match_tokens": [
+        "продлен",
+        "ВНЖ"
+      ],
+      "manual_note": "Опубликованная цена услуги; проверена по сохранённому тексту, не коммерческое предложение.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "IR02",
+      "company_id": "immigration_relocator",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "field": "price",
+      "amount": 150,
+      "kind": "published_offer",
+      "evidence": "Иммиграционная консультация\n€150,00",
+      "match_tokens": [
+        "консультац",
+        "иммиграц"
+      ],
+      "manual_note": "Не смешивать с налоговой консультацией.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "IR03",
+      "company_id": "immigration_relocator",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "field": "price",
+      "amount": 170,
+      "kind": "published_offer",
+      "evidence": "Консультация по налогообложению в Португалии\n€170,00",
+      "match_tokens": [
+        "консультац",
+        "налог"
+      ],
+      "manual_note": "Первый блок. На той же странице есть 350 EUR; сохранить обе версии и отметить конфликт.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "IR04",
+      "company_id": "immigration_relocator",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "field": "price",
+      "amount": 350,
+      "kind": "published_offer",
+      "evidence": "Консультация по налогообложению в Португалии\n€350,00",
+      "match_tokens": [
+        "консультац",
+        "налог"
+      ],
+      "manual_note": "Второй блок той же страницы; не выбирать актуальную цену без подтверждения.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "IR05",
+      "company_id": "immigration_relocator",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "field": "price",
+      "amount": 150,
+      "kind": "published_offer",
+      "evidence": "Дистанционное оформление налогового номера (NIF)\n€150,00",
+      "match_tokens": [
+        "NIF"
+      ],
+      "manual_note": "Цена услуги, не налоговый платёж.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "MR01",
+      "company_id": "migrun",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "field": "price",
+      "amount": 530,
+      "kind": "published_offer",
+      "evidence": "Check-up\n€530",
+      "match_tokens": [
+        "check"
+      ],
+      "manual_note": "Пакет проверки; не равно полному сопровождению.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "MR02",
+      "company_id": "migrun",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "field": "price",
+      "amount": 1290,
+      "kind": "published_offer",
+      "evidence": "Standard Assistance\nПопулярно\n€1290",
+      "match_tokens": [
+        "standard"
+      ],
+      "manual_note": "Цена пакета на португальской странице.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    },
+    {
+      "reference_id": "MR03",
+      "company_id": "migrun",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "field": "price",
+      "amount": 3490,
+      "kind": "published_offer",
+      "evidence": "Premium Assistance\n€3490",
+      "match_tokens": [
+        "premium"
+      ],
+      "manual_note": "Цена пакета на португальской странице.",
+      "status": "not_matched_requires_semantic_review",
+      "candidate_fact_ids": []
+    }
+  ]
+}

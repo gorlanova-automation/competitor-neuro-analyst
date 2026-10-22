@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "properties": {
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "enum": [
+              "service",
+              "composition",
+              "price",
+              "condition",
+              "audience",
+              "geography",
+              "positioning",
+              "trust",
+              "contact"
+            ]
+          },
+          "value": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "company_claim",
+              "published_offer"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "offer_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "amount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_basis": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "field",
+          "value",
+          "evidence",
+          "kind",
+          "country",
+          "offer_name",
+          "amount",
+          "currency",
+          "price_basis"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "facts"
+  ],
+  "additionalProperties": false
+}

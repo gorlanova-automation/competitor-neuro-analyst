@@ -1,0 +1,21 @@
+{
+  "status": "pilot_draft",
+  "own_company": "Immigration Relocator",
+  "competitors_in_detailed_pilot": [
+    "Migrun"
+  ],
+  "confirmed_competitor_list": "competitor_candidates.json",
+  "website_snapshots": [
+    "20261021T191729Z_4005ca",
+    "20261022T111451Z_0f8116"
+  ],
+  "facts_selected_experiment": "20261022T113037Z_be7ea6",
+  "facts_count": 175,
+  "quarantine_count": 3,
+  "social_posts_count": 25,
+  "manual_price_references": 8,
+  "facts_semantic_review": "not_complete",
+  "source_claims_independently_verified": false,
+  "scope_limit": "Two companies; website source rows include repeated snapshots. Eight confirmed competitors have not all been collected.",
+  "actual_api_billing_rub": null
+}

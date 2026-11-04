@@ -1,2 +1,5 @@
 # Preserve research snapshots and recorded hashes exactly on every platform.
 * -text
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Captured evidence is preserved byte-for-byte, including source whitespace.
+stage_3/input/** -whitespace

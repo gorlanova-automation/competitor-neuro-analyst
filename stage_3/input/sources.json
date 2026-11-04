@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "immigration_relocator_a317a051e73c04",
+    "company_id": "immigration_relocator",
+    "requested_url": "https://immigration-relocator.com/pt-otherservices",
+    "collected_at": "2026-10-22T11:14:54.602842+00:00",
+    "method": "python_requests",
+    "source_kind": "official_website",
+    "status": "ok",
+    "robots_mode": "parsed",
+    "http_status": 200,
+    "final_url": "https://immigration-relocator.com/pt-otherservices",
+    "content_type": "text/html; charset=UTF-8",
+    "encoding": "UTF-8",
+    "sha256_raw": "ef602561a294d89d8b29ea2dc571c69375968c2365209bfeb3eee0ccbf9b0c1d",
+    "raw_path": "raw/immigration_relocator_a317a051e73c04.html",
+    "title": "Дополнительные услуги Португалии",
+    "sha256_text": "249acdd40d1b41d4a7615b4bebac704f4ae0fff56d013bd0404543358a3cbafe",
+    "text_chars": 20881,
+    "text_path": "clean/immigration_relocator_a317a051e73c04.txt"
+  },
+  {
+    "source_id": "migrun_374ee81f00c9b3",
+    "company_id": "migrun",
+    "requested_url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "collected_at": "2026-10-22T11:15:02.895335+00:00",
+    "method": "python_requests",
+    "source_kind": "official_website",
+    "status": "ok",
+    "robots_mode": "parsed",
+    "http_status": 200,
+    "final_url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+    "content_type": "text/html; charset=utf-8",
+    "encoding": "utf-8",
+    "sha256_raw": "4c333505adf1097a7250d033c212ae82ec205e2bc84d7659381df3f7cace52e1",
+    "raw_path": "raw/migrun_374ee81f00c9b3.html",
+    "title": "Виртуальный ассистент в Португалии от Migrun | Переезд в Португалию с ассистентом",
+    "sha256_text": "9b26ab9eda730bb07747b3a75a834e75adc8018de4c626fa1ec9ad437262f78c",
+    "text_chars": 6961,
+    "text_path": "clean/migrun_374ee81f00c9b3.txt"
+  }
+]

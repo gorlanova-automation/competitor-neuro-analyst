@@ -1,0 +1,24 @@
+{
+  "company_name": "SHIFT",
+  "headline": "Give your next video more impact.",
+  "summary": "Short video analysis: a specific moment, an explanation and an edit you can test.",
+  "market_terms": "AI video analysis short form creators",
+  "inference_method": "metadata_headings_and_explicit_keyword_rule_no_llm",
+  "source_url": "https://youtube.fghk.ru/landing/?lang=en",
+  "source_sha256": "e4672003849610ba2c11d87a9bb7d89af344d3cf67ea01d677092a10c9991ba3",
+  "review_status": "pending_user_confirmation",
+  "search_queries": [
+    "AI video analysis short form creators competitors",
+    "AI video analysis short form creators timestamp editing feedback",
+    "AI video analysis short form creators pricing alternatives"
+  ],
+  "needs_user_input": [
+    "Подтвердить продукт и аудиторию",
+    "Уточнить географию и язык рынка",
+    "Подтвердить или дополнить конкурентов"
+  ],
+  "limits": [
+    "Черновик по одной странице; утверждения сайта не проверены на практике.",
+    "Профиль и запросы требуют подтверждения. Правило video — демонстрационная эвристика, не универсальный классификатор."
+  ]
+}

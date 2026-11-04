@@ -1,0 +1,44 @@
+{
+  "config": {
+    "own_company": "immigration_relocator",
+    "competitors": [
+      "migrun",
+      "migran",
+      "relotus",
+      "relocate_group",
+      "e_residence",
+      "dh_private",
+      "migrall",
+      "movetocascais",
+      "portugaldom",
+      "monolite",
+      "okno"
+    ],
+    "country": "Portugal",
+    "live_llm_enabled": false,
+    "model": "openai/gpt-6-luna",
+    "max_live_calls": 1,
+    "mapping_status": "researcher_defined_demo_not_full_semantic_review"
+  },
+  "mode": "offline_reuse_stage2_llm_facts",
+  "input_manifest_sha256": "ac79824ff9f330af1d52b7c26d715b288c7dfc38daa3c7f4c77bce8980437dee",
+  "code_sha256": {
+    "analyst.py": "cf220e99a402570048436a9bfac8587a83d7c23d4539819830a7ab7a1d2dda20",
+    "build_document.py": "8e306e89b72f8376873db1ff96fd82c62a2ec61537e32b3e8fb7c881eaaeddaa",
+    "build_notebook.py": "fe97bda90603a9d027813387bc5dbcf5fd49b15250c5f50424a11c3dabce6b30",
+    "build_two_case_notebook.py": "014d70307e8dd54f90b616b4874630800c7568c77d463ef07456f109d0a42db5",
+    "collect_additions.py": "c17b0cb7586378f0a91e2d10ba0ac11418055f904b03c572a94b91d80086b3b8",
+    "llm_report.py": "2314c9d3c341b694d0c6611938a1e00601ac630a71e939d3c35dd794f3091820",
+    "map_additions.py": "d6e8e64be644ec56512995d7b6f88c88cd539e099a42c6f57e925bc17d467705",
+    "prepare_demo.py": "bc302b6bc777e583f56feb770a9f5ff7abedec3bae7dea3b59ecb3fd720fb656",
+    "profile_site.py": "c08c93cbbcb33ea2f6764786932ea24583fbbb2b935068652ea1676b4427f598",
+    "publish_snapshot.py": "bbc125a72f8330fce7598f782477ed2644e800af99e683dff676ccc1cc5a7327",
+    "reporting.py": "374446781ca4b2e8951f45c380be7b400c18fa98b167dc9c8e948e08cd0e6212",
+    "review_case.py": "4c6710e31e594a984c917d464646678c8572de4431b9c8129d17dc121752e051",
+    "test_analyst.py": "6b6d2ba48f9b4191f355f97d9c2a31d5d3c52ecd86af8b72311190f8d11803e0",
+    "test_profile.py": "f20dcf5bf9d78f5b9adc1ded08ae2bba23f1843ec4441856b6ffd4a6fffaed40"
+  },
+  "new_llm_calls": 0,
+  "new_api_cost": 0,
+  "generated_at": "2026-11-04T16:09:31.307580+00:00"
+}

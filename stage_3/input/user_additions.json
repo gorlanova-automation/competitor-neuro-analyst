@@ -1,0 +1,42 @@
+{
+  "requested_on": "2026-11-04",
+  "items": [
+    {
+      "company_id": "portugaldom",
+      "name": "PortugalDom",
+      "supplied_url": "https://portugaldom.pt/legalizacziya-v-portugalii/",
+      "added_by": "user",
+      "discovery_method": "user_supplied",
+      "already_registered": false,
+      "action": "register_user_addition"
+    },
+    {
+      "company_id": "movetocascais",
+      "name": "MoveToCascais",
+      "supplied_url": "https://movetocascais.com/ru/o-nas/",
+      "added_by": "user",
+      "discovery_method": "user_supplied",
+      "already_registered": true,
+      "action": "enrich_existing_no_duplicate"
+    },
+    {
+      "company_id": "monolite",
+      "name": "MONOLITE",
+      "supplied_url": "https://monolite.pt/#uslugi",
+      "added_by": "user",
+      "discovery_method": "user_supplied",
+      "already_registered": false,
+      "action": "register_user_addition"
+    },
+    {
+      "company_id": "okno",
+      "name": "OKNO Agency",
+      "supplied_url": "https://okno.agency",
+      "added_by": "user",
+      "discovery_method": "user_supplied",
+      "already_registered": false,
+      "action": "register_user_addition"
+    }
+  ],
+  "note": "MoveToCascais was already user-added on 2026-10-21. The other three were absent from the saved candidate catalogs; not attributed to the search script."
+}

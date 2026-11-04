@@ -1,0 +1,92 @@
+[
+  {
+    "path": "input/additions/chunks.json",
+    "sha256": "fc3a417d50954a5dfbf877be0f5863359b21ca59c48bc198b239135498325127",
+    "bytes": 74470
+  },
+  {
+    "path": "input/additions/facts.json",
+    "sha256": "f5246efd508a936e5ded7afff7f114b9288d20d2c356bc72f6a71aad5c69394c",
+    "bytes": 15541
+  },
+  {
+    "path": "input/additions/monolite.txt",
+    "sha256": "2e869b20272d92e5792b162b4577bea58435e2c3e31887bcf9a37124eec235b8",
+    "bytes": 15583
+  },
+  {
+    "path": "input/additions/movetocascais.txt",
+    "sha256": "9727dd238c08cbe059d62b7c25cec3fe423e328e1d6f6b96d42efa3093c057fe",
+    "bytes": 7159
+  },
+  {
+    "path": "input/additions/okno.txt",
+    "sha256": "d4e3adb03254b8a0df8e4cf1116e341fe656460666268de2b81e52c3f2515caf",
+    "bytes": 20775
+  },
+  {
+    "path": "input/additions/portugaldom.txt",
+    "sha256": "d797c0fd134fa0a2be74fc36ec98fc0775c065f996c730be3b4acb46b89f1b56",
+    "bytes": 29355
+  },
+  {
+    "path": "input/additions/sources.json",
+    "sha256": "8501ddaf61816d299b7cdd7ca7e561a5c6d4979d3f574bfa67f0032b118b4d00",
+    "bytes": 3836
+  },
+  {
+    "path": "input/chunks.json",
+    "sha256": "398817bf5f04558cbf3a3f1e0f4557d3a7c18aee20099dc079edd0e6405580d5",
+    "bytes": 54835
+  },
+  {
+    "path": "input/clean/immigration_relocator_a317a051e73c04.txt",
+    "sha256": "249acdd40d1b41d4a7615b4bebac704f4ae0fff56d013bd0404543358a3cbafe",
+    "bytes": 37151
+  },
+  {
+    "path": "input/clean/migrun_374ee81f00c9b3.txt",
+    "sha256": "9b26ab9eda730bb07747b3a75a834e75adc8018de4c626fa1ec9ad437262f78c",
+    "bytes": 11840
+  },
+  {
+    "path": "input/companies.json",
+    "sha256": "22c47804f7be6666195b80f272435374ced654c747c30798273527f94f520e8f",
+    "bytes": 2497
+  },
+  {
+    "path": "input/competitor_candidates.json",
+    "sha256": "5fcba16f20efdbc60cc93949af07f714980116d9f55bdac2b303fde63b241358",
+    "bytes": 9515
+  },
+  {
+    "path": "input/criteria.json",
+    "sha256": "a35f247b64ab83259f601d06b6465283235fe7dc802c35fdfb4b3949f62912c0",
+    "bytes": 6070
+  },
+  {
+    "path": "input/facts_draft.json",
+    "sha256": "07309faba983e5d2dc1d054467b40b5e6ce62524e1390f1304971b5f82f9320a",
+    "bytes": 185340
+  },
+  {
+    "path": "input/raw/immigration_relocator_a317a051e73c04.html",
+    "sha256": "ef602561a294d89d8b29ea2dc571c69375968c2365209bfeb3eee0ccbf9b0c1d",
+    "bytes": 3605366
+  },
+  {
+    "path": "input/raw/migrun_374ee81f00c9b3.html",
+    "sha256": "4c333505adf1097a7250d033c212ae82ec205e2bc84d7659381df3f7cace52e1",
+    "bytes": 119191
+  },
+  {
+    "path": "input/sources.json",
+    "sha256": "ba8aa958226ffd8f13189802125c328d728c6c74172e0e655430a952d3b4dc38",
+    "bytes": 1950
+  },
+  {
+    "path": "input/user_additions.json",
+    "sha256": "5c53a17e28fa37aabd00f85cd3c33074467a985a6478312acfd65e3362311021",
+    "bytes": 1336
+  }
+]

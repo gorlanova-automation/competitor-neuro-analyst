@@ -20,3 +20,7 @@ stage_2/*.zip
 stage_2/docs/curator_report.md
 migration_manifest.json
 review/
+/var/
+stage_3/review/
+stage_3/submission/
+stage_3/Этап_3_прототип_нейроаналитика.ipynb

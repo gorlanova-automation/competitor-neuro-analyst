@@ -1,0 +1,55 @@
+﻿criterion,company_id,status,amounts_eur,fact_ids,comparison
+Входная консультация,immigration_relocator,observed_draft,[150],"[""15de784c6b8a45af95dd""]",blocked_unverified_scope_or_terms
+Входная консультация,migrun,observed_draft,"[40, 70]","[""eb214cd8635a995b22cc"", ""0ec799da32b5bc76f79f""]",blocked_unverified_scope_or_terms
+Входная консультация,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Входная консультация,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,immigration_relocator,conflicting_published_prices,"[170, 350]","[""556890c135ee959d318d"", ""daa9c3a4e66e2e1f2031""]",blocked_unverified_scope_or_terms
+Налоговая консультация,migrun,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Налоговая консультация,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,immigration_relocator,observed_draft,[150],"[""a3250126d0a017dc1f98""]",blocked_unverified_scope_or_terms
+Оформление NIF,migrun,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Оформление NIF,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,immigration_relocator,observed_draft,[500],"[""3887e2ca5004d9f85f44"", ""00ded96e3b08df2070aa""]",blocked_unverified_scope_or_terms
+Продление ВНЖ,migrun,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Продление ВНЖ,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,immigration_relocator,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,migrun,observed_draft,"[530, 1290, 3490]","[""7020aa1cee8bd213e04f"", ""1275c05e3ab20fe956d4"", ""e950fd041d8cb1266532""]",blocked_unverified_scope_or_terms
+Пакеты сопровождения,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Пакеты сопровождения,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,immigration_relocator,observed_draft,[950],"[""91504d485cf00fdd15af"", ""935281eb6991e994697d""]",blocked_unverified_scope_or_terms
+Регистрация компании,migrun,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,migran,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,relotus,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,relocate_group,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,e_residence,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,dh_private,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,migrall,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms
+Регистрация компании,movetocascais,not_observed_in_limited_corpus,[],[],blocked_unverified_scope_or_terms

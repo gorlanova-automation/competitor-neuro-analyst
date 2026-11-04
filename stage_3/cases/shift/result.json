@@ -1,0 +1,67 @@
+{
+  "case_id": "shift",
+  "status": "awaiting_profile_and_competitor_confirmation",
+  "profile": {
+    "company_name": "SHIFT",
+    "headline": "Give your next video more impact.",
+    "summary": "Short video analysis: a specific moment, an explanation and an edit you can test.",
+    "market_terms": "AI video analysis short form creators",
+    "inference_method": "metadata_headings_and_explicit_keyword_rule_no_llm",
+    "source_url": "https://youtube.fghk.ru/landing/?lang=en",
+    "source_sha256": "e4672003849610ba2c11d87a9bb7d89af344d3cf67ea01d677092a10c9991ba3",
+    "review_status": "pending_user_confirmation",
+    "search_queries": [
+      "AI video analysis short form creators competitors",
+      "AI video analysis short form creators timestamp editing feedback",
+      "AI video analysis short form creators pricing alternatives"
+    ],
+    "needs_user_input": [
+      "Подтвердить продукт и аудиторию",
+      "Уточнить географию и язык рынка",
+      "Подтвердить или дополнить конкурентов"
+    ],
+    "limits": [
+      "Черновик по одной странице; утверждения сайта не проверены на практике.",
+      "Профиль и запросы требуют подтверждения. Правило video — демонстрационная эвристика, не универсальный классификатор."
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Retensis - AI Video Analysis & Content Strategy for Short-Form Creators",
+      "requested_url": "https://retensis.com/",
+      "final_url": "https://retensis.com/",
+      "description": "Analyze any TikTok, YouTube Short, or Instagram Reel in 90 seconds. Get hook scores, retention curves, predicted drop-off timestamps, and AI-powered content strategy tools. Free to start.",
+      "sha256_text": "9a6de6416ea47f8180dabca7862047bb0c38452c314a4b242984e147a6e5d01b",
+      "confirmation_status": "pending_user_confirmation",
+      "status": null
+    },
+    {
+      "title": "Acuity · Know before you post",
+      "requested_url": "https://acuity.fyi/",
+      "final_url": "https://acuity.fyi/",
+      "description": "Know before you post. Upload a TikTok, Reel, or Short and get per-dimension scores, an estimated retention curve, and timestamped fixes from 40 analyzers. 3 free analyses, no card.",
+      "sha256_text": "71737dfd299a40ebbae201605196c8e4fc00698a17b2fc7e80899e7b7e0e816d",
+      "confirmation_status": "pending_user_confirmation",
+      "status": null
+    },
+    {
+      "title": null,
+      "requested_url": "https://pacing.io/",
+      "final_url": null,
+      "description": null,
+      "sha256_text": null,
+      "confirmation_status": "pending_user_confirmation",
+      "status": "collection_failed"
+    }
+  ],
+  "new_llm_calls": 0,
+  "new_api_cost": 0,
+  "comparison_status": "blocked_pending_user_review",
+  "requested_market_scope": null,
+  "search_provenance": "Search performed by assistant web tool, not by the Python collector. Queries saved in search_log.json.",
+  "hypotheses": [],
+  "limits": [
+    "Не смешивать с услугами релокации.",
+    "Наличие страницы не доказывает качество продукта."
+  ]
+}

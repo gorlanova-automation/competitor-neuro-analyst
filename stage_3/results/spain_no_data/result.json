@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "mode": "offline_reuse_stage2_llm_facts",
+  "generated_at": "2026-11-04T16:09:31.837581+00:00",
+  "config": {
+    "own_company": "immigration_relocator",
+    "competitors": [
+      "migrun",
+      "migran",
+      "relotus",
+      "relocate_group",
+      "e_residence",
+      "dh_private",
+      "migrall",
+      "movetocascais",
+      "portugaldom",
+      "monolite",
+      "okno"
+    ],
+    "country": "Spain",
+    "live_llm_enabled": false,
+    "model": "openai/gpt-6-luna",
+    "max_live_calls": 1,
+    "mapping_status": "researcher_defined_demo_not_full_semantic_review"
+  },
+  "coverage": [
+    {
+      "company_id": "immigration_relocator",
+      "name": "Immigration Relocator",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "migrun",
+      "name": "Migrun",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "migran",
+      "name": "Migran",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "relotus",
+      "name": "Relotus",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "relocate_group",
+      "name": "Релокейт Групп",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "e_residence",
+      "name": "e-residence",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "dh_private",
+      "name": "DISCUS HOLDINGS PRIVATE CLIENTS",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "migrall",
+      "name": "MigrAll Portugal",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": null,
+      "discovery_method": "previous_candidate_catalog"
+    },
+    {
+      "company_id": "movetocascais",
+      "name": "MoveToCascais",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": "user",
+      "discovery_method": "user_supplied"
+    },
+    {
+      "company_id": "portugaldom",
+      "name": "PortugalDom",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": "user",
+      "discovery_method": "user_supplied"
+    },
+    {
+      "company_id": "monolite",
+      "name": "MONOLITE",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": "user",
+      "discovery_method": "user_supplied"
+    },
+    {
+      "company_id": "okno",
+      "name": "OKNO Agency",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country",
+      "added_by": "user",
+      "discovery_method": "user_supplied"
+    }
+  ],
+  "criteria": [],
+  "evidence": [],
+  "recommendations": [],
+  "rejected": [],
+  "limits": [
+    "Смешанные снимки: пилот 22.10.2026 и четыре страницы 04.11.2026. Даты источников сохранены; это не полный актуальный сбор всех компаний.",
+    "175 фактов этапа 2 остаются черновиками; техническая проверка не равна смысловой.",
+    "Полный состав и условия услуг не сопоставлены; рейтинг и проценты дешевизны не рассчитываются.",
+    "Отсутствие наблюдения в ограниченном корпусе не означает отсутствия услуги.",
+    "Новые вызовы LLM в основном офлайн-прогоне отсутствуют; используются реальные результаты LLM этапа 2."
+  ]
+}

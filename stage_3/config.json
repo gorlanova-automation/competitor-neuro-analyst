@@ -1,0 +1,21 @@
+{
+  "own_company": "immigration_relocator",
+  "competitors": [
+    "migrun",
+    "migran",
+    "relotus",
+    "relocate_group",
+    "e_residence",
+    "dh_private",
+    "migrall",
+    "movetocascais",
+    "portugaldom",
+    "monolite",
+    "okno"
+  ],
+  "country": "Portugal",
+  "live_llm_enabled": false,
+  "model": "openai/gpt-6-luna",
+  "max_live_calls": 1,
+  "mapping_status": "researcher_defined_demo_not_full_semantic_review"
+}

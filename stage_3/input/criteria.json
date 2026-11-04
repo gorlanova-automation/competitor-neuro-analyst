@@ -1,0 +1,161 @@
+[
+  {
+    "id": "consultation",
+    "name": "Входная консультация",
+    "country": "Portugal",
+    "fact_ids": {
+      "immigration_relocator": [
+        "15de784c6b8a45af95dd"
+      ],
+      "migrun": [
+        "eb214cd8635a995b22cc",
+        "0ec799da32b5bc76f79f"
+      ],
+      "portugaldom": [
+        "e9ec47ec65afabd84b0d"
+      ],
+      "movetocascais": [
+        "685263dc3e92e51b666c"
+      ]
+    },
+    "comparison_note": "150 EUR против 40/70 EUR — разные описания; длительность собственной консультации в цитате не указана. Численный рейтинг заблокирован.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "tax_consultation",
+    "name": "Налоговая консультация",
+    "country": "Portugal",
+    "fact_ids": {
+      "immigration_relocator": [
+        "556890c135ee959d318d",
+        "daa9c3a4e66e2e1f2031"
+      ]
+    },
+    "comparison_note": "Два блока 170 и 350 EUR сохраняются как неразрешённое расхождение; нельзя выбрать актуальную цену автоматически.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "nif",
+    "name": "Оформление NIF",
+    "country": "Portugal",
+    "fact_ids": {
+      "immigration_relocator": [
+        "a3250126d0a017dc1f98"
+      ],
+      "portugaldom": [
+        "6d355c782cecbcf17b10"
+      ],
+      "movetocascais": [
+        "08c2688f6d74fbd075c1"
+      ],
+      "monolite": [
+        "084520d4331a8026cef8"
+      ]
+    },
+    "comparison_note": "150 EUR — наблюдение своей компании. Цена Migrun 109 EUR не используется: факт остался в карантине этапа 2. Отсутствие в выбранных данных не равно отсутствию услуги.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "renewal",
+    "name": "Продление ВНЖ",
+    "country": "Portugal",
+    "fact_ids": {
+      "immigration_relocator": [
+        "3887e2ca5004d9f85f44",
+        "00ded96e3b08df2070aa"
+      ],
+      "monolite": [
+        "563bdc5120a68eeff8ca"
+      ]
+    },
+    "comparison_note": "Повторные блоки 500 EUR не суммируются и не считаются отдельными тарифами. Сопоставимого предложения конкурента в данном наборе нет.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "assistance",
+    "name": "Пакеты сопровождения",
+    "country": "Portugal",
+    "fact_ids": {
+      "migrun": [
+        "7020aa1cee8bd213e04f",
+        "1275c05e3ab20fe956d4",
+        "e950fd041d8cb1266532"
+      ],
+      "portugaldom": [
+        "ee38544cd717b882870d"
+      ],
+      "movetocascais": [
+        "53d3e5e1694d70f03268"
+      ]
+    },
+    "comparison_note": "Check-up 530 EUR, Standard 1290 EUR и Premium 3490 EUR — разные пакеты одного конкурента. Входная консультация или отдельные услуги своей компании не являются эквивалентом пакета.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "company_registration",
+    "name": "Регистрация компании",
+    "country": "Portugal",
+    "fact_ids": {
+      "immigration_relocator": [
+        "91504d485cf00fdd15af",
+        "935281eb6991e994697d"
+      ],
+      "monolite": [
+        "109396a08193298752bb"
+      ],
+      "okno": [
+        "4b37f5d71adde70fc959"
+      ]
+    },
+    "comparison_note": "Два блока 950 EUR различаются пометками государственных сборов. Не выдавать сумму за сопоставимую полную стоимость без уточнения включённых платежей.",
+    "mapping_origin": "explicit_researcher_demo_mapping_not_user_semantic_annotation"
+  },
+  {
+    "id": "niss",
+    "name": "Оформление NISS",
+    "country": "Portugal",
+    "fact_ids": {
+      "portugaldom": [
+        "e9f3922f0740de89384b"
+      ],
+      "monolite": [
+        "ace962170bae15a61847"
+      ]
+    },
+    "comparison_note": "Упоминание на выбранной странице; состав, условия и цена не сопоставлены. Отсутствие записи не означает отсутствия услуги.",
+    "mapping_origin": "explicit_researcher_source_mapping"
+  },
+  {
+    "id": "digital_nomad",
+    "name": "Digital Nomad / D8",
+    "country": "Portugal",
+    "fact_ids": {
+      "portugaldom": [
+        "0981599f92ccd86c7da9"
+      ],
+      "movetocascais": [
+        "6b488099577f41ac254b"
+      ],
+      "monolite": [
+        "338f9d3b29fa848b7065"
+      ],
+      "okno": [
+        "2ec7b3edb2d9e8e4b039"
+      ]
+    },
+    "comparison_note": "Упоминание на выбранной странице; состав, условия и цена не сопоставлены. Отсутствие записи не означает отсутствия услуги.",
+    "mapping_origin": "explicit_researcher_source_mapping"
+  },
+  {
+    "id": "legal_services",
+    "name": "Юридическая помощь при иммиграции",
+    "country": "Portugal",
+    "fact_ids": {
+      "okno": [
+        "9c3c6d20f9852cd5c125"
+      ]
+    },
+    "comparison_note": "Упоминание на выбранной странице; состав, условия и цена не сопоставлены. Отсутствие записи не означает отсутствия услуги.",
+    "mapping_origin": "explicit_researcher_source_mapping"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "config": {
+    "own_company": "immigration_relocator",
+    "competitors": [
+      "migrun",
+      "migran",
+      "relotus",
+      "relocate_group",
+      "e_residence",
+      "dh_private",
+      "migrall",
+      "movetocascais"
+    ],
+    "country": "Portugal",
+    "live_llm_enabled": false,
+    "model": "openai/gpt-6-luna",
+    "max_live_calls": 1,
+    "mapping_status": "researcher_defined_demo_not_full_semantic_review"
+  },
+  "mode": "offline_reuse_stage2_llm_facts",
+  "input_manifest_sha256": "6a0e919dce32b4615f9836fc36fd597f0500734c604d741607fa2175e7b86cd2",
+  "code_sha256": {
+    "analyst.py": "0db0663a94be034803388cd7866cfa57b7a5c771575a642cd98cbf108f80169a",
+    "build_document.py": "64564dc2c04aa61134b5280957928ae72de561fb64ce16fd227b1a3ee309f531",
+    "build_notebook.py": "fe97bda90603a9d027813387bc5dbcf5fd49b15250c5f50424a11c3dabce6b30",
+    "llm_report.py": "8dbae9319a0910e06ac7b4070b9929663cac749e60937ad6ba192cbec2474054",
+    "prepare_demo.py": "19037b21c56d3e72f25b06bab2fc93889e8656cba69f2f4d9d0ecc159e731ec9",
+    "reporting.py": "bb1c95d697d9a3708dae9edbee2e616279f9271d3573f1b2fb057b95799d3cbc",
+    "test_analyst.py": "3af58f01fff0ef45a61a20eb1a8d59a7eda172b124d66f5b5aa1cefbc864e697"
+  },
+  "new_llm_calls": 0,
+  "new_api_cost": 0,
+  "generated_at": "2026-10-27T10:05:12.926965+00:00"
+}

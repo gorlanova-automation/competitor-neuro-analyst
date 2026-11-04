@@ -1,0 +1,48 @@
+{
+  "verified_on": "2026-11-04",
+  "local": {
+    "analyst_and_other_domain_tests": 14,
+    "api_tests": 6,
+    "http_api_smoke": "passed",
+    "portugal": {
+      "competitors": 11,
+      "criteria": 9,
+      "evidence": 30,
+      "hypotheses": 3,
+      "covered_including_own": 6
+    },
+    "spain_evidence": 0
+  },
+  "colab": {
+    "url": "https://colab.research.google.com/drive/1ynjo7ctXczXM9b0Djek5cBYYOR62V7hI",
+    "executed_code_cells": 6,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "tests_passed": 20,
+    "observed_test_time_seconds": 1.729,
+    "downloaded_actual_notebook": true,
+    "notebook_sha256": "b797358e8e0c9361d72004960d0fa8873ff0e50c22cca3f66c4f5fa0083b1eb1",
+    "payload_sha256": "7e8cc246291416c1d953b7b4d66f5a9b83f467df29dff3f820ff91db6e2aa7b7"
+  },
+  "browser_checks": {
+    "portugal_full_result": "9 criteria, 30 evidence, 3 hypotheses",
+    "spain_no_data": "0 criteria, 0 evidence, 0 hypotheses",
+    "shift_unconfirmed": "blocked with explicit user action message"
+  },
+  "new_llm_calls": 0,
+  "new_api_cost": 0,
+  "shift_status": "awaiting_profile_and_competitor_confirmation",
+  "not_verified": [
+    "Full site coverage for all competitors",
+    "Semantic validation of all 175 stage-2 facts",
+    "Product quality or paid functionality of SHIFT competitors",
+    "New LLM experiments or model choice benchmark"
+  ],
+  "publication": "Prepared for GitHub Pages; deployment verified separately"
+}

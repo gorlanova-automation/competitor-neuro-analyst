@@ -1,0 +1,20 @@
+{
+  "requested_url": "https://youtube.fghk.ru/landing/?lang=en",
+  "final_url": "https://youtube.fghk.ru/landing/?lang=en",
+  "title": "SHIFT · Give your next video more impact",
+  "description": "Short video analysis: a specific moment, an explanation and an edit you can test.",
+  "headings": [
+    "Give your next video more impact.",
+    "A prioritized editing plan.",
+    "Sound is more than speech.",
+    "Find where attention changes.",
+    "Starter",
+    "Growth"
+  ],
+  "text": "SHORTS · REELS · TIKTOK\nGive your next video more impact.\nFind your video's strongest moments and get a clear editing plan.\nA prioritized editing plan.\nSound is more than speech.\nVoice, music, ambience and sound effects shape the action. The review shows how sound supports your idea and where it could work harder.\nFind where attention changes.\nAdd your retention graph. SHIFT connects it to the moments in your video and highlights sections worth improving.\nTry for free\nFree\nNo subscription\n3 videos to try\nStarter\n$19.99\nper month\n40 videos per month\nGrowth\n$29.99\nper month\n100 videos per month\nPicture, sound and editing review\nSpecific moments and an editing plan\nSaved reviews in your workspace",
+  "collected_at": "2026-11-04T15:47:00+00:00",
+  "method": "cua_browser_visible_dom_selected_excerpts",
+  "capture_scope": "Selected visible product and pricing excerpts, not full HTML. Collected in educational Chrome Profile 1.",
+  "direct_collection_note": "Public landing loads in browser; robots.txt returned HTTP 401. Strict Python collector stopped; explicit rendered snapshot used. No authentication bypass or paid analysis performed.",
+  "sha256_text": "e4672003849610ba2c11d87a9bb7d89af344d3cf67ea01d677092a10c9991ba3"
+}

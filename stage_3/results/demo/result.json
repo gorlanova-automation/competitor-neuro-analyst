@@ -1,0 +1,885 @@
+{
+  "schema_version": 1,
+  "mode": "offline_reuse_stage2_llm_facts",
+  "generated_at": "2026-10-27T10:05:12.926965+00:00",
+  "config": {
+    "own_company": "immigration_relocator",
+    "competitors": [
+      "migrun",
+      "migran",
+      "relotus",
+      "relocate_group",
+      "e_residence",
+      "dh_private",
+      "migrall",
+      "movetocascais"
+    ],
+    "country": "Portugal",
+    "live_llm_enabled": false,
+    "model": "openai/gpt-6-luna",
+    "max_live_calls": 1,
+    "mapping_status": "researcher_defined_demo_not_full_semantic_review"
+  },
+  "coverage": [
+    {
+      "company_id": "immigration_relocator",
+      "name": "Immigration Relocator",
+      "facts_in_demo": 8,
+      "status": "limited_snapshot"
+    },
+    {
+      "company_id": "migrun",
+      "name": "Migrun",
+      "facts_in_demo": 5,
+      "status": "limited_snapshot"
+    },
+    {
+      "company_id": "migran",
+      "name": "Migran",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "relotus",
+      "name": "Relotus",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "relocate_group",
+      "name": "Релокейт Групп",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "e_residence",
+      "name": "e-residence",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "dh_private",
+      "name": "DISCUS HOLDINGS PRIVATE CLIENTS",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "migrall",
+      "name": "MigrAll Portugal",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    },
+    {
+      "company_id": "movetocascais",
+      "name": "MoveToCascais",
+      "facts_in_demo": 0,
+      "status": "not_researched_for_selected_country"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "consultation",
+      "name": "Входная консультация",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "observed_draft",
+          "amounts_eur": [
+            150
+          ],
+          "fact_ids": [
+            "15de784c6b8a45af95dd"
+          ]
+        },
+        {
+          "company_id": "migrun",
+          "status": "observed_draft",
+          "amounts_eur": [
+            40,
+            70
+          ],
+          "fact_ids": [
+            "eb214cd8635a995b22cc",
+            "0ec799da32b5bc76f79f"
+          ]
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "150 EUR против 40/70 EUR — разные описания; длительность собственной консультации в цитате не указана. Численный рейтинг заблокирован."
+    },
+    {
+      "id": "tax_consultation",
+      "name": "Налоговая консультация",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "conflicting_published_prices",
+          "amounts_eur": [
+            170,
+            350
+          ],
+          "fact_ids": [
+            "556890c135ee959d318d",
+            "daa9c3a4e66e2e1f2031"
+          ]
+        },
+        {
+          "company_id": "migrun",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "Два блока 170 и 350 EUR сохраняются как неразрешённое расхождение; нельзя выбрать актуальную цену автоматически."
+    },
+    {
+      "id": "nif",
+      "name": "Оформление NIF",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "observed_draft",
+          "amounts_eur": [
+            150
+          ],
+          "fact_ids": [
+            "a3250126d0a017dc1f98"
+          ]
+        },
+        {
+          "company_id": "migrun",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "150 EUR — наблюдение своей компании. Цена Migrun 109 EUR не используется: факт остался в карантине этапа 2. Отсутствие в выбранных данных не равно отсутствию услуги."
+    },
+    {
+      "id": "renewal",
+      "name": "Продление ВНЖ",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "observed_draft",
+          "amounts_eur": [
+            500
+          ],
+          "fact_ids": [
+            "3887e2ca5004d9f85f44",
+            "00ded96e3b08df2070aa"
+          ]
+        },
+        {
+          "company_id": "migrun",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "Повторные блоки 500 EUR не суммируются и не считаются отдельными тарифами. Сопоставимого предложения конкурента в данном наборе нет."
+    },
+    {
+      "id": "assistance",
+      "name": "Пакеты сопровождения",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrun",
+          "status": "observed_draft",
+          "amounts_eur": [
+            530,
+            1290,
+            3490
+          ],
+          "fact_ids": [
+            "7020aa1cee8bd213e04f",
+            "1275c05e3ab20fe956d4",
+            "e950fd041d8cb1266532"
+          ]
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "Check-up 530 EUR, Standard 1290 EUR и Premium 3490 EUR — разные пакеты одного конкурента. Входная консультация или отдельные услуги своей компании не являются эквивалентом пакета."
+    },
+    {
+      "id": "company_registration",
+      "name": "Регистрация компании",
+      "country": "Portugal",
+      "cells": [
+        {
+          "company_id": "immigration_relocator",
+          "status": "observed_draft",
+          "amounts_eur": [
+            950
+          ],
+          "fact_ids": [
+            "91504d485cf00fdd15af",
+            "935281eb6991e994697d"
+          ]
+        },
+        {
+          "company_id": "migrun",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migran",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relotus",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "relocate_group",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "e_residence",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "dh_private",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "migrall",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        },
+        {
+          "company_id": "movetocascais",
+          "status": "not_observed_in_limited_corpus",
+          "amounts_eur": [],
+          "fact_ids": []
+        }
+      ],
+      "numeric_comparison": "blocked_unverified_scope_or_terms",
+      "reason": "Два блока 950 EUR различаются пометками государственных сборов. Не выдавать сумму за сопоставимую полную стоимость без уточнения включённых платежей."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "price",
+      "value": "€150,00",
+      "evidence": "Иммиграционная консультация\n€150,00",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Иммиграционная консультация",
+      "amount": 150,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.957135+00:00",
+      "evidence_start": 1267,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "15de784c6b8a45af95dd",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "Разбор кейса — €40 за 30 минут",
+      "evidence": "Разбор кейса (30 мин./€40)",
+      "kind": "published_offer",
+      "country": null,
+      "offer_name": "Разбор кейса",
+      "amount": 40,
+      "currency": "EUR",
+      "price_basis": "за 30 минут",
+      "company_id": "migrun",
+      "source_id": "migrun_374ee81f00c9b3",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "extracted_at": "2026-10-22T11:32:52.321305+00:00",
+      "evidence_start": 72,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "eb214cd8635a995b22cc",
+      "source_collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "План переезда — €70 за 60 минут",
+      "evidence": "План переезда (60 мин./€70)",
+      "kind": "published_offer",
+      "country": null,
+      "offer_name": "План переезда",
+      "amount": 70,
+      "currency": "EUR",
+      "price_basis": "за 60 минут",
+      "company_id": "migrun",
+      "source_id": "migrun_374ee81f00c9b3",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "extracted_at": "2026-10-22T11:32:52.321374+00:00",
+      "evidence_start": 101,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "0ec799da32b5bc76f79f",
+      "source_collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€170,00",
+      "evidence": "Консультация по налогообложению в Португалии\n€170,00",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Консультация по налогообложению в Португалии",
+      "amount": 170,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.953868+00:00",
+      "evidence_start": 1311,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "556890c135ee959d318d",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€350,00",
+      "evidence": "Консультация по налогообложению в Португалии\n€350,00",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Консультация по налогообложению в Португалии",
+      "amount": 350,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.955439+00:00",
+      "evidence_start": 3343,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "daa9c3a4e66e2e1f2031",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€150,00",
+      "evidence": "Дистанционное оформление налогового номера (NIF)\n€150,00",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Дистанционное оформление налогового номера (NIF)",
+      "amount": 150,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.953979+00:00",
+      "evidence_start": 1372,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "a3250126d0a017dc1f98",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€500,00",
+      "evidence": "Продление ВНЖ\n€500,00",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Продление ВНЖ",
+      "amount": 500,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.953742+00:00",
+      "evidence_start": 1237,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "3887e2ca5004d9f85f44",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€500,00",
+      "evidence": "Продление ВНЖ\n€500,00\nВыбрать\nПодача на ПМЖ",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Продление ВНЖ",
+      "amount": 500,
+      "currency": "EUR",
+      "price_basis": "фиксированная цена",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.954412+00:00",
+      "evidence_start": 1802,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "00ded96e3b08df2070aa",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "Пакет Check-up — €530",
+      "evidence": "Check-up\n€530",
+      "kind": "published_offer",
+      "country": null,
+      "offer_name": "Check-up",
+      "amount": 530,
+      "currency": "EUR",
+      "price_basis": null,
+      "company_id": "migrun",
+      "source_id": "migrun_374ee81f00c9b3",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "extracted_at": "2026-10-22T11:32:52.321440+00:00",
+      "evidence_start": 1323,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "7020aa1cee8bd213e04f",
+      "source_collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "Пакет Standard Assistance — €1290",
+      "evidence": "Standard Assistance\nПопулярно\n€1290",
+      "kind": "published_offer",
+      "country": null,
+      "offer_name": "Standard Assistance",
+      "amount": 1290,
+      "currency": "EUR",
+      "price_basis": null,
+      "company_id": "migrun",
+      "source_id": "migrun_374ee81f00c9b3",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "extracted_at": "2026-10-22T11:32:52.321634+00:00",
+      "evidence_start": 1487,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "1275c05e3ab20fe956d4",
+      "source_collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "Пакет Premium Assistance — €3490",
+      "evidence": "Premium Assistance\n€3490",
+      "kind": "published_offer",
+      "country": null,
+      "offer_name": "Premium Assistance",
+      "amount": 3490,
+      "currency": "EUR",
+      "price_basis": null,
+      "company_id": "migrun",
+      "source_id": "migrun_374ee81f00c9b3",
+      "chunk_id": "migrun_374ee81f00c9b3_c000",
+      "url": "https://www.migrun.tech/ru/portugal/services-in-portugal/assistance-packages",
+      "collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "extracted_at": "2026-10-22T11:32:52.321758+00:00",
+      "evidence_start": 1673,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "e950fd041d8cb1266532",
+      "source_collected_at": "2026-10-22T11:15:02.895335+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€950,00 (гос. сборы)",
+      "evidence": "Дистанционное открытие\nкомпании (LDA)\n€950,00\n(гос. сборы)",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Дистанционное открытие компании (LDA)",
+      "amount": 950,
+      "currency": "EUR",
+      "price_basis": "гос. сборы",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.953493+00:00",
+      "evidence_start": 1048,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "91504d485cf00fdd15af",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    },
+    {
+      "field": "price",
+      "value": "€950,00 (гос. сборы включены)",
+      "evidence": "Дистанционное открытие\nкомпании (LDA)\n€950,00\n(гос. сборы включены)",
+      "kind": "published_offer",
+      "country": "Portugal",
+      "offer_name": "Дистанционное открытие компании (LDA)",
+      "amount": 950,
+      "currency": "EUR",
+      "price_basis": "гос. сборы включены",
+      "company_id": "immigration_relocator",
+      "source_id": "immigration_relocator_a317a051e73c04",
+      "chunk_id": "immigration_relocator_a317a051e73c04_c000",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "extracted_at": "2026-10-22T11:32:16.954578+00:00",
+      "evidence_start": 2031,
+      "review_status": "pending_human_review",
+      "origin": "llm_extraction",
+      "fact_id": "935281eb6991e994697d",
+      "source_collected_at": "2026-10-22T11:14:54.602842+00:00",
+      "source_country_context": "Portugal",
+      "country_context_basis": "Explicit manual mapping of two Portugal service pages; original fact country is unchanged",
+      "verification": "quote_number_provenance_only",
+      "semantic_review": "not_complete"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "H1",
+      "status": "hypothesis_requires_owner_review",
+      "title": "Уточнить две цены налоговой консультации",
+      "action": "Проверить блоки 170 и 350 EUR: обозначить различия состава или исправить устаревший блок после подтверждения владельцем.",
+      "experiment": "Владелец услуги сверяет оба блока, срок действия цены и объём консультации.",
+      "metric": "Число неразрешённых расхождений в опубликованной карточке: целевое 0.",
+      "evidence_ids": [
+        "556890c135ee959d318d",
+        "daa9c3a4e66e2e1f2031"
+      ]
+    },
+    {
+      "id": "H2",
+      "status": "hypothesis_requires_owner_review",
+      "title": "Яснее описать входную консультацию",
+      "action": "Проверить гипотезу о пользе явных длительности и результата консультации. Не снижать 150 EUR по несопоставимым предложениям 40/70 EUR.",
+      "experiment": "Вариант карточки с длительностью, результатом и исключениями; после утверждения сравнить с текущим описанием.",
+      "metric": "Доля квалифицированных обращений и вопросов о составе; исходных данных для эффекта пока нет.",
+      "evidence_ids": [
+        "15de784c6b8a45af95dd",
+        "eb214cd8635a995b22cc",
+        "0ec799da32b5bc76f79f"
+      ]
+    },
+    {
+      "id": "H3",
+      "status": "hypothesis_requires_owner_review",
+      "title": "Проверить понятность ступеней сопровождения",
+      "action": "Использовать наблюдаемую линейку Migrun как повод проверить понятность собственных границ услуг, без копирования цен.",
+      "experiment": "Создать согласованный макет сравнения состава пакетов и проверить понимание на интервью с клиентами.",
+      "metric": "Доля участников, правильно выбравших подходящий состав. Результаты интервью пока отсутствуют.",
+      "evidence_ids": [
+        "7020aa1cee8bd213e04f",
+        "1275c05e3ab20fe956d4",
+        "e950fd041d8cb1266532"
+      ]
+    }
+  ],
+  "rejected": [],
+  "limits": [
+    "Снимок 22.10.2026, не актуализация сайтов на дату отчёта.",
+    "175 фактов этапа 2 остаются черновиками; техническая проверка не равна смысловой.",
+    "Полный состав и условия услуг не сопоставлены; рейтинг и проценты дешевизны не рассчитываются.",
+    "Отсутствие наблюдения в ограниченном корпусе не означает отсутствия услуги.",
+    "Новые вызовы LLM в основном офлайн-прогоне отсутствуют; используются реальные результаты LLM этапа 2."
+  ]
+}

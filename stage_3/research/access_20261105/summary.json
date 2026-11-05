@@ -1,0 +1,290 @@
+{
+  "checked_at": "2026-11-05T18:19:55.067983+00:00",
+  "collector_version": "resilient_v2",
+  "items": [
+    {
+      "company_id": "immigration_relocator",
+      "kind": "control_website",
+      "url": "https://immigration-relocator.com/",
+      "checked_at": "2026-11-05T18:19:40.659121+00:00",
+      "attempted_urls": 1,
+      "status": "ok",
+      "next_action": null,
+      "recovered": true,
+      "cause": "ok",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "migran",
+      "kind": "website",
+      "url": "https://www.migran.es/",
+      "allow_apex_fallback": true,
+      "checked_at": "2026-11-05T18:19:38.245123+00:00",
+      "attempted_urls": 2,
+      "status": "robots_unavailable",
+      "next_action": "check_domain_and_canonical_host",
+      "recovered": false,
+      "cause": "dns_error",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "relocate_group",
+      "kind": "website",
+      "url": "https://relocate-legal.com/",
+      "verified_alternatives": [
+        "https://relocate-legal.com/o-nas/",
+        "https://relocate-legal.com/o-nas/kontakti/"
+      ],
+      "alternative_provenance": "Official URLs verified in web search 2026-11-05; not alternate brands",
+      "checked_at": "2026-11-05T18:19:55.065986+00:00",
+      "attempted_urls": 3,
+      "status": "robots_unavailable",
+      "next_action": "browser_review",
+      "recovered": false,
+      "cause": "timeout",
+      "robots_attempt_count": 2
+    },
+    {
+      "company_id": "immigration_relocator",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/immigration_relocator",
+      "found_on": "https://immigration-relocator.com/es-otherservices",
+      "checked_at": "2026-11-05T18:19:38.729117+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "immigration_relocator",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/immigrationrelocator.fb",
+      "found_on": "https://immigration-relocator.com/es-otherservices",
+      "checked_at": "2026-11-05T18:19:38.975122+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "migrun",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/migrun_spain",
+      "found_on": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+      "checked_at": "2026-11-05T18:19:39.599123+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "migrun",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/migrun.tech",
+      "found_on": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+      "checked_at": "2026-11-05T18:19:39.826121+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "e_residence",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/eresidence_com",
+      "found_on": "https://e-residence.com/ru/portugal/",
+      "checked_at": "2026-11-05T18:19:40.760120+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "migrall",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/migrallportugal",
+      "found_on": "https://migrall.com/",
+      "checked_at": "2026-11-05T18:19:40.851122+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "movetocascais",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/movetocascais/",
+      "found_on": "https://movetocascais.com/ru/o-nas/",
+      "checked_at": "2026-11-05T18:19:41.403122+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "movetocascais",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/movetocascais/",
+      "found_on": "https://movetocascais.com/ru/o-nas/",
+      "checked_at": "2026-11-05T18:19:41.600119+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "portugaldom",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/PortugalDom.ru/",
+      "found_on": "https://portugaldom.pt/vnzh-ru/",
+      "checked_at": "2026-11-05T18:19:41.589121+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "portugaldom",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/portugal_dom/",
+      "found_on": "https://portugaldom.pt/vnzh-ru/",
+      "checked_at": "2026-11-05T18:19:42.253121+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    },
+    {
+      "company_id": "monolite",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/pro.portugal?igsh=Z3d2bTI5cXpyaGty&utm_source=qr",
+      "found_on": "https://monolite.pt/",
+      "checked_at": "2026-11-05T18:19:42.430121+00:00",
+      "attempted_urls": 1,
+      "status": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch",
+      "recovered": false,
+      "cause": "robots_disallowed",
+      "robots_attempt_count": 1
+    }
+  ],
+  "browser_review_queue": [
+    {
+      "company_id": "migran",
+      "kind": "website",
+      "url": "https://www.migran.es/",
+      "reason": "robots_unavailable",
+      "next_action": "check_domain_and_canonical_host"
+    },
+    {
+      "company_id": "relocate_group",
+      "kind": "website",
+      "url": "https://relocate-legal.com/",
+      "reason": "robots_unavailable",
+      "next_action": "browser_review"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/immigration_relocator",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "immigration_relocator",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/immigrationrelocator.fb",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "migrun",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/migrun_spain",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "migrun",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/migrun.tech",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "e_residence",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/eresidence_com",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "migrall",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/migrallportugal",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "movetocascais",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/movetocascais/",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "movetocascais",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/movetocascais/",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "portugaldom",
+      "kind": "facebook",
+      "url": "https://www.facebook.com/PortugalDom.ru/",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "portugaldom",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/portugal_dom/",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    },
+    {
+      "company_id": "monolite",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/pro.portugal?igsh=Z3d2bTI5cXpyaGty&utm_source=qr",
+      "reason": "robots_disallowed",
+      "next_action": "manual_source_review_no_automated_fetch"
+    }
+  ],
+  "limits": [
+    "HTTP success does not establish a readable social feed.",
+    "No login, CAPTCHA or robots bypass.",
+    "Browser review queue is not a completed browser capture."
+  ],
+  "summary_note": "Actual HTTP probes; manual browser queue is not completed collection."
+}

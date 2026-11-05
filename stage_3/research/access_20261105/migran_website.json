@@ -1,0 +1,85 @@
+{
+  "company_id": "migran",
+  "kind": "website",
+  "url": "https://www.migran.es/",
+  "allow_apex_fallback": true,
+  "checked_at": "2026-11-05T18:19:38.245123+00:00",
+  "attempted_urls": 2,
+  "results": [
+    {
+      "url": "https://www.migran.es/",
+      "collected_at": "2026-11-05T18:19:37.840120+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "unavailable",
+        "failure": {
+          "status": "dns_error",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "dns_error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "next_action": "check_domain_and_canonical_host"
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "dns_error",
+            "error_type": "ConnectionError"
+          }
+        ]
+      },
+      "status": "robots_unavailable",
+      "failure_kind": "dns_error",
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "dns_error",
+          "error_type": "ConnectionError"
+        }
+      ],
+      "next_action": "check_domain_and_canonical_host"
+    },
+    {
+      "url": "https://migran.es/",
+      "collected_at": "2026-11-05T18:19:38.106121+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "unavailable",
+        "failure": {
+          "status": "dns_error",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "dns_error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "next_action": "check_domain_and_canonical_host"
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "dns_error",
+            "error_type": "ConnectionError"
+          }
+        ]
+      },
+      "status": "robots_unavailable",
+      "failure_kind": "dns_error",
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "dns_error",
+          "error_type": "ConnectionError"
+        }
+      ],
+      "next_action": "check_domain_and_canonical_host"
+    }
+  ],
+  "status": "robots_unavailable",
+  "next_action": "check_domain_and_canonical_host",
+  "recovered": false
+}

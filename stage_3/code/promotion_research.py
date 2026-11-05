@@ -17,11 +17,10 @@ def telegram(link,cid):
     session=requests.Session();session.headers['User-Agent']=UA
     url='https://t.me/s/'+name
     try:
-        p=fetch(session,url,{})
+        p=fetch(session,url,{},include_html=True)
         if p['status']!='ok':row.update(posts_status=p['status']);return row
-        # Fetch the same public response to parse message boundaries, not flattened text.
-        r=session.get(url,timeout=25);r.raise_for_status()
-        soup=BeautifulSoup(r.content,'html.parser')
+        # Parse the same bounded, audited response; no second unguarded request.
+        soup=BeautifulSoup(p['html'],'html.parser')
         for item in soup.select('.tgme_widget_message[data-post]')[-8:]:
             text=item.select_one('.tgme_widget_message_text');date=item.select_one('time[datetime]')
             body=text.get_text(' ',strip=True) if text else ''

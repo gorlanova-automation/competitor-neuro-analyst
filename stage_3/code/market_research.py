@@ -38,37 +38,7 @@ def host(url): return (urlsplit(url).hostname or '').lower().removeprefix('www.'
 def save(path,value): path.write_bytes((json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode())
 
 
-def fetch(session,url,policies):
-    key=urlsplit(url).scheme+'://'+urlsplit(url).netloc
-    if key not in policies:
-        r=session.get(key+'/robots.txt',timeout=15)
-        if r.status_code==200:
-            robot=RobotFileParser();robot.parse(r.text.splitlines());policies[key]=robot
-        elif r.status_code in (404,410):policies[key]=True
-        else:policies[key]=False
-    policy=policies[key]
-    if policy is False or (policy is not True and not policy.can_fetch(UA,url)):
-        return {'url':url,'status':'robots_unavailable_or_disallowed','collected_at':utc()}
-    r=session.get(url,timeout=25)
-    if r.status_code!=200 or 'html' not in r.headers.get('content-type','').lower():
-        return {'url':url,'status':'http_or_content_error','http_status':r.status_code,'collected_at':utc()}
-    if len(r.content)>4_000_000: raise ValueError('page_too_large')
-    r.encoding=r.apparent_encoding or 'utf-8'
-    soup=BeautifulSoup(r.text,'html.parser')
-    links=[]
-    for a in soup.select('a[href]'):
-        href=urldefrag(urljoin(r.url,a['href']))[0]
-        if href.startswith('https://'):
-            links.append({'url':href,'label':a.get_text(' ',strip=True)[:180]})
-    headings=[h.get_text(' ',strip=True) for h in soup.select('h1,h2,h3')]
-    title=soup.title.get_text(' ',strip=True) if soup.title else ''
-    images=[{'alt':i.get('alt','')[:200],'url':urljoin(r.url,i.get('src',''))} for i in soup.select('img') if i.get('src')][:25]
-    for tag in soup(['script','style','noscript','template','svg']):tag.decompose()
-    text=re.sub(r'\s+',' ',soup.get_text(' ',strip=True)).strip()
-    return {'url':url,'final_url':r.url,'status':'ok','collected_at':utc(),'title':title,
-            'headings':headings,'text':text,'sha256_text':sha(text),'links':links,
-            'image_metadata':images,'video_elements':len(soup.select('video,iframe[src*="youtube"]')),
-            'method':'requests_beautifulsoup','robots':'checked'}
+from resilient_fetch import fetch
 
 
 def excerpt(text,pattern):
@@ -78,15 +48,19 @@ def excerpt(text,pattern):
 
 def collect_company(company,max_pages,out):
     session=requests.Session();session.headers['User-Agent']=UA
-    policies={};pages=[];seen=set();queue=[urldefrag(u)[0] for u in company['seed_urls'][:1]]
-    while queue and len(pages)<max_pages:
+    policies={};pages=[];seen=set();queue=list(dict.fromkeys(urldefrag(u)[0] for u in company['seed_urls']))
+    while queue and len(pages)<max_pages*3 and sum(p['status']=='ok' for p in pages)<max_pages:
         url=queue.pop(0)
         if url in seen:continue
         seen.add(url)
         try:page=fetch(session,url,policies)
         except (requests.RequestException,ValueError) as exc:page={'url':url,'status':'collection_error','error_type':type(exc).__name__,'collected_at':utc()}
         pages.append(page)
-        if page['status']!='ok':continue
+        if page['status']!='ok':
+            if page.get('failure_kind',page['status'])=='dns_error' and urlsplit(url).netloc.startswith('www.'):
+                alternate=url.replace('https://www.','https://',1)
+                if alternate not in seen and alternate not in queue:queue.append(alternate)
+            continue
         homehost=host(page['final_url'])
         options=[]
         for link in page['links']:

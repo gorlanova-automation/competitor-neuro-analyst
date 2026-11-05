@@ -1,0 +1,9 @@
+{
+  "verified_on": "2026-11-05",
+  "local_tests_passed": 36,
+  "new_failure_and_recovery_tests": 11,
+  "real_http_probe": "diagnose_access.py executed twice; control website ok; failures and robots prohibitions recorded",
+  "new_llm_calls": 0,
+  "colab_rerun": false,
+  "historical_market_snapshot_unchanged": true
+}

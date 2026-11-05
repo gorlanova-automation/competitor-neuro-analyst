@@ -1,0 +1,32 @@
+{
+  "company_id": "migrun",
+  "kind": "facebook",
+  "url": "https://www.facebook.com/migrun.tech",
+  "found_on": "https://www.migrun.tech/ru/expert-services/spain-migrun-60-min-consultation",
+  "checked_at": "2026-11-05T18:19:39.826121+00:00",
+  "attempted_urls": 1,
+  "results": [
+    {
+      "url": "https://www.facebook.com/migrun.tech",
+      "collected_at": "2026-11-05T18:19:38.980123+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "parsed",
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "final_url": "https://www.facebook.com/robots.txt",
+            "outcome": "received"
+          }
+        ]
+      },
+      "status": "robots_disallowed",
+      "attempts": [],
+      "next_action": "manual_source_review_no_automated_fetch"
+    }
+  ],
+  "status": "robots_disallowed",
+  "next_action": "manual_source_review_no_automated_fetch",
+  "recovered": false
+}

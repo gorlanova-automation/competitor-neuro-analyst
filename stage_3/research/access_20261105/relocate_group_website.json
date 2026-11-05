@@ -1,0 +1,170 @@
+{
+  "company_id": "relocate_group",
+  "kind": "website",
+  "url": "https://relocate-legal.com/",
+  "verified_alternatives": [
+    "https://relocate-legal.com/o-nas/",
+    "https://relocate-legal.com/o-nas/kontakti/"
+  ],
+  "alternative_provenance": "Official URLs verified in web search 2026-11-05; not alternate brands",
+  "checked_at": "2026-11-05T18:19:55.065986+00:00",
+  "attempted_urls": 3,
+  "results": [
+    {
+      "url": "https://relocate-legal.com/",
+      "collected_at": "2026-11-05T18:19:37.841122+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "unavailable",
+        "failure": {
+          "status": "timeout",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            },
+            {
+              "attempt": 2,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            }
+          ],
+          "next_action": "browser_review"
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          },
+          {
+            "attempt": 2,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          }
+        ]
+      },
+      "status": "robots_unavailable",
+      "failure_kind": "timeout",
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        },
+        {
+          "attempt": 2,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        }
+      ],
+      "next_action": "browser_review"
+    },
+    {
+      "url": "https://relocate-legal.com/o-nas/",
+      "collected_at": "2026-11-05T18:19:55.065986+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "unavailable",
+        "failure": {
+          "status": "timeout",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            },
+            {
+              "attempt": 2,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            }
+          ],
+          "next_action": "browser_review"
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          },
+          {
+            "attempt": 2,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          }
+        ]
+      },
+      "status": "robots_unavailable",
+      "failure_kind": "timeout",
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        },
+        {
+          "attempt": 2,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        }
+      ],
+      "next_action": "browser_review"
+    },
+    {
+      "url": "https://relocate-legal.com/o-nas/kontakti/",
+      "collected_at": "2026-11-05T18:19:55.065986+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots": {
+        "status": "unavailable",
+        "failure": {
+          "status": "timeout",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            },
+            {
+              "attempt": 2,
+              "outcome": "timeout",
+              "error_type": "ConnectTimeout"
+            }
+          ],
+          "next_action": "browser_review"
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          },
+          {
+            "attempt": 2,
+            "outcome": "timeout",
+            "error_type": "ConnectTimeout"
+          }
+        ]
+      },
+      "status": "robots_unavailable",
+      "failure_kind": "timeout",
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        },
+        {
+          "attempt": 2,
+          "outcome": "timeout",
+          "error_type": "ConnectTimeout"
+        }
+      ],
+      "next_action": "browser_review"
+    }
+  ],
+  "status": "robots_unavailable",
+  "next_action": "browser_review",
+  "recovered": false
+}

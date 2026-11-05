@@ -1,0 +1,32 @@
+{
+  "verified_on": "2026-11-05",
+  "colab": "https://colab.research.google.com/drive/1c206uziXBZ-RqOLGfh7uyDqC-AbM5jBS",
+  "code_cells": 4,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "tests_passed": 25,
+  "colab_test_seconds": 1.91,
+  "actual_download_checked": true,
+  "notebook_sha256": "fd641ed8322577ca8428dbdf265a14ac1d4340141c0e91f5c67372ea5a0ff958",
+  "new_llm_calls": 0,
+  "summary": {
+    "companies_total": 12,
+    "companies_with_pages": 10,
+    "pages_ok": 34,
+    "channel_links": 44,
+    "telegram_posts": 23,
+    "companies_with_telegram_posts": 3,
+    "editorial_pages": 20,
+    "visual_reviewed_or_limited": 10
+  },
+  "interpretation_method": "assistant_manual_notes_plus_separately_labeled_lexical_rules",
+  "limits": [
+    "Bounded sources, not complete marketing audit",
+    "No ad spend, effectiveness, frequency or full social-feed claims",
+    "Two company sites inaccessible; two visual captures partially rendered"
+  ]
+}

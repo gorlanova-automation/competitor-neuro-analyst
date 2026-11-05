@@ -14,6 +14,7 @@ def build():
     payload=io.BytesIO()
     with zipfile.ZipFile(payload,'w',zipfile.ZIP_DEFLATED) as archive:
         paths=[ROOT/'config.json',*(ROOT/'input').rglob('*'),*(ROOT/'cases').rglob('*.json')]
+        paths += list((ROOT/'research').rglob('*.json'))
         paths += list((ROOT/'code').glob('*.py'))
         for p in paths:
             if p.is_file(): archive.write(p,'stage_3/'+p.relative_to(ROOT).as_posix())

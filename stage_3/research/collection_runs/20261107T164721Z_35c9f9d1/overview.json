@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-11-07T16:47:22.325774+00:00",
+  "companies": [
+    {
+      "company_id": "migran",
+      "name": "Migran",
+      "added_by": null,
+      "pages_attempted": 2,
+      "pages_ok": 0,
+      "sources": [
+        {
+          "url": "https://www.migran.es/",
+          "collected_at": "2026-11-07T16:47:21.684773+00:00",
+          "method": "requests_beautifulsoup_resilient_v2",
+          "robots_cached": false,
+          "robots": {
+            "status": "unavailable",
+            "failure": {
+              "status": "dns_error",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "outcome": "dns_error",
+                  "error_type": "ConnectionError"
+                }
+              ],
+              "next_action": "check_domain_and_canonical_host"
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "outcome": "dns_error",
+                "error_type": "ConnectionError"
+              }
+            ]
+          },
+          "status": "robots_unavailable",
+          "failure_kind": "dns_error",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "dns_error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "next_action": "check_domain_and_canonical_host"
+        },
+        {
+          "url": "https://migran.es/",
+          "collected_at": "2026-11-07T16:47:21.966776+00:00",
+          "method": "requests_beautifulsoup_resilient_v2",
+          "robots_cached": false,
+          "robots": {
+            "status": "unavailable",
+            "failure": {
+              "status": "dns_error",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "outcome": "dns_error",
+                  "error_type": "ConnectionError"
+                }
+              ],
+              "next_action": "check_domain_and_canonical_host"
+            },
+            "attempts": [
+              {
+                "attempt": 1,
+                "outcome": "dns_error",
+                "error_type": "ConnectionError"
+              }
+            ]
+          },
+          "status": "robots_unavailable",
+          "failure_kind": "dns_error",
+          "attempts": [
+            {
+              "attempt": 1,
+              "outcome": "dns_error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "next_action": "check_domain_and_canonical_host"
+        }
+      ],
+      "assortment": [],
+      "channels": [],
+      "content_links": [],
+      "conversion_paths": [],
+      "tone_signals": [],
+      "visual": {
+        "status": "not_visually_reviewed",
+        "image_count_in_html": 0,
+        "note": "HTML metadata cannot establish colours, composition, visual quality or brand consistency."
+      },
+      "coverage": "bounded_official_pages_not_full_site",
+      "new_llm_calls": 0
+    }
+  ],
+  "max_pages_per_company": 1,
+  "method": "Bounded link discovery, lexical candidate observations, exact source excerpts. No LLM calls.",
+  "limits": [
+    "Не полный обход сайтов и площадок.",
+    "Сигналы требуют смысловой проверки; упоминание не доказывает предложение услуги.",
+    "Частота публикаций и эффективность продвижения без корпуса и метрик не определяются."
+  ]
+}

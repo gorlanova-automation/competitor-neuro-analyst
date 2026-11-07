@@ -16,6 +16,25 @@ class Response:
 
 
 class FetchTests(unittest.TestCase):
+    def test_new_runs_cannot_overwrite_previous_sources(self):
+        from market_research import create_run_directory
+        with tempfile.TemporaryDirectory() as folder:
+            first=create_run_directory(folder)
+            (first/'evidence.json').write_text('original')
+            second=create_run_directory(folder)
+            self.assertNotEqual(first,second)
+            self.assertEqual((first/'evidence.json').read_text(),'original')
+
+    def test_recovery_queue_retains_cause_without_counting_success(self):
+        from market_research import recovery_queue
+        queue=recovery_queue([{'company_id':'test','sources':[
+            {'url':'https://example.org/','status':'ok'},
+            {'url':'https://example.org/blog','status':'robots_unavailable',
+             'failure_kind':'timeout','next_action':'browser_review','attempts':[{'attempt':1}]}]}])
+        self.assertEqual(len(queue),1)
+        self.assertEqual(queue[0]['cause'],'timeout')
+        self.assertEqual(queue[0]['next_action'],'browser_review')
+
     def test_transient_timeout_is_retried_and_success_audited(self):
         s=Mock();s.get.side_effect=[requests.Timeout(),Response()]
         response,log=request(s,'https://example.org/',sleep=lambda _:None)

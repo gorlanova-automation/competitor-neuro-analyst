@@ -91,6 +91,8 @@ def fetch(session,url,policies,include_html=False):
     # Let BeautifulSoup honour the actual document encoding, including HTML meta.
     soup=BeautifulSoup(response['body'],'html.parser')
     title=soup.title.get_text(' ',strip=True) if soup.title else ''
+    meta=soup.select_one('meta[name="description"]')
+    description=meta.get('content','') if meta else ''
     headings=[h.get_text(' ',strip=True) for h in soup.select('h1,h2,h3')]
     links=[{'url':urljoin(response['url'],a['href']).split('#')[0],'label':a.get_text(' ',strip=True)[:180]}
            for a in soup.select('a[href]') if urljoin(response['url'],a['href']).startswith('https://')]
@@ -102,7 +104,7 @@ def fetch(session,url,policies,include_html=False):
     if re.search(r'/accounts/login|/login(?:[/?]|$)|consent\.',response['url'],re.I):status='login_required';action='browser_review'
     elif re.search(r'checking your browser|just a moment|verify you are human|captcha',title+' '+text[:500],re.I):status='challenge_page';action='browser_review'
     elif len(text)<200:status='render_required';action='browser_review'
-    page={**result,'status':status,'title':title,'headings':headings,'text':text,
+    page={**result,'status':status,'title':title,'description':description,'headings':headings,'text':text,
         'sha256_text':hashlib.sha256(text.encode()).hexdigest(),'links':links,'image_metadata':images,
         'video_elements':videos,'next_action':action,'quality':'text_received_not_semantically_verified' if status=='ok' else 'not_research_content'}
     if include_html:page['html']=response['body']

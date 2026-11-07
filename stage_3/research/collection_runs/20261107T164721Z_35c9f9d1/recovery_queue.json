@@ -1,0 +1,30 @@
+[
+  {
+    "company_id": "migran",
+    "url": "https://www.migran.es/",
+    "status": "robots_unavailable",
+    "cause": "dns_error",
+    "next_action": "check_domain_and_canonical_host",
+    "attempts": [
+      {
+        "attempt": 1,
+        "outcome": "dns_error",
+        "error_type": "ConnectionError"
+      }
+    ]
+  },
+  {
+    "company_id": "migran",
+    "url": "https://migran.es/",
+    "status": "robots_unavailable",
+    "cause": "dns_error",
+    "next_action": "check_domain_and_canonical_host",
+    "attempts": [
+      {
+        "attempt": 1,
+        "outcome": "dns_error",
+        "error_type": "ConnectionError"
+      }
+    ]
+  }
+]

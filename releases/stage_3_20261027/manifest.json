@@ -1,0 +1,23 @@
+{
+  "version": "stage_3_20261027",
+  "files": [
+    {
+      "file": "Этап_3_Прототип_нейроаналитика.docx",
+      "sha256": "130ceef323c5a6692f20e5ae4168b3a72100c5de66d6c1e1818b805812c04270",
+      "bytes": 109572
+    },
+    {
+      "file": "Этап_3_код_и_результаты.zip",
+      "sha256": "470e1b39f37ac5fcc28ecec889a6cee36f12d08e72b6d0c6b59dc7241b6bd08e",
+      "bytes": 763325
+    },
+    {
+      "file": "Этап_3_прототип_нейроаналитика.ipynb",
+      "sha256": "291bace415cc564b533bdb7ef5b30008430ee4e03fe95d1df3fe339f2142ffa1",
+      "bytes": 520905
+    }
+  ],
+  "source": "Original validated submission artifacts; not regenerated with current code.",
+  "colab": "https://colab.research.google.com/drive/17AaYUf-wWWAy2pneSUzUS_RZotlAU5Xn",
+  "limits": "Original pilot: 2 companies, 6 criteria, 13 observations, 3 hypotheses. Later broad market research is separate."
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://www.migran.es/",
+    "collected_at": "2026-11-07T16:47:21.684773+00:00",
+    "method": "requests_beautifulsoup_resilient_v2",
+    "robots_cached": false,
+    "robots": {
+      "status": "unavailable",
+      "failure": {
+        "status": "dns_error",
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "dns_error",
+            "error_type": "ConnectionError"
+          }
+        ],
+        "next_action": "check_domain_and_canonical_host"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "dns_error",
+          "error_type": "ConnectionError"
+        }
+      ]
+    },
+    "status": "robots_unavailable",
+    "failure_kind": "dns_error",
+    "attempts": [
+      {
+        "attempt": 1,
+        "outcome": "dns_error",
+        "error_type": "ConnectionError"
+      }
+    ],
+    "next_action": "check_domain_and_canonical_host"
+  },
+  {
+    "url": "https://migran.es/",
+    "collected_at": "2026-11-07T16:47:21.966776+00:00",
+    "method": "requests_beautifulsoup_resilient_v2",
+    "robots_cached": false,
+    "robots": {
+      "status": "unavailable",
+      "failure": {
+        "status": "dns_error",
+        "attempts": [
+          {
+            "attempt": 1,
+            "outcome": "dns_error",
+            "error_type": "ConnectionError"
+          }
+        ],
+        "next_action": "check_domain_and_canonical_host"
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "dns_error",
+          "error_type": "ConnectionError"
+        }
+      ]
+    },
+    "status": "robots_unavailable",
+    "failure_kind": "dns_error",
+    "attempts": [
+      {
+        "attempt": 1,
+        "outcome": "dns_error",
+        "error_type": "ConnectionError"
+      }
+    ],
+    "next_action": "check_domain_and_canonical_host"
+  }
+]

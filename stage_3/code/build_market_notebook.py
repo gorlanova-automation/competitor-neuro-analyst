@@ -17,6 +17,7 @@ def build():
         for p in paths:
             if p.is_file():archive.write(p,'stage_3/'+p.relative_to(ROOT).as_posix())
         for p in (ROOT.parent/'app').glob('*.py'):archive.write(p,'app/'+p.name)
+        for p in (ROOT.parent/'stage_4').glob('*.py'):archive.write(p,'stage_4/'+p.name)
     packed=lzma.compress(payload.getvalue());encoded=base64.b64encode(packed).decode();cells=[]
     def md(s):cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(True)})
     def code(s):cells.append({'cell_type':'code','metadata':{'cellView':'form'},'source':s.splitlines(True),'outputs':[],'execution_count':None})

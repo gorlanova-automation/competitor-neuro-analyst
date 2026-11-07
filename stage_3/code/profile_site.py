@@ -18,35 +18,15 @@ AGENT = 'CompetitorResearchBot/1.0'
 
 
 def capture(url):
+    from resilient_fetch import fetch
     parts = urlsplit(url)
     if parts.scheme != 'https' or not parts.hostname or parts.username or parts.password:
         raise ValueError('A public HTTPS URL without credentials is required')
     session = requests.Session()
     session.headers['User-Agent'] = AGENT
-    policy = session.get(f'https://{parts.netloc}/robots.txt', timeout=30)
-    if policy.status_code == 200:
-        robots = RobotFileParser()
-        robots.parse(policy.text.splitlines())
-        if not robots.can_fetch(AGENT, url): raise ValueError('robots_disallowed')
-    elif policy.status_code not in (404, 410):
-        raise ValueError('robots_unavailable')
-    response = session.get(url, timeout=45)
-    response.raise_for_status()
-    if 'html' not in response.headers.get('content-type', '').lower(): raise ValueError('not_html')
-    response.encoding = response.apparent_encoding or 'utf-8'
-    soup = BeautifulSoup(response.text, 'html.parser')
-    title = soup.title.get_text(' ', strip=True) if soup.title else parts.hostname
-    meta = soup.select_one('meta[name="description"]')
-    description = meta.get('content', '') if meta else ''
-    headings = [h.get_text(' ', strip=True) for h in soup.select('h1,h2,h3')]
-    for tag in soup(['script', 'style', 'noscript', 'svg', 'template']): tag.decompose()
-    text = re.sub(r'\s+', ' ', soup.get_text(' ', strip=True)).strip()
-    if len(text) < 200: raise ValueError('Insufficient server HTML; rendered capture needs review')
-    return {'status': 'ok', 'requested_url': url, 'final_url': response.url, 'title': title,
-            'description': description, 'headings': headings, 'text': text,
-            'collected_at': datetime.now(timezone.utc).isoformat(),
-            'http_status': response.status_code, 'method': 'python_requests_beautifulsoup',
-            'sha256_text': hashlib.sha256(text.encode()).hexdigest()}
+    source=fetch(session,url,{})
+    if source['status']!='ok':raise ValueError(source['status'])
+    return {**source,'requested_url':url}
 
 
 def draft_profile(source):

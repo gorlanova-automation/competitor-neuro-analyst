@@ -8,6 +8,7 @@ import concurrent.futures
 import hashlib
 import json
 import re
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urldefrag
@@ -111,10 +112,34 @@ def collect_company(company,max_pages,out):
         'coverage':'bounded_official_pages_not_full_site','new_llm_calls':0}
 
 
+def recovery_queue(results):
+    """Keep collection failures separate from evidence of absent activity."""
+    return [{'company_id':company['company_id'],'url':source.get('url'),
+             'status':source['status'],'cause':source.get('failure_kind',source['status']),
+             'next_action':source.get('next_action') or 'review_source_and_retry',
+             'attempts':source.get('attempts',[])}
+            for company in results for source in company['sources'] if source['status']!='ok']
+
+
+def create_run_directory(parent):
+    out=Path(parent)/(datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'_'+uuid.uuid4().hex[:8])
+    out.mkdir(parents=True,exist_ok=False)
+    return out
+
+
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--max-pages',type=int,default=4);args=parser.parse_args()
-    out=ROOT/'research/market_20261105';out.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--max-pages',type=int,default=4)
+    parser.add_argument('--output-root',type=Path,default=ROOT/'research/collection_runs')
+    parser.add_argument('--company',action='append',help='Company ID; repeat to select several companies')
+    args=parser.parse_args()
+    if not 1<=args.max_pages<=30:parser.error('--max-pages must be between 1 and 30')
     companies=json.loads((ROOT/'input/companies.json').read_text(encoding='utf-8'))
+    if args.company:
+        unknown=set(args.company)-{c['id'] for c in companies}
+        if unknown:parser.error('Unknown company IDs: '+', '.join(sorted(unknown)))
+        companies=[c for c in companies if c['id'] in args.company]
+    out=create_run_directory(args.output_root)
+    print('Run directory:',out,flush=True)
     results=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         jobs={pool.submit(collect_company,c,args.max_pages,out):c for c in companies}
@@ -122,6 +147,7 @@ def main():
             result=future.result();results.append(result)
             print(result['name'],result['pages_ok'],'pages;',len(result['channels']),'channels',flush=True)
     results.sort(key=lambda c:next(i for i,x in enumerate(companies) if x['id']==c['company_id']))
+    save(out/'recovery_queue.json',recovery_queue(results))
     save(out/'overview.json',{'generated_at':utc(),'companies':results,'max_pages_per_company':args.max_pages,
          'method':'Bounded link discovery, lexical candidate observations, exact source excerpts. No LLM calls.',
          'limits':['Не полный обход сайтов и площадок.','Сигналы требуют смысловой проверки; упоминание не доказывает предложение услуги.',

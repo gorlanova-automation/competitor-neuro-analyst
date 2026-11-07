@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
 from uuid import UUID, uuid4
+from threading import RLock
 
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse
@@ -17,12 +18,23 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 PROJECT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT / 'stage_3' / 'code'))
 import analyst
+from stage_4.workflow import run_project, WorkflowError
 
 
 class RunRequest(BaseModel):
     model_config = ConfigDict(extra='forbid')
     country: Literal['Portugal', 'Spain'] = 'Portugal'
     competitors: list[str] | None = Field(default=None, max_length=100)
+
+
+class ProjectRequest(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    action: Literal['start','confirm_profile','search','confirm_competitors','collect']='start'
+    website_url: str=Field(default='',max_length=2000)
+    profile: dict[str,str] | None=None
+    competitor_urls: list[str] | None=Field(default=None,max_length=10)
+    uploads: dict[str,dict[str,str]] | None=None
+    max_pages: int=Field(default=4,ge=1,le=8)
 
 
 def now():
@@ -34,6 +46,7 @@ def create_app(data_dir=None, stage_root=None):
     stage = Path(stage_root) if stage_root else PROJECT / 'stage_3'
     storage.mkdir(parents=True, exist_ok=True)
     db = storage / 'history.sqlite3'
+    project_lock=RLock()
     @contextmanager
     def connect():
         conn = sqlite3.connect(db, timeout=30)
@@ -69,7 +82,41 @@ def create_app(data_dir=None, stage_root=None):
 
     @api.get('/health')
     def health():
-        return {'status': 'ok', 'mode': 'offline', 'live_llm_enabled': False}
+        return {'status': 'ok', 'mode': 'local_application', 'live_llm_enabled': False,'workflow_available':True}
+
+    def project_action(body,project_id=None):
+        try:
+            with project_lock:
+                return run_project(**body.model_dump(),output_dir=storage/'projects',project_id=project_id)
+        except WorkflowError as error:
+            raise HTTPException(422,str(error)) from None
+        except Exception:
+            raise HTTPException(500,'Операция не завершена. Предыдущие результаты сохранены; проверьте данные и подключение.') from None
+
+    @api.post('/projects',status_code=201)
+    def start_project(body:ProjectRequest):
+        if body.action!='start':raise HTTPException(422,'Новый проект начинается с действия start.')
+        return project_action(body)
+
+    @api.get('/projects')
+    def project_history():
+        return [json.loads(p.read_text(encoding='utf-8')) for p in sorted((storage/'projects').glob('*/state.json'),reverse=True)]
+
+    @api.get('/projects/{project_id}')
+    def project_detail(project_id:UUID):
+        try:return run_project(project_id=str(project_id),output_dir=storage/'projects',action='read')
+        except WorkflowError as error:raise HTTPException(404,str(error)) from None
+
+    @api.post('/projects/{project_id}')
+    def advance_project(project_id:UUID,body:ProjectRequest):
+        if body.action=='start':raise HTTPException(422,'Создайте новый проект через /projects.')
+        return project_action(body,str(project_id))
+
+    @api.get('/projects/{project_id}/reports/{report_id}')
+    def project_report(project_id:UUID,report_id:UUID,format:Literal['html','json']='html'):
+        path=storage/'projects'/str(project_id)/'runs'/str(report_id)/('report.html' if format=='html' else 'result.json')
+        if not path.is_file():raise HTTPException(404,'Отчёт не найден.')
+        return FileResponse(path,filename=path.name,content_disposition_type='inline' if format=='html' else 'attachment')
 
     @api.get('/companies')
     def companies():
@@ -128,7 +175,7 @@ def create_app(data_dir=None, stage_root=None):
 
     @api.get('/', include_in_schema=False)
     def home():
-        return RedirectResponse('/stand/stage3.html')
+        return RedirectResponse('/stand/workspace.html')
 
     if (PROJECT/'docs').is_dir():
         api.mount('/stand', StaticFiles(directory=PROJECT/'docs', html=True), name='stand')

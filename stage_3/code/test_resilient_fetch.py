@@ -72,6 +72,10 @@ class FetchTests(unittest.TestCase):
         s=Mock();s.get.side_effect=[Response(404),Response(body=b'<title>Just a moment</title><p>Verify you are human</p>')]
         self.assertEqual(fetch(s,'https://example.org/',{})['status'],'challenge_page')
 
+    def test_search_engine_challenge_is_not_empty_success(self):
+        s=Mock();s.get.side_effect=[Response(404),Response(body=b'<title>DuckDuckGo</title><p>Unfortunately, bots use DuckDuckGo too. Please complete the following challenge. Select all squares containing a duck.</p>')]
+        self.assertEqual(fetch(s,'https://example.org/',{})['status'],'challenge_page')
+
     def test_login_redirect_is_not_a_public_feed(self):
         s=Mock();s.get.side_effect=[Response(404),Response(url='https://example.org/accounts/login/')]
         self.assertEqual(fetch(s,'https://example.org/',{})['status'],'login_required')

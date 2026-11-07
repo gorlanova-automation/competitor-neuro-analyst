@@ -73,14 +73,19 @@ def draft(source):
     return {'company_name':re.split(r'[|·—]',title)[0].strip(),
             'summary':source.get('description') or source['text'][:350],
             'offering':source.get('headings',[])[:12],
-            'market_scope':'','search_terms':source.get('description') or title,
+            'market_scope':'','search_terms':' '.join(source.get('headings',[])[:2])[:180] or source.get('description') or title,
             'source_sha256':source['sha256_text'],'method':'metadata_draft_requires_confirmation'}
 
 
 def queries(profile):
     terms=profile.get('search_terms') or profile['company_name']
     scope=profile.get('market_scope','')
-    return [f'{terms} {scope} competitors',f'{terms} {scope} альтернативы',f'{terms} {scope} услуги цены']
+    words=re.findall(r'[\w-]+',terms+' '+scope,flags=re.UNICODE)
+    unique=[];seen=set()
+    for word in words:
+        if word.casefold() not in seen:unique.append(word);seen.add(word.casefold())
+    base=' '.join(unique[:14])
+    return [base+' компании',base+' альтернативы',base+' услуги цены']
 
 
 def capture_source(url,session,policies,uploads):
@@ -110,12 +115,13 @@ def discover(profile):
             if target not in seen:
                 seen.add(target);candidates.append({'url':target,'label':link['label'],'added_by':'script_search','query':query})
             if len(candidates)==10:break
-    return {'query':query,'engine_url':source['url'],'status':source['status'],'candidates':candidates,
+    status=source['status'] if source['status']!='ok' or candidates else 'no_candidates'
+    return {'query':query,'engine_url':source['url'],'status':status,'candidates':candidates,'source':source,
             'collected_at':timestamp(),'limits':'Результаты поиска — кандидаты, их соответствие нише подтверждает пользователь.'}
 
 
 def collect_site(url,session,uploads,max_pages=4):
-    policies={};queue=[url];seen=set();sources=[]
+    policies={};queue=[url]+[u for u in uploads if u!=url and urlsplit(u).hostname==urlsplit(url).hostname];seen=set();sources=[]
     while queue and len(sources)<max_pages*3 and sum(p['status']=='ok' for p in sources)<max_pages:
         target=queue.pop(0)
         if target in seen:continue
@@ -153,7 +159,8 @@ def observations(sources):
             for match in matches:
                 excerpt=source['text'][max(0,match.start()-60):min(len(source['text']),match.end()+180)]
                 rows.append({'category':category,'quote':excerpt,'url':source.get('final_url',source['url']),
-                             'source_sha256':source['sha256_text'],'method':'lexical_signal_requires_review'})
+                             'source_sha256':source['sha256_text'],'source_method':source.get('method'),
+                             'collected_at':source.get('collected_at'),'method':'lexical_signal_requires_review'})
     return rows
 
 
@@ -202,7 +209,9 @@ def compare(companies,profile):
                 if any(hostname==h or hostname.endswith('.'+h) for h in ['t.me','instagram.com','facebook.com','youtube.com','linkedin.com','tiktok.com','vk.com']):
                     channels[link['url']]={'url':link['url'],'found_on':source.get('final_url',source['url']),
                                          'status':'link_found_content_not_collected'}
-        result.append({'url':company['url'],'role':company['role'],'pages_ok':sum(s['status']=='ok' for s in sources),
+        result.append({'url':company['url'],'name':next((s.get('title') for s in sources if s['status']=='ok' and s.get('title')),company['url']),
+                       'role':company['role'],'added_by':company.get('added_by','own_site'),
+                       'pages_ok':sum(s['status']=='ok' and s.get('source_kind')!='publication' for s in sources),
                        'evidence':evidence,'dimensions':{d:sum(e['category']==d for e in evidence) for d in dimensions},
                        'channels':list(channels.values()),'publication_samples':company.get('publication_samples',[]),
                        'posts_collected':sum(s.get('source_kind')=='publication' for s in sources),
@@ -234,10 +243,19 @@ def render_report(result):
         for hypothesis in semantic['hypotheses']:parts.append('<p>'+esc(hypothesis['action'])+' · основания: '+esc(hypothesis['evidence_indexes'])+'</p>')
         for missing in semantic['missing_evidence']:parts.append('<p>Не хватает данных: '+esc(missing)+'</p>')
     for company in result['companies']:
-        parts.append('<article><h2>'+esc(company['url'])+'</h2><p>Получено страниц: '+str(company['pages_ok'])+'</p>')
+        parts.append('<article><h2>'+esc(company.get('name',company['url']))+'</h2><p>'+('Своя компания' if company['role']=='own' else 'Конкурент')+' · '+esc(company['url'])+'</p><p>Получено страниц сайта: '+str(company['pages_ok'])+'</p>')
+        if company.get('added_by')=='user_added':parts.append('<p>Конкурент добавлен пользователем.</p>')
+        elif company.get('added_by')=='script_search_confirmed':parts.append('<p>Кандидат найден скриптом и подтверждён пользователем.</p>')
         for failure in company['failures']:parts.append('<p>Не получено: '+esc(failure['url'])+' — '+esc(failure['status'])+'</p>')
-        for evidence in company['evidence']:
-            parts.append('<p>'+esc(evidence['category'])+'</p><blockquote>'+esc(evidence['quote'])+'</blockquote><a href="'+esc(evidence['url'])+'" rel="noopener noreferrer">Источник</a><br><small>SHA256: '+esc(evidence['source_sha256'])+'</small>')
+        categories={'assortment':'Ассортимент и предложение','pricing':'Цены и условия','positioning':'Позиционирование и аргументы','conversion':'Переходы к обращению','editorial':'Редакционные материалы'}
+        for category,label in categories.items():
+            evidence_rows=[e for e in company['evidence'] if e['category']==category]
+            parts.append('<details'+(' open' if category=='assortment' else '')+'><summary>'+label+' · цитат: '+str(len(evidence_rows))+'</summary>')
+            if not evidence_rows:parts.append('<p>В полученной выборке не выделено подходящих цитат. Это не означает отсутствия предложения.</p>')
+            for evidence in evidence_rows:
+                origin='Текст предоставлен пользователем' if evidence.get('source_method')=='user_uploaded_text' else 'Сохранённый результат сбора'
+                parts.append('<blockquote>'+esc(evidence['quote'])+'</blockquote><a href="'+esc(evidence['url'])+'" rel="noopener noreferrer">Открыть источник</a><p><small>'+origin+' · '+esc(evidence.get('collected_at',''))+'</small></p><details><summary>Проверить происхождение цитаты</summary><small>SHA256 сохранённого текста: '+esc(evidence['source_sha256'])+'</small></details>')
+            parts.append('</details>')
         if company['channels']:parts.append('<h3>Найденные площадки (содержимое не прочитано)</h3>')
         for channel in company['channels']:parts.append('<p><a href="'+esc(channel['url'])+'">'+esc(channel['url'])+'</a></p>')
         parts.append('<p>Реально получено публикаций: '+str(company.get('posts_collected',0))+'. Ограниченное превью не позволяет оценить частоту.</p>')
@@ -270,7 +288,7 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             source=capture_source(website_url,session,{},uploads or {})
         save(folder/'own_source.json',source)
         state={'id':identifier,'url':website_url,'created_at':timestamp(),'status':'profile_draft' if source['status']=='ok' else 'source_unavailable',
-               'profile':draft(source) if source['status']=='ok' else None,'source_status':source['status'],
+               'profile':draft(source) if source['status']=='ok' else None,'source_status':source['status'],'source_method':source.get('method'),
                'next_action':None if source['status']=='ok' else source.get('next_action'),'competitors':[],
                'profile_confirmed':False,'competitors_confirmed':False,'events':[]}
     else:
@@ -304,7 +322,14 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             companies=json.loads((previous/'sources.json').read_text(encoding='utf-8'))
             result=json.loads((previous/'result.json').read_text(encoding='utf-8'))
             run_id=str(uuid4());run_folder=folder/'runs'/run_id;run_folder.mkdir(parents=True)
-            semantic=analyze(companies,state['profile'],api_key,run_folder/'model',model)
+            try:semantic=analyze(companies,state['profile'],api_key,run_folder/'model',model)
+            except WorkflowError:
+                attempted=(run_folder/'model/request.json').is_file()
+                state['last_model_attempt']={'run_id':run_id,'status':'quarantined','request_prepared':attempted,
+                                             'actual_billed_amount':None,'at':timestamp()}
+                state['events'].append({'action':'analyze_failed','at':timestamp(),'run_id':run_id})
+                save(folder/'state.json',state)
+                raise
             result.update(semantic=semantic,run_id=run_id,new_llm_calls=1,api_cost=None)
             save(run_folder/'sources.json',companies);save(run_folder/'result.json',result)
             (run_folder/'report.html').write_bytes(render_report(result).encode('utf-8'))

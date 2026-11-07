@@ -102,7 +102,7 @@ def fetch(session,url,policies,include_html=False):
     text=re.sub(r'\s+',' ',soup.get_text(' ',strip=True)).strip()
     status='ok';action=None
     if re.search(r'/accounts/login|/login(?:[/?]|$)|consent\.',response['url'],re.I):status='login_required';action='browser_review'
-    elif re.search(r'checking your browser|just a moment|verify you are human|captcha',title+' '+text[:500],re.I):status='challenge_page';action='browser_review'
+    elif re.search(r'checking your browser|just a moment|verify you are human|captcha|complete the following challenge|select all squares|unfortunately,? bots',title+' '+text[:700],re.I):status='challenge_page';action='browser_review'
     elif len(text)<200:status='render_required';action='browser_review'
     page={**result,'status':status,'title':title,'description':description,'headings':headings,'text':text,
         'sha256_text':hashlib.sha256(text.encode()).hexdigest(),'links':links,'image_metadata':images,

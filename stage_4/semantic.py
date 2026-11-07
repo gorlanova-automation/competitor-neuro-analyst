@@ -15,7 +15,8 @@ SYSTEM='''Ты аналитик предложения и маркетингов
 темы и тон публикаций. Наличие ссылки на площадку не означает чтение её публикаций.
 Визуальные свойства без реально переданных изображений не оценивай. Частоту, охват, конверсию и качество услуг не выдумывай.
 Каждое наблюдение содержит точную непрерывную цитату quote из текста source_id, краткий summary и category.
-Категории: assortment, audience, positioning, promotion, content, tone, pricing. Не более 12 наблюдений.
+Категории: assortment, audience, positioning, promotion, content, tone, pricing. Не более 8 наблюдений.
+Цитата — от 15 до 140 символов, summary — до 200 символов. Каждое наблюдение должно быть содержательным.
 Выводы ограничивай полученным корпусом. Отсутствие цитат не означает отсутствие услуги или активности.
 Рекламные обещания обозначай как заявления компании, не подтверждённые результаты.
 Дай до трёх гипотез для своей компании: действие для проверки, evidence_indexes — индексы наблюдений (с нуля).
@@ -73,7 +74,7 @@ def analyze(companies,profile,api_key,output_dir='var/model_runs',model='openai/
     out=Path(output_dir);out.mkdir(parents=True,exist_ok=False)
     body={'model':model,'messages':[{'role':'system','content':SYSTEM},
           {'role':'user','content':json.dumps({'profile':profile,'sources':sources},ensure_ascii=False)}],
-          'max_completion_tokens':2500,'response_format':{'type':'json_object'}}
+          'max_completion_tokens':2500,'reasoning_effort':'none','response_format':{'type':'json_object'}}
     save(out/'request.json',body)
     started=timestamp()
     try:
@@ -96,5 +97,5 @@ def analyze(companies,profile,api_key,output_dir='var/model_runs',model='openai/
              'request_sha256':digest(json.dumps(body,ensure_ascii=False)), 'transport':'injected_test' if transport else 'proxyapi_live'})
         return result
     except Exception as error:
-        save(out/'failure.json',{'status':'quarantined','error_type':type(error).__name__,'attempts':1,'model':model,'started_at':started})
+        save(out/'failure.json',{'status':'quarantined','error_type':type(error).__name__,'http_status':getattr(error,'code',None),'attempts':1,'model':model,'started_at':started})
         raise WorkflowError('Ответ модели не принят. Предыдущий отчёт сохранён, автоматического повторного списания нет.') from None

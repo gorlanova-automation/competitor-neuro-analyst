@@ -36,9 +36,13 @@ def launch_colab(output_dir='var/projects'):
     state=run_project(project_id=state['id'],action='collect',uploads=uploads,output_dir=output_dir,max_pages=4)
     print('Сбор завершён:',json.dumps(state['report'],ensure_ascii=False))
     if input('Добавить смысловой анализ? Один вызов ProxyAPI, максимум 2500 токенов ответа. да/нет [нет]: ').strip().lower()=='да':
-        from google.colab import userdata
-        key=userdata.get('PROXYAPI_KEY')
-        try:state=run_project(project_id=state['id'],action='analyze',api_key=key,output_dir=output_dir)
+        key=None
+        try:
+            from google.colab import userdata
+            key=userdata.get('PROXYAPI_KEY')
+            state=run_project(project_id=state['id'],action='analyze',api_key=key,output_dir=output_dir)
+        except Exception:
+            print('Модельный шаг не завершён. Проверьте подключение Colab и доступ к секрету. Отчёт сбора сохранён; автоматического повторного запроса нет.')
         finally:key=None
     folder=Path(output_dir)/state['id']/'runs'/state['report']['run_id']
     display(HTML((folder/'report.html').read_text(encoding='utf-8')))

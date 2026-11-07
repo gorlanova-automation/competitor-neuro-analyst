@@ -22,6 +22,8 @@ class SemanticTests(unittest.TestCase):
             out=Path(folder)/'experiment'
             result=analyze([{'url':'https://example.org/','role':'own','sources':[self.source]}],{},'test-key-do-not-save',out,transport=transport)
             self.assertEqual(len(calls),1);self.assertEqual(result['usage']['total_tokens'],300)
+            self.assertEqual(calls[0]['reasoning_effort'],'none')
+            self.assertEqual(calls[0]['max_completion_tokens'],2500)
             self.assertEqual(result['new_llm_calls'],0)
             for path in out.glob('*.json'):self.assertNotIn('test-key-do-not-save',path.read_text(encoding='utf-8'))
 

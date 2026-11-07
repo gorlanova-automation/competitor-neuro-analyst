@@ -21,18 +21,21 @@ def build(project_root='.',destination='stage_4/Этап_4_приложение.
     with zipfile.ZipFile(payload,'w',zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(set(files)):
             if path.is_file():archive.write(path,path.relative_to(root).as_posix())
-    packed=lzma.compress(payload.getvalue());encoded=base64.b64encode(packed).decode()
+    packed=payload.getvalue();package_hash=hashlib.sha256(packed).hexdigest()
+    packages=root/'stage_4/packages';packages.mkdir(parents=True,exist_ok=True)
+    package=packages/(package_hash+'.zip');package.write_bytes(packed)
     cells=[]
     def md(text):cells.append({'cell_type':'markdown','metadata':{},'source':text.splitlines(True)})
     def code(text):cells.append({'cell_type':'code','metadata':{},'source':text.splitlines(True),'execution_count':None,'outputs':[]})
     md('# Нейро-аналитик конкурентов · финальное приложение\n\nСайт → проверка профиля → подтверждение конкурентов → сбор → проверяемый отчёт. Ни один шаг не утверждает отсутствие услуги из-за ошибки загрузки.\n\nШаги 1–3 проверяют код и воспроизводят сохранённые исследования двух отраслей. **Последняя ячейка запускает новый пользовательский проект через input/upload.** По умолчанию платных вызовов нет. Модель включается только отдельным явным ответом, ключ берётся из Colab Secret `PROXYAPI_KEY`.\n\nОригинальный комплект этапа 3 находится внутри `releases/stage_3_20261027/`, включая Word. Сохранённые снимки и свежий HTTP-сбор — разные режимы.\n\nКод и публичная база: https://github.com/gorlanova-automation/competitor-neuro-analyst .')
-    code('''# 1. Распаковать зафиксированный комплект и установить зависимости
-import base64,hashlib,io,json,lzma,pathlib,sys,zipfile,subprocess
-payload=base64.b64decode("'''+encoded+'''")
-assert hashlib.sha256(payload).hexdigest()=="'''+hashlib.sha256(packed).hexdigest()+'''"
+    code('''#@title 1. Загрузить зафиксированный комплект и установить зависимости
+import hashlib,io,json,pathlib,sys,zipfile,subprocess,urllib.request
+PACKAGE_URL='https://raw.githubusercontent.com/gorlanova-automation/competitor-neuro-analyst/main/stage_4/packages/'''+package.name+'''\x27
+with urllib.request.urlopen(PACKAGE_URL,timeout=60) as response:payload=response.read(15000000)
+assert hashlib.sha256(payload).hexdigest()=="'''+package_hash+'''", 'Package checksum mismatch'
 WORK=pathlib.Path.cwd()/'neuro_analyst_final'
 WORK.mkdir(exist_ok=True)
-with zipfile.ZipFile(io.BytesIO(lzma.decompress(payload))) as archive:
+with zipfile.ZipFile(io.BytesIO(payload)) as archive:
     for name in archive.namelist():
         if not (WORK/name).resolve().is_relative_to(WORK.resolve()):raise ValueError('Unsafe archive path')
     archive.extractall(WORK)

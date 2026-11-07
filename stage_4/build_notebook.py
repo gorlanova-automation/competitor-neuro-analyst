@@ -13,7 +13,8 @@ def build(project_root='.',destination='stage_4/Этап_4_приложение.
     for folder in ['stage_4','app','stage_3/code']:
         files.extend((root/folder).glob('*.py'))
     files.extend([root/'stage_3/config.json',root/'stage_3/code/requirements.txt',root/'app/requirements.txt'])
-    for folder in ['stage_3/input','stage_3/cases/shift','stage_3/research/market_20261105']:
+    files.extend((root/'stage_3/input').rglob('*'))
+    for folder in ['stage_3/cases/shift','stage_3/research/market_20261105']:
         files.extend((root/folder).rglob('*.json'))
     files.extend((root/'releases/stage_3_20261027').glob('*'))
     if (root/'stage_4/experiments.json').is_file():files.append(root/'stage_4/experiments.json')
@@ -21,6 +22,10 @@ def build(project_root='.',destination='stage_4/Этап_4_приложение.
     with zipfile.ZipFile(payload,'w',zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(set(files)):
             if path.is_file():archive.write(path,path.relative_to(root).as_posix())
+    with zipfile.ZipFile(io.BytesIO(payload.getvalue())) as archive:
+        manifest=json.loads(archive.read('stage_3/input/manifest.json'))
+        for item in manifest:
+            assert hashlib.sha256(archive.read('stage_3/'+item['path'])).hexdigest()==item['sha256'],item['path']
     packed=payload.getvalue();package_hash=hashlib.sha256(packed).hexdigest()
     packages=root/'stage_4/packages';packages.mkdir(parents=True,exist_ok=True)
     package=packages/(package_hash+'.zip');package.write_bytes(packed)

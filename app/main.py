@@ -29,12 +29,13 @@ class RunRequest(BaseModel):
 
 class ProjectRequest(BaseModel):
     model_config=ConfigDict(extra='forbid')
-    action: Literal['start','confirm_profile','search','confirm_competitors','collect']='start'
+    action: Literal['start','confirm_profile','search','confirm_competitors','collect','review_analysis']='start'
     website_url: str=Field(default='',max_length=2000)
     profile: dict[str,str] | None=None
-    competitor_urls: list[str] | None=Field(default=None,max_length=10)
+    competitor_urls: list[str] | None=Field(default=None,max_length=20)
     uploads: dict[str,dict[str,str]] | None=None
     max_pages: int=Field(default=4,ge=1,le=8)
+    review: dict | None=None
 
 
 def now():

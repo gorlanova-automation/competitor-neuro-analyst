@@ -11,7 +11,7 @@ from datetime import datetime,timezone
 def validate(project_root='.',destination='stage_4/results/validation.json'):
     root=Path(project_root).resolve();sys.path.insert(0,str(root));sys.path.insert(0,str(root/'stage_3/code'))
     suite=unittest.defaultTestLoader.discover(str(root/'stage_3/code'),pattern='test_*.py')
-    for module in ['stage_4.test_workflow','stage_4.test_semantic','app.test_api','app.test_workflow_api']:
+    for module in ['stage_4.test_workflow','stage_4.test_semantic','stage_4.test_review','app.test_api','app.test_workflow_api']:
         suite.addTests(unittest.defaultTestLoader.loadTestsFromName(module))
     stream=io.StringIO();result=unittest.TextTestRunner(verbosity=2,stream=stream).run(suite)
     release=root/'releases/stage_3_20261027'

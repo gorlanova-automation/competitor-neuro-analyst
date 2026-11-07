@@ -234,13 +234,18 @@ def render_report(result):
            '<p>Автоматическая выборка цитат. Смысловые выводы и визуал требуют проверки.</p><h2>Ограничения</h2><ul>']
     parts.extend('<li>'+esc(limit)+'</li>' for limit in result['limits']);parts.append('</ul>')
     if result.get('semantic'):
-        semantic=result['semantic'];parts.append('<h2>Смысловой анализ модели — черновик для проверки</h2>')
+        semantic=result['semantic'];reviewed=semantic.get('status')=='human_review_recorded'
+        parts.append('<h2>'+('Выводы после проверки' if reviewed else 'Смысловой анализ модели — черновик для проверки')+'</h2>')
+        if reviewed:parts.append('<p>Автор проверки: '+esc(semantic['reviewer'])+'. Принято выводов: '+str(semantic['accepted_findings'])+'. Это решения указанного автора, а не автоматическая оценка модели.</p>')
         by_id={s['source_id']:s for s in semantic['sources']}
-        for finding in semantic['findings']:
+        labels={'assortment':'Ассортимент','audience':'Аудитория','positioning':'Позиционирование','promotion':'Продвижение','content':'Публикации','tone':'Тон','pricing':'Цены и условия'}
+        for index,finding in enumerate(semantic['findings']):
+            if finding.get('review_status')=='reject':continue
             source=by_id[finding['source_id']]
-            parts.append('<h3>'+esc(finding['category'])+'</h3><p>'+esc(finding['summary'])+'</p><blockquote>'+esc(finding['quote'])+'</blockquote><a href="'+esc(source['url'])+'">Источник</a>')
+            parts.append('<h3>F'+str(index)+' · '+esc(labels.get(finding['category'],finding['category']))+'</h3><p>'+esc(finding['summary'])+'</p><blockquote>'+esc(finding['quote'])+'</blockquote><a href="'+esc(source['url'])+'">Источник</a>')
         parts.append('<h3>Гипотезы для проверки</h3>')
-        for hypothesis in semantic['hypotheses']:parts.append('<p>'+esc(hypothesis['action'])+' · основания: '+esc(hypothesis['evidence_indexes'])+'</p>')
+        for hypothesis in semantic['hypotheses']:
+            if hypothesis.get('review_status')!='reject':parts.append('<p>'+esc(hypothesis['action'])+' · основания: '+esc(hypothesis['evidence_indexes'])+'</p>')
         for missing in semantic['missing_evidence']:parts.append('<p>Не хватает данных: '+esc(missing)+'</p>')
     for company in result['companies']:
         parts.append('<article><h2>'+esc(company.get('name',company['url']))+'</h2><p>'+('Своя компания' if company['role']=='own' else 'Конкурент')+' · '+esc(company['url'])+'</p><p>Получено страниц сайта: '+str(company['pages_ok'])+'</p>')
@@ -265,7 +270,7 @@ def render_report(result):
 
 
 def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var/projects',project_id=None,
-                action='start',uploads=None,max_pages=4,api_key=None,model='openai/gpt-6-luna'):
+                action='start',uploads=None,max_pages=4,api_key=None,model='openai/gpt-6-luna',review=None):
     """Single orchestrator. Every action receives its inputs explicitly.
 
     start → confirm_profile → search (optional) → confirm_competitors → collect.
@@ -273,7 +278,7 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
     """
     uploads={public_url(url):value for url,value in (uploads or {}).items()}
     if not 1<=max_pages<=8:raise WorkflowError('Лимит страниц должен быть от 1 до 8.')
-    if action not in ('start','confirm_profile','search','confirm_competitors','collect','read','analyze'):
+    if action not in ('start','confirm_profile','search','confirm_competitors','collect','read','analyze','review_analysis'):
         raise WorkflowError('Неизвестное действие.')
     if project_id is not None:
         try:project_id=str(UUID(str(project_id)))
@@ -307,7 +312,7 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             search=discover(state['profile']);save(folder/'search.json',search);state['search']=search
         elif action=='confirm_competitors':
             if not state['profile_confirmed']:raise WorkflowError('Сначала подтвердите профиль.')
-            if not competitor_urls or len(competitor_urls)>10:raise WorkflowError('Укажите от 1 до 10 конкурентов.')
+            if not competitor_urls or len(competitor_urls)>20:raise WorkflowError('Укажите от 1 до 20 конкурентов.')
             competitors=list(dict.fromkeys(public_url(url.strip()) for url in competitor_urls))
             own_host=(urlsplit(state['url']).hostname or '').removeprefix('www.')
             if any((urlsplit(u).hostname or '').removeprefix('www.')==own_host for u in competitors):
@@ -315,6 +320,20 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             scripted={c['url'] for c in state.get('search',{}).get('candidates',[])}
             state['competitors']=[{'url':u,'added_by':'script_search_confirmed' if u in scripted else 'user_added'} for u in competitors]
             state.update(competitors_confirmed=True,status='ready_to_collect');state.pop('report',None)
+        elif action=='review_analysis':
+            from stage_4.review import apply_review
+            if not state.get('report'):raise WorkflowError('Сначала получите отчёт.')
+            previous=folder/'runs'/state['report']['run_id']
+            source_bytes=(previous/'result.json').read_bytes()
+            result=json.loads(source_bytes)
+            companies=json.loads((previous/'sources.json').read_text(encoding='utf-8'))
+            result=apply_review(result,review,hashlib.sha256(source_bytes).hexdigest(),companies)
+            run_id=str(uuid4());run_folder=folder/'runs'/run_id;run_folder.mkdir(parents=True)
+            result.update(run_id=run_id,new_llm_calls=0,generated_at=timestamp())
+            save(run_folder/'result.json',result);save(run_folder/'sources.json',companies);save(run_folder/'review.json',review)
+            (run_folder/'report.html').write_bytes(render_report(result).encode('utf-8'))
+            state['report']={**state['report'],'run_id':run_id,'new_llm_calls':0,'semantic_status':result['semantic']['status'],
+                             'accepted_findings':result['semantic']['accepted_findings'],'reviewer':result['semantic']['reviewer']}
         elif action=='analyze':
             from stage_4.semantic import analyze
             if not state.get('report'):raise WorkflowError('Сначала соберите данные.')
@@ -330,7 +349,8 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
                 state['events'].append({'action':'analyze_failed','at':timestamp(),'run_id':run_id})
                 save(folder/'state.json',state)
                 raise
-            result.update(semantic=semantic,run_id=run_id,new_llm_calls=1,api_cost=None)
+            result.update(semantic=semantic,run_id=run_id,new_llm_calls=1,api_cost=None,
+                          analysis_method='Текстовая выборка и отдельно выполненный модельный черновик; требуется проверка смысла.')
             save(run_folder/'sources.json',companies);save(run_folder/'result.json',result)
             (run_folder/'report.html').write_bytes(render_report(result).encode('utf-8'))
             state['report']={**state['report'],'run_id':run_id,'new_llm_calls':1,'api_cost':None,'semantic_status':semantic['status']}

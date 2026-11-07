@@ -108,6 +108,12 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(search['status'],'no_candidates')
         self.assertEqual(search['source']['text'],'No results')
 
+    def test_all_eleven_agreed_competitors_fit_in_one_project(self):
+        identifier=self.confirmed()
+        urls=['https://rival'+str(i)+'.example/' for i in range(11)]
+        state=self.run_action(project_id=identifier,action='confirm_competitors',competitor_urls=urls)
+        self.assertEqual(len(state['competitors']),11)
+
     def test_publications_are_messages_not_social_links(self):
         from stage_4.workflow import sample_publications
         from unittest.mock import Mock

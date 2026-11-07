@@ -1,0 +1,1473 @@
+{
+  "generated_at": "2026-11-07T19:12:57.852617+00:00",
+  "profile": {
+    "company_name": "Immigration Relocator",
+    "summary": "Сопровождение релокации: оформление ВНЖ и гражданства, помощь с документами и адаптацией.",
+    "offering": [
+      "Оформляем ВНЖ и гражданство в Португалии, Испании и Франции"
+    ],
+    "market_scope": "Португалия и Испания; русскоязычные частные клиенты",
+    "search_terms": "релокация ВНЖ документы адаптация Португалия Испания",
+    "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+    "method": "metadata_draft_requires_confirmation"
+  },
+  "companies": [
+    {
+      "url": "https://immigration-relocator.com/",
+      "role": "own",
+      "pages_ok": 4,
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "tUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Испания О жизни в Испании ВНЖ без права на работу (No Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Фра",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "o Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ Открытие предприятия (Passeport Talent) ВНЖ Инновационный проект (Passeport Talent) Дополнительные ус",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " ВНЖ Инновационный проект (Passeport Talent) Дополнительные услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О ",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О нас Онлайн-услуги Партнерам Кейсы по странам Головной офис ",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ажданства Парагвай Вануату Сан-Томе и Принсипи О нас Онлайн-услуги Партнерам Кейсы по странам Головной офис Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Страны и программы Испания Воссоединение семьи Дополнительные услуги Golden",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "ой стране Алекс и Ксения — основатели Immigration Relocator Стоимость релокации «под ключ» Узнайте стоимость «под ключ» с учетом всех госпошлин и доп.расходов Сколько человек планируют переезд вместе с вами? Ксения главный иммиграционный эксперт Вос",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "mmigration Relocator Стоимость релокации «под ключ» Узнайте стоимость «под ключ» с учетом всех госпошлин и доп.расходов Сколько человек планируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и вн",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "ие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Р",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "тация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форму вы даете согласие на обработку персональных данных Записаться на консультацию Наши услуги ВНЖ Португалии Все варианты → Digital Nomad Visa – для фрилансеров,ИП,",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "лифицированных специалистов Golden Visa – для инвесторов от €280 000 ВНЖ Испании Все варианты → No Lucrativa – для финансово независимых лиц, без права на работу Digital Nomad Visa – для фрилансеров, ИП, удалённой работы StartUp Visa – для т",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "нируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и внутри страны значительно отличаются. Поэтому советуем подумать об этом вопросе заранее Только я Я и мой супруг/супруга Я, супруг/супруга и",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " источники дохода у вас есть? Ксения главный иммиграционный эксперт Понимаем, что это щепетильный вопрос, но это один самых важных пункт для выбора программы, т.к. они все привязаны к источникам дохода Пассивный доход (аренда, инвестиции, дивиденд",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ачать процесс оформления ВНЖ? Ксения главный иммиграционный эксперт Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше Как можно скорее (в течение месяца) В ближайшие 3–6 месяцев Пока изучаю варианты, не спешу Зависит о",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "я ВНЖ с учетом вашей ситуации Ксения главный иммиграционный эксперт Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время) Ваше имя Телефон привяза",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ндации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу. Какая Вам нужна консультация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форм",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "tor — ВНЖ и гражданство за 2-6 месяцев по всему миру Онлайн-консультация Связаться в What's App +351 912 858 635 Связаться в Telegram +34 662 675 462 En Av. Elias Garcia 76 1G, 1050-100 Лиссабон En Онлайн-консультация Av. Elias Garcia 76 1G, 1050-100",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": " 462 En Av. Elias Garcia 76 1G, 1050-100 Лиссабон En Онлайн-консультация Av. Elias Garcia 76 1G, 1050-100 Лиссабон Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "овной офис Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Страны и программы Испания Воссоединение семьи Дополнительные услуги Golden Visa StartUp Visa Дополнительные услуги Visa Digital Nomad HQA Visa D7 ВНЖ без права на работу (No Lu",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "главный иммиграционный эксперт Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше Как можно скорее (в течение месяца) В ближайшие 3–6 месяцев Пока изучаю варианты, не спешу Зависит от стоимости и условий Спасибо за от",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ве ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время) Ваше имя Телефон привязанный к мессенджеру Отправляя заявки, я даю согласие с политикой конфиденциальности Далее Отправить Шаг: Пол",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "с нашими основателями в Instagram Видео отзыв Наши партнеры Стать партнёром Частые вопросы Кого можно включить в подачу на паспорт или резидентство? Многие из наших иммиграционных программ предусматривают право на получение паспорта для всей сем",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": ", получение второго гражданства означает потерю возможности стать президентом или поступить на государственную службу, но при этом человек может претендовать на получение льгот, голосовать на выборах и пользоваться другими правами. Важно отметит",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "жет меняться, и приведенная здесь информация является общим руководством к действию. В каждой стране действуют свои правила и нормы, поэтому очень важно понимать налоговые последствия наличия нескольких гражданств в контексте конкретных стран. Консул",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": " Связаться через WhatsApp Связаться через WhatsApp Полезные статьи Все статьи Все статьи Записаться на консультацию Предпочитаете мессенджер? Специалист свяжется с вами в течение 10 минут Контакты Режим работы: Пн–Пт, 10:00–19:00 по западно-евро",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "через WhatsApp Связаться через WhatsApp Полезные статьи Все статьи Все статьи Записаться на консультацию Предпочитаете мессенджер? Специалист свяжется с вами в течение 10 минут Контакты Режим работы: Пн–Пт, 10:00–19:00 по западно-европейскому вр",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Дополнительные услуги Португалии Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "tUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Испания О жизни в Испании ВНЖ без права на работу (No Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Фра",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "o Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ Открытие предприятия (Passeport Talent) ВНЖ Инновационный проект (Passeport Talent) Дополнительные ус",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " ВНЖ Инновационный проект (Passeport Talent) Дополнительные услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О ",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О нас Онлайн-услуги Партнерам Кейсы по странам Головной офис ",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "тво Популярные услуги Дистанционное открытие компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15 дней Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста €1 100,00 Выбрать Срок: 6-8 мес. Продление ВНЖ €500,00 Выбрать ",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "ионную службу (AIMA) при отсутствии слотов с помощью юриста €1 100,00 Выбрать Срок: 6-8 мес. Продление ВНЖ €500,00 Выбрать Иммиграционная консультация €150,00 Выбрать Консультация по налогообложению в Португалии €170,00 Выбрать Дистанционное",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "мощью юриста €1 100,00 Выбрать Срок: 6-8 мес. Продление ВНЖ €500,00 Выбрать Иммиграционная консультация €150,00 Выбрать Консультация по налогообложению в Португалии €170,00 Выбрать Дистанционное оформление налогового номера (NIF) €150,00 Выб",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": ". Продление ВНЖ €500,00 Выбрать Иммиграционная консультация €150,00 Выбрать Консультация по налогообложению в Португалии €170,00 Выбрать Дистанционное оформление налогового номера (NIF) €150,00 Выбрать Срок: 5 дней Дистанционное открытие ИП ",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "150,00 Выбрать Консультация по налогообложению в Португалии €170,00 Выбрать Дистанционное оформление налогового номера (NIF) €150,00 Выбрать Срок: 5 дней Дистанционное открытие ИП без IBAN €270,00 Выбрать Срок: 10 дней Открытие банковского с",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "нируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и внутри страны значительно отличаются. Поэтому советуем подумать об этом вопросе заранее Только я Я и мой супруг/супруга Я, супруг/супруга и",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " источники дохода у вас есть? Ксения главный иммиграционный эксперт Понимаем, что это щепетильный вопрос, но это один самых важных пункт для выбора программы, т.к. они все привязаны к источникам дохода Пассивный доход (аренда, инвестиции, дивиденд",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ачать процесс оформления ВНЖ? Ксения главный иммиграционный эксперт Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше Как можно скорее (в течение месяца) В ближайшие 3–6 месяцев Пока изучаю варианты, не спешу Зависит о",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "я ВНЖ с учетом вашей ситуации Ксения главный иммиграционный эксперт Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время) Ваше имя Телефон привяза",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ндации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу. Какая Вам нужна консультация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форм",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Португалии Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Исп",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "овной офис Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Страны и программы Испания Воссоединение семьи Дополнительные услуги Golden Visa StartUp Visa Дополнительные услуги Visa Digital Nomad HQA Visa D7 ВНЖ без права на работу (No Lu",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "нтов О нас Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация ВЫ МЕЧТАЕТЕ, МЫ ВОПЛОЩАЕМ В ЖИЗНЬ! Португалия / Дополнительные услуги Дополнительные услуги в Португалии Недвижимость и интеграция Консультации Релокационный процесс Бизнес Банк",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ополнительные услуги в Португалии Недвижимость и интеграция Консультации Релокационный процесс Бизнес Банковское и налоговое сопровождение ВНЖ и гражданство Популярные услуги Дистанционное открытие компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "е компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15 дней Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста €1 100,00 Выбрать Срок: 6-8 мес. Продление ВНЖ €500,00 Выбрать Иммиграционная консультация €150,00 Выбрать Кон",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "е типы локализации ВНЖ для детей (14-18 лет) через учебу по статье 91.2 €1 800,00 Выбрать Воссоединение с гражданином ЕС €2 200,00 Выбрать Продление ВНЖ €500,00 Выбрать Подача на ПМЖ €550,00 Выбрать Подача на Гражданство €1 000,00+€250 (гос. пош",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": " регистрации в SNS ВНЖ для детей (14-18 лет) через учебу по статье 91.2 €1 800,00 Заказать Консультация Получить консультацию Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас! заполняя форму вы даете согласие",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "00 Заказать заграничный паспорт налоговый номер (NIF) номер статьи португальский адрес Запись в Миграционную службу (AIMA) при доступных слотах €500,00 Заказать полный пакет документов как на первичную подачу в AIMA, список документов зависит от",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Дополнительные услуги в Испании Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa ",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "tUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Испания О жизни в Испании ВНЖ без права на работу (No Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Фра",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "o Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ Открытие предприятия (Passeport Talent) ВНЖ Инновационный проект (Passeport Talent) Дополнительные ус",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " ВНЖ Инновационный проект (Passeport Talent) Дополнительные услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О ",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О нас Онлайн-услуги Партнерам Кейсы по странам Головной офис ",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "шаетесь с политикой использования файлов cookies Ок Узнайте стоимость «под ключ» с учетом всех госпошлин и доп.расходов Сколько человек планируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и вн",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "ие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Р",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "тация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форму вы даете согласие на обработку персональных данных Записаться на консультацию Если необходима консультация клиенту Можем проконсультировать вашего клиента по лю",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "нируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и внутри страны значительно отличаются. Поэтому советуем подумать об этом вопросе заранее Только я Я и мой супруг/супруга Я, супруг/супруга и",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " источники дохода у вас есть? Ксения главный иммиграционный эксперт Понимаем, что это щепетильный вопрос, но это один самых важных пункт для выбора программы, т.к. они все привязаны к источникам дохода Пассивный доход (аренда, инвестиции, дивиденд",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ачать процесс оформления ВНЖ? Ксения главный иммиграционный эксперт Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше Как можно скорее (в течение месяца) В ближайшие 3–6 месяцев Пока изучаю варианты, не спешу Зависит о",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "я ВНЖ с учетом вашей ситуации Ксения главный иммиграционный эксперт Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время) Ваше имя Телефон привяза",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ндации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу. Какая Вам нужна консультация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форм",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": " в Испании Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Исп",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "овной офис Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Страны и программы Испания Воссоединение семьи Дополнительные услуги Golden Visa StartUp Visa Дополнительные услуги Visa Digital Nomad HQA Visa D7 ВНЖ без права на работу (No Lu",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "нтов О нас Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация ВЫ МЕЧТАЕТЕ, МЫ ВОПЛОЩАЕМ В ЖИЗНЬ! Испания / Дополнительные услуги Дополнительные услуги в Испании Релокационный процесс Консультации Интеграция Банковское и налоговое сопровожд",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "слуги Дополнительные услуги в Испании Релокационный процесс Консультации Интеграция Банковское и налоговое сопровождение Бизнес Модификации статусов Гражданство и ПМЖ Продление ВНЖ Гражданство и прочие виды услуг Банковские услуги Налоговые услуги За",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ство и прочие виды услуг Банковские услуги Налоговые услуги Записи и взаимодействие с госорганами Испании Справки, идентификационные номера и нотариальные действия Апелляции и судебные процедуры Образование Прочие услуги Получить консультацию Ос",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Дополнительные услуги Франции Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQ",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "tUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Испания О жизни в Испании ВНЖ без права на работу (No Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Фра",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "o Lucrativa) Visa Digital Nomad StartUp Visa Дополнительные услуги Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ Открытие предприятия (Passeport Talent) ВНЖ Инновационный проект (Passeport Talent) Дополнительные ус",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " ВНЖ Инновационный проект (Passeport Talent) Дополнительные услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О ",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": " услуги Программы Венгрии Венгрия White card Дополнительные услуги Программы Греции Греция Golden Visa Программы Гражданства Программы гражданства Парагвай Вануату Сан-Томе и Принсипи О нас Онлайн-услуги Партнерам Кейсы по странам Головной офис ",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "шаетесь с политикой использования файлов cookies Ок Узнайте стоимость «под ключ» с учетом всех госпошлин и доп.расходов Сколько человек планируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и вн",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "ие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Р",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "тация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форму вы даете согласие на обработку персональных данных Записаться на консультацию Если необходима консультация клиенту Можем проконсультировать вашего клиента по лю",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "нируют переезд вместе с вами? Ксения главный иммиграционный эксперт Воссоединение семьи через консульство и внутри страны значительно отличаются. Поэтому советуем подумать об этом вопросе заранее Только я Я и мой супруг/супруга Я, супруг/супруга и",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " источники дохода у вас есть? Ксения главный иммиграционный эксперт Понимаем, что это щепетильный вопрос, но это один самых важных пункт для выбора программы, т.к. они все привязаны к источникам дохода Пассивный доход (аренда, инвестиции, дивиденд",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ачать процесс оформления ВНЖ? Ксения главный иммиграционный эксперт Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше Как можно скорее (в течение месяца) В ближайшие 3–6 месяцев Пока изучаю варианты, не спешу Зависит о",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "я ВНЖ с учетом вашей ситуации Ксения главный иммиграционный эксперт Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время) Ваше имя Телефон привяза",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ндации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу. Какая Вам нужна консультация? Диагностика миграционного кейса Полная-консультация (€150) заполняя форм",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ги Франции Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Программы Португалии О жизни в Португалии Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение семьи Дополнительные услуги Программы Исп",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "овной офис Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация Страны и программы Испания Воссоединение семьи Дополнительные услуги Golden Visa StartUp Visa Дополнительные услуги Visa Digital Nomad HQA Visa D7 ВНЖ без права на работу (No Lu",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "нтов О нас Av. Elias Garcia 76 1G, 1050-100 Лиссабон Онлайн-консультация ВЫ МЕЧТАЕТЕ, МЫ ВОПЛОЩАЕМ В ЖИЗНЬ! Франция / Дополнительные услуги Дополнительные услуги во Франции Бизнес услуги Административные услуги на 1 год жизни Получить консультацию Ос",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "знес услуги Административные услуги на 1 год жизни Получить консультацию Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас! заполняя форму вы даете согласие на обработку персональных данных Получить консультацию По",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "консультацию Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас! заполняя форму вы даете согласие на обработку персональных данных Получить консультацию Получить консультацию Оставьте свои контактные данные и ",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "method": "lexical_signal_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 20,
+        "pricing": 16,
+        "positioning": 20,
+        "conversion": 20,
+        "editorial": 8
+      },
+      "channels": [
+        {
+          "url": "https://t.me/+351913098628",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.instagram.com/immigration_relocator",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.facebook.com/immigrationrelocator.fb",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/immigrationrelocatorbot",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/USERNAME_BOT",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": []
+    },
+    {
+      "url": "https://okno.agency/",
+      "role": "competitor",
+      "pages_ok": 4,
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "OKNO Agency: ВНЖ, гражданство и юридические услуги в Португалии OKNO . Agency ВНЖ Все основания для ВНЖ Работа и учёба D1: работа по трудовому договору D3: высококвалифицированные специалисты D4: учёба Бизнес, доход и инвестиции ",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "жа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат для бизнеса База знаний RU Русский язык UA Українська мова Хотите начать? OKNO . Age",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ська мова Иммиграция, ВНЖ и юридическая помощь в Португалии Помогаем переехать в Португалию и решать здесь важные юридические и административные вопросы: ВНЖ, гражданство, семья, недвижимость, бизнес и документы. OKNO работает в Португалии с 2014",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам. Я ещё не в Португалии Если вы только планируете переезд, сначала определим подходящее основание и выстроим процесс от документов",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " процесс задерживается, нет ответа или обычные обращения не помогают, подключаем юридическую работу: запросы, жалобы, досудебные действия и, когда это необходимо, суд. Если вы живёте в Португалии уже несколько лет Постоянный ВНЖ и долгосрочный ре",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "есь каждый день. Основатель в Португалии с 2012 года Личный опыт жизни и бизнеса в стране. 5 000+ консультаций Для частных клиентов, семей и компаний. 1 000+ кейсов ВНЖ, гражданство и сложные иммиграционные ситуации. Португальские адвокаты Юрид",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ртным ситуациям. Отзывы клиентов Отзывы людей, которым OKNO помогал с ВНЖ, гражданством, документами, недвижимостью и юридическими вопросами в Португалии. Посмотреть все отзывы Реальные кейсы D7 для семьи с собственным доходом Доход от аренды, до",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ь агентства Андре Михалевич живёт здесь с 2012 года. 5 000+ консультаций, 1 000+ кейсов, португальские адвокаты и команда в Португалии. Выберите свою ситуацию Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следую",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ии с 2012 года Личный опыт жизни и бизнеса в стране. 5 000+ консультаций Для частных клиентов, семей и компаний. 1 000+ кейсов ВНЖ, гражданство и сложные иммиграционные ситуации. Португальские адвокаты Юридическая работа внутри нашей команды. 4 языка",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ич Основатель OKNO Agency Проводит сложные и стратегические консультации по переезду, ВНЖ, бизнесу, капиталу, недвижимости и нестандартным ситуациям. Отзывы клиентов Отзывы людей, которым OKNO помогал с ВНЖ, гражданством, документами, недвижимостью и",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "аться в ситуации, документах и последовательности действий. Записаться на консультацию Задать короткий вопрос Если нужно быстро уточнить один конкретный вопрос. Запросить сопровождение Если вы уже понимаете, какая услуга нужна, и хотите передать",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ии, документах и последовательности действий. Записаться на консультацию Задать короткий вопрос Если нужно быстро уточнить один конкретный вопрос. Запросить сопровождение Если вы уже понимаете, какая услуга нужна, и хотите передать процесс команде. У",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "ть YouTube OKNO Telegram-сообщество OKNO 7 000+ участников. Новости AIMA, изменения законодательства, опыт людей, которые уже переехали, и обсуждение жизни в Португалии. Открыть Telegram-сообщество Проекты группы OKNO THE-Ö Legal the-o.legal Порт",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "жа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат для бизнеса База знаний RU Русский язык UA Українська мова Обсудить бизнес-задачу OK",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "овождаем регистрацию до получения корпоративных документов. Стоимость сопровождения: от 1 000 € Зарегистрировать компанию Корпоративный банковский счёт Готовим корпоративный комплект, проверяем данные компании, участников и руководителей, помогаем п",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "корпоративных документов. Стоимость сопровождения: от 1 000 € Зарегистрировать компанию Корпоративный банковский счёт Готовим корпоративный комплект, проверяем данные компании, участников и руководителей, помогаем пройти идентификацию и отве",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": " помогаем пройти идентификацию и отвечать на запросы банка. Стоимость: по запросу после проверки компании и документов Открыть корпоративный счёт Адвокат для бизнеса Корпоративные изменения, договоры, отношения участников, коммерческие вопросы и спо",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "в, коммерческие вопросы и споры. Консультация адвоката: 150 € Обратиться к адвокату для бизнеса Команда OKNO в Португалии Работаем в Португалии с 2014 года. Отзывы клиентов в Google Загружаем отзывы… Открыть отзывы в Google Отдельные юридиче",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "или других регистрационных сведений в стандартной ситуации. Стоимость: 300 € Обсудить изменение Трудовой договор Подготовка или юридическая проверка стандартного трудового договора. Стоимость: 150 € Подготовить договор Договор услуг или стандартный ",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "ект, проверяем данные компании, участников и руководителей, помогаем пройти идентификацию и отвечать на запросы банка. Стоимость: по запросу после проверки компании и документов Открыть корпоративный счёт Адвокат для бизнеса Корпоративные изменен",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "говоры, отношения участников, коммерческие вопросы и споры. Консультация адвоката: 150 € Обратиться к адвокату для бизнеса Команда OKNO в Португалии Работаем в Португалии с 2014 года. Отзывы клиентов в Google Загружаем отзывы… Открыть отзывы в Google",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ащита в Португалии Переход с временной защиты на ВНЖ Начать Записаться на консультацию Задать короткий вопрос Запросить сопровождение Telegram-группа Правовое Обработка персональных данных © OKNO Agency · OKNO LDA, Португалия",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "алии Переход с временной защиты на ВНЖ Начать Записаться на консультацию Задать короткий вопрос Запросить сопровождение Telegram-группа Правовое Обработка персональных данных © OKNO Agency · OKNO LDA, Португалия",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "страция компании в Португалии Определяем состав участников, руководство, доли и виды деятельности, готовим данные для подачи и сопровождаем регистрацию до получения корпоративных документов. Стоимость сопровождения: от 1 000 € Зарегистрировать компан",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "жа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат для бизнеса База знаний RU Русский язык UA Українська мова Хотите начать? OKNO . Age",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "родный переезд. Документы Когда нужен адвокат в Португалии: консультация, документы, переговоры и суд В каких ситуациях иностранцу нужен адвокат в Португалии: документы, AIMA, договоры, семейные вопросы, недвижимость, трудовой конфликт, переговоры и ",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ащита в Португалии Переход с временной защиты на ВНЖ Начать Записаться на консультацию Задать короткий вопрос Запросить сопровождение Telegram-группа Правовое Обработка персональных данных © OKNO Agency · OKNO LDA, Португалия",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "алии Переход с временной защиты на ВНЖ Начать Записаться на консультацию Задать короткий вопрос Запросить сопровождение Telegram-группа Правовое Обработка персональных данных © OKNO Agency · OKNO LDA, Португалия",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика. С чего начать ВНЖ в Португалии: все основания и варианты Переезд в Португалию | Адаптация и обустройство семьи под ключ Услуги для бизнеса в",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": " работы в Португалии Чем отличаются D1, национальный ВНЖ по статье 90 и EU Blue Card, когда подходит работа по service contract и почему прям ВНЖ Учёба в Португалии: D4, студенческий ВНЖ и что проверить до поступления Как работает студенческий В",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "жа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат для бизнеса База знаний RU UA Хотите начать? OKNO . Agency × ВНЖ Все основания для В",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "ранного развода Брачный договор Дети и родители Юридические услуги Адвокат в Португалии Иммиграционный адвокат Суды и споры Адвокат по недвижимости Семейный адвокат Адвокат для бизнеса Нотариат и документы Нотариат и документы в Португалии Довер",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "и покупка Проверка недвижимости CPCV и договоры Юридическое сопровождение сделки Продажа недвижимости Адвокат по недвижимости Бизнес и инвестиции Услуги для бизнеса в Португалии Регистрация компании Открытие банковского счёта для компании Адвокат дл",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "/ О компании OKNO Agency О компании OKNO Agency OKNO Agency помогает русско- и украиноязычным клиентам решать иммиграционные, семейные, юридические, нотариальные, имущественные и бизнес-задачи в Португалии. Агентство работает в Португалии с 2014 ",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "снователь OKNO Андрей Михалевич живёт в стране с 2012 года. Записаться на консультацию Запросить сопровождение Что мы делаем К нам обращаются на разных этапах: до переезда, когда нужно выбрать основание и подготовить документы; после въезда, ког",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": " Андрей Михалевич живёт в стране с 2012 года. Записаться на консультацию Запросить сопровождение Что мы делаем К нам обращаются на разных этапах: до переезда, когда нужно выбрать основание и подготовить документы; после въезда, когда начинается работ",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "х По данным, зафиксированным на 1 августа 2026 года: 5 000+ консультаций; 1 000+ процессов по ВНЖ и гражданству; 22 000+ подписчиков YouTube; 1 000+ опубликованных видео; 7 000+ участников Telegram-сообщества. Эти цифры описывают объём практики и ауд",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "нужен подробный разбор документов и ситуации, запишитесь на консультацию. Если услуга уже понятна, можно сразу запросить сопровождение. Записаться на консультацию Запросить сопровождение Услуги ВНЖ Гражданство Семья и брак Юридические услуги Недвижим",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "ли услуга уже понятна, можно сразу запросить сопровождение. Записаться на консультацию Запросить сопровождение Услуги ВНЖ Гражданство Семья и брак Юридические услуги Недвижимость Бизнес и инвестиции Полезное База знаний Кейсы О нас Контакты Прое",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "method": "lexical_signal_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 20,
+        "pricing": 5,
+        "positioning": 7,
+        "conversion": 16,
+        "editorial": 4
+      },
+      "channels": [
+        {
+          "url": "https://t.me/okno_agency",
+          "found_on": "https://okno.agency/about",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NBfYX1n2A0g",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=48o-PmURMaI",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZL6zRYSQIyI",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/@oknoagency",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [
+        {
+          "url": "https://t.me/s/okno_agency",
+          "found_on": "https://okno.agency/",
+          "status": "no_public_messages_observed",
+          "posts": 0
+        }
+      ],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": []
+    },
+    {
+      "url": "https://monolite.pt/",
+      "role": "competitor",
+      "pages_ok": 1,
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "тугалии. +351 936 603 319 О нас Программы ВНЖ Другие страны Услуги Недвижимость Для партнёров Отзывы Контакты +351 936 603 319 О нас Пргораммы ВНЖ Услуги Недвижимость Для партёров Отзывы Контакты +351 936 603 319 О нас Программы ВНЖ Другие стран",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "тнёров Отзывы Контакты +351 936 603 319 О нас Пргораммы ВНЖ Услуги Недвижимость Для партёров Отзывы Контакты +351 936 603 319 О нас Программы ВНЖ Другие страны Услуги Недвижимость Для партнёров Отзывы Контакты +351 936 603 319 О нас Программы ВН",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Контакты +351 936 603 319 О нас Программы ВНЖ Другие страны Услуги Недвижимость Для партнёров Отзывы Контакты +351 936 603 319 О нас Программы ВНЖ Другие страны Услуги Недвижимость Для партнёров Отзывы Контакты [{\"lid\":\"1721856260717\",\"ls\":\"10\",",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Контакты +351 936 603 319 О нас Программы ВНЖ Другие страны Услуги Недвижимость Для партнёров Отзывы Контакты [{\"lid\":\"1721856260717\",\"ls\":\"10\",\"loff\":\"\",\"li_type\":\"nm\",\"li_name\":\"name\",\"li_ph\":\"\\u0412\\u0430\\u0448\\u0435 \\u0438\\u043c\\u044f\",\"li_n",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "у Получить консультацию Результативно Прозрачно Легально Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США. MONOLITE — международный иммиграционный консультант Дорогие гости! Я рад приветствовать вас на нашем сайте. Мы",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "стока и Северной Америки. Иммиграция не только в Португалию Эксперты в +30 странах Наша команда и партнёрская сеть охватывают более 30 стран. Мы подберём решение под ваш стиль жизни, бюджет и цели — будь то Европа, Азия, Америка или ОАЭ. Литва ОАЭ",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "покупку. Подключим все необходимые коммуникации и Интернет. Поможем с выбором и зачислением детей в школы и ВУЗы. Оформим страховые полисы, зарегистрируем в поликлинике, поможем с выбором автомобиля, поменяем водительское удостоверение и конечно",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Зы. Оформим страховые полисы, зарегистрируем в поликлинике, поможем с выбором автомобиля, поменяем водительское удостоверение и конечно продлим ваш ВНЖ или подадим на гражданство. 3 Подбор недвижимости в Португалии Организовываем процесс под клю",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "конверта до контейнера. Оказываем следующий перечень услуг: Опыт Более трех лет мы ежедневно помогаем нашим клиентам решать их задачи по иммиграции, приобретению или аренде недвижимости, а также оказываем всестороннюю поддержку в прочих юридиче",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": " следующий перечень услуг: Опыт Более трех лет мы ежедневно помогаем нашим клиентам решать их задачи по иммиграции, приобретению или аренде недвижимости, а также оказываем всестороннюю поддержку в прочих юридических, административных и бытовых во",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": ":\"y\",\"li_nm\":\"Checkbox\"}] Заполните форму, и наш специалист свяжется с вами в ближайшее время. [{\"lid\":\"1721856260717\",\"ls\":\"10\",\"loff\":\"\",\"li_type\":\"nm\",\"li_name\":\"name\",\"li_ph\":\"\\u0412\\u0430\\u0448\\u0435 \\u0438\\u043c\\u044f\",\"li_nm\":\"name\"},{\"l",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": ":\"y\",\"li_nm\":\"Checkbox\"}] Заполните форму, и наш специалист свяжется с вами в ближайшее время. Оставить заявку Получить консультацию Результативно Прозрачно Легально Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, С",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": " наш специалист свяжется с вами в ближайшее время. Оставить заявку Получить консультацию Результативно Прозрачно Легально Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США. MONOLITE — международный иммиграционный к",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "свяжется с вами в ближайшее время. Оставить заявку Получить консультацию Результативно Прозрачно Легально Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США. MONOLITE — международный иммиграционный консультант Дорогие го",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": " компания предоставляет весь спектр иммиграционных услуг от консультаций до полного сопровождения получения ВНЖ и Гражданства под ключ. Мы профессионально работаем с недвижимостью и индивидуально подходим к каждой сделке, обеспечиваем вас не только к",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "method": "lexical_signal_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 5,
+        "pricing": 0,
+        "positioning": 5,
+        "conversion": 5,
+        "editorial": 0
+      },
+      "channels": [
+        {
+          "url": "https://www.instagram.com/pro.portugal?igsh=Z3d2bTI5cXpyaGty&utm_source=qr",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/monolite_pt",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/nasty0510",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [
+        {
+          "url": "https://t.me/s/monolite_pt",
+          "found_on": "https://monolite.pt/",
+          "status": "no_public_messages_observed",
+          "posts": 0
+        },
+        {
+          "url": "https://t.me/s/nasty0510",
+          "found_on": "https://monolite.pt/",
+          "status": "render_required",
+          "posts": 0
+        }
+      ],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": []
+    }
+  ],
+  "new_llm_calls": 0,
+  "api_cost": null,
+  "analysis_method": "Сохранённый модельный черновик и офлайн-проверка чисел/покрытия. Проверка смысла ещё не выполнена.",
+  "limits": [
+    "Упоминание не доказывает продажу услуги. Отсутствие цитаты означает недостаток данных.",
+    "Ссылки на соцсети не означают прочитанные публикации. Эффективность продвижения не измерена.",
+    "Визуал требует просмотра снимков; цвета и качество дизайна по тексту не определяются.",
+    "Цены без состава пакета, даты и условий нельзя считать сопоставимыми."
+  ],
+  "hypotheses": [],
+  "run_id": "b8716bfc-7890-486b-99e8-d910f6b5a89b",
+  "semantic": {
+    "status": "human_review_recorded",
+    "findings": [
+      {
+        "source_id": "s0",
+        "category": "assortment",
+        "summary": "Компания перечисляет иммиграционные программы в нескольких странах, включая Португалию, Испанию, Францию и другие направления, а также программы гражданства.",
+        "quote": "Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ",
+        "review_status": "reject"
+      },
+      {
+        "source_id": "s0",
+        "category": "promotion",
+        "summary": "Компания заявляет о лицензированном провайдере госпрограмм и 100% одобрения заявок. Независимого подтверждения в этой цитате нет.",
+        "quote": "Лицензированный провайдер госпрограмм 100% одобрения заявок",
+        "review_status": "revise",
+        "original_model_summary": "Заявления о 100% одобрении и оформлении без риска отказа — рекламные обещания компании; корпус не подтверждает такие результаты.",
+        "original_model_quote": "Лицензированный провайдер госпрограмм 100% одобрения заявок"
+      },
+      {
+        "source_id": "s0",
+        "category": "promotion",
+        "summary": "На сайте обещана обратная связь менеджера в течение получаса в рабочее время после ответов клиента.",
+        "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)",
+        "review_status": "revise",
+        "original_model_summary": "Форма оценки собирает сведения о составе семьи, источниках дохода и сроках, затем обещает персональный расчёт и обратную связь в рабочее время.",
+        "original_model_quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)"
+      },
+      {
+        "source_id": "s0",
+        "category": "pricing",
+        "summary": "Компания предлагает бесплатную диагностику миграционного кейса продолжительностью 30 минут.",
+        "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов.",
+        "review_status": "revise",
+        "original_model_summary": "Предложены два формата видеоконсультации: бесплатная 30-минутная диагностика и платная часовая консультация за €150 с планом действий и документов.",
+        "original_model_quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов."
+      },
+      {
+        "source_id": "s1",
+        "category": "assortment",
+        "summary": "Португальские дополнительные услуги охватывают иммиграционные и гражданские задачи, бизнес, налоги, банковские услуги и локализацию.",
+        "quote": "Недвижимость и интеграция Консультации Релокационный процесс Бизнес Банковское и налоговое сопровождение ВНЖ и гражданство",
+        "review_status": "reject"
+      },
+      {
+        "source_id": "s1",
+        "category": "pricing",
+        "summary": "В цитате указаны дистанционное открытие LDA, €950,00 с пометкой «гос. сборы» и срок 15 дней. Состав платежа требует уточнения.",
+        "quote": "Дистанционное открытие компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15 дней",
+        "review_status": "revise",
+        "original_model_summary": "На странице указаны отдельные цены и сроки услуг, например дистанционное открытие компании; цену следует читать с указанным условием о госпошлинах.",
+        "original_model_quote": "Дистанционное открытие компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15 дней"
+      },
+      {
+        "source_id": "s2",
+        "category": "assortment",
+        "summary": "В Испании заявлен широкий набор дополнительных направлений: от продления ВНЖ и гражданства до банковских, налоговых, образовательных и судебных процедур.",
+        "quote": "Продление ВНЖ Гражданство и прочие виды услуг Банковские услуги Налоговые услуги Записи и взаимодействие с госорганами Испании",
+        "review_status": "reject"
+      },
+      {
+        "source_id": "s4",
+        "category": "positioning",
+        "summary": "OKNO предлагает начать с текущей ситуации и задачи клиента, чтобы определить подходящий следующий шаг.",
+        "quote": "Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам.",
+        "review_status": "revise",
+        "original_model_summary": "OKNO предлагает выбирать маршрут с учётом этапа переезда и текущего статуса клиента, отдельно описывая ситуации до и после въезда.",
+        "original_model_quote": "Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам."
+      },
+      {
+        "source_id": "s6",
+        "category": "content",
+        "summary": "На странице базы знаний представлены практические темы о переезде, ВНЖ, работе и бизнесе; заявлено обновление материалов при изменении правил или практики.",
+        "quote": "Практические материалы о переезде, ВНЖ, работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика.",
+        "review_status": "accept"
+      }
+    ],
+    "hypotheses": [
+      {
+        "action": "Проверить понятность входного обращения: сначала спросить текущую ситуацию и задачу клиента, затем ясно назвать срок обратной связи.",
+        "evidence_indexes": [
+          2,
+          7
+        ],
+        "review_status": "revise",
+        "original_model_action": "Проверить на русскоязычной аудитории вариант входной формы, которая сначала спрашивает этап переезда, состав семьи и задачу, а затем предлагает персональный следующий шаг."
+      },
+      {
+        "action": "Проверить востребованность практических материалов и процесса их обновления при изменении правил или практики.",
+        "evidence_indexes": [
+          8
+        ],
+        "review_status": "revise",
+        "original_model_action": "Протестировать отдельную базу практических материалов по ключевым миграционным сценариям с датой актуализации и ссылкой на консультацию."
+      },
+      {
+        "action": "Проверить, правильно ли клиент понимает обозначение цены, государственных сборов и срока открытия LDA; уточнить формулировку после проверки состава платежа.",
+        "evidence_indexes": [
+          5
+        ],
+        "review_status": "revise",
+        "original_model_action": "Проверить понятность прайс-листа для дополнительных услуг: показывать цену, сроки и отдельно оговаривать госпошлины или иные условия там, где они применимы."
+      }
+    ],
+    "missing_evidence": [
+      "Нет данных о публикациях Immigration Relocator в социальных сетях или о фактической частоте и результатах продвижения.",
+      "По конкуренту Monolite передана главная страница, но для OKNO корпус содержит отдельные страницы услуг и базы знаний; поэтому детальное сопоставление отдельных пакетов и цен неполное.",
+      "Не представлены независимые подтверждения заявлений компаний об одобрениях, опыте, сроках или качестве; они рассмотрены только как заявления.",
+      "Нет данных об аудитории, охвате, конверсии, фактическом чтении материалов или результатах клиентских обращений."
+    ],
+    "sources": [
+      {
+        "source_id": "s0",
+        "company_url": "https://immigration-relocator.com/",
+        "role": "own",
+        "url": "https://immigration-relocator.com/",
+        "sha256_text": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+        "collected_at": "2026-11-07T17:55:46.149856+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s1",
+        "company_url": "https://immigration-relocator.com/",
+        "role": "own",
+        "url": "https://immigration-relocator.com/pt-otherservices",
+        "sha256_text": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+        "collected_at": "2026-11-07T17:58:36.796490+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s2",
+        "company_url": "https://immigration-relocator.com/",
+        "role": "own",
+        "url": "https://immigration-relocator.com/es-otherservices",
+        "sha256_text": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+        "collected_at": "2026-11-07T17:58:38.393374+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s3",
+        "company_url": "https://immigration-relocator.com/",
+        "role": "own",
+        "url": "https://immigration-relocator.com/fr-otherservices",
+        "sha256_text": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+        "collected_at": "2026-11-07T17:58:39.167974+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s4",
+        "company_url": "https://okno.agency/",
+        "role": "competitor",
+        "url": "https://okno.agency/",
+        "sha256_text": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+        "collected_at": "2026-11-07T17:58:39.643130+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s5",
+        "company_url": "https://okno.agency/",
+        "role": "competitor",
+        "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+        "sha256_text": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+        "collected_at": "2026-11-07T17:58:40.736388+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s6",
+        "company_url": "https://okno.agency/",
+        "role": "competitor",
+        "url": "https://okno.agency/blog",
+        "sha256_text": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+        "collected_at": "2026-11-07T17:58:41.026701+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s7",
+        "company_url": "https://okno.agency/",
+        "role": "competitor",
+        "url": "https://okno.agency/about",
+        "sha256_text": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+        "collected_at": "2026-11-07T17:58:41.316878+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      },
+      {
+        "source_id": "s8",
+        "company_url": "https://monolite.pt/",
+        "role": "competitor",
+        "url": "https://monolite.pt/",
+        "sha256_text": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+        "collected_at": "2026-11-07T17:58:41.590464+00:00",
+        "method": "requests_beautifulsoup_resilient_v2"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 14666,
+      "completion_tokens": 1190,
+      "total_tokens": 15856,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 14663,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "model": "openai/gpt-6-luna",
+    "new_llm_calls": 1,
+    "actual_billed_amount": null,
+    "input_characters": 43855,
+    "limits": "Цитаты проверены кодом; смысловая связь вывода с цитатой требует проверки человеком.",
+    "audit": {
+      "finding_flags": [
+        {
+          "finding_index": 3,
+          "kind": "numbers_not_supported_by_quote",
+          "values": [
+            "150"
+          ]
+        }
+      ],
+      "companies_without_findings": [
+        "https://monolite.pt/"
+      ],
+      "prompt_count_limit_exceeded": true,
+      "limit": "Проверка чисел выявляет отдельные ошибки, но не доказывает смысловую полноту цитаты."
+    },
+    "source_model_run_id": "74e981d6-a806-46d9-b441-bfce60478ed0",
+    "reviewer": "Проверка помощником для тестирования; не приёмка Елены",
+    "reviewed_at": "2026-11-07T19:12:57.851618+00:00",
+    "accepted_findings": 6,
+    "accepted_hypotheses": 3
+  },
+  "new_api_cost": 0,
+  "demo_provenance": "Реальный корпус и модельный ответ. Подготовлено помощником для проверки интерфейса; не приёмка Еленой.",
+  "review_provenance": {
+    "source_run_id": "c36e7209-26e9-5cf7-92e9-bbb4c55a5ff3",
+    "source_report_sha256": "09b1387424fb907d95897c39b90ddca3d5bf54d916e56bd28091635b591f530d",
+    "reviewer": "Проверка помощником для тестирования; не приёмка Елены",
+    "new_llm_calls": 0
+  }
+}

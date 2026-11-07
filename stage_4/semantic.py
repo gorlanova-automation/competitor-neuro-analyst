@@ -92,6 +92,8 @@ def analyze(companies,profile,api_key,output_dir='var/model_runs',model='openai/
                 'usage':response.get('usage'),'model':model,'new_llm_calls':0 if transport else 1,
                 'actual_billed_amount':None,'input_characters':sum(len(s['text']) for s in sources),
                 'limits':'Цитаты проверены кодом; смысловая связь вывода с цитатой требует проверки человеком.'}
+        from stage_4.review import audit_semantics
+        result['audit']=audit_semantics(result)
         save(out/'analysis.json',result)
         save(out/'execution.json',{'started_at':started,'finished_at':timestamp(),'attempts':1,'model':model,
              'request_sha256':digest(json.dumps(body,ensure_ascii=False)), 'transport':'injected_test' if transport else 'proxyapi_live'})

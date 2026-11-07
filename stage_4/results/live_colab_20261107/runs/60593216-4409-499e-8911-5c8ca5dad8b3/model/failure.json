@@ -1,0 +1,7 @@
+{
+  "status": "quarantined",
+  "error_type": "WorkflowError",
+  "attempts": 1,
+  "model": "openai/gpt-6-luna",
+  "started_at": "2026-11-07T18:19:08.175780+00:00"
+}

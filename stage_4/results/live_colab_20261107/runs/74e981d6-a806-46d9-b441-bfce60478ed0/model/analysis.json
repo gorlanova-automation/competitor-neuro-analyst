@@ -1,0 +1,190 @@
+{
+  "status": "model_draft_pending_semantic_review",
+  "findings": [
+    {
+      "source_id": "s0",
+      "category": "assortment",
+      "summary": "Компания перечисляет иммиграционные программы в нескольких странах, включая Португалию, Испанию, Францию и другие направления, а также программы гражданства.",
+      "quote": "Программы Италия Visa Digital Nomad Программы Франция О жизни во Франции ВНЖ"
+    },
+    {
+      "source_id": "s0",
+      "category": "promotion",
+      "summary": "Заявления о 100% одобрении и оформлении без риска отказа — рекламные обещания компании; корпус не подтверждает такие результаты.",
+      "quote": "Лицензированный провайдер госпрограмм 100% одобрения заявок"
+    },
+    {
+      "source_id": "s0",
+      "category": "promotion",
+      "summary": "Форма оценки собирает сведения о составе семьи, источниках дохода и сроках, затем обещает персональный расчёт и обратную связь в рабочее время.",
+      "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)"
+    },
+    {
+      "source_id": "s0",
+      "category": "pricing",
+      "summary": "Предложены два формата видеоконсультации: бесплатная 30-минутная диагностика и платная часовая консультация за €150 с планом действий и документов.",
+      "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов."
+    },
+    {
+      "source_id": "s1",
+      "category": "assortment",
+      "summary": "Португальские дополнительные услуги охватывают иммиграционные и гражданские задачи, бизнес, налоги, банковские услуги и локализацию.",
+      "quote": "Недвижимость и интеграция Консультации Релокационный процесс Бизнес Банковское и налоговое сопровождение ВНЖ и гражданство"
+    },
+    {
+      "source_id": "s1",
+      "category": "pricing",
+      "summary": "На странице указаны отдельные цены и сроки услуг, например дистанционное открытие компании; цену следует читать с указанным условием о госпошлинах.",
+      "quote": "Дистанционное открытие компании (LDA) €950,00 (гос. сборы) Выбрать Срок: 15 дней"
+    },
+    {
+      "source_id": "s2",
+      "category": "assortment",
+      "summary": "В Испании заявлен широкий набор дополнительных направлений: от продления ВНЖ и гражданства до банковских, налоговых, образовательных и судебных процедур.",
+      "quote": "Продление ВНЖ Гражданство и прочие виды услуг Банковские услуги Налоговые услуги Записи и взаимодействие с госорганами Испании"
+    },
+    {
+      "source_id": "s4",
+      "category": "positioning",
+      "summary": "OKNO предлагает выбирать маршрут с учётом этапа переезда и текущего статуса клиента, отдельно описывая ситуации до и после въезда.",
+      "quote": "Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам."
+    },
+    {
+      "source_id": "s6",
+      "category": "content",
+      "summary": "На странице базы знаний представлены практические темы о переезде, ВНЖ, работе и бизнесе; заявлено обновление материалов при изменении правил или практики.",
+      "quote": "Практические материалы о переезде, ВНЖ, работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика."
+    }
+  ],
+  "hypotheses": [
+    {
+      "action": "Проверить на русскоязычной аудитории вариант входной формы, которая сначала спрашивает этап переезда, состав семьи и задачу, а затем предлагает персональный следующий шаг.",
+      "evidence_indexes": [
+        2,
+        6
+      ]
+    },
+    {
+      "action": "Протестировать отдельную базу практических материалов по ключевым миграционным сценариям с датой актуализации и ссылкой на консультацию.",
+      "evidence_indexes": [
+        7
+      ]
+    },
+    {
+      "action": "Проверить понятность прайс-листа для дополнительных услуг: показывать цену, сроки и отдельно оговаривать госпошлины или иные условия там, где они применимы.",
+      "evidence_indexes": [
+        5
+      ]
+    }
+  ],
+  "missing_evidence": [
+    "Нет данных о публикациях Immigration Relocator в социальных сетях или о фактической частоте и результатах продвижения.",
+    "По конкуренту Monolite передана главная страница, но для OKNO корпус содержит отдельные страницы услуг и базы знаний; поэтому детальное сопоставление отдельных пакетов и цен неполное.",
+    "Не представлены независимые подтверждения заявлений компаний об одобрениях, опыте, сроках или качестве; они рассмотрены только как заявления.",
+    "Нет данных об аудитории, охвате, конверсии, фактическом чтении материалов или результатах клиентских обращений."
+  ],
+  "sources": [
+    {
+      "source_id": "s0",
+      "company_url": "https://immigration-relocator.com/",
+      "role": "own",
+      "url": "https://immigration-relocator.com/",
+      "sha256_text": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+      "collected_at": "2026-11-07T17:55:46.149856+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s1",
+      "company_url": "https://immigration-relocator.com/",
+      "role": "own",
+      "url": "https://immigration-relocator.com/pt-otherservices",
+      "sha256_text": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+      "collected_at": "2026-11-07T17:58:36.796490+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s2",
+      "company_url": "https://immigration-relocator.com/",
+      "role": "own",
+      "url": "https://immigration-relocator.com/es-otherservices",
+      "sha256_text": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+      "collected_at": "2026-11-07T17:58:38.393374+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s3",
+      "company_url": "https://immigration-relocator.com/",
+      "role": "own",
+      "url": "https://immigration-relocator.com/fr-otherservices",
+      "sha256_text": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+      "collected_at": "2026-11-07T17:58:39.167974+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s4",
+      "company_url": "https://okno.agency/",
+      "role": "competitor",
+      "url": "https://okno.agency/",
+      "sha256_text": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+      "collected_at": "2026-11-07T17:58:39.643130+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s5",
+      "company_url": "https://okno.agency/",
+      "role": "competitor",
+      "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+      "sha256_text": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+      "collected_at": "2026-11-07T17:58:40.736388+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s6",
+      "company_url": "https://okno.agency/",
+      "role": "competitor",
+      "url": "https://okno.agency/blog",
+      "sha256_text": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+      "collected_at": "2026-11-07T17:58:41.026701+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s7",
+      "company_url": "https://okno.agency/",
+      "role": "competitor",
+      "url": "https://okno.agency/about",
+      "sha256_text": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+      "collected_at": "2026-11-07T17:58:41.316878+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    },
+    {
+      "source_id": "s8",
+      "company_url": "https://monolite.pt/",
+      "role": "competitor",
+      "url": "https://monolite.pt/",
+      "sha256_text": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+      "collected_at": "2026-11-07T17:58:41.590464+00:00",
+      "method": "requests_beautifulsoup_resilient_v2"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14666,
+    "completion_tokens": 1190,
+    "total_tokens": 15856,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 14663,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "model": "openai/gpt-6-luna",
+  "new_llm_calls": 1,
+  "actual_billed_amount": null,
+  "input_characters": 43855,
+  "limits": "Цитаты проверены кодом; смысловая связь вывода с цитатой требует проверки человеком."
+}

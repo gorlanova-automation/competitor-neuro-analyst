@@ -29,7 +29,7 @@ def launch_colab(output_dir='var/projects'):
     if input('Попробовать автоматический поиск кандидатов? да/нет [нет]: ').strip().lower()=='да':
         state=run_project(project_id=state['id'],action='search',output_dir=output_dir)
         print(json.dumps(state.get('search'),ensure_ascii=False,indent=2))
-    urls=[u.strip() for u in input('Сайты выбранных конкурентов, через запятую (1–10): ').split(',') if u.strip()]
+    urls=[u.strip() for u in input('Сайты выбранных конкурентов, через запятую (1–20): ').split(',') if u.strip()]
     print('Будут исследованы:',urls)
     if input('Подтверждаете этот список? Напишите да: ').strip().lower()!='да':return state
     state=run_project(project_id=state['id'],competitor_urls=urls,action='confirm_competitors',output_dir=output_dir)
@@ -46,6 +46,23 @@ def launch_colab(output_dir='var/projects'):
         finally:key=None
     folder=Path(output_dir)/state['id']/'runs'/state['report']['run_id']
     display(HTML((folder/'report.html').read_text(encoding='utf-8')))
+    if state['report'].get('semantic_status'):
+        print('Проверка смысла выводов: https://gorlanova-automation.github.io/competitor-neuro-analyst/review.html')
+        print('Выберите result.json на стенде, проверьте выводы и гипотезы, скачайте review.json. Это не новый вызов модели.')
+        if input('Скачать result.json для проверки? да/нет [нет]: ').strip().lower()=='да':
+            from google.colab import files
+            files.download(str(folder/'result.json'))
+        if input('Загрузить уже подготовленный review.json и применить решения? да/нет [нет]: ').strip().lower()=='да':
+            try:
+                from google.colab import files
+                uploaded=files.upload()
+                if len(uploaded)!=1:raise WorkflowError('Нужен один файл решений.')
+                review=json.loads(next(iter(uploaded.values())).decode('utf-8-sig'))
+                state=run_project(project_id=state['id'],action='review_analysis',review=review,output_dir=output_dir)
+                folder=Path(output_dir)/state['id']/'runs'/state['report']['run_id']
+                display(HTML((folder/'report.html').read_text(encoding='utf-8')))
+            except Exception:
+                print('Решения не применены. Проверьте версию исходного отчёта, цитаты и основания гипотез. Исходный отчёт сохранён.')
     print('HTML и JSON:',folder)
     if input('Скачать отчёт и источники ZIP? да/нет [да]: ').strip().lower()!='нет':
         import shutil

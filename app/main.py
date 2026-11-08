@@ -1,7 +1,10 @@
 import json
 import sqlite3
 import sys
-from contextlib import contextmanager
+import os
+import base64
+import secrets
+from contextlib import contextmanager,asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
@@ -60,11 +63,27 @@ def create_app(data_dir=None, stage_root=None):
     with connect() as conn:
         conn.execute('CREATE TABLE IF NOT EXISTS runs (id TEXT PRIMARY KEY, created_at TEXT, completed_at TEXT, status TEXT, config TEXT, summary TEXT, error TEXT)')
 
-    api = FastAPI(title='Нейро-аналитик конкурентов — локальный API', version='1.0')
-    api.add_middleware(TrustedHostMiddleware, allowed_hosts=['localhost', '127.0.0.1', 'testserver'])
+    @asynccontextmanager
+    async def lifespan(app):
+        yield
+        app.state.product_pool.shutdown(wait=False,cancel_futures=True)
+
+    api = FastAPI(title='Нейро-аналитик конкурентов', version='2.0',lifespan=lifespan)
+    allowed_hosts=['localhost','127.0.0.1','testserver']+[h.strip() for h in os.environ.get('ANALYST_ALLOWED_HOSTS','').split(',') if h.strip()]
+    api.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
 
     @api.middleware('http')
     async def same_origin(request: Request, call_next):
+        password=os.environ.get('ANALYST_PASSWORD')
+        if password:
+            expected='analyst:'+password
+            try:
+                scheme,encoded=request.headers.get('authorization','').split(' ',1)
+                supplied=base64.b64decode(encoded,validate=True).decode('utf-8') if scheme.lower()=='basic' else ''
+            except (ValueError,UnicodeError):supplied=''
+            if not secrets.compare_digest(supplied.encode(),expected.encode()):
+                from fastapi.responses import JSONResponse
+                return JSONResponse({'detail':'Войдите в рабочее пространство.'},status_code=401,headers={'WWW-Authenticate':'Basic realm="Neuroanalyst", charset="UTF-8"'})
         origin = request.headers.get('origin')
         if request.method not in ('GET', 'HEAD', 'OPTIONS') and origin and origin != str(request.base_url).rstrip('/'):
             from fastapi.responses import JSONResponse
@@ -176,7 +195,10 @@ def create_app(data_dir=None, stage_root=None):
 
     @api.get('/', include_in_schema=False)
     def home():
-        return RedirectResponse('/stand/workspace.html')
+        return RedirectResponse('/stand/product.html')
+
+    from .product import install
+    install(api,storage,PROJECT)
 
     if (PROJECT/'docs').is_dir():
         api.mount('/stand', StaticFiles(directory=PROJECT/'docs', html=True), name='stand')

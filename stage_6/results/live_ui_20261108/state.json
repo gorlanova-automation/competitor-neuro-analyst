@@ -1,0 +1,223 @@
+{
+  "id": "367c50c2-00a5-464d-b236-c4bedd1c414c",
+  "url": "https://immigration-relocator.com/",
+  "created_at": "2026-11-08T05:15:46.462366+00:00",
+  "status": "report_ready",
+  "profile": {
+    "company_name": "Immigration Relocator",
+    "summary": "Вы мечтаете, мы воплощаем в жизнь! Упрощаем процесс релокации, сделав его простым и понятным! Помогаем в адаптации, а бюрократию берем на себя.",
+    "offering": [
+      "Оформляем ВНЖ и гражданство в Португалии, Испании и Франции"
+    ],
+    "market_scope": "Португалия и Испания; русскоязычные клиенты, переезд и адаптация",
+    "search_terms": "релокация ВНЖ сопровождение переезда",
+    "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+    "method": "metadata_draft_requires_confirmation"
+  },
+  "source_status": "ok",
+  "source_method": "requests_beautifulsoup_resilient_v2",
+  "next_action": null,
+  "competitors": [
+    {
+      "url": "https://monolite.pt/",
+      "added_by": "user_added",
+      "name": "MONOLITE · Португалия"
+    },
+    {
+      "url": "https://okno.agency/",
+      "added_by": "user_added",
+      "name": "OKNO Agency"
+    }
+  ],
+  "profile_confirmed": true,
+  "competitors_confirmed": true,
+  "events": [
+    {
+      "action": "start",
+      "at": "2026-11-08T05:15:46.463366+00:00"
+    },
+    {
+      "action": "confirm_profile",
+      "at": "2026-11-08T05:17:01.540931+00:00"
+    },
+    {
+      "action": "search",
+      "at": "2026-11-08T05:17:02.313930+00:00"
+    },
+    {
+      "action": "confirm_competitors",
+      "at": "2026-11-08T05:18:26.151248+00:00"
+    },
+    {
+      "action": "collect",
+      "at": "2026-11-08T05:20:28.075662+00:00"
+    },
+    {
+      "action": "collect",
+      "at": "2026-11-08T05:24:13.426783+00:00"
+    }
+  ],
+  "updated_at": "2026-11-08T05:24:13.426783+00:00",
+  "search_queries": [
+    "релокация ВНЖ сопровождение переезда Португалия и Испания русскоязычные клиенты переезд адаптация компании",
+    "релокация ВНЖ сопровождение переезда Португалия и Испания русскоязычные клиенты переезд адаптация альтернативы",
+    "релокация ВНЖ сопровождение переезда Португалия и Испания русскоязычные клиенты переезд адаптация услуги цены"
+  ],
+  "search": {
+    "query": "релокация ВНЖ сопровождение переезда Португалия и Испания русскоязычные клиенты переезд адаптация компании",
+    "engine_url": "https://html.duckduckgo.com/html/?q=%D1%80%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%20%D0%92%D0%9D%D0%96%20%D1%81%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%D0%B0%20%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B8%20%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8",
+    "status": "challenge_page",
+    "candidates": [],
+    "source": {
+      "url": "https://html.duckduckgo.com/html/?q=%D1%80%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%20%D0%92%D0%9D%D0%96%20%D1%81%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%D0%B0%20%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B8%20%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8",
+      "collected_at": "2026-11-08T05:17:01.557929+00:00",
+      "method": "requests_beautifulsoup_resilient_v2",
+      "robots_cached": false,
+      "robots": {
+        "status": "parsed",
+        "attempts": [
+          {
+            "attempt": 1,
+            "http_status": 200,
+            "final_url": "https://html.duckduckgo.com/robots.txt",
+            "outcome": "received"
+          }
+        ]
+      },
+      "final_url": "https://html.duckduckgo.com/html/?q=%D1%80%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%20%D0%92%D0%9D%D0%96%20%D1%81%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%D0%B0%20%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B8%20%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8",
+      "http_status": 202,
+      "attempts": [
+        {
+          "attempt": 1,
+          "http_status": 202,
+          "final_url": "https://html.duckduckgo.com/html/?q=%D1%80%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%20%D0%92%D0%9D%D0%96%20%D1%81%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%D0%B0%20%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%8F%20%D0%B8%20%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D1%8F%D0%B7%D1%8B%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8",
+          "outcome": "received"
+        }
+      ],
+      "status": "challenge_page",
+      "title": "DuckDuckGo",
+      "description": "",
+      "headings": [],
+      "text": "DuckDuckGo DuckDuckGo Unfortunately, bots use DuckDuckGo too. Please complete the following challenge to confirm this search was made by a human. Select all squares containing a duck: Submit Images not loading? Please email the following code to: error-lite+edd8@duckduckgo.com Code: edd8",
+      "sha256_text": "0f2aa383537e8bd1473517d9e6422e64b06b209b6d027d31f2f25e1903517328",
+      "links": [
+        {
+          "url": "https://html.duckduckgo.com/html/",
+          "label": "DuckDuckGo"
+        }
+      ],
+      "image_metadata": [
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/61eab3a91dc101e9ed81b2f84725d511.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/26d6dc152174a62dd26ffb51ca66a3dc.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/f7d7cf65d670262984d730462b7d448e.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/ec2997abe0e3e70b70ecea1c528b9fec.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/533777d749312e8199c3d5ae39fcdd8c.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/8e9a317bc3e4d846d8b33328e3c3fd2a.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/0937516c6a6d9a4c7bd3b6fcdb673ef0.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/036ef386126084b6275ff34fabda050d.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://html.duckduckgo.com/assets/anomaly/images/challenge/2715fb5fbd4f8b0e5f866ddcaafe1a6c.jpg",
+          "alt": " "
+        },
+        {
+          "url": "https://duckduckgo.com/t/tqadb?5347003&s=lite&i=-1&p=61eab3a91dc101e9ed81b2f84725d511-26d6dc152174a62dd26ffb51ca66a3dc-f7d7cf65d670262984d730462b7d448e-ec2997abe0e3e70b70ecea1c528b9fec-533777d749312e8199c3d5ae39fcdd8c-8e9a317bc3e4d846d8b33328e3c3fd2a-0937516c6a6d9a4c7bd3b6fcdb673ef0-036ef386126084b6275ff34fabda050d-2715fb5fbd4f8b0e5f866ddcaafe1a6c&e=0&c=dadb&iadb=0&gk=d4cd0dabcf4caa22ad92fab40844c786&r=euw&cc=sre&sc=1&o=H6ytKIL3NtYz%2Fg2DthHMIH8yeHUIvPXnP6u4TrbPqCE7pRQA56tBvp9N1bLAQDR%2B%0A",
+          "alt": ""
+        }
+      ],
+      "video_elements": 0,
+      "next_action": "browser_review",
+      "quality": "not_research_content"
+    },
+    "collected_at": "2026-11-08T05:17:02.312930+00:00",
+    "limits": "Результаты поиска — кандидаты, их соответствие нише подтверждает пользователь."
+  },
+  "suggestions": [
+    {
+      "name": "Migrun",
+      "url": "https://www.migrun.tech/ru",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "Migran",
+      "url": "https://www.migran.es/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "Relotus",
+      "url": "https://relotus-relocation.com/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "Релокейт Групп",
+      "url": "https://relocate-legal.com/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "e-residence",
+      "url": "https://e-residence.com/ru/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "DISCUS HOLDINGS PRIVATE CLIENTS",
+      "url": "https://dhprivate.com/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "MigrAll Portugal",
+      "url": "https://www.migrall.com/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "MoveToCascais",
+      "url": "https://movetocascais.com/ru/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "PortugalDom",
+      "url": "https://portugaldom.pt/legalizacziya-v-portugalii/",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "MONOLITE",
+      "url": "https://monolite.pt/#uslugi",
+      "origin": "Согласованный список прежнего исследования"
+    },
+    {
+      "name": "OKNO Agency",
+      "url": "https://okno.agency",
+      "origin": "Согласованный список прежнего исследования"
+    }
+  ],
+  "report": {
+    "run_id": "db5cb5e1-b928-410b-8fde-7246ce3d251e",
+    "companies": 3,
+    "companies_without_content": 0,
+    "evidence": 98,
+    "new_llm_calls": 0,
+    "api_cost": 0
+  }
+}

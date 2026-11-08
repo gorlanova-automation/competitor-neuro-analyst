@@ -100,12 +100,18 @@ def fetch(session,url,policies,include_html=False):
     videos=len(soup.select('video,iframe[src*="youtube"]'))
     for node in soup(['script','style','noscript','template','svg']):node.decompose()
     text=re.sub(r'\s+',' ',soup.get_text(' ',strip=True)).strip()
+    blocks=[]
+    for node in soup.select('p,li,h1,h2,h3,div'):
+        if node.find_parent(['nav','header','footer']) or node.name=='div' and node.find(['div','p','li']):continue
+        block=re.sub(r'\s+',' ',node.get_text(' ',strip=True)).strip()
+        linked=sum(len(a.get_text(' ',strip=True)) for a in node.select('a'))
+        if 35<=len(block)<=650 and block in text and linked<len(block)*.6 and block not in blocks:blocks.append(block)
     status='ok';action=None
     if re.search(r'/accounts/login|/login(?:[/?]|$)|consent\.',response['url'],re.I):status='login_required';action='browser_review'
     elif re.search(r'checking your browser|just a moment|verify you are human|captcha|complete the following challenge|select all squares|unfortunately,? bots',title+' '+text[:700],re.I):status='challenge_page';action='browser_review'
     elif len(text)<200:status='render_required';action='browser_review'
     page={**result,'status':status,'title':title,'description':description,'headings':headings,'text':text,
-        'sha256_text':hashlib.sha256(text.encode()).hexdigest(),'links':links,'image_metadata':images,
+        'sha256_text':hashlib.sha256(text.encode()).hexdigest(),'links':links,'image_metadata':images,'text_blocks':blocks[:300],
         'video_elements':videos,'next_action':action,'quality':'text_received_not_semantically_verified' if status=='ok' else 'not_research_content'}
     if include_html:page['html']=response['body']
     return page

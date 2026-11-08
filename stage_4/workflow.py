@@ -155,6 +155,14 @@ def observations(sources):
     for source in sources:
         if source['status']!='ok':continue
         for category,pattern in patterns.items():
+            blocks=[b for b in source.get('text_blocks',[]) if re.search(pattern,b,re.I) and b in source['text']]
+            if blocks:
+                for excerpt in blocks[:8]:
+                    rows.append({'category':category,'quote':excerpt,'url':source.get('final_url',source['url']),
+                                 'source_sha256':source['sha256_text'],'source_method':source.get('method'),
+                                 'collected_at':source.get('collected_at'),'method':'content_block_requires_review'})
+                continue
+            if source.get('text_blocks'):continue
             matches=list(re.finditer(pattern,source['text'],re.I))[:5]
             for match in matches:
                 excerpt=source['text'][max(0,match.start()-60):min(len(source['text']),match.end()+180)]
@@ -270,7 +278,7 @@ def render_report(result):
 
 
 def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var/projects',project_id=None,
-                action='start',uploads=None,max_pages=4,api_key=None,model='openai/gpt-6-luna',review=None):
+                action='start',uploads=None,max_pages=4,api_key=None,model='openai/gpt-6-luna',review=None,progress=None):
     """Single orchestrator. Every action receives its inputs explicitly.
 
     start → confirm_profile → search (optional) → confirm_competitors → collect.
@@ -361,12 +369,18 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             run_id=str(uuid4());run_folder=folder/'runs'/run_id;run_folder.mkdir(parents=True)
             companies=[]
             with new_session() as session:
+                if progress:progress('Собираем страницы своей компании')
                 own=collect_site(state['url'],session,uploads or {},max_pages)
                 # Use the confirmed snapshot if the live page changed or is unavailable.
+                for fresh in own:
+                    if fresh.get('sha256_text')==source['sha256_text'] and fresh.get('text_blocks'):
+                        source={**source,'text_blocks':fresh['text_blocks']}
                 companies.append({'url':state['url'],'role':'own','sources':[source]+[s for s in own if s.get('sha256_text')!=source['sha256_text']]})
                 for competitor in state['competitors']:
+                    if progress:progress('Собираем '+(competitor.get('name') or competitor['url']))
                     companies.append({**competitor,'role':'competitor','sources':collect_site(competitor['url'],session,uploads or {},max_pages)})
                 for company in companies:
+                    if progress:progress('Проверяем открытые публикации: '+company['url'])
                     posts,samples=sample_publications(company['sources'],session)
                     company['sources'].extend(posts);company['publication_samples']=samples
             save(run_folder/'sources.json',companies)

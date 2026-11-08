@@ -1,0 +1,1874 @@
+{
+  "run_id": "db5cb5e1-b928-410b-8fde-7246ce3d251e",
+  "generated_at": "2026-11-08T05:24:13.419782+00:00",
+  "profile": {
+    "company_name": "Immigration Relocator",
+    "summary": "Вы мечтаете, мы воплощаем в жизнь! Упрощаем процесс релокации, сделав его простым и понятным! Помогаем в адаптации, а бюрократию берем на себя.",
+    "offering": [
+      "Оформляем ВНЖ и гражданство в Португалии, Испании и Франции"
+    ],
+    "market_scope": "Португалия и Испания; русскоязычные клиенты, переезд и адаптация",
+    "search_terms": "релокация ВНЖ сопровождение переезда",
+    "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+    "method": "metadata_draft_requires_confirmation"
+  },
+  "companies": [
+    {
+      "url": "https://immigration-relocator.com/",
+      "name": "Immigration Relocator",
+      "role": "own",
+      "added_by": "own_site",
+      "pages_ok": 4,
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "Сопровождаем клиентов на каждом шаге — от выбора страны до получения ВНЖ, гражданства или открытия бизнеса.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас!",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас!",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас!",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:04.074785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте свои контактные данные и наш менеджер свяжется с вами и проконсультирует вас!",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:05.448783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Диагностика миграционного кейса Полная-консультация (€150)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Ксения главный иммиграционный эксперт",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Выбирая нас, вы выбираете опыт, надёжность и результат",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "за первый час, каждый последующий час по €100,00",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "ВНЖ для детей (14-18 лет) через учебу по статье 91.2",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Юридически грамотное оформление без риска отказа. Работаем по договору, оплата частями, сопровождение релокации «под ключ»",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Помогаем выбрать оптимальный маршрут: ВНЖ, резиденция, вторая страна, гражданство или набор стратегий сразу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Мы успешно довели до получения ВНЖ каждую поданную заявку. Даже в 37 сложных случаях нашли решения, которые устроили клиентов и соответствовали закону.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Открытие банковского счета с личным сопровождением для лиц имеющих действительный ВНЖ ЕС (с истребованием NIF)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Помощь в открытии банковского счета с личным сопровождением для лиц имеющих действительный ВНЖ ЕС (без истребования NIF)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Стоимость подготовки дополнительных доверенностей и заверения доверенностей для банка и государственных учреждений",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "медицинская справка - (нужен Número de utente) записываем Вас на онлайн прием в к доктору для запроса справки. (справка входит в стоимость)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "подтверждение подлинности ваших прав - справка из ГИБДД с апостилем. (перевод и заверение входит в стоимость)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "за один документ (далее цена зависит от структуры доходов и объема налоговой отчетности)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Заполнение и структурирование всех документов (включая формуляры, заявления и сопроводительные файлы): личная консультация в нашем офисе",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Узнайте стоимость «под ключ» с учетом всех госпошлин и доп.расходов",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "В каких странах открытие бизнеса помогает в получении ВНЖ?",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Сделаем все возможное, чтобы записать вас на сдачу документов как можно раньше",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Отправляя заявки, я даю согласие с политикой конфиденциальности",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Диагностика миграционного кейса Полная-консультация (€150)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Банковское и налоговое сопровождение",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Открытие счета компании в банке Португалии с личным сопровождением",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Личное сопровождение при подаче заявки в AIMA",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Персональный подбор и сопровождение аренды",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Комплексное сопровождение покупки недвижимости по договору",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Нотариальное сопровождение сделки купли-продажи недвижимости",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "за один документ (далее цена зависит от объема документов)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Стоимость одного переведенного листа",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "2 часа в месяц (далее цена зависит от программы и скорости процесса)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Запись в Миграционную службу (AIMA) при отсутствии слотов с помощью юриста",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Консультация по налогообложению в Португалии",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Запись в Консульство Португалии в стране запроса визы",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Запись в Миграционную службу (AIMA) при доступных слотах",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Личное сопровождение при подаче заявки в AIMA",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Отслеживание статуса заявки и реагирование на дозапросы юристом",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Банковское и налоговое сопровождение",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:04.074785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Записи и взаимодействие с госорганами Испании",
+          "url": "https://immigration-relocator.com/es-otherservices",
+          "source_sha256": "422206bac4b3594e9bceb9ae3f478726caa19761d4daeb6435fab819f189da81",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:04.074785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Административные услуги на 1 год жизни",
+          "url": "https://immigration-relocator.com/fr-otherservices",
+          "source_sha256": "45d581dfdf61a56f892c8afa601a6f6ac47c58edd0ba93d151d724117bbf5bf7",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:05.448783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 13,
+        "pricing": 11,
+        "positioning": 6,
+        "conversion": 19,
+        "editorial": 1,
+        "tone": 4
+      },
+      "channels": [
+        {
+          "url": "https://t.me/+351913098628",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.instagram.com/immigration_relocator",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.facebook.com/immigrationrelocator.fb",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/immigrationrelocatorbot",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/USERNAME_BOT",
+          "found_on": "https://immigration-relocator.com/fr-otherservices",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": [],
+      "sections": [
+        {
+          "title": "Оформляем ВНЖ и гражданство в Португалии, Испании и Франции",
+          "url": "https://immigration-relocator.com/"
+        }
+      ],
+      "gaps": [
+        "Визуал: требуется просмотр реальных снимков"
+      ]
+    },
+    {
+      "url": "https://monolite.pt/",
+      "name": "MONOLITE · Португалия",
+      "role": "competitor",
+      "added_by": "user_added",
+      "pages_ok": 1,
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Мы сопровождаем клиентов по всему миру — от Европы до Ближнего Востока и Северной Америки.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Свяжитесь с нами, чтобы уточнить наличие нужного вам направления. Мы работаем с более чем 30 странами.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Организовываем процесс под ключ и сопровождаем на каждом шаге",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "От конверта до контейнера. Оказываем следующий перечень услуг:",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Или свяжитесь с нами для получение большей информации:",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Оставьте заявку и получите консультацию иммиграционного специалиста",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Консультационная поддержка юриста на каждом этапе вашего иммиграционного процесса. Делаем записи и регистрации во все необходимые инстанции и госучреждения, подготавливаем все требующиеся для процесса документы, откроем счет в банке, предоставим португалоговорящего юриста для сопровождения в миграционные органы.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Подберем недвижимость в аренду или на покупку. Подключим все необходимые коммуникации и Интернет. Поможем с выбором и зачислением детей в школы и ВУЗы. Оформим страховые полисы, зарегистрируем в поликлинике, поможем с выбором автомобиля, поменяем водительское удостоверение и конечно продлим ваш ВНЖ или подадим на гражданство.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Более трех лет мы ежедневно помогаем нашим клиентам решать их задачи по иммиграции, приобретению или аренде недвижимости, а также оказываем всестороннюю поддержку в прочих юридических, административных и бытовых вопросах",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Ответственность - одно из основных наших качеств благодаря которым мы предоставляем высокое качество сервиса и гарантируем результат.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Консультационная поддержка юриста на каждом этапе вашего иммиграционного процесса. Делаем записи и регистрации во все необходимые инстанции и госучреждения, подготавливаем все требующиеся для процесса документы, откроем счет в банке, предоставим португалоговорящего юриста для сопровождения в миграционные органы.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Также наша компания оказывает следующие виды услуг:",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Мы сопровождаем клиентов по всему миру — от Европы до Ближнего Востока и Северной Америки.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Свяжитесь с нами, чтобы уточнить наличие нужного вам направления. Мы работаем с более чем 30 странами.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Консультационная поддержка юриста на каждом этапе вашего иммиграционного процесса. Делаем записи и регистрации во все необходимые инстанции и госучреждения, подготавливаем все требующиеся для процесса документы, откроем счет в банке, предоставим португалоговорящего юриста для сопровождения в миграционные органы.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 6,
+        "pricing": 0,
+        "positioning": 3,
+        "conversion": 4,
+        "editorial": 0,
+        "tone": 4
+      },
+      "channels": [
+        {
+          "url": "https://www.instagram.com/pro.portugal?igsh=Z3d2bTI5cXpyaGty&utm_source=qr",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/monolite_pt",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://t.me/nasty0510",
+          "found_on": "https://monolite.pt/",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [
+        {
+          "url": "https://t.me/s/monolite_pt",
+          "found_on": "https://monolite.pt/",
+          "status": "no_public_messages_observed",
+          "posts": 0
+        },
+        {
+          "url": "https://t.me/s/nasty0510",
+          "found_on": "https://monolite.pt/",
+          "status": "render_required",
+          "posts": 0
+        }
+      ],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": [],
+      "sections": [],
+      "gaps": [
+        "Цены и условия: недостаточно данных",
+        "Материалы и публикации: недостаточно данных",
+        "Визуал: требуется просмотр реальных снимков"
+      ]
+    },
+    {
+      "url": "https://okno.agency/",
+      "name": "OKNO Agency",
+      "role": "competitor",
+      "added_by": "user_added",
+      "pages_ok": 4,
+      "evidence": [
+        {
+          "category": "positioning",
+          "quote": "Новости AIMA, изменения законодательства, опыт людей, которые уже переехали, и обсуждение жизни в Португалии.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Определяем состав участников, руководство, доли и виды деятельности, готовим данные для подачи и сопровождаем регистрацию до получения корпоративных документов.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "Практические материалы о переезде, ВНЖ, работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика.",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "Чем отличаются D1, национальный ВНЖ по статье 90 и EU Blue Card, когда подходит работа по service contract и почему прям",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Основатель в Португалии с 2012 года Личный опыт жизни и бизнеса в стране.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Стоимость сопровождения: от 1 000 €",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Если нужен подробный разбор документов и ситуации, запишитесь на консультацию.",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Запросить сопровождение Если вы уже понимаете, какая услуга нужна, и хотите передать процесс команде.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Помогаем переехать в Португалию и решать здесь важные юридические и административные вопросы: ВНЖ, гражданство, семья, недвижимость, бизнес и документы.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Отзывы людей, которым OKNO помогал с ВНЖ, гражданством, документами, недвижимостью и юридическими вопросами в Португалии.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "5 000+ консультаций, 1 000+ кейсов, португальские адвокаты и команда в Португалии.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Проводит сложные и стратегические консультации по переезду, ВНЖ, бизнесу, капиталу, недвижимости и нестандартным ситуациям.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "Новости AIMA, изменения законодательства, опыт людей, которые уже переехали, и обсуждение жизни в Португалии.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Подготовка или проверка стандартного договора на оказание услуг или другого типового коммерческого документа.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Бухгалтерское обслуживание не входит в перечень услуг на этой странице и согласовывается отдельно.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Не обязательно заранее знать, нужна вам компания, банковское сопровождение или адвокат.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Опишите задачу и то, что уже сделано. Мы определим, нужна ли регистрация, банковское сопровождение или помощь адвоката, а вопрос ВНЖ проверим отдельно.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "Готовим корпоративный комплект, проверяем данные компании, участников и руководителей, помогаем пройти идентификацию и отвечать на запросы банка.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "editorial",
+          "quote": "Определяем состав участников, руководство, доли и виды деятельности, готовим данные для подачи и сопровождаем регистрацию до получения корпоративных документов.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Адвокат в Лиссабоне: юридические услуги на русском и украинском языке для иммигрантов",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Чем отличаются D1, национальный ВНЖ по статье 90 и EU Blue Card, когда подходит работа по service contract и почему прям",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Что важно проверить в трудовом договоре в Португалии, чем трудовой договор отличается от договора услуг, что делать при увольнении, споре о выплатах и изменении условий труда.",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Внутри одной системы работают специалисты по иммиграции, клиентскому сопровождению, документам, недвижимости и бизнесу. Юридические задачи, где требуется адвокат, передаются португальским адвокатам.",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "positioning",
+          "quote": "OKNO Agency помогает русско- и украиноязычным клиентам решать иммиграционные, семейные, юридические, нотариальные, имущественные и бизнес-задачи в Португалии.",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "5 000+ консультаций Для частных клиентов, семей и компаний.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Обсудить бизнес-задачу Выбрать услугу",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Стоимость сопровождения: от 1 000 €",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Договор услуг или стандартный коммерческий договор",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "pricing",
+          "quote": "Стоимость: по запросу после проверки компании и документов",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Когда нужен адвокат в Португалии: консультация, документы, переговоры и суд",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Записаться на консультацию Запросить сопровождение",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "за нотариальными и документальными услугами.",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "assortment",
+          "quote": "Если услуга уже понятна, можно сразу запросить сопровождение.",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "conversion",
+          "quote": "Записаться на консультацию Запросить сопровождение",
+          "url": "https://okno.agency/about",
+          "source_sha256": "1951b0779c717a32b698d1926d6948a0788cb28f5b5666e1901274b1123afb91",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.583783+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Практические материалы о переезде, ВНЖ, работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика.",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Запросить сопровождение Если вы уже понимаете, какая услуга нужна, и хотите передать процесс команде.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Начните с того, где вы сейчас и какую задачу хотите решить. Мы поможем понять, какой следующий шаг подходит именно вам.",
+          "url": "https://okno.agency/",
+          "source_sha256": "73f8e50466e2a0bee06c6e757871cf5dbef33556db0b4637dfc087dfdae9d10f",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:09.023786+00:00",
+          "method": "content_block_requires_review"
+        },
+        {
+          "category": "tone",
+          "quote": "Опишите задачу и то, что уже сделано. Мы определим, нужна ли регистрация, банковское сопровождение или помощь адвоката, а вопрос ВНЖ проверим отдельно.",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review"
+        }
+      ],
+      "dimensions": {
+        "assortment": 16,
+        "pricing": 2,
+        "positioning": 7,
+        "conversion": 6,
+        "editorial": 4,
+        "tone": 4
+      },
+      "channels": [
+        {
+          "url": "https://t.me/okno_agency",
+          "found_on": "https://okno.agency/about",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NBfYX1n2A0g",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=48o-PmURMaI",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZL6zRYSQIyI",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        },
+        {
+          "url": "https://www.youtube.com/@oknoagency",
+          "found_on": "https://okno.agency/",
+          "status": "link_found_content_not_collected"
+        }
+      ],
+      "publication_samples": [
+        {
+          "url": "https://t.me/s/okno_agency",
+          "found_on": "https://okno.agency/",
+          "status": "no_public_messages_observed",
+          "posts": 0
+        }
+      ],
+      "posts_collected": 0,
+      "visual_status": "requires_screenshot_review",
+      "failures": [],
+      "sections": [
+        {
+          "title": "Иммиграция, ВНЖ и юридическая помощь в Португалии",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Выберите свою ситуацию",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Я ещё не в Португалии",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Я уже в Португалии",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Гражданство Португалии",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Юридическая помощь, документы, недвижимость и бизнес",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Почему OKNO",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Команда в Португалии",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Отзывы клиентов",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Реальные кейсы",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "OKNO в YouTube и Telegram",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "YouTube OKNO",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Telegram-сообщество OKNO",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Проекты группы OKNO",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "С чего начать",
+          "url": "https://okno.agency/"
+        },
+        {
+          "title": "Услуги для бизнеса в Португалии",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Основные услуги",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Регистрация компании в Португалии",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Корпоративный банковский счёт",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Адвокат для бизнеса",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Команда OKNO в Португалии",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Отдельные юридические задачи бизнеса",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Изменения в компании",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Трудовой договор",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Договор услуг или стандартный коммерческий договор",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Компания и самостоятельная деятельность: разные формы работы",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Если бизнес связан с ВНЖ",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "D2 для предпринимателя",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Startup Visa",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Сотрудники и специалисты",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Что нужно сделать после регистрации компании",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Полезные материалы",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Компания LDA в Португалии: регистрация, капитал и RCBE",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Корпоративный банковский счёт в Португалии",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Компания и ВНЖ D2: что связано, а что нет",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Трудовой договор и увольнение в Португалии",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Как начать",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "Хотите открыть компанию или решить задачу действующего бизнеса?",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy"
+        },
+        {
+          "title": "База знаний о Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "ВНЖ в Португалии: все основания и варианты",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Переезд в Португалию | Адаптация и обустройство семьи под ключ",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Адвокат в Лиссабоне: юридические услуги на русском и украинском языке для иммигрантов",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Гражданство Португалии в 2026 году: основания и документы",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Недвижимость в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Семья и брак в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Новые и обновлённые материалы",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Recibos verdes или LDA в Португалии: что выбрать в 2026 году",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Startup Visa или D2 в Португалии: что выбрать предпринимателю",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "D1, D3 или EU Blue Card: что выбрать для работы в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Учёба в Португалии: D4, студенческий ВНЖ и что проверить до поступления",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "D7, D8 или D2: какой ВНЖ Португалии подходит под ваш доход и работу",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Переезд в Португалию: что решить до визы и до покупки билетов",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Воссоединение семьи в Португалии: D6, сроки и подача из Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Первые 90 дней в Португалии: что сделать после переезда",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "NIF, NISS и SNS в Португалии: что это и что получать первым",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Покупка недвижимости за криптовалюту в Португалии: как устроена сделка",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Налоги и расходы при покупке недвижимости в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Ипотека в Португалии: как проходит покупка недвижимости с кредитом",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Покупка проблемной недвижимости в Португалии: что проверить до сделки",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Аренда жилья в Португалии: договор, депозит и риски",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Наследство в Португалии: что делать с недвижимостью",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Брак в Португалии для иностранцев: документы и порядок регистрации",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Режимы имущества супругов в Португалии и брачный договор",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Регистрация иностранного брака в Португалии: когда нужна transcrição de casamento",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Признание иностранного развода в Португалии: когда нужен суд",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Развод, дети и родительские права в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Когда нужен адвокат в Португалии: консультация, документы, переговоры и суд",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Внесудебное урегулирование спора в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Суд в Португалии: что проверить до подачи иска",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Трудовой договор и увольнение в Португалии: что проверить работнику и работодателю",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Корпоративный банковский счёт в Португалии: документы и проверка банка",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Компания в Португалии и ВНЖ D2: что связано, а что нет",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "ВНЖ и переезд",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Жизнь в Португалии",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Работа и бизнес",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Документы и право",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Недвижимость",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "Все публикации",
+          "url": "https://okno.agency/blog"
+        },
+        {
+          "title": "О компании OKNO Agency",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "Что мы делаем",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "OKNO в цифрах",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "Основатель",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "Андрей Михалевич",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "Наш подход",
+          "url": "https://okno.agency/about"
+        },
+        {
+          "title": "Проекты группы",
+          "url": "https://okno.agency/about"
+        }
+      ],
+      "gaps": [
+        "Визуал: требуется просмотр реальных снимков"
+      ]
+    }
+  ],
+  "dimensions": {
+    "assortment": "Ассортимент",
+    "pricing": "Цены и условия",
+    "positioning": "Позиционирование",
+    "conversion": "Обращение и продажа",
+    "editorial": "Материалы и публикации",
+    "tone": "Тон и обращение"
+  },
+  "recommendations": [
+    {
+      "kind": "check",
+      "title": "Проверить абсолютное обещание в собственной подаче",
+      "action": "В своей цитате есть обещание результата без риска или полного одобрения. Проверьте подтверждения и условия. Если доказательств нет, замените абсолютное обещание описанием процесса, границ ответственности и факторов решения; проверьте формулировку у ответственного специалиста.",
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "Юридически грамотное оформление без риска отказа. Работаем по договору, оплата частями, сопровождение релокации «под ключ»",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Формулировка подтверждена источниками и не создаёт ожидания гарантированного решения третьей стороны."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: ассортимент",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "Сопровождаем клиентов на каждом шаге — от выбора страны до получения ВНЖ, гражданства или открытия бизнеса.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у MONOLITE · Португалия: ассортимент",
+      "action": "Сопоставьте предложение из цитаты со своей линейкой: состав, аудитория, результат, ограничения. Если есть спрос и компетенции, подготовьте отдельную карточку или пакет; не копируйте обещания без проверки.",
+      "evidence": [
+        {
+          "category": "assortment",
+          "quote": "Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review",
+          "company": "MONOLITE · Португалия",
+          "company_url": "https://monolite.pt/"
+        },
+        {
+          "category": "assortment",
+          "quote": "Сопровождаем клиентов на каждом шаге — от выбора страны до получения ВНЖ, гражданства или открытия бизнеса.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: цены и условия",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "pricing",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у OKNO Agency: цены и условия",
+      "action": "Проверьте формат объяснения цены: что входит, что оплачивается отдельно, срок и условия. Протестируйте такой же уровень прозрачности на своей странице; суммы разных пакетов не ранжируйте.",
+      "evidence": [
+        {
+          "category": "pricing",
+          "quote": "Стоимость сопровождения: от 1 000 €",
+          "url": "https://okno.agency/uslugi/uslugi-dlya-kompaniy",
+          "source_sha256": "af25bf386f2da12212c7b7a20b6d8c77aa5c9f8b62b11c7b711743bf00255b34",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.026787+00:00",
+          "method": "content_block_requires_review",
+          "company": "OKNO Agency",
+          "company_url": "https://okno.agency/"
+        },
+        {
+          "category": "pricing",
+          "quote": "Диагностика миграционного кейса (30 мин, бесплатная) Если вам необходимо понять, подойдете ли вы под текущие требования законов. Полная-консультация (1 час, платная, €150) Если вы уже знаете, что вы хотите, и вам нужен конкретный план действий, документов и уточнить нюансы актуального законодательства. 3 причины записаться на консультацию: 1️⃣ Расскажем о деталях законодательства , которые необходимо соблюсти. 2️⃣ Проверим правильность заполнения форм, предоставим образцы и рекомендации по оформлению документов или сделаем это за вас. 3️⃣ Поможем избежать ошибок и неправильных действий , которые могут привести к отказу.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: позиционирование",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "positioning",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у MONOLITE · Португалия: позиционирование",
+      "action": "Разберите аргумент из цитаты. Подберите собственное проверяемое доказательство — кейс, процесс или подтверждённый опыт — и протестируйте его в первом экране.",
+      "evidence": [
+        {
+          "category": "positioning",
+          "quote": "Подберем недвижимость в аренду или на покупку. Подключим все необходимые коммуникации и Интернет. Поможем с выбором и зачислением детей в школы и ВУЗы. Оформим страховые полисы, зарегистрируем в поликлинике, поможем с выбором автомобиля, поменяем водительское удостоверение и конечно продлим ваш ВНЖ или подадим на гражданство.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review",
+          "company": "MONOLITE · Португалия",
+          "company_url": "https://monolite.pt/"
+        },
+        {
+          "category": "positioning",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: обращение и продажа",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "conversion",
+          "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у MONOLITE · Португалия: обращение и продажа",
+      "action": "Разберите путь обращения в цитате: первый шаг, ожидаемый результат и срок ответа. Протестируйте понятный аналог на своей странице и измерьте долю завершённых обращений.",
+      "evidence": [
+        {
+          "category": "conversion",
+          "quote": "Свяжитесь с нами, чтобы уточнить наличие нужного вам направления. Мы работаем с более чем 30 странами.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review",
+          "company": "MONOLITE · Португалия",
+          "company_url": "https://monolite.pt/"
+        },
+        {
+          "category": "conversion",
+          "quote": "Мы уже готовим оптимальное решение на основе ваших ответов. Наберитесь немного терпения, наш менеджер свяжется с вами в течение получаса (в рабочее время)",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: материалы и публикации",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "editorial",
+          "quote": "ВНЖ для детей (14-18 лет) через учебу по статье 91.2",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у OKNO Agency: материалы и публикации",
+      "action": "Используйте тему или формат материала как повод для интервью с аудиторией. Подготовьте собственный практический материал, проверьте актуальность и добавьте следующий шаг к обращению.",
+      "evidence": [
+        {
+          "category": "editorial",
+          "quote": "Практические материалы о переезде, ВНЖ, работе, бизнесе и жизни в Португалии. Мы обновляем ключевые статьи, когда меняются правила или практика.",
+          "url": "https://okno.agency/blog",
+          "source_sha256": "44c1c3e7d830c94f7fc9d646f24b128f9d4e1993562d06e08b26a33a3ac9fb5a",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:10.311785+00:00",
+          "method": "content_block_requires_review",
+          "company": "OKNO Agency",
+          "company_url": "https://okno.agency/"
+        },
+        {
+          "category": "editorial",
+          "quote": "ВНЖ для детей (14-18 лет) через учебу по статье 91.2",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:01.888785+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "keep",
+      "title": "Сохранить и сделать заметнее: тон и обращение",
+      "action": "Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.",
+      "evidence": [
+        {
+          "category": "tone",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки."
+    },
+    {
+      "kind": "adapt",
+      "title": "Что можно адаптировать у MONOLITE · Португалия: тон и обращение",
+      "action": "Разберите обращение и обещание в цитате: кто говорит, какую задачу клиента называет, что обещает. Перепишите собственный текст в подходящем аудитории тоне и проверьте понимание; не переносите чужие гарантии.",
+      "evidence": [
+        {
+          "category": "tone",
+          "quote": "Мы сопровождаем частных клиентов, семьи и бизнес по маршрутам: Европа, Азия, США.",
+          "url": "https://monolite.pt/",
+          "source_sha256": "059757d2b843f54e8e63c4eba51037d032ae8e30fb1199845432ff23ce514218",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:24:07.179788+00:00",
+          "method": "content_block_requires_review",
+          "company": "MONOLITE · Португалия",
+          "company_url": "https://monolite.pt/"
+        },
+        {
+          "category": "tone",
+          "quote": "У нас есть большая экспертиза в Европе, а также есть программы инвестиционного гражданства по всему миру. Более 8 лет мы сопровождаем сложные и нестандартные иммиграционные кейсы.",
+          "url": "https://immigration-relocator.com/",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6",
+          "source_method": "requests_beautifulsoup_resilient_v2",
+          "collected_at": "2026-11-08T05:15:43.930365+00:00",
+          "method": "content_block_requires_review",
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/"
+        }
+      ],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей."
+    },
+    {
+      "kind": "market",
+      "title": "Возможность отстройки: понятность условий",
+      "action": "Проведите одинаковую проверку состава, срока, итоговой цены и исключений у всех компаний. Если подтвердится общая непрозрачность, протестируйте полное объяснение своих условий. Сейчас недостаток цитат не доказывает слабость рынка.",
+      "evidence": [],
+      "status": "Гипотеза для проверки",
+      "success_check": "Сопоставимые пакеты проверены по источникам; клиенты верно понимают итоговые условия."
+    }
+  ],
+  "limits": [
+    "Упоминание не доказывает продажу услуги. Отсутствие цитаты означает недостаток данных.",
+    "Ссылки на соцсети не означают прочитанные публикации. Эффективность продвижения не измерена.",
+    "Визуал требует просмотра снимков; цвета и качество дизайна по тексту не определяются.",
+    "Цены без состава пакета, даты и условий нельзя считать сопоставимыми."
+  ],
+  "method": "Сравнение сохранённых цитат и правила подготовки проверяемых действий; без нового LLM-вызова.",
+  "new_llm_calls": 0,
+  "verification_provenance": "Assistant browser QA on real public websites; not acceptance by Elena."
+}

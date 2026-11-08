@@ -16,6 +16,19 @@ class Response:
 
 
 class FetchTests(unittest.TestCase):
+    def test_content_blocks_exclude_navigation_and_preserve_exact_quotes(self):
+        paragraph='We offer company registration with clear conditions and consultation for international clients.'
+        navigation='Services pricing contact home navigation menu repeated words for the site.'
+        body=('<html><nav><p>'+navigation+'</p></nav><main><p>'+paragraph+'</p><p>'+paragraph+'</p></main></html>').encode()
+        session=Mock();session.get.side_effect=[Response(404),Response(body=body)]
+        source=fetch(session,'https://example.org/',{})
+        self.assertEqual(source['text_blocks'],[paragraph])
+        self.assertIn(paragraph,source['text'])
+        from stage_4.workflow import observations
+        rows=observations([source])
+        self.assertTrue(rows)
+        self.assertTrue(all(r['quote']==paragraph for r in rows))
+
     def test_new_runs_cannot_overwrite_previous_sources(self):
         from market_research import create_run_directory
         with tempfile.TemporaryDirectory() as folder:

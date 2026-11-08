@@ -1,0 +1,9 @@
+.git
+var
+**/__pycache__
+stage_4/results
+stage_4/review
+stage_4/packages
+stage_5
+*.env
+.env*

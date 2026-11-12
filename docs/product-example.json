@@ -11798,69 +11798,6 @@
   "recommendations": [
     {
       "kind": "adapt",
-      "title": "Показывать состав сопровождения по странам",
-      "action": "Для ключевых маршрутов оформить отдельные карточки: этапы, включённые услуги, дополнительные опции и границы ответственности.",
-      "reason": "У своей компании широкий перечень, но подробная номенклатура и цены преимущественно относятся к Португалии; конкуренты также показывают страновые и предметные разборы. Ясная комплектация уменьшит неопределённость выбора.",
-      "success_check": "Для Португалии и Испании опубликованы карточки с одинаковыми полями: этапы, состав, исключения и следующий шаг.",
-      "evidence_ids": [
-        "c0:assortment",
-        "c0:editorial",
-        "c1:assortment"
-      ],
-      "evidence": [
-        {
-          "company": "Immigration Relocator",
-          "company_url": "https://immigration-relocator.com/",
-          "quote": "Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение семьи",
-          "url": "https://immigration-relocator.com/",
-          "category": "assortment",
-          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6"
-        },
-        {
-          "company": "Immigration Relocator",
-          "company_url": "https://immigration-relocator.com/",
-          "quote": "Истребование документов Переводы и заверения Номер системы здравоохранения (Número de Utente)",
-          "url": "https://immigration-relocator.com/pt-otherservices",
-          "category": "assortment",
-          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d"
-        },
-        {
-          "company": "Immigration Relocator",
-          "company_url": "https://immigration-relocator.com/",
-          "quote": "Действующий заграничный паспорт Национальная виза типа D (если требуется)",
-          "url": "https://immigration-relocator.com/pt-otherservices",
-          "category": "editorial",
-          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d"
-        },
-        {
-          "company": "Immigration Relocator",
-          "company_url": "https://immigration-relocator.com/",
-          "quote": "Истории успеха клиентов Видео отзыв",
-          "url": "https://immigration-relocator.com/",
-          "category": "editorial",
-          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6"
-        },
-        {
-          "company": "Migrun",
-          "company_url": "https://www.migrun.tech/ru",
-          "quote": "Пакеты сопровождения Португалия через Сербию Личная консультация Налоговая консультация NIF / Налоговый номер Открытие ИП Пейролл найм",
-          "url": "https://www.migrun.tech/ru",
-          "category": "assortment",
-          "source_sha256": "4b2b154d7926393cfa2313285aa791463170ae55bc45ffb9459e346fee2cb63c"
-        },
-        {
-          "company": "Migrun",
-          "company_url": "https://www.migrun.tech/ru",
-          "quote": "Корпоративная релокация команд от 5 до 1000+ сотрудников",
-          "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
-          "category": "assortment",
-          "source_sha256": "75c3301f896c76f7abe3b5e3a3590a2e21b0f866c68b1d7235b7aada6a5176fc"
-        }
-      ],
-      "status": "ИИ-гипотеза · требуется проверка"
-    },
-    {
-      "kind": "adapt",
       "title": "Добавить краткий итог после диагностики",
       "action": "После бесплатной 30-минутной диагностики отправлять клиенту резюме запроса, подходящие маршруты и перечень следующих шагов.",
       "reason": "Своя компания уже предлагает бесплатную диагностику; Migrun отдельно обещает резюме после консультации. Такой формат дополняет существующий вход, не требуя менять саму услугу.",
@@ -11903,7 +11840,7 @@
           "source_sha256": "e0f0eacbb1cbed82f61a31317e06ac2a2d1f34b1128b788a1244a10f203f5d26"
         }
       ],
-      "status": "ИИ-гипотеза · требуется проверка"
+      "status": "ИИ-гипотеза · обоснование проверено ИИ"
     },
     {
       "kind": "market",
@@ -11949,7 +11886,7 @@
           "source_sha256": "75c3301f896c76f7abe3b5e3a3590a2e21b0f866c68b1d7235b7aada6a5176fc"
         }
       ],
-      "status": "ИИ-гипотеза · требуется проверка"
+      "status": "ИИ-гипотеза · обоснование проверено ИИ"
     }
   ],
   "limits": [
@@ -12058,7 +11995,24 @@
     "attempts": 1,
     "reused_company_responses": 10,
     "actual_billed_amount": null,
-    "source_report_sha256": "bafa197694ba54255786395761e24d41fb9ad5510e39e5456a84a1de27c60bad"
+    "source_report_sha256": "bafa197694ba54255786395761e24d41fb9ad5510e39e5456a84a1de27c60bad",
+    "recommendation_review": "completed",
+    "recommendation_review_usage": {
+      "prompt_tokens": 4045,
+      "completion_tokens": 448,
+      "total_tokens": 4493,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 4042,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
   },
   "discovery_usage": [
     {
@@ -12150,6 +12104,70 @@
       ],
       "status": "ИИ-гипотеза · требуется проверка",
       "rejection_reason": "При проверке ассистентом отклонено: наличие бесплатной диагностики не доказывает её эффективность и не обосновывает совет сохранить формат."
+    },
+    {
+      "kind": "adapt",
+      "title": "Показывать состав сопровождения по странам",
+      "action": "Для ключевых маршрутов оформить отдельные карточки: этапы, включённые услуги, дополнительные опции и границы ответственности.",
+      "reason": "У своей компании широкий перечень, но подробная номенклатура и цены преимущественно относятся к Португалии; конкуренты также показывают страновые и предметные разборы. Ясная комплектация уменьшит неопределённость выбора.",
+      "success_check": "Для Португалии и Испании опубликованы карточки с одинаковыми полями: этапы, состав, исключения и следующий шаг.",
+      "evidence_ids": [
+        "c0:assortment",
+        "c0:editorial",
+        "c1:assortment"
+      ],
+      "evidence": [
+        {
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/",
+          "quote": "Visa D2 Visa D3 Visa D4 Visa D7 Visa Digital Nomad StartUp Visa HQA Golden Visa Воссоединение семьи",
+          "url": "https://immigration-relocator.com/",
+          "category": "assortment",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6"
+        },
+        {
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/",
+          "quote": "Истребование документов Переводы и заверения Номер системы здравоохранения (Número de Utente)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "category": "assortment",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d"
+        },
+        {
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/",
+          "quote": "Действующий заграничный паспорт Национальная виза типа D (если требуется)",
+          "url": "https://immigration-relocator.com/pt-otherservices",
+          "category": "editorial",
+          "source_sha256": "5c53e197ed89784560e3528793ca3f744d3d308a12ebee75c05b0053d743173d"
+        },
+        {
+          "company": "Immigration Relocator",
+          "company_url": "https://immigration-relocator.com/",
+          "quote": "Истории успеха клиентов Видео отзыв",
+          "url": "https://immigration-relocator.com/",
+          "category": "editorial",
+          "source_sha256": "d7a7872db51d8fd1719cd162460f5d1a55bedfd347883a3a33cb3343d8038bb6"
+        },
+        {
+          "company": "Migrun",
+          "company_url": "https://www.migrun.tech/ru",
+          "quote": "Пакеты сопровождения Португалия через Сербию Личная консультация Налоговая консультация NIF / Налоговый номер Открытие ИП Пейролл найм",
+          "url": "https://www.migrun.tech/ru",
+          "category": "assortment",
+          "source_sha256": "4b2b154d7926393cfa2313285aa791463170ae55bc45ffb9459e346fee2cb63c"
+        },
+        {
+          "company": "Migrun",
+          "company_url": "https://www.migrun.tech/ru",
+          "quote": "Корпоративная релокация команд от 5 до 1000+ сотрудников",
+          "url": "https://www.migrun.tech/ru/relocation-for-teams-and-companies",
+          "category": "assortment",
+          "source_sha256": "75c3301f896c76f7abe3b5e3a3590a2e21b0f866c68b1d7235b7aada6a5176fc"
+        }
+      ],
+      "status": "ИИ-гипотеза · требуется проверка",
+      "rejection_reason": "Источники подтверждают широкий перечень услуг компании и наличие у Migrun страновых пакетов, но не подтверждают заявленное различие в подробности страновых разборов или то, что карточки уменьшат неопределённость. Кроме того, предложение опубликовать карточки для Португалии и Испании не подкреплено сравнением состава и цен по этим маршрутам; ссылки на сведения, преимущественно относящиеся к Португалии, сами по себе не обосновывают конкретный формат."
     }
   ],
   "assistant_review": {

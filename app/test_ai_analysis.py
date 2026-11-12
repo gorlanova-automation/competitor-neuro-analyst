@@ -1,10 +1,28 @@
 import copy
 import unittest
-from app.ai_analysis import DIMENSIONS,validate_profile,validate_synthesis,partial_profile
+from pathlib import Path
+from unittest.mock import patch
+from app.ai_analysis import DIMENSIONS,validate_profile,validate_synthesis,partial_profile,review_recommendations
 from stage_4.workflow import observations,WorkflowError
 
 
 class SemanticProductTests(unittest.TestCase):
+    def test_recommendation_review_matches_ids_and_requires_complete_coverage(self):
+        rows = [{'evidence_ids': ['c0:pricing']} for _ in range(2)]
+        cells = {'c0:pricing': ({'name': 'Own', 'role': 'own'}, {
+            'summary': 'Консультация', 'refs': [], 'status': 'observed',
+        })}
+        rejected = {'id': 'r0', 'decision': 'reject', 'reason': 'Услуги различаются.'}
+        approved = {'id': 'r1', 'decision': 'approve', 'reason': 'Предложен измеримый тест.'}
+        with patch('app.ai_analysis.call_model') as model:
+            model.return_value = {'verdicts': [approved, rejected]}, None
+            verdicts, _ = review_recommendations(rows, cells, '', Path('unused'))
+            self.assertEqual(verdicts, [rejected, approved])
+            for invalid in ([approved], [approved, approved], [approved, {**rejected, 'id': 'r2'}]):
+                model.return_value = {'verdicts': invalid}, None
+                with self.assertRaises(WorkflowError):
+                    review_recommendations(rows, cells, '', Path('unused'))
+
     def setUp(self):
         self.source={'source_id':'s0','text':'Полная консультация стоит 150 евро за час.','url':'https://own.example/','company_url':'https://own.example/','sha256_text':'hash','collected_at':'date','method':'test'}
         self.profile={'dimensions':{k:{'status':'insufficient','summary':'Нет данных.','refs':[]} for k in DIMENSIONS},'gaps':[]}

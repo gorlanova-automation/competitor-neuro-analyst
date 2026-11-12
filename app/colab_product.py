@@ -99,7 +99,7 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 print(json.dumps(channels,ensure_ascii=False,indent=2))
                 if input('Подтвердить принадлежность этих каналов компаниям и собрать публичные посты? да: ').strip().lower()=='да':
                     state=run({'action':'confirm_telegram','telegram_channels':channels},state['id'])
-            if model_key and input('Выполнить смысловой анализ Luna? До '+str(len(competitors)+2)+' запросов, максимум 2500 токенов ответа каждый, без автоматических повторов. да/нет [нет]: ').strip().lower()=='да':
+            if model_key and input('Выполнить анализ и проверку рекомендаций Luna? До '+str(len(competitors)+3)+' запросов, максимум 2500 токенов ответа каждый, без автоматических повторов. да/нет [нет]: ').strip().lower()=='да':
                 state=run({'action':'analyze'},state['id'])
             result=client.get('/api/research/'+state['id']+'/result').json()
             target=export_result(output_dir,state['id'],result)

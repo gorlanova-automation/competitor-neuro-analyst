@@ -7,6 +7,25 @@ from fastapi.testclient import TestClient
 from app.main import create_app
 
 
+def export_result(output_dir,identifier,result):
+    from uuid import UUID
+    target=Path(output_dir)/'exports'/str(UUID(identifier))/'product-result.json'
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    return target
+
+
+def download_saved(output_dir,project_id):
+    """Recover an existing export without collecting or searching again."""
+    from google.colab import files
+    with TestClient(create_app(output_dir)) as client:
+        response=client.get('/api/research/'+project_id+'/result')
+        response.raise_for_status()
+        target=export_result(output_dir,project_id,response.json())
+    files.download(str(target))
+    return target
+
+
 def launch(output_dir='var/colab_product',search_key=None):
     from google.colab import files
     print('Сайт → профиль → кандидаты → ваш список → сбор → JSON для GitHub Pages.')
@@ -62,8 +81,7 @@ def launch(output_dir='var/colab_product',search_key=None):
             state=run({'action':'confirm_competitors','competitors':competitors},state['id'])
             state=run({'action':'collect','max_pages':2,'uploads':uploads},state['id'])
             result=client.get('/api/research/'+state['id']+'/result').json()
-            target=Path(output_dir)/state['id']/'product-result.json'
-            target.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+            target=export_result(output_dir,state['id'],result)
             print('Готово. Компаний:',len(result['companies']),'; страниц:',sum(c['pages_ok'] for c in result['companies']))
             print('Предложения — гипотезы для проверки. Откройте JSON на https://gorlanova-automation.github.io/competitor-neuro-analyst/')
             files.download(str(target))

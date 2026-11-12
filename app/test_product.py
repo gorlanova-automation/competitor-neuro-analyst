@@ -10,6 +10,16 @@ from app.product import product_report
 
 
 class ProductTests(unittest.TestCase):
+    def test_colab_export_creates_its_own_directory(self):
+        from app.colab_product import export_result
+        with tempfile.TemporaryDirectory() as folder:
+            identifier='00000000-0000-0000-0000-000000000001'
+            value={'profile':{'company_name':'Проверка'},'companies':[]}
+            path=export_result(folder,identifier,value)
+            self.assertEqual(json.loads(path.read_text(encoding='utf-8')),value)
+            self.assertEqual(path.parent.parent,Path(folder)/'exports')
+            self.assertFalse((Path(folder)/'projects').exists())
+
     def test_official_candidate_edit_and_manual_browser_continuation(self):
         from app.test_search import Response
         with tempfile.TemporaryDirectory() as folder:

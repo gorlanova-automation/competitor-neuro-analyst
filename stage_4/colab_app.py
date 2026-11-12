@@ -1,5 +1,6 @@
 """Interactive demonstration and new research, with explicit checkpoints."""
 import json
+import os
 import sys
 from pathlib import Path
 from stage_4.workflow import run_project,WorkflowError,public_url
@@ -27,8 +28,21 @@ def launch_colab(output_dir='var/projects'):
     state=run_project(project_id=state['id'],profile=profile,action='confirm_profile',output_dir=output_dir)
     print('Поисковые запросы:',*state['search_queries'],sep='\n')
     if input('Попробовать автоматический поиск кандидатов? да/нет [нет]: ').strip().lower()=='да':
-        state=run_project(project_id=state['id'],action='search',output_dir=output_dir)
-        print(json.dumps(state.get('search'),ensure_ascii=False,indent=2))
+        previous={name:os.environ.get(name) for name in ('TAVILY_API_KEY','ANALYST_SEARCH_ENABLED','ANALYST_SEARCH_PROVIDER','ANALYST_SEARCH_BUDGET_FILE')}
+        try:
+            from google.colab import userdata
+            os.environ['TAVILY_API_KEY']=userdata.get('TAVILY_API_KEY')
+            os.environ['ANALYST_SEARCH_ENABLED']='1'
+            os.environ['ANALYST_SEARCH_PROVIDER']='tavily'
+            os.environ['ANALYST_SEARCH_BUDGET_FILE']=str(Path(output_dir).parent/'search_budget.json')
+            state=run_project(project_id=state['id'],action='search',output_dir=output_dir)
+            print(json.dumps(state.get('search'),ensure_ascii=False,indent=2))
+        except Exception:
+            print('Поиск не завершён. Проверьте доступ к TAVILY_API_KEY в Colab Secrets. Можно продолжить с адресами вручную; повторного запроса нет.')
+        finally:
+            for name,value in previous.items():
+                if value is None:os.environ.pop(name,None)
+                else:os.environ[name]=value
     urls=[u.strip() for u in input('Сайты выбранных конкурентов, через запятую (1–20): ').split(',') if u.strip()]
     print('Будут исследованы:',urls)
     if input('Подтверждаете этот список? Напишите да: ').strip().lower()!='да':return state

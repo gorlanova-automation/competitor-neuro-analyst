@@ -9,6 +9,7 @@ import ipaddress
 import json
 import re
 import socket
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -103,6 +104,9 @@ def capture_source(url,session,policies,uploads):
 def discover(profile):
     """Optional public search; a failed engine never becomes invented candidates."""
     query=queries(profile)[0]
+    if os.environ.get('ANALYST_SEARCH_PROVIDER','tavily')!='duckduckgo':
+        from app.search import official_search
+        return official_search(query)
     with new_session() as session:
         source=fetch(session,'https://html.duckduckgo.com/html/?q='+quote(query),{})
     candidates=[];seen=set()
@@ -317,7 +321,12 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             state.pop('report',None)
         elif action=='search':
             if not state['profile_confirmed']:raise WorkflowError('Подтвердите профиль перед поиском.')
-            search=discover(state['profile']);save(folder/'search.json',search);state['search']=search
+            search=discover(state['profile'])
+            own_host=(urlsplit(state['url']).hostname or '').removeprefix('www.')
+            search['candidates']=[c for c in search.get('candidates',[]) if (urlsplit(c['url']).hostname or '').removeprefix('www.')!=own_host]
+            history=folder/'search_runs';history.mkdir(exist_ok=True)
+            search['search_run_id']=str(uuid4());save(history/(search['search_run_id']+'.json'),search)
+            save(folder/'search.json',search);state['search']=search
         elif action=='confirm_competitors':
             if not state['profile_confirmed']:raise WorkflowError('Сначала подтвердите профиль.')
             if not competitor_urls or len(competitor_urls)>20:raise WorkflowError('Укажите от 1 до 20 конкурентов.')
@@ -325,7 +334,7 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
             own_host=(urlsplit(state['url']).hostname or '').removeprefix('www.')
             if any((urlsplit(u).hostname or '').removeprefix('www.')==own_host for u in competitors):
                 raise WorkflowError('Собственный сайт нельзя добавить как конкурента.')
-            scripted={c['url'] for c in state.get('search',{}).get('candidates',[])}
+            scripted={c['url'] for c in state.get('search',{}).get('candidates',[]) if c.get('added_by')=='script_search'}
             state['competitors']=[{'url':u,'added_by':'script_search_confirmed' if u in scripted else 'user_added'} for u in competitors]
             state.update(competitors_confirmed=True,status='ready_to_collect');state.pop('report',None)
         elif action=='review_analysis':

@@ -100,12 +100,13 @@ class Competitor(BaseModel):
 
 class Command(BaseModel):
     model_config=ConfigDict(extra='forbid')
-    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect)$')
+    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|search|import_search)$')
     website_url:str=Field(default='',max_length=2000)
     profile:dict[str,str]|None=None
     competitors:list[Competitor]|None=Field(default=None,max_length=20)
     uploads:dict[str,dict[str,str]]|None=None
     max_pages:int=Field(default=4,ge=1,le=8)
+    search_text:str=Field(default='',max_length=100000)
 
 
 def install(api,storage,project_root):
@@ -146,15 +147,33 @@ def install(api,storage,project_root):
                 job.update(step=message,updated_at=timestamp());job_save(file,job)
             try:
                 job['status']='running';progress('Получаем профиль' if body.action=='start' else 'Обновляем исследование')
-                state=run_project(action=body.action,website_url=body.website_url,profile=body.profile,
-                    competitor_urls=[c.url for c in body.competitors] if body.competitors is not None else None,
-                    uploads=body.uploads,max_pages=body.max_pages,project_id=str(identifier) if identifier else None,
-                    output_dir=storage/'projects',progress=progress)
+                if body.action=='import_search':
+                    from .search import manual_candidates
+                    from stage_4.workflow import queries
+                    state=read(identifier)
+                    if not state['profile_confirmed']:raise WorkflowError('Сначала подтвердите профиль.')
+                    query=queries(state['profile'])[0];candidates=manual_candidates(body.search_text,query)
+                    candidates=[c for c in candidates if host(c['url'])!=host(state['url'])]
+                    if not candidates:raise WorkflowError('Вставьте хотя бы один публичный HTTPS-адрес из просмотренной выдачи.')
+                    search={'query':query,'provider':'manual_browser','status':'ok','candidates':candidates,
+                            'collected_at':timestamp(),'api_attempts':0,'provenance':'Пользователь предоставил адреса после просмотра браузера. Не автоматическая выдача API.'}
+                    directory=storage/'projects'/state['id']/'search_runs';directory.mkdir(exist_ok=True)
+                    search['search_run_id']=str(uuid4());save(directory/(search['search_run_id']+'.json'),search)
+                    save(storage/'projects'/state['id']/'search.json',search)
+                    state['search']=search
+                    state['updated_at']=timestamp();state['events'].append({'action':'import_search','at':state['updated_at']})
+                else:
+                    state=run_project(action=body.action,website_url=body.website_url,profile=body.profile,
+                        competitor_urls=[c.url for c in body.competitors] if body.competitors is not None else None,
+                        uploads=body.uploads,max_pages=body.max_pages,project_id=str(identifier) if identifier else None,
+                        output_dir=storage/'projects',progress=progress)
                 job['project_id']=state['id']
                 if body.action=='confirm_profile':
                     progress('Ищем кандидатов по подтверждённому профилю')
                     state=run_project(action='search',project_id=state['id'],output_dir=storage/'projects')
-                    state['suggestions']=suggest(state)+[{'name':c['label'],'url':c['url'],'origin':'Новый поисковый кандидат'} for c in state.get('search',{}).get('candidates',[])]
+                if body.action in ('confirm_profile','search','import_search'):
+                    state['suggestions']=[{'name':c['label'],'url':c['url'],'origin':'Результат из браузера, добавлен пользователем' if c.get('added_by')=='user_provided_search_result' else ('Кандидат официального поиска: '+c['provider'] if c.get('provider') in ('tavily','brave') else 'Кандидат веб-поиска'),'snippet':c.get('snippet','')} for c in state.get('search',{}).get('candidates',[])]+suggest(state)
+                    state['competitors_confirmed']=False
                 if body.action=='confirm_competitors':
                     names={public_url(c.url.strip()):c.name.strip() for c in body.competitors}
                     for c in state['competitors']:c['name']=names[c['url']]

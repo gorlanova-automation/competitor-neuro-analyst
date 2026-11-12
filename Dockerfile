@@ -10,6 +10,6 @@ COPY stage_3/input ./stage_3/input
 COPY docs ./docs
 RUN useradd --uid 10001 --create-home analyst && mkdir /data && chown analyst:analyst /data
 USER analyst
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 ANALYST_DATA_DIR=/data
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 ANALYST_DATA_DIR=/data ANALYST_SEARCH_BUDGET_FILE=/data/search_budget.json
 EXPOSE 8000
 CMD ["uvicorn","app.server:app","--host","0.0.0.0","--port","8000","--proxy-headers"]

@@ -1,0 +1,18 @@
+{
+  "test_mode": "Assistant QA, not user acceptance",
+  "search": "Replayed real Tavily output from same date; zero additional search calls",
+  "project_id": "0887e77d-3eef-479b-8eeb-dc9ca16cdd74",
+  "status": "report_ready",
+  "companies": [
+    {
+      "name": "Immigration Relocator",
+      "pages_ok": 2
+    },
+    {
+      "name": "OKNO Agency",
+      "pages_ok": 2
+    }
+  ],
+  "recommendations": 13,
+  "new_llm_calls": 0
+}

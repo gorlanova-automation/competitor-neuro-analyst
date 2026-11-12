@@ -94,7 +94,7 @@ class WorkflowTests(unittest.TestCase):
 
     def test_search_failure_preserves_manual_path(self):
         identifier=self.confirmed()
-        with patch('stage_4.workflow.fetch',return_value={'url':'https://html.duckduckgo.com/','status':'challenge_page'}):
+        with patch.dict('os.environ',{'ANALYST_SEARCH_PROVIDER':'duckduckgo'}),patch('stage_4.workflow.fetch',return_value={'url':'https://html.duckduckgo.com/','status':'challenge_page'}):
             state=self.run_action(project_id=identifier,action='search')
         self.assertEqual(state['search']['candidates'],[])
         self.assertTrue(state['competitors_confirmed'])
@@ -103,7 +103,7 @@ class WorkflowTests(unittest.TestCase):
         from stage_4.workflow import queries,discover
         text=queries({'company_name':'Test','search_terms':'relocation Portugal Spain','market_scope':'Portugal Spain'})[0]
         self.assertEqual(text.count('Portugal'),1)
-        with patch('stage_4.workflow.fetch',return_value={'url':'https://html.duckduckgo.com/','status':'ok','text':'No results','links':[]}):
+        with patch.dict('os.environ',{'ANALYST_SEARCH_PROVIDER':'duckduckgo'}),patch('stage_4.workflow.fetch',return_value={'url':'https://html.duckduckgo.com/','status':'ok','text':'No results','links':[]}):
             search=discover({'company_name':'Test'})
         self.assertEqual(search['status'],'no_candidates')
         self.assertEqual(search['source']['text'],'No results')

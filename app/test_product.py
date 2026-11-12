@@ -3,13 +3,38 @@ import tempfile
 import time
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import patch,Mock
 from fastapi.testclient import TestClient
 from app.main import create_app
 from app.product import product_report
 
 
 class ProductTests(unittest.TestCase):
+    def test_official_candidate_edit_and_manual_browser_continuation(self):
+        from app.test_search import Response
+        with tempfile.TemporaryDirectory() as folder:
+            settings={'ANALYST_SEARCH_PROVIDER':'tavily','ANALYST_SEARCH_ENABLED':'1','TAVILY_API_KEY':'test-search-token',
+                      'ANALYST_SEARCH_BUDGET_FILE':str(Path(folder)/'budget.json')}
+            transport=Mock();transport.request.return_value=Response({'results':[{'title':'API candidate','url':'https://rival.example/'}]})
+            with patch.dict('os.environ',settings),patch('app.search.requests.Session',return_value=transport),TestClient(create_app(folder)) as client:
+                def run(body,identifier=None):
+                    response=client.post('/api/research'+('/'+identifier if identifier else ''),json=body)
+                    self.assertEqual(response.status_code,202,response.text)
+                    for _ in range(400):
+                        job=client.get('/api/jobs/'+response.json()['id']).json()
+                        if job['status'] not in ('running','queued'):break
+                        time.sleep(.01)
+                    self.assertEqual(job['status'],'succeeded',job)
+                    return client.get('/api/research/'+job['project_id']).json()
+                state=run({'action':'start','website_url':'https://own.example/','uploads':{'https://own.example/':{'text':'Public consulting service for international customers. '*10}}})
+                state=run({'action':'confirm_profile','profile':{'company_name':'Own','summary':'Consulting','market_scope':'EU','search_terms':'consulting'}},state['id'])
+                self.assertEqual(state['search']['status'],'ok');self.assertEqual(state['suggestions'][0]['name'],'API candidate')
+                state=run({'action':'confirm_competitors','competitors':[{'name':'Edited name','url':'https://rival.example/'}]},state['id'])
+                self.assertEqual(state['competitors'][0]['name'],'Edited name');self.assertEqual(state['competitors'][0]['added_by'],'script_search_confirmed')
+                state=run({'action':'import_search','search_text':'Browser result https://manual.example/'},state['id'])
+                state=run({'action':'confirm_competitors','competitors':[{'name':'Edited browser name','url':'https://manual.example/'}]},state['id'])
+                self.assertEqual(state['competitors'][0]['added_by'],'user_added');self.assertEqual(transport.request.call_count,1)
+
     def test_shared_workspace_requires_auth_and_exact_host(self):
         with tempfile.TemporaryDirectory() as folder,patch.dict('os.environ',{'ANALYST_PASSWORD':'test-only-password','ANALYST_ALLOWED_HOSTS':'analyst.example'}):
             with TestClient(create_app(folder)) as client:

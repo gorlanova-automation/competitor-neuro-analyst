@@ -26,7 +26,7 @@ def main():
     snapshot={'facts':read(stage/'knowledge_base/facts_draft.json')['facts'],'sources':read(stage/'knowledge_base/sources.json'),'quarantine':read(stage/'knowledge_base/quarantine.json'),'posts':read(stage/'knowledge_base/social_posts.json')['posts'],'experiments':cards,'dataset_card':read(stage/'knowledge_base/dataset_card.json'),'candidates':read(stage/'competitor_candidates.json'),'company_catalog':read(stage/'code/companies.json')}
     (ROOT/'docs/data.js').write_text('window.RESEARCH_DATA = '+json.dumps(snapshot,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     # Report only paths, never a matched credential value.
-    patterns=[re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}'),re.compile(r'github_pat_[A-Za-z0-9_]{20,}'),re.compile(r'\bsk-[A-Za-z0-9_-]{24,}'),re.compile(r'-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----')]
+    patterns=[re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}'),re.compile(r'github_pat_[A-Za-z0-9_]{20,}'),re.compile(r'\bsk-[A-Za-z0-9_-]{24,}'),re.compile(r'\btvly-[A-Za-z0-9_-]{20,}'),re.compile(r'-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----')]
     bad=[]
     for path in ROOT.rglob('*'):
         if not path.is_file() or '.git' in path.parts: continue

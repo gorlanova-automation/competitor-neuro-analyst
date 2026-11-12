@@ -1,6 +1,7 @@
 """Build the static UI snapshot and file manifest from repository research."""
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 
@@ -28,11 +29,14 @@ def main():
     # Report only paths, never a matched credential value.
     patterns=[re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}'),re.compile(r'github_pat_[A-Za-z0-9_]{20,}'),re.compile(r'\bsk-[A-Za-z0-9_-]{24,}'),re.compile(r'\btvly-[A-Za-z0-9_-]{20,}'),re.compile(r'-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----')]
     bad=[]
-    for path in ROOT.rglob('*'):
-        if not path.is_file() or '.git' in path.parts: continue
-        if path.suffix.lower() not in ('.py','.json','.ipynb','.js','.md','.txt','.html','.csv','.jsonl'): continue
-        text=path.read_text(encoding='utf-8-sig',errors='replace')
-        if any(pattern.search(text) for pattern in patterns): bad.append(path.relative_to(ROOT).as_posix())
+    for folder,dirs,names in os.walk(ROOT):
+        dirs[:]=[d for d in dirs if d not in ('.git','var','node_modules','__pycache__','.venv','.pytest_cache')]
+        for name in names:
+            path=Path(folder)/name
+            if path.suffix.lower() not in ('.py','.json','.ipynb','.js','.md','.txt','.html','.csv','.jsonl'): continue
+            try:text=path.read_text(encoding='utf-8-sig',errors='replace')
+            except OSError as error:raise RuntimeError('Cannot scan file: '+path.relative_to(ROOT).as_posix()) from error
+            if any(pattern.search(text) for pattern in patterns): bad.append(path.relative_to(ROOT).as_posix())
     if bad: raise ValueError('Potential credentials in files: '+', '.join(bad))
     manifest=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(copied)]
     (ROOT/'research_manifest.json').write_text(json.dumps({'description':'Research files: sizes and SHA256 for reproducibility','facts':len(snapshot['facts']),'files':manifest},ensure_ascii=False,indent=2),encoding='utf-8')

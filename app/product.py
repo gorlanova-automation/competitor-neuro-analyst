@@ -41,54 +41,15 @@ def product_report(result,state,raw_sources=None):
                 for heading in source.get('headings',[]):
                     if 8<=len(heading)<=140 and heading.casefold() not in seen:
                         seen.add(heading.casefold());item['sections'].append({'title':heading,'url':source.get('final_url',source['url'])})
-        tone=[{**e,'category':'tone'} for e in item['evidence'] if re.search(r'\bмы\b|\bвы\b|\bваш|\byou\b|\bwe\b',e['quote'],re.I)][:4]
-        item['evidence']+=tone;item['dimensions']={**original['dimensions'],'tone':len(tone)}
+        item['dimensions']={**original['dimensions'],'tone':0}
         item['name']=state['profile']['company_name'] if item['role']=='own' else names.get(item['url']) or item['name']
         item['gaps']=[label+': недостаточно данных' for key,label in LABELS.items() if not item['dimensions'].get(key)]
         item['gaps'].append('Визуал: требуется просмотр реальных снимков')
         companies.append(item)
-    own=next(c for c in companies if c['role']=='own');rivals=[c for c in companies if c['role']!='own']
-    actions=[]
-    def add(kind,title,action,evidence,check):
-        actions.append({'kind':kind,'title':title,'action':action,'evidence':evidence,
-                        'status':'Гипотеза для проверки','success_check':check})
-    def proof(c,key):
-        return [{**e,'company':c['name'],'company_url':c['url']} for e in c['evidence'] if e['category']==key][:1]
-    absolute=next((e for e in own['evidence'] if re.search(r'без риска отказа|100\s*%\s*одобр|guaranteed approval|no risk',e['quote'],re.I)),None)
-    if absolute:
-        add('check','Проверить абсолютное обещание в собственной подаче',
-            'В своей цитате есть обещание результата без риска или полного одобрения. Проверьте подтверждения и условия. Если доказательств нет, замените абсолютное обещание описанием процесса, границ ответственности и факторов решения; проверьте формулировку у ответственного специалиста.',
-            [{**absolute,'company':own['name'],'company_url':own['url']}],
-            'Формулировка подтверждена источниками и не создаёт ожидания гарантированного решения третьей стороны.')
-    for key,label in LABELS.items():
-        ours=proof(own,key);others=[(c,proof(c,key)) for c in rivals if proof(c,key)]
-        if ours and not re.search(r'без риска отказа|100\s*%\s*одобр|guaranteed approval|no risk',ours[0]['quote'],re.I):
-            add('keep','Сохранить и сделать заметнее: '+label.lower(),
-                'Проверьте, что предложение из цитаты актуально, понятно клиенту и заметно на пути к обращению. Сохраните подтверждённую формулировку и протестируйте её размещение.',ours,
-                'Пять потенциальных клиентов находят и правильно пересказывают предложение без подсказки.')
-        if others:
-            rival,evidence=others[0]
-            action={
-                'assortment':'Сопоставьте предложение из цитаты со своей линейкой: состав, аудитория, результат, ограничения. Если есть спрос и компетенции, подготовьте отдельную карточку или пакет; не копируйте обещания без проверки.',
-                'pricing':'Проверьте формат объяснения цены: что входит, что оплачивается отдельно, срок и условия. Протестируйте такой же уровень прозрачности на своей странице; суммы разных пакетов не ранжируйте.',
-                'positioning':'Разберите аргумент из цитаты. Подберите собственное проверяемое доказательство — кейс, процесс или подтверждённый опыт — и протестируйте его в первом экране.',
-                'conversion':'Разберите путь обращения в цитате: первый шаг, ожидаемый результат и срок ответа. Протестируйте понятный аналог на своей странице и измерьте долю завершённых обращений.',
-                'editorial':'Используйте тему или формат материала как повод для интервью с аудиторией. Подготовьте собственный практический материал, проверьте актуальность и добавьте следующий шаг к обращению.',
-                'tone':'Разберите обращение и обещание в цитате: кто говорит, какую задачу клиента называет, что обещает. Перепишите собственный текст в подходящем аудитории тоне и проверьте понимание; не переносите чужие гарантии.'}[key]
-            add('adapt','Что можно адаптировать у '+rival['name']+': '+label.lower(),action,evidence+ours,
-                'Сначала подтвердить смысл цитаты и потребность аудитории; затем сравнить тестовую версию с текущей.')
-        if not ours:
-            add('check','Проверить свою подачу: '+label.lower(),
-                'В собранной выборке своей компании нет достаточного основания для оценки. Проверьте нужную страницу и добавьте её текст. Только после проверки решайте, требуется ли исправление.',[],
-                'Есть актуальный источник и подтверждение того, что клиент понимает предложение.')
-    missing=[c['name'] for c in companies if not c['dimensions'].get('pricing')]
-    if missing:
-        add('market','Возможность отстройки: понятность условий',
-            'Проведите одинаковую проверку состава, срока, итоговой цены и исключений у всех компаний. Если подтвердится общая непрозрачность, протестируйте полное объяснение своих условий. Сейчас недостаток цитат не доказывает слабость рынка.',[],
-            'Сопоставимые пакеты проверены по источникам; клиенты верно понимают итоговые условия.')
+    actions=[]  # Recommendations require semantic comparison, not keyword presence.
     return {'run_id':result['run_id'],'generated_at':result['generated_at'],'profile':result['profile'],
             'companies':companies,'dimensions':LABELS,'recommendations':actions,'limits':result['limits'],
-            'method':'Сравнение сохранённых цитат и правила подготовки проверяемых действий; без нового LLM-вызова.',
+            'method':'База источников и лексическая выборка. Смысловой анализ ИИ ещё не выполнен.',
             'new_llm_calls':0}
 
 
@@ -100,13 +61,14 @@ class Competitor(BaseModel):
 
 class Command(BaseModel):
     model_config=ConfigDict(extra='forbid')
-    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|search|import_search)$')
+    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|search|import_search|analyze|discover_telegram|confirm_telegram)$')
     website_url:str=Field(default='',max_length=2000)
     profile:dict[str,str]|None=None
     competitors:list[Competitor]|None=Field(default=None,max_length=20)
     uploads:dict[str,dict[str,str]]|None=None
     max_pages:int=Field(default=4,ge=1,le=8)
     search_text:str=Field(default='',max_length=100000)
+    telegram_channels:dict[str,str]|None=Field(default=None,max_length=20)
 
 
 def install(api,storage,project_root):
@@ -147,7 +109,50 @@ def install(api,storage,project_root):
                 job.update(step=message,updated_at=timestamp());job_save(file,job)
             try:
                 job['status']='running';progress('Получаем профиль' if body.action=='start' else 'Обновляем исследование')
-                if body.action=='import_search':
+                if body.action in ('discover_telegram','confirm_telegram'):
+                    import os
+                    from stage_4.workflow import new_session,sample_publications,compare,render_report
+                    state=read(identifier)
+                    if not state.get('report'):raise WorkflowError('Сначала соберите материалы сайтов.')
+                    directory=storage/'projects'/state['id']/'runs'/state['report']['run_id']
+                    raw=json.loads((directory/'sources.json').read_text(encoding='utf-8'))
+                    if body.action=='discover_telegram':
+                        from .telegram_discovery import enrich
+                        base=json.loads((directory/'result.json').read_text(encoding='utf-8'))
+                        prepared=product_report(base,state,raw)
+                        value=enrich(prepared,directory/'telegram_search'/str(uuid4()),os.environ.get('PROXYAPI_KEY'))
+                        save(directory/'telegram_candidates.json',value)
+                    else:
+                        if not body.telegram_channels:raise WorkflowError('Подтвердите компанию и Telegram-канал.')
+                        for company_url,channel_url in body.telegram_channels.items():
+                            company=next((c for c in raw if host(c['url'])==host(public_url(company_url))),None)
+                            parts=urlsplit(channel_url);username=parts.path.strip('/')
+                            if not company or parts.scheme!='https' or parts.hostname!='t.me' or parts.query or parts.fragment or not re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{3,}',username) or username.lower().endswith('bot'):raise WorkflowError('Нужен подтверждённый публичный канал https://t.me/имя и компания из исследования.')
+                            with new_session() as session:
+                                posts,feeds=sample_publications([{'status':'ok','url':company['url'],'links':[{'url':channel_url}],
+                                    'channel_discovery':'user_confirmed_not_site_link'}],session)
+                            existing={s['url'] for s in company['sources']}
+                            company['sources'] += [p for p in posts if p['url'] not in existing]
+                            company.setdefault('publication_samples',[]).extend(feeds)
+                        run_id=str(uuid4());directory=storage/'projects'/state['id']/'runs'/run_id;directory.mkdir()
+                        base=compare(raw,state['profile']);base['run_id']=run_id
+                        save(directory/'sources.json',raw);save(directory/'result.json',base)
+                        (directory/'report.html').write_text(render_report(base),encoding='utf-8')
+                        state['report']={**state['report'],'run_id':run_id};state['report'].pop('ai_status',None)
+                elif body.action=='analyze':
+                    import os
+                    from .ai_analysis import analyze_product
+                    state=read(identifier)
+                    if not state.get('report'):raise WorkflowError('Сначала соберите материалы.')
+                    directory=storage/'projects'/state['id']/'runs'/state['report']['run_id']
+                    base=json.loads((directory/'result.json').read_text(encoding='utf-8'))
+                    raw=json.loads((directory/'sources.json').read_text(encoding='utf-8'))
+                    prepared=product_report(base,state,raw)
+                    analysis_dir=directory/'ai_runs'/str(uuid4())
+                    value=analyze_product(prepared,raw,os.environ.get('PROXYAPI_KEY'),analysis_dir,progress=progress)
+                    save(directory/'product_analysis.json',value)
+                    state['report']['ai_status']=value['ai_analysis']['status']
+                elif body.action=='import_search':
                     from .search import manual_candidates
                     from stage_4.workflow import queries
                     state=read(identifier)
@@ -221,6 +226,10 @@ def install(api,storage,project_root):
         state=read(identifier)
         if not state.get('report'):raise HTTPException(409,'Результат ещё не готов.')
         file=storage/'projects'/str(identifier)/'runs'/state['report']['run_id']/'result.json'
+        analyzed=file.parent/'product_analysis.json'
+        if analyzed.is_file():return json.loads(analyzed.read_text(encoding='utf-8'))
+        candidates=file.parent/'telegram_candidates.json'
+        if candidates.is_file():return json.loads(candidates.read_text(encoding='utf-8'))
         sources=json.loads((file.parent/'sources.json').read_text(encoding='utf-8'))
         return product_report(json.loads(file.read_text(encoding='utf-8')),state,sources)
     api.include_router(router)

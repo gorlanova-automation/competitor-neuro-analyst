@@ -10,7 +10,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(root),str(root/'stage_3/code')]
 suite=unittest.defaultTestLoader.discover(str(root/'stage_3/code'),pattern='test_*.py')
-for module in ['stage_4.test_workflow','stage_4.test_semantic','stage_4.test_review','app.test_api','app.test_workflow_api','app.test_product','app.test_search']:
+for module in ['stage_4.test_workflow','stage_4.test_semantic','stage_4.test_review','app.test_api','app.test_workflow_api','app.test_product','app.test_search','app.test_ai_analysis']:
     suite.addTests(unittest.defaultTestLoader.loadTestsFromName(module))
 stream=io.StringIO();result=unittest.TextTestRunner(verbosity=2,stream=stream).run(suite)
 release=root/'releases/stage_3_20261027';manifest=json.loads((release/'manifest.json').read_text(encoding='utf-8'))

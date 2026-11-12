@@ -121,10 +121,11 @@ class WorkflowTests(unittest.TestCase):
         markup=b'<div class="tgme_widget_message" data-post="public_channel/123"><div class="tgme_widget_message_text">Public message about services.</div><time datetime="2026-11-07"></time></div>'
         with patch('stage_4.workflow.fetch',return_value={'status':'ok','html':markup}) as fetch:
             posts,feeds=sample_publications([page],Mock())
-        self.assertEqual(fetch.call_count,1);self.assertEqual(len(posts),1)
+        self.assertEqual(fetch.call_count,2);self.assertEqual(len(posts),1)
         self.assertEqual(posts[0]['url'],'https://t.me/public_channel/123')
         self.assertEqual(posts[0]['sha256_text'],hashlib.sha256(posts[0]['text'].encode()).hexdigest())
         self.assertEqual(feeds[0]['posts'],1)
+        self.assertEqual(feeds[1]['status'],'not_a_public_feed')
 
     def test_colab_secret_failure_still_returns_the_saved_report(self):
         from stage_4.colab_app import launch_colab

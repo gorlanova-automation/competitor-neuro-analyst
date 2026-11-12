@@ -15,7 +15,7 @@ jobs:
       - run: python -B -m unittest app.test_api -v
       - run: python -B -m unittest stage_4.test_workflow stage_4.test_semantic stage_4.test_review app.test_workflow_api -v
       - run: python -B -m unittest app.test_product -v
-      - run: python -B -m unittest app.test_search -v
+      - run: python -B -m unittest app.test_search app.test_ai_analysis -v
       - run: python -B prepare_public.py
       - run: node --check docs/stage3.js
       - run: node --check docs/workspace.js

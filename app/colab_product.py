@@ -26,11 +26,11 @@ def download_saved(output_dir,project_id):
     return target
 
 
-def launch(output_dir='var/colab_product',search_key=None):
+def launch(output_dir='var/colab_product',search_key=None,model_key=None):
     from google.colab import files
     print('Сайт → профиль → кандидаты → ваш список → сбор → JSON для GitHub Pages.')
-    print('LLM не вызывается. Автопоиск — один Tavily basic-запрос, 1 кредит; без повторов.')
-    names=('TAVILY_API_KEY','ANALYST_SEARCH_ENABLED','ANALYST_SEARCH_PROVIDER','ANALYST_SEARCH_BUDGET_FILE')
+    print('ИИ-анализ включается отдельно после сбора. Поиск — Tavily basic, 1 кредит на запрос; без повторов.')
+    names=('TAVILY_API_KEY','PROXYAPI_KEY','ANALYST_SEARCH_ENABLED','ANALYST_SEARCH_PROVIDER','ANALYST_SEARCH_BUDGET_FILE')
     previous={n:os.environ.get(n) for n in names}
     os.environ['ANALYST_SEARCH_ENABLED']='0'
     try:
@@ -79,7 +79,28 @@ def launch(output_dir='var/colab_product',search_key=None):
             print(json.dumps(competitors,ensure_ascii=False,indent=2))
             if input('Подтвердить именно этот список и начать сбор? да: ').strip().lower()!='да':return state
             state=run({'action':'confirm_competitors','competitors':competitors},state['id'])
-            state=run({'action':'collect','max_pages':2,'uploads':uploads},state['id'])
+            state=run({'action':'collect','max_pages':4,'uploads':uploads},state['id'])
+            if model_key:os.environ['PROXYAPI_KEY']=model_key
+            if search_key and input('Поискать публичные Telegram-кандидаты для компаний без прочитанных постов? До одного basic-запроса на компанию. да/нет [нет]: ').strip().lower()=='да':
+                os.environ['TAVILY_API_KEY']=search_key;os.environ['ANALYST_SEARCH_ENABLED']='1';os.environ['ANALYST_SEARCH_PROVIDER']='tavily'
+                state=run({'action':'discover_telegram'},state['id'])
+                os.environ['ANALYST_SEARCH_ENABLED']='0'
+                candidates=client.get('/api/research/'+state['id']+'/result').json()
+                for c in candidates['companies']:
+                    if c.get('telegram_discovery'):print(c['name'],json.dumps(c['telegram_discovery'],ensure_ascii=False))
+                print('Это поиск публичных t.me-страниц, не полный поиск внутри Telegram. Кандидаты ИИ требуют проверки.')
+            print('Можно найти канал по названию в Telegram и подтвердить здесь. Бот и личный контакт не равны каналу.')
+            channels={}
+            for _ in range(20):
+                line=input('Сайт компании | подтверждённый https://t.me/канал (Enter — закончить): ').strip()
+                if not line:break
+                company_url,channel=line.split('|',1);channels[company_url.strip()]=channel.strip()
+            if channels:
+                print(json.dumps(channels,ensure_ascii=False,indent=2))
+                if input('Подтвердить принадлежность этих каналов компаниям и собрать публичные посты? да: ').strip().lower()=='да':
+                    state=run({'action':'confirm_telegram','telegram_channels':channels},state['id'])
+            if model_key and input('Выполнить смысловой анализ Luna? До '+str(len(competitors)+2)+' запросов, максимум 2500 токенов ответа каждый, без автоматических повторов. да/нет [нет]: ').strip().lower()=='да':
+                state=run({'action':'analyze'},state['id'])
             result=client.get('/api/research/'+state['id']+'/result').json()
             target=export_result(output_dir,state['id'],result)
             print('Готово. Компаний:',len(result['companies']),'; страниц:',sum(c['pages_ok'] for c in result['companies']))

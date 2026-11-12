@@ -34,7 +34,7 @@ def reserve(env):
         except (OSError,ValueError):return 'budget_unavailable'
 
 
-def normalize(rows,query,provider,key='',own_url=''):
+def normalize(rows,query,provider,key='',own_url='',deduplicate_by_host=True):
     candidates=[];seen=set();own=(urlsplit(own_url).hostname or '').removeprefix('www.')
     for row in rows:
         if not isinstance(row,dict):continue
@@ -43,8 +43,9 @@ def normalize(rows,query,provider,key='',own_url=''):
         try:target=public_url(target)
         except ValueError:continue
         host=(urlsplit(target).hostname or '').removeprefix('www.')
-        if host==own or host in seen:continue
-        seen.add(host)
+        identity=host if deduplicate_by_host else target
+        if host==own or identity in seen:continue
+        seen.add(identity)
         clean=lambda text:str(text or '').replace(key,'[redacted]') if key else str(text or '')
         candidates.append({'url':target,'label':clean(row.get('title') or host)[:200],
                            'snippet':clean(row.get('description',row.get('content','')))[:600],
@@ -53,7 +54,7 @@ def normalize(rows,query,provider,key='',own_url=''):
     return candidates
 
 
-def official_search(query,own_url='',session=None,settings=None):
+def official_search(query,own_url='',session=None,settings=None,deduplicate_by_host=True):
     env=os.environ if settings is None else settings
     provider=env.get('ANALYST_SEARCH_PROVIDER','tavily')
     result={'query':query,'provider':provider,'candidates':[],'collected_at':timestamp(),
@@ -94,7 +95,7 @@ def official_search(query,own_url='',session=None,settings=None):
             web=data.get('web',{})
             rows=data.get('results',[]) if provider=='tavily' else web.get('results',[]) if isinstance(web,dict) else None
             if not isinstance(rows,list):return {**result,'status':'invalid_response'}
-            result['candidates']=normalize(rows,query,provider,key,own_url)
+            result['candidates']=normalize(rows,query,provider,key,own_url,deduplicate_by_host)
             if isinstance(data.get('usage'),dict):
                 credits=data['usage'].get('credits')
                 if type(credits) in (int,float):result['reported_credits']=credits

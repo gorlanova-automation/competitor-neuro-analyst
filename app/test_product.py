@@ -76,7 +76,7 @@ class ProductTests(unittest.TestCase):
             value=client.get('/api/research/'+state['id']+'/result').json()
             self.assertEqual(value['companies'][1]['name'],'Исправленное имя')
             self.assertEqual(value['companies'][1]['added_by'],'user_added')
-            self.assertTrue(value['recommendations']);self.assertEqual(value['new_llm_calls'],0)
+            self.assertEqual(value['recommendations'],[]);self.assertEqual(value['new_llm_calls'],0)
             self.assertTrue(all(e['quote'] in text for r in value['recommendations'] for e in r['evidence']))
             self.assertEqual(client.get('/api/jobs/not-a-uuid').status_code,422)
 
@@ -95,7 +95,7 @@ class ProductTests(unittest.TestCase):
         company={'url':'https://own.example/','name':'Own','role':'own','dimensions':{'positioning':1},'evidence':[evidence],'pages_ok':1}
         value=product_report({'companies':[company],'run_id':'run','generated_at':'time','profile':{},'limits':[]},
                              {'profile':{'company_name':'Own'},'competitors':[]})
-        self.assertTrue(any(r['kind']=='check' and r['evidence'] for r in value['recommendations']))
+        self.assertEqual(value['recommendations'],[])  # No advice before semantic analysis.
         self.assertFalse(any(r['kind']=='keep' and r['evidence'][0]['quote']==quote for r in value['recommendations']))
 
     def test_restart_finishes_interrupted_job_and_preserves_history(self):

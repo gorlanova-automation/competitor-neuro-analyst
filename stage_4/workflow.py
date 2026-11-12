@@ -154,7 +154,7 @@ def observations(sources):
         'pricing':r'€|\$|₽|\bEUR\b|\bUSD\b|цена|стоимость|pricing|price|тариф',
         'positioning':r'помога|помож|эксперт|опыт|гарант|expert|experience|help|guarantee',
         'conversion':r'консультац|заявк|свяж|запис|consultation|contact|book|trial|demo',
-        'editorial':r'блог|стать|новост|blog|article|news|guide|руководств',
+        'editorial':r'блог|\bстать(?:я|и|ю|ёй|ями)\b(?!\s+(?:\d|закона))|новост|blog|article(?!\s+\d)|news|guide|руководств',
     }
     for source in sources:
         if source['status']!='ok':continue
@@ -177,35 +177,57 @@ def observations(sources):
 
 
 def sample_publications(sources,session):
-    """Collect actual public Telegram messages, not a count of social links."""
-    feeds={};publications=[];seen=set()
+    """Explicit discovery, contact classification and bounded public feed sampling."""
+    feeds={};publications=[];seen=set();post_seen=set();public_attempts=0
     for source in sources:
         if source['status']!='ok':continue
         for link in source.get('links',[]):
-            if (urlsplit(link['url']).hostname or '').removeprefix('www.')!='t.me':continue
-            path=urlsplit(link['url']).path.strip('/').split('/')
+            parts=urlsplit(link['url'])
+            if (parts.hostname or '').removeprefix('www.') not in ('t.me','telegram.me'):continue
+            path=parts.path.strip('/').split('/')
             name=path[1] if len(path)>1 and path[0]=='s' else path[0]
-            if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{3,}',name) or name.lower().endswith('bot') or name in seen:continue
+            if name in seen:continue
             seen.add(name)
-            if len(feeds)>=2:break
+            found_on=None if source.get('channel_discovery')=='user_confirmed_not_site_link' else source.get('final_url',source['url'])
+            row={'url':link['url'],'found_on':found_on,'status':'not_a_public_feed','posts':0,
+                 'checked_at':timestamp(),'purpose':'contact_invite_or_bot','ownership':source.get('channel_discovery','linked_from_company_site_not_independently_verified'),
+                 'coverage':'Не вступаем в группы и закрытые каналы. До 2 страниц публичного превью, максимум 20 сообщений на канал.'}
+            feeds[link['url']]=row
+            if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{3,}',name) or name.lower().endswith('bot'):continue
+            if public_attempts>=4:
+                row.update(status='not_sampled_limit',purpose='public_username_unverified');continue
+            public_attempts+=1;row['purpose']='public_username_unverified'
             url='https://t.me/s/'+name
-            try:page=fetch(session,url,{},include_html=True)
-            except (requests.RequestException,ValueError):page={'status':'collection_failed'}
-            row={'url':url,'found_on':source.get('final_url',source['url']),'status':page['status'],'posts':0}
-            if page['status']=='ok':
+            row['preview_url']=url;dates=[];row['pages_attempted']=0
+            for _ in range(2):
+                row['pages_attempted']+=1
+                try:page=fetch(session,url,{},include_html=True)
+                except (requests.RequestException,ValueError):page={'status':'collection_failed'}
+                if page['status']!='ok':
+                    row.update(status=page['status'],next_action=page.get('next_action','Проверьте доступность публичного превью или предоставьте экспорт канала.'));break
                 soup=BeautifulSoup(page['html'],'html.parser')
-                for item in soup.select('.tgme_widget_message[data-post]')[-8:]:
+                items=soup.select('.tgme_widget_message[data-post]');numbers=[]
+                for item in items[-20:]:
                     text=item.select_one('.tgme_widget_message_text');date=item.select_one('time[datetime]')
                     body=text.get_text(' ',strip=True) if text else ''
                     if not body or not date:continue
+                    if not re.fullmatch(re.escape(name)+r'/\d+',item['data-post'],re.I):continue
+                    numbers.append(int(item['data-post'].rsplit('/',1)[1]))
                     post_url='https://t.me/'+item['data-post']
+                    if post_url in post_seen or row['posts']>=20:continue
+                    post_seen.add(post_url);dates.append(date['datetime'])
                     publications.append({'url':post_url,'final_url':post_url,'status':'ok','title':'Telegram: '+name,
                         'description':'','headings':[],'text':body,'sha256_text':digest(body),'links':[],
                         'collected_at':timestamp(),'published_at':date['datetime'],'method':'public_telegram_dom_message',
-                        'source_kind':'publication','found_on':source.get('final_url',source['url'])})
+                        'source_kind':'publication','found_on':found_on,
+                        'formats':['video'] if item.select_one('video,.tgme_widget_message_video_player') else ['photo'] if item.select_one('.tgme_widget_message_photo_wrap') else ['text']})
                     row['posts']+=1
                 row['status']='sample_collected' if row['posts'] else 'no_public_messages_observed'
-            feeds[url]=row
+                if row['posts']:row['purpose']='public_channel_or_group_feed'
+                if row['posts']>=20 or not numbers:break
+                url='https://t.me/s/'+name+'?before='+str(min(numbers))
+            if dates:row.update(first_published_at=min(dates),last_published_at=max(dates))
+            row['frequency_assessed']=False
     return publications,list(feeds.values())
 
 

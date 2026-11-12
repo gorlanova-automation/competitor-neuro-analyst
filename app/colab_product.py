@@ -7,8 +7,8 @@ from fastapi.testclient import TestClient
 from app.main import create_app
 
 
-def launch(output_dir='var/colab_product'):
-    from google.colab import files,userdata
+def launch(output_dir='var/colab_product',search_key=None):
+    from google.colab import files
     print('Сайт → профиль → кандидаты → ваш список → сбор → JSON для GitHub Pages.')
     print('LLM не вызывается. Автопоиск — один Tavily basic-запрос, 1 кредит; без повторов.')
     names=('TAVILY_API_KEY','ANALYST_SEARCH_ENABLED','ANALYST_SEARCH_PROVIDER','ANALYST_SEARCH_BUDGET_FILE')
@@ -40,7 +40,8 @@ def launch(output_dir='var/colab_product'):
             if input('Подтвердить профиль? да: ').strip().lower()!='да':return state
             if input('Один запрос Tavily из бесплатного лимита? да/нет [нет]: ').strip().lower()=='да':
                 try:
-                    os.environ['TAVILY_API_KEY']=userdata.get('TAVILY_API_KEY')
+                    if not search_key:raise ValueError('Секрет не подключён.')
+                    os.environ['TAVILY_API_KEY']=search_key
                     os.environ['ANALYST_SEARCH_ENABLED']='1';os.environ['ANALYST_SEARCH_PROVIDER']='tavily'
                     os.environ['ANALYST_SEARCH_BUDGET_FILE']=str(Path(output_dir)/'search_budget.json')
                 except Exception:print('Секрет недоступен. Продолжаем с ручным списком.')

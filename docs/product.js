@@ -55,13 +55,13 @@ function telegramCoverage(parent,c){const samples=c.publication_samples||[];pare
 
 let comparisonSelection=[];
 function comparison(){
-    const count=Math.min(3,report.companies.length);
-    if(comparisonSelection.length!==count){
+    if(!comparisonSelection.length){
         const own=report.companies.findIndex(c=>c.role==='own');
         const preferred=report.companies.map((c,i)=>i).filter(i=>i!==own)
             .sort((a,b)=>(report.companies[b].analysis?.status==='ai_draft')-(report.companies[a].analysis?.status==='ai_draft'));
-        comparisonSelection=[...(own>=0?[own]:[]),...preferred].slice(0,count);
+        comparisonSelection=[...(own>=0?[own]:[]),...preferred].slice(0,3);
     }
+    const count=comparisonSelection.length;
     const controls=el('div',undefined,'comparison-selectors');
     for(let slot=0;slot<count;slot++){
         const label=el('label','Компания '+(slot+1));
@@ -78,10 +78,25 @@ function comparison(){
             if(comparisonSelection.includes(index))return;
             comparisonSelection[slot]=index;comparison();
         };
-        label.append(select);controls.append(label);
+        label.append(select);
+        if(count>1){
+            const remove=el('button','Убрать','quiet');remove.type='button';
+            remove.setAttribute('aria-label','Убрать компанию '+(slot+1));
+            remove.onclick=()=>{comparisonSelection.splice(slot,1);comparison();};
+            label.append(remove);
+        }
+        controls.append(label);
     }
+    const add=el('button','+ Добавить компанию','secondary');add.type='button';
+    add.disabled=count===report.companies.length;
+    add.onclick=()=>{
+        const next=report.companies.findIndex((_,index)=>!comparisonSelection.includes(index));
+        if(next<0)return;
+        comparisonSelection.push(next);comparison();
+    };
     const selected=comparisonSelection.map(i=>report.companies[i]);
     const wrap=el('div',undefined,'table-wrap'),table=el('table',undefined,'selected-comparison'),head=el('tr');
+    table.style.minWidth=Math.max(760,145+count*280)+'px';
     head.append(el('th','Критерий'));
     comparisonSelection.forEach(i=>{
         const c=report.companies[i],th=el('th'),button=el('button',c.name,'quiet');
@@ -111,7 +126,7 @@ function comparison(){
         card.append(el('h3',report.dimensions[row.category]),el('p',row.summary));overview.append(card);
     }
     $('comparison').replaceChildren(
-        el('h2','Сравнение компаний'),controls,
+        el('h2','Сравнение компаний'),controls,add,
         el('p','В базе '+report.companies.length+' компаний. Одновременно показано '+count+'. Выберите компании в списках. Переключение использует уже собранные данные.','hint'),
         overview,wrap
     );

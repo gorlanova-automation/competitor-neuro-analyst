@@ -269,7 +269,7 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 print(' Поиск публичных t.me-страниц:',discovery.get('status'))
                 verdicts={r['url']:r for r in discovery.get('ai_review',[])}
                 candidates=[r for r in relevant_candidates(company,discovery.get('candidates',[]))
-                            if r.get('confirmation_required') and verdicts.get(r['url'],{}).get('verdict') in ('likely','uncertain')]
+                            if r.get('confirmation_required') and verdicts.get(r['url'],{}).get('verdict')=='likely']
                 if not candidates:
                     if not company.get('posts_collected'):
                         print(' В проверенных источниках подходящий публичный канал не подтверждён.')

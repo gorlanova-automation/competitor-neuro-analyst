@@ -10,6 +10,12 @@ from app.product import product_report
 
 
 class ProductTests(unittest.TestCase):
+    def test_colab_confirmation_reprompts_and_accepts_keyboard_layout(self):
+        from app.colab_product import confirm_choice
+        for answer,expected in [('lf',True),('YES',True),('да',True),('ytn',False),('нет',False)]:
+            with patch('builtins.input',side_effect=['ошибка',answer]),patch('builtins.print'):
+                self.assertEqual(confirm_choice('Confirm?'),expected)
+
     def test_colab_competitors_accept_domains_and_named_urls(self):
         from app.colab_product import parse_competitor_input
         rows=parse_competitor_input('avention.io, retensis.com, https://getreelyze.com')

@@ -7,6 +7,15 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from fastapi.testclient import TestClient
 from app.main import create_app
+from stage_4.workflow import save
+
+
+def confirm_choice(question):
+    while True:
+        answer=input(question).strip().casefold()
+        if answer in ('да','д','yes','y','lf'):return True
+        if answer in ('нет','н','no','n','ytn'):return False
+        print('Введите да или нет. Предыдущие данные сохранены.')
 
 
 def parse_competitor_input(line):
@@ -166,7 +175,7 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 profile={}
                 for name,label in [('company_name','Название'),('summary','Описание'),('market_scope','Рынок и аудитория'),('search_terms','Поисковые слова')]:
                     draft=state['profile'].get(name,'');profile[name]=input(label+' ['+draft+']: ').strip() or draft
-                if input('Подтвердить профиль? да: ').strip().lower()!='да':return state
+                if not confirm_choice('Подтвердить профиль? да/нет: '):return state
                 if model_key and input('Подготовить поисковый запрос с ИИ по профилю? Один запрос Luna, до 2500 токенов ответа. да/нет [нет]: ').strip().lower()=='да':
                     from app.ai_analysis import call_model
                     from stage_4.workflow import WorkflowError
@@ -200,7 +209,9 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
             for c in state.get('suggestions',[]):print(c['name'],c['url'],c.get('origin',''))
             print('Введите названия, домены или Название | https://сайт/. Можно смешивать через запятую. Enter завершает список.')
             print('Для названия найдём сайт и предложим подтвердить адрес. До одного Tavily basic-запроса на уникальное название, 1 кредит.')
-            competitors=[]
+            pending=Path(output_dir)/'projects'/state['id']/'pending_competitors.json'
+            competitors=json.loads(pending.read_text(encoding='utf-8')) if pending.is_file() else []
+            if competitors:print('Восстановлен список компаний:',json.dumps(competitors,ensure_ascii=False))
             name_cache={}
             while len(competitors)<20:
                 line=input('Названия или домены (Enter — закончить): ').strip()
@@ -219,11 +230,12 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                     added=unique
                     if len(competitors)+len(added)>20:raise ValueError('В исследовании допускается до 20 конкурентов.')
                     competitors.extend(added)
+                    save(pending,competitors)
                     print('В списке компаний:',len(competitors))
                 except ValueError as exc:
                     print('Не удалось добавить строку:',exc,'Повторите ввод. Список сохранён.')
             print(json.dumps(competitors,ensure_ascii=False,indent=2))
-            if input('Подтвердить именно этот список и начать сбор? да: ').strip().lower()!='да':return state
+            if not confirm_choice('Подтвердить именно этот список и начать сбор? да/нет: '):return state
             state=run({'action':'confirm_competitors','competitors':competitors},state['id'])
             state=run({'action':'collect','max_pages':4,'uploads':uploads},state['id'])
             if model_key:os.environ['PROXYAPI_KEY']=model_key
@@ -243,7 +255,7 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 company_url,channel=line.split('|',1);channels[company_url.strip()]=channel.strip()
             if channels:
                 print(json.dumps(channels,ensure_ascii=False,indent=2))
-                if input('Подтвердить принадлежность этих каналов компаниям и собрать публичные посты? да: ').strip().lower()=='да':
+                if confirm_choice('Подтвердить принадлежность этих каналов компаниям и собрать публичные посты? да/нет: '):
                     state=run({'action':'confirm_telegram','telegram_channels':channels},state['id'])
             if model_key and input('Выполнить анализ и проверку рекомендаций Luna? До '+str(len(competitors)+3)+' запросов, максимум 2500 токенов ответа каждый, без автоматических повторов. да/нет [нет]: ').strip().lower()=='да':
                 state=run({'action':'analyze'},state['id'])

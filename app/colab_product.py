@@ -56,7 +56,7 @@ def resolve_competitor_names(rows,suggestions,profile,search_key,own_url,output_
         candidates=[c for c in suggestions if c.get('name','').casefold()==identity]
         record={'name':name,'method':'existing_suggestion','candidates':candidates}
         if not candidates and search_key:
-            query=name+' официальный сайт '+profile.get('search_terms','')[:160]
+            query='"'+name.replace('"',' ')+'" официальный сайт'
             settings={**os.environ,'ANALYST_SEARCH_ENABLED':'1','ANALYST_SEARCH_PROVIDER':'tavily','TAVILY_API_KEY':search_key,
                       'ANALYST_SEARCH_BUDGET_FILE':os.environ.get('ANALYST_SEARCH_BUDGET_FILE',str(Path(output_dir)/'search_budget.json'))}
             result=(search or official_search)(query,own_url=own_url,settings=settings)
@@ -68,7 +68,12 @@ def resolve_competitor_names(rows,suggestions,profile,search_key,own_url,output_
         else:
             notify('Выберите сайт для '+name+':')
             for i,candidate in enumerate(candidates,1):
-                notify(str(i)+'. '+candidate.get('name',candidate.get('label',''))+' '+candidate['url']+' '+candidate.get('snippet',''))
+                title=' '.join(candidate.get('name',candidate.get('label','')).split())[:120]
+                snippet=' '.join(candidate.get('snippet','').split())
+                if len(snippet)>160:snippet=snippet[:157]+'…'
+                notify(str(i)+'. '+title+' — '+candidate['url'])
+                if snippet:notify('   '+snippet)
+            notify('Выбирайте адрес нужной компании. Если подходящего сайта нет, введите домен вручную или нажмите Enter, чтобы пропустить.')
         chosen=None
         while True:
             answer=prompt('Номер сайта, домен или Enter — пропустить '+name+': ').strip()

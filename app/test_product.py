@@ -22,13 +22,16 @@ class ProductTests(unittest.TestCase):
 
     def test_colab_name_resolution_requires_choice_and_reuses_name(self):
         from app.colab_product import parse_competitor_input,resolve_competitor_names
-        search=Mock(return_value={'status':'ok','candidates':[{'label':'Official Example','url':'https://example.com/'}]})
+        search=Mock(return_value={'status':'ok','candidates':[{'label':'Official Example','url':'https://example.com/','snippet':('Long text\n'*200)}]})
         answers=iter(['99','1'])
+        messages=[]
         with tempfile.TemporaryDirectory() as folder:
             rows=resolve_competitor_names(parse_competitor_input('Example, Example'),[],{},'test-key','https://own.example/',folder,
-                prompt=lambda _:next(answers),notify=lambda _:None,search=search)
+                prompt=lambda _:next(answers),notify=messages.append,search=search)
             self.assertEqual(rows,[{'name':'Example','url':'https://example.com/'}])
             self.assertEqual(search.call_count,1)
+            self.assertEqual(search.call_args.args[0],'"Example" официальный сайт')
+            self.assertTrue(all('\n' not in message and len(message)<250 for message in messages))
             record=json.loads(next((Path(folder)/'name_resolution').glob('*.json')).read_text(encoding='utf-8'))
             self.assertEqual(record['confirmed_url'],'https://example.com/')
 

@@ -20,7 +20,23 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'stage_3/code'))
-from resilient_fetch import fetch, UA
+from resilient_fetch import fetch as fetch_snapshot, UA
+
+
+def fetch(session,url,policies,include_html=False):
+    """Apply RFC 9309 2.3.1.3 to missing robots authorization, then check the page."""
+    result=fetch_snapshot(session,url,policies,include_html=include_html)
+    parts=urlsplit(url)
+    base=parts.scheme+'://'+parts.netloc
+    policy=policies.get(base,{})
+    failure=policy.get('failure',{})
+    if result.get('status')=='robots_unavailable' and failure.get('http_status') in (401,403):
+        # A robots 4xx does not establish that the requested public page is gated.
+        # Preserve the failed robots request in the audit trail.
+        policies[base]={'status':'unavailable_4xx','http_status':failure['http_status'],
+                       'attempts':policy.get('attempts',[]),'rule':'RFC9309-2.3.1.3'}
+        result=fetch_snapshot(session,url,policies,include_html=include_html)
+    return result
 
 
 class WorkflowError(ValueError):pass
@@ -328,6 +344,7 @@ def run_project(website_url='',profile=None,competitor_urls=None,output_dir='var
         save(folder/'own_source.json',source)
         state={'id':identifier,'url':website_url,'created_at':timestamp(),'status':'profile_draft' if source['status']=='ok' else 'source_unavailable',
                'profile':draft(source) if source['status']=='ok' else None,'source_status':source['status'],'source_method':source.get('method'),
+               'source_diagnostic':{k:source[k] for k in ('http_status','failure_kind','attempts','robots') if k in source},
                'next_action':None if source['status']=='ok' else source.get('next_action'),'competitors':[],
                'profile_confirmed':False,'competitors_confirmed':False,'events':[]}
     else:

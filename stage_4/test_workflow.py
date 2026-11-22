@@ -12,6 +12,29 @@ from stage_4.workflow import run_project,WorkflowError,public_url,PublicSession
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_robots_401_does_not_prevent_checking_public_page(self):
+        from stage_4.workflow import fetch
+        policies={}
+        def snapshot(session,url,cache,include_html=False):
+            if cache:
+                return {'status':'ok','robots':cache['https://own.example']}
+            cache['https://own.example']={'status':'unavailable','failure':{'http_status':401},'attempts':[{'http_status':401}]}
+            return {'status':'robots_unavailable'}
+        with patch('stage_4.workflow.fetch_snapshot',side_effect=snapshot) as capture:
+            result=fetch(None,'https://own.example/page',policies)
+        self.assertEqual(result['status'],'ok')
+        self.assertEqual(result['robots']['http_status'],401)
+        self.assertEqual(capture.call_count,2)
+
+    def test_fetch_preserves_page_authentication_and_robots_limits(self):
+        from stage_4.workflow import fetch
+        for result in ({'status':'http_error','http_status':401},
+                       {'status':'robots_disallowed'},
+                       {'status':'robots_unavailable','failure_kind':'timeout'}):
+            with patch('stage_4.workflow.fetch_snapshot',return_value=result) as capture:
+                self.assertEqual(fetch(None,'https://own.example/',{}),result)
+                self.assertEqual(capture.call_count,1)
+
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name)

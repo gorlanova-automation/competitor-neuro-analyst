@@ -52,7 +52,15 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 uploads[url]={'text':next(iter(data.values())).decode('utf-8-sig')}
             state=run({'action':'start','website_url':url,'uploads':uploads})
             if not state.get('profile'):
-                print('Сайт недоступен. Повторите запуск с TXT; не делаем вывод об отсутствии услуг.');return state
+                print('Сборщик не получил текст страницы. Причина:',state.get('source_status','неизвестна'))
+                details=state.get('source_diagnostic',{})
+                if details.get('http_status'):print('HTTP страницы:',details['http_status'])
+                if details.get('failure_kind'):print('Причина сбоя загрузки:',details['failure_kind'])
+                for attempt in details.get('attempts',[]):
+                    print('Попытка',attempt.get('attempt'),attempt.get('outcome'),attempt.get('http_status',''))
+                print('Подробности загрузки сохранены в',str(Path(output_dir)/state['id']/'own_source.json'))
+                print('Страница может открываться в вашем браузере. Для продолжения можно предоставить её публичный текст в TXT.')
+                return state
             profile={}
             for name,label in [('company_name','Название'),('summary','Описание'),('market_scope','Рынок и аудитория'),('search_terms','Поисковые слова')]:
                 draft=state['profile'].get(name,'');profile[name]=input(label+' ['+draft+']: ').strip() or draft

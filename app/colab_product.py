@@ -10,7 +10,7 @@ from app.main import create_app
 
 
 def parse_competitor_input(line):
-    """Accept a named URL or a comma-separated list of public domains."""
+    """Accept company names, domains, named URLs and mixed lists."""
     from stage_4.workflow import public_url
     rows=[]
     for part in re.split(r'[,;\n]+',line):
@@ -22,6 +22,11 @@ def parse_competitor_input(line):
         else:
             target=part
             name=''
+            if not re.match(r'^[a-z][a-z0-9+.-]*://',part,re.I) and not re.match(r'^\S+\.\S+(?:/.*)?$',part):
+                if len(part)>200 or any(c in part for c in '/:@') or part.lower()=='localhost':
+                    raise ValueError('Укажите название компании или публичный домен.')
+                rows.append({'name':part,'url':None})
+                continue
         if not re.match(r'^https?://',target,re.I):target='https://'+target
         url=public_url(target)
         hostname=urlsplit(url).hostname
@@ -30,6 +35,66 @@ def parse_competitor_input(line):
         rows.append({'name':name or hostname,'url':url})
     if not rows:raise ValueError('В строке нет адресов.')
     return rows
+
+
+def resolve_competitor_names(rows,suggestions,profile,search_key,own_url,output_dir,prompt=None,notify=print,search=None,cache=None):
+    """Search names, then let the user confirm an address without inventing one."""
+    from app.search import official_search
+    from stage_4.workflow import public_url,save
+    from uuid import uuid4
+    prompt=prompt or input
+    resolved=[]
+    cache=cache if cache is not None else {}
+    for row in rows:
+        if row['url']:
+            resolved.append(row);continue
+        name=row['name']
+        identity=name.casefold()
+        if identity in cache:
+            if cache[identity]:resolved.append(cache[identity])
+            continue
+        candidates=[c for c in suggestions if c.get('name','').casefold()==identity]
+        record={'name':name,'method':'existing_suggestion','candidates':candidates}
+        if not candidates and search_key:
+            query=name+' официальный сайт '+profile.get('search_terms','')[:160]
+            settings={**os.environ,'ANALYST_SEARCH_ENABLED':'1','ANALYST_SEARCH_PROVIDER':'tavily','TAVILY_API_KEY':search_key,
+                      'ANALYST_SEARCH_BUDGET_FILE':os.environ.get('ANALYST_SEARCH_BUDGET_FILE',str(Path(output_dir)/'search_budget.json'))}
+            result=(search or official_search)(query,own_url=own_url,settings=settings)
+            candidates=result.get('candidates',[])
+            record={'name':name,'method':'tavily_name_search','search':result}
+            notify('Поиск сайта для '+name+': '+result['status'])
+        if not candidates:
+            notify('Для '+name+' нет подтверждённого адреса. Введите домен вручную или пропустите компанию.')
+        else:
+            notify('Выберите сайт для '+name+':')
+            for i,candidate in enumerate(candidates,1):
+                notify(str(i)+'. '+candidate.get('name',candidate.get('label',''))+' '+candidate['url']+' '+candidate.get('snippet',''))
+        chosen=None
+        while True:
+            answer=prompt('Номер сайта, домен или Enter — пропустить '+name+': ').strip()
+            if not answer:break
+            if answer.isdigit():
+                index=int(answer)-1
+                if not 0<=index<len(candidates):
+                    notify('Такого номера нет. Повторите выбор.');continue
+                target=candidates[index]['url']
+            else:
+                target=answer
+            try:
+                parsed=parse_competitor_input(target)
+                if len(parsed)!=1 or not parsed[0]['url']:
+                    raise ValueError('Нужен один домен или номер результата.')
+                chosen={'name':name,'url':public_url(parsed[0]['url'])}
+                break
+            except ValueError as exc:notify(str(exc))
+        record['confirmed_url']=chosen['url'] if chosen else None
+        log=Path(output_dir)/'name_resolution';log.mkdir(parents=True,exist_ok=True)
+        save(log/(uuid4().hex+'.json'),record)
+        cache[identity]=chosen
+        if chosen:resolved.append(chosen)
+    unique={}
+    for row in resolved:unique.setdefault(row['url'],row)
+    return list(unique.values())
 
 
 def export_result(output_dir,identifier,result):
@@ -128,13 +193,19 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
             print('Поиск:',state.get('search',{}).get('status'))
             print('Это кандидаты, включая статьи и публикации. Проверьте компанию и основной сайт:')
             for c in state.get('suggestions',[]):print(c['name'],c['url'],c.get('origin',''))
-            print('Введите компании: Название | https://сайт/ или домены через запятую. Enter завершает список.')
+            print('Введите названия, домены или Название | https://сайт/. Можно смешивать через запятую. Enter завершает список.')
+            print('Для названия найдём сайт и предложим подтвердить адрес. До одного Tavily basic-запроса на уникальное название, 1 кредит.')
             competitors=[]
+            name_cache={}
             while len(competitors)<20:
-                line=input('Компания или домены (Enter — закончить): ').strip()
+                line=input('Названия или домены (Enter — закончить): ').strip()
                 if not line:break
                 try:
                     added=parse_competitor_input(line)
+                    if len(competitors)+len(added)>20:
+                        raise ValueError('В исследовании допускается до 20 конкурентов.')
+                    added=resolve_competitor_names(added,state.get('suggestions',[]),state['profile'],search_key,
+                                                   state['url'],Path(output_dir)/'projects'/state['id'],cache=name_cache)
                     existing={c['url'] for c in competitors}
                     unique=[]
                     for candidate in added:

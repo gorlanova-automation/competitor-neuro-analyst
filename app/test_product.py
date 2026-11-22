@@ -15,8 +15,31 @@ class ProductTests(unittest.TestCase):
         rows=parse_competitor_input('avention.io, retensis.com, https://getreelyze.com')
         self.assertEqual([r['url'] for r in rows],['https://avention.io/','https://retensis.com/','https://getreelyze.com/'])
         self.assertEqual(parse_competitor_input('Example | https://example.com/')[0]['name'],'Example')
-        for invalid in ('не знаю','http://example.com/','localhost','https://127.0.0.1/'):
+        mixed=parse_competitor_input('Opus Clip, Example | https://example.com/, Captions')
+        self.assertEqual(mixed,[{'name':'Opus Clip','url':None},{'name':'Example','url':'https://example.com/'},{'name':'Captions','url':None}])
+        for invalid in ('http://example.com/','localhost','https://127.0.0.1/'):
             with self.assertRaises(ValueError):parse_competitor_input(invalid)
+
+    def test_colab_name_resolution_requires_choice_and_reuses_name(self):
+        from app.colab_product import parse_competitor_input,resolve_competitor_names
+        search=Mock(return_value={'status':'ok','candidates':[{'label':'Official Example','url':'https://example.com/'}]})
+        answers=iter(['99','1'])
+        with tempfile.TemporaryDirectory() as folder:
+            rows=resolve_competitor_names(parse_competitor_input('Example, Example'),[],{},'test-key','https://own.example/',folder,
+                prompt=lambda _:next(answers),notify=lambda _:None,search=search)
+            self.assertEqual(rows,[{'name':'Example','url':'https://example.com/'}])
+            self.assertEqual(search.call_count,1)
+            record=json.loads(next((Path(folder)/'name_resolution').glob('*.json')).read_text(encoding='utf-8'))
+            self.assertEqual(record['confirmed_url'],'https://example.com/')
+
+    def test_colab_unresolved_name_can_be_skipped_or_supplied_manually(self):
+        from app.colab_product import resolve_competitor_names
+        with tempfile.TemporaryDirectory() as folder:
+            self.assertEqual(resolve_competitor_names([{'name':'Example','url':None}],[],{},None,'https://own.example/',folder,
+                prompt=lambda _:'',notify=lambda _:None),[])
+            result=resolve_competitor_names([{'name':'Example','url':None}],[],{},None,'https://own.example/',folder,
+                prompt=lambda _:'example.com',notify=lambda _:None)
+            self.assertEqual(result,[{'name':'Example','url':'https://example.com/'}])
 
     def test_colab_resumes_confirmed_profile_and_recovers_bad_input(self):
         import io
@@ -32,7 +55,7 @@ class ProductTests(unittest.TestCase):
             google=ModuleType('google');colab=ModuleType('google.colab')
             colab.files=SimpleNamespace(download=Mock())
             google.colab=colab
-            answers=['https://own.example/','нет','да','нет','не знаю','rival.example, second.example','','да','']
+            answers=['https://own.example/','нет','да','нет','https://127.0.0.1/','rival.example, second.example','','да','']
             source={'url':'https://own.example/','status':'ok','text':text,'text_blocks':[text],
                     'title':'Test','links':[],'collected_at':'date','sha256_text':'test','method':'test'}
             # Reuse the stored source hash for the confirmed own snapshot.

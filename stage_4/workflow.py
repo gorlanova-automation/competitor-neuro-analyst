@@ -205,7 +205,7 @@ def sample_publications(sources,session):
             name=path[1] if len(path)>1 and path[0]=='s' else path[0]
             if name in seen:continue
             seen.add(name)
-            found_on=None if source.get('channel_discovery')=='user_confirmed_not_site_link' else source.get('final_url',source['url'])
+            found_on=None if source.get('channel_discovery') else source.get('final_url',source['url'])
             row={'url':link['url'],'found_on':found_on,'status':'not_a_public_feed','posts':0,
                  'checked_at':timestamp(),'purpose':'contact_invite_or_bot','ownership':source.get('channel_discovery','linked_from_company_site_not_independently_verified'),
                  'coverage':'Не вступаем в группы и закрытые каналы. До 2 страниц публичного превью, максимум 20 сообщений на канал.'}

@@ -7,6 +7,22 @@ from stage_4.workflow import observations,WorkflowError
 
 
 class SemanticProductTests(unittest.TestCase):
+    def test_search_channel_is_collected_only_with_name_and_profile_backlink(self):
+        from app.telegram_discovery import collect_verified_candidates
+        report={'companies':[{'name':'Brand','url':'https://brand.example/','telegram_discovery':{
+            'candidates':[{'url':'https://t.me/brand_news','confirmation_required':True},
+                          {'url':'https://t.me/unrelated_news','confirmation_required':True}]}}]}
+        raw=[{'url':'https://brand.example/','sources':[]}]
+        good={'status':'ok','html':'<div class="tgme_channel_info_header_title">Brand News</div><div class="tgme_channel_info_description"><a href="https://brand.example/">Site</a></div>','sha256_text':'hash'}
+        wrong={'status':'ok','html':'<div class="tgme_channel_info_description"><a href="https://brand.example.evil.test/">Site</a></div>'}
+        with patch('stage_4.workflow.fetch',side_effect=[good,wrong]),patch('stage_4.workflow.sample_publications',return_value=([{'url':'https://t.me/brand_news/1'}],[])) as sample:
+            collect_verified_candidates(report,raw,None)
+        self.assertEqual(sample.call_count,1)
+        self.assertEqual(len(raw[0]['sources']),1)
+        candidates=report['companies'][0]['telegram_discovery']['candidates']
+        self.assertFalse(candidates[0]['confirmation_required'])
+        self.assertTrue(candidates[1]['confirmation_required'])
+
     def test_recommendation_review_matches_ids_and_requires_complete_coverage(self):
         rows = [{'evidence_ids': ['c0:pricing']} for _ in range(2)]
         cells = {'c0:pricing': ({'name': 'Own', 'role': 'own'}, {

@@ -24,6 +24,55 @@ def discover(company,search=official_search):
         'limits':'Поиск публичных t.me-страниц, не полный поиск внутри Telegram. Отсутствие кандидата не доказывает отсутствие канала.'}
 
 
+def collect_verified_candidates(report,raw,session):
+    """Collect a search candidate only when its public profile links to the company."""
+    from bs4 import BeautifulSoup
+    from stage_4.workflow import fetch,sample_publications
+    import requests
+    for company in report['companies']:
+        discovery=company.get('telegram_discovery')
+        if not discovery:continue
+        host=(urlsplit(company['url']).hostname or '').removeprefix('www.')
+        item=next(c for c in raw if c['url']==company['url'])
+        discovery['identity_checks']=[]
+        for candidate in discovery['candidates'][:3]:
+            username=urlsplit(candidate['url']).path.strip('/')
+            preview='https://t.me/s/'+username
+            try:page=fetch(session,preview,{},include_html=True)
+            except (requests.RequestException,ValueError):
+                discovery['identity_checks'].append({'url':candidate['url'],'status':'profile_fetch_failed'})
+                continue
+            if page.get('status')!='ok':
+                discovery['identity_checks'].append({'url':candidate['url'],'status':page.get('status')})
+                continue
+            soup=BeautifulSoup(page['html'],'html.parser')
+            description=soup.select_one('.tgme_channel_info_description,.tgme_page_description')
+            backlinks=[]
+            for anchor in description.select('a[href]') if description else []:
+                target=anchor['href']
+                if (urlsplit(target).hostname or '').removeprefix('www.')==host:
+                    backlinks.append(target)
+            if not backlinks:
+                discovery['identity_checks'].append({'url':candidate['url'],'status':'ownership_unconfirmed'})
+                continue
+            title=soup.select_one('.tgme_channel_info_header_title,.tgme_page_title')
+            heading=re.sub(r'[^\w]','',title.get_text(' ',strip=True).casefold()) if title else ''
+            name=re.sub(r'[^\w]','',company['name'].casefold())
+            brand=host.split('.')[0]
+            if not heading or not ((name and name in heading) or (len(brand)>=4 and brand in heading)):
+                discovery['identity_checks'].append({'url':candidate['url'],'status':'name_match_unconfirmed','backlinks':backlinks})
+                continue
+            candidate.update(ownership='public_profile_links_to_company_site',confirmation_required=False)
+            posts,feeds=sample_publications([{'status':'ok','url':preview,'links':[{'url':candidate['url']}],
+                'channel_discovery':'public_profile_links_to_company_site'}],session)
+            existing={s['url'] for s in item['sources']}
+            item['sources'].extend(p for p in posts if p['url'] not in existing)
+            item.setdefault('publication_samples',[]).extend(feeds)
+            discovery['identity_checks'].append({'url':candidate['url'],'status':'site_backlink_verified',
+                'profile_url':preview,'profile_sha256':page.get('sha256_text'),'backlinks':backlinks,'posts':len(posts)})
+    return raw
+
+
 def enrich(report,output_dir,api_key=None,search=official_search,transport=None):
     """One public search per missing feed, then one optional AI shortlist review."""
     payload=[];out=Path(output_dir);out.mkdir(parents=True,exist_ok=True)

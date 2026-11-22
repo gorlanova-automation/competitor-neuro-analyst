@@ -117,11 +117,26 @@ def install(api,storage,project_root):
                     directory=storage/'projects'/state['id']/'runs'/state['report']['run_id']
                     raw=json.loads((directory/'sources.json').read_text(encoding='utf-8'))
                     if body.action=='discover_telegram':
-                        from .telegram_discovery import enrich
+                        from .telegram_discovery import enrich,collect_verified_candidates
                         base=json.loads((directory/'result.json').read_text(encoding='utf-8'))
                         prepared=product_report(base,state,raw)
                         value=enrich(prepared,directory/'telegram_search'/str(uuid4()),os.environ.get('PROXYAPI_KEY'))
+                        with new_session() as session:
+                            raw=collect_verified_candidates(value,raw,session)
+                        discoveries={c['url']:c.get('telegram_discovery') for c in value['companies']}
+                        run_id=str(uuid4());directory=storage/'projects'/state['id']/'runs'/run_id;directory.mkdir()
+                        base=compare(raw,state['profile']);base['run_id']=run_id
+                        save(directory/'sources.json',raw);save(directory/'result.json',base)
+                        (directory/'report.html').write_text(render_report(base),encoding='utf-8')
+                        rebuilt=product_report(base,state,raw)
+                        for company in rebuilt['companies']:
+                            if discoveries.get(company['url']):company['telegram_discovery']=discoveries[company['url']]
+                        for key in ('discovery_usage','telegram_review_status'):
+                            if key in value:rebuilt[key]=value[key]
+                        rebuilt['new_llm_calls']=value.get('new_llm_calls',0)
+                        value=rebuilt
                         save(directory/'telegram_candidates.json',value)
+                        state['report']={**state['report'],'run_id':run_id};state['report'].pop('ai_status',None)
                     else:
                         if not body.telegram_channels:raise WorkflowError('Подтвердите компанию и Telegram-канал.')
                         for company_url,channel_url in body.telegram_channels.items():
@@ -148,6 +163,8 @@ def install(api,storage,project_root):
                     base=json.loads((directory/'result.json').read_text(encoding='utf-8'))
                     raw=json.loads((directory/'sources.json').read_text(encoding='utf-8'))
                     prepared=product_report(base,state,raw)
+                    if (directory/'telegram_candidates.json').is_file():
+                        prepared=json.loads((directory/'telegram_candidates.json').read_text(encoding='utf-8'))
                     analysis_dir=directory/'ai_runs'/str(uuid4())
                     value=analyze_product(prepared,raw,os.environ.get('PROXYAPI_KEY'),analysis_dir,progress=progress)
                     save(directory/'product_analysis.json',value)

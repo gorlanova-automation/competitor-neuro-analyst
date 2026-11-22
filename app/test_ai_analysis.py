@@ -48,6 +48,20 @@ class SemanticProductTests(unittest.TestCase):
             bad=copy.deepcopy(good);bad['comparisons'][0]['evidence_ids']=ids
             with self.assertRaises(WorkflowError):validate_synthesis(bad,profiles)
 
+    def test_action_plan_requires_steps_deliverable_and_decision_rule(self):
+        profiles=[{'id':i,'role':role,'dimensions':self.profile['dimensions']} for i,role in [('c0','own'),('c1','competitor')]]
+        row={'kind':'adapt','title':'Проверить формат','action':'Провести тест','reason':'Различие форматов',
+             'success_check':'Доля оплаченных заказов','evidence_ids':['c0:pricing','c1:pricing'],
+             'priority':'средний','timeframe':'4 недели','owner_role':'Маркетолог',
+             'deliverable':'Тестовая страница','steps':['Зафиксировать базу','Запустить тест','Оценить результат'],
+             'decision_rule':'Продолжить при заранее согласованном улучшении'}
+        value={'comparisons':[],'recommendations':[row],'gaps':[]}
+        validate_synthesis(value,profiles)
+        for key in ('deliverable','steps','decision_rule'):
+            invalid=copy.deepcopy(value)
+            invalid['recommendations'][0].pop(key)
+            with self.assertRaises(WorkflowError):validate_synthesis(invalid,profiles)
+
     def test_law_reference_is_not_an_editorial_publication(self):
         text='ВНЖ для детей через учебу по статье 91.2'
         rows=observations([{'status':'ok','text':text,'text_blocks':[text],'url':'https://own.example/','sha256_text':'x'}])

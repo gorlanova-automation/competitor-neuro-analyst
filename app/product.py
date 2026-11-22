@@ -38,6 +38,8 @@ def product_report(result,state,raw_sources=None):
             if raw['url']!=item['url']:continue
             for source in raw['sources']:
                 if source['status']!='ok':continue
+                if source.get('title') and source.get('source_kind')!='publication' and not item.get('site_title'):
+                    item['site_title']=source['title']
                 for heading in source.get('headings',[]):
                     if 8<=len(heading)<=140 and heading.casefold() not in seen:
                         seen.add(heading.casefold());item['sections'].append({'title':heading,'url':source.get('final_url',source['url'])})

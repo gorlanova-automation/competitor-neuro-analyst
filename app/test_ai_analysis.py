@@ -97,7 +97,15 @@ class SemanticProductTests(unittest.TestCase):
             {'url':'https://t.me/brand_news/124','label':'Duplicate'}, {'url':'https://t.me/other_channel','label':'Other'},
             {'url':'https://t.me/brand_bot','label':'Bot'},{'url':'https://evil.example/','label':'Not Telegram'}]})
         value=discover({'name':'Brand'},search)
-        self.assertEqual(len(value['candidates']),2)
+        self.assertEqual(len(value['candidates']),1)
         self.assertTrue(all(c['confirmation_required'] for c in value['candidates']))
         self.assertIn('not_telegram_global_search',value['method'])
         self.assertFalse(search.call_args.kwargs['deduplicate_by_host'])
+
+    def test_telegram_search_uses_site_brand_when_company_name_is_a_url(self):
+        from app.telegram_discovery import search_name,relevant_candidates
+        company={'name':'https://youtube.fghk.ru/landing/ru.html','url':'https://youtube.fghk.ru/','site_title':'SHIFT дай следующему ролику больше силы'}
+        self.assertEqual(search_name(company),'SHIFT')
+        rows=[{'url':'https://t.me/car_news','label':'Автомобили','snippet':'Канал машин'},
+              {'url':'https://t.me/shift_video','label':'SHIFT','snippet':'Анализ видео'}]
+        self.assertEqual(relevant_candidates(company,rows),[rows[1]])

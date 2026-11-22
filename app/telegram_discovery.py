@@ -8,8 +8,23 @@ from pathlib import Path
 from uuid import uuid4
 
 
+def search_name(company):
+    name=company['name'].strip()
+    if '://' in name:
+        return company.get('site_title','').split(' ')[0] or (urlsplit(company['url']).hostname or '').removeprefix('www.').split('.')[0]
+    if '.' in name and ' ' not in name:
+        return name.removeprefix('www.').split('.')[0]
+    return name
+
+
+def relevant_candidates(company,candidates):
+    brand=re.sub(r'[^\w]','',search_name(company).casefold())
+    return [row for row in candidates if len(brand)>=4 and brand in re.sub(r'[^\w]','',
+        (row.get('url','')+' '+row.get('label','')+' '+row.get('snippet','')).casefold())]
+
+
 def discover(company,search=official_search):
-    result=search('site:t.me "'+company['name']+'" Telegram канал',deduplicate_by_host=False)
+    result=search('site:t.me "'+search_name(company)+'" Telegram канал',deduplicate_by_host=False)
     candidates=[];seen=set()
     for row in result.get('candidates',[]):
         parts=urlsplit(row['url'])
@@ -19,7 +34,7 @@ def discover(company,search=official_search):
         seen.add(name.lower());candidates.append({'url':'https://t.me/'+name,'label':row['label'],
             'snippet':row.get('snippet',''),'ownership':'unverified_search_candidate','confirmation_required':True})
     return {'method':'tavily_public_tme_search_not_telegram_global_search','query':result.get('query'),
-        'status':result['status'],'checked_at':result.get('collected_at'),'candidates':candidates,'api_attempts':result.get('api_attempts',0),
+        'status':result['status'],'checked_at':result.get('collected_at'),'candidates':relevant_candidates(company,candidates),'api_attempts':result.get('api_attempts',0),
         'reported_credits':result.get('reported_credits'),
         'limits':'Поиск публичных t.me-страниц, не полный поиск внутри Telegram. Отсутствие кандидата не доказывает отсутствие канала.'}
 
@@ -83,6 +98,7 @@ def enrich(report,output_dir,api_key=None,search=official_search,transport=None)
             import json
             value=json.loads(cache.read_text(encoding='utf-8'))
         else:value=discover(company,search);save(cache,value)
+        value['candidates']=relevant_candidates(company,value['candidates'])
         company['telegram_discovery']=value
         payload.append({'id':'c'+str(i),'company_name':company['name'],'official_site':company['url'],'candidates':value['candidates'][:2]})
     if not any(c['candidates'] for c in payload) or not api_key and not transport:return report

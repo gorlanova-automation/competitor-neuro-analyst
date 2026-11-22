@@ -241,7 +241,7 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 state=run({'action':'collect','max_pages':4,'uploads':uploads},state['id'])
             if model_key:os.environ['PROXYAPI_KEY']=model_key
             result=client.get('/api/research/'+state['id']+'/result').json()
-            missing=[c for c in result['companies'] if not c.get('posts_collected')]
+            missing=[c for c in result['companies'] if not c.get('posts_collected') and not c.get('telegram_discovery')]
             if search_key and missing:
                 print('Ищем Telegram для компаний без прочитанных постов. До одного basic-запроса на компанию.')
                 os.environ['TAVILY_API_KEY']=search_key
@@ -254,7 +254,13 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
             elif missing:
                 print('TAVILY_API_KEY недоступен. Ссылки с сайтов обработаны, дополнительный поиск не выполнен.')
             channels={}
+            from app.telegram_discovery import relevant_candidates
+            sources_file=Path(output_dir)/'projects'/state['id']/'runs'/state['report']['run_id']/'sources.json'
+            raw_sources=json.loads(sources_file.read_text(encoding='utf-8'))
             for company in result['companies']:
+                raw_company=next((r for r in raw_sources if r['url']==company['url']),{})
+                if not company.get('site_title'):
+                    company['site_title']=next((s['title'] for s in raw_company.get('sources',[]) if s.get('title') and s.get('source_kind')!='publication'),'')
                 print(company['name']+': получено Telegram-постов '+str(company.get('posts_collected',0)))
                 for feed in company.get('publication_samples',[]):
                     print(' ',feed['url'],feed['status'])
@@ -262,8 +268,8 @@ def launch(output_dir='var/colab_product',search_key=None,model_key=None):
                 if not discovery:continue
                 print(' Поиск публичных t.me-страниц:',discovery.get('status'))
                 verdicts={r['url']:r for r in discovery.get('ai_review',[])}
-                candidates=[r for r in discovery.get('candidates',[])
-                            if r.get('confirmation_required') and verdicts.get(r['url'],{}).get('verdict')!='reject']
+                candidates=[r for r in relevant_candidates(company,discovery.get('candidates',[]))
+                            if r.get('confirmation_required') and verdicts.get(r['url'],{}).get('verdict') in ('likely','uncertain')]
                 if not candidates:
                     if not company.get('posts_collected'):
                         print(' В проверенных источниках подходящий публичный канал не подтверждён.')

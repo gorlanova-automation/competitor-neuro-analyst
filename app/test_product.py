@@ -10,6 +10,42 @@ from app.product import product_report
 
 
 class ProductTests(unittest.TestCase):
+    def test_colab_competitors_accept_domains_and_named_urls(self):
+        from app.colab_product import parse_competitor_input
+        rows=parse_competitor_input('avention.io, retensis.com, https://getreelyze.com')
+        self.assertEqual([r['url'] for r in rows],['https://avention.io/','https://retensis.com/','https://getreelyze.com/'])
+        self.assertEqual(parse_competitor_input('Example | https://example.com/')[0]['name'],'Example')
+        for invalid in ('не знаю','http://example.com/','localhost','https://127.0.0.1/'):
+            with self.assertRaises(ValueError):parse_competitor_input(invalid)
+
+    def test_colab_resumes_confirmed_profile_and_recovers_bad_input(self):
+        import io
+        import sys
+        from types import ModuleType,SimpleNamespace
+        from app.colab_product import launch
+        from stage_4.workflow import run_project
+        text='Public short video analysis service and editing recommendations. '*10
+        with tempfile.TemporaryDirectory() as folder:
+            state=run_project(output_dir=Path(folder)/'projects',website_url='https://own.example/',uploads={'https://own.example/':{'text':text}})
+            state=run_project(output_dir=Path(folder)/'projects',project_id=state['id'],action='confirm_profile',
+                              profile={'company_name':'Own','summary':'Video analysis','market_scope':'Creators','search_terms':'video analysis tools'})
+            google=ModuleType('google');colab=ModuleType('google.colab')
+            colab.files=SimpleNamespace(download=Mock())
+            google.colab=colab
+            answers=['https://own.example/','нет','да','нет','не знаю','rival.example, second.example','','да','']
+            source={'url':'https://own.example/','status':'ok','text':text,'text_blocks':[text],
+                    'title':'Test','links':[],'collected_at':'date','sha256_text':'test','method':'test'}
+            # Reuse the stored source hash for the confirmed own snapshot.
+            from stage_4.workflow import digest
+            source['sha256_text']=digest(text)
+            output=io.StringIO()
+            with patch.dict(sys.modules,{'google':google,'google.colab':colab}),patch('builtins.input',side_effect=answers),patch('stage_4.workflow.fetch',return_value=source),patch('sys.stdout',output):
+                result=launch(folder)
+            self.assertEqual(result['id'],state['id'])
+            self.assertEqual(len(result['competitors']),2)
+            self.assertIn('Повторите ввод',output.getvalue())
+            self.assertEqual(colab.files.download.call_count,1)
+
     def test_colab_export_creates_its_own_directory(self):
         from app.colab_product import export_result
         with tempfile.TemporaryDirectory() as folder:

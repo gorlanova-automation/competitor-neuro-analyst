@@ -102,7 +102,8 @@ def queries(profile):
     for word in words:
         if word.casefold() not in seen:unique.append(word);seen.add(word.casefold())
     base=' '.join(unique[:14])
-    return [base+' компании',base+' альтернативы',base+' услуги цены']
+    return [base+' компании услуги цены -site:youtube.com -site:reddit.com',
+            base+' компании услуги официальный сайт',base+' альтернативы сервисы цены']
 
 
 def capture_source(url,session,policies,uploads):

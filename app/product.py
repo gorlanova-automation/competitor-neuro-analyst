@@ -131,8 +131,8 @@ def install(api,storage,project_root):
                         rebuilt=product_report(base,state,raw)
                         for company in rebuilt['companies']:
                             if discoveries.get(company['url']):company['telegram_discovery']=discoveries[company['url']]
-                        for key in ('discovery_usage','telegram_review_status'):
-                            if key in value:rebuilt[key]=value[key]
+                        for metadata_key in ('discovery_usage','telegram_review_status'):
+                            if metadata_key in value:rebuilt[metadata_key]=value[metadata_key]
                         rebuilt['new_llm_calls']=value.get('new_llm_calls',0)
                         value=rebuilt
                         save(directory/'telegram_candidates.json',value)

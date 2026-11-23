@@ -62,18 +62,7 @@ function publishedMode(){
 function aiEvidence(parent,cell){if(!cell.refs?.length)return;const d=el('details');d.append(el('summary','Основания · '+cell.refs.length));cell.refs.forEach(r=>evidence(d,r));parent.append(d);}
 function telegramCoverage(parent,c){const samples=c.publication_samples||[];parent.append(el('p','Прочитано сообщений: '+c.posts_collected+'. Частота и эффективность по неполному превью не оцениваются.','hint'));if(!samples.length)parent.append(el('p','Telegram-ссылка не обнаружена в полученных страницах. Это не доказательство отсутствия канала.','hint'));const labels={sample_collected:'Публикации получены',not_a_public_feed:'Контакт, приглашение или бот',no_public_messages_observed:'В превью нет доступных сообщений',not_sampled_limit:'Не проверено: лимит выборки',robots_disallowed:'Загрузка ограничена robots.txt',challenge_page:'Защитная проверка'};for(const f of samples){const box=el('div',undefined,'evidence');box.append(link(f.url,f.url),el('p',(labels[f.status]||'Источник недоступен: '+f.status)+' · сообщений: '+f.posts));if(f.first_published_at)box.append(el('p','Период полученной выборки: '+f.first_published_at.slice(0,10)+' — '+f.last_published_at.slice(0,10)));if(f.found_on)box.append(link('Ссылка найдена на сайте ↗',f.found_on));parent.append(box);}if(c.telegram_discovery){const d=c.telegram_discovery;parent.append(el('p','Дополнительный поиск: публичные t.me-страницы через Tavily. Это не поиск внутри приложения Telegram.','hint'));for(const r of d.ai_review||[]){const box=el('div',undefined,'evidence');box.append(link(r.url,r.url),el('p',({likely:'Вероятный кандидат · подтвердите принадлежность',uncertain:'Принадлежность не установлена',reject:'ИИ отклонил совпадение'})[r.verdict]),el('p',r.reason));parent.append(box);}const details=el('details');details.append(el('summary','Вся поисковая выдача · '+d.candidates.length));for(const x of d.candidates){details.append(link(x.label,x.url),el('p',x.snippet||''));}parent.append(details);if(!d.candidates.length)parent.append(el('p','В этой проверенной выдаче кандидатов нет. Канал может существовать.'));}}
 
-let comparisonSelection=[],comparisonResize=null;
-function tableNavigation(wrap,table){
- if(comparisonResize)comparisonResize.disconnect();
- const bar=el('div',undefined,'table-navigation'),label=el('label','Прокрутка таблицы'),slider=el('input');
- slider.type='range';slider.min='0';slider.max='100';slider.step='0.1';slider.setAttribute('aria-label','Горизонтальная прокрутка сравнения');label.append(slider);
- const left=el('button','Влево','secondary'),right=el('button','Вправо','secondary');left.type=right.type='button';
- const update=()=>{const max=wrap.scrollWidth-wrap.clientWidth;bar.hidden=max<=1;slider.value=max>0?String(wrap.scrollLeft/max*100):'0';left.disabled=wrap.scrollLeft<=1;right.disabled=wrap.scrollLeft>=max-1;};
- slider.oninput=()=>{wrap.scrollLeft=(wrap.scrollWidth-wrap.clientWidth)*Number(slider.value)/100;};
- left.onclick=()=>{wrap.scrollLeft-=wrap.clientWidth*.75;};right.onclick=()=>{wrap.scrollLeft+=wrap.clientWidth*.75;};
- wrap.addEventListener('scroll',update,{passive:true});bar.append(left,label,right);comparisonResize=new ResizeObserver(update);comparisonResize.observe(wrap);comparisonResize.observe(table);requestAnimationFrame(update);return bar;
-}
-
+let comparisonSelection=[];
 function comparison(){
     if(!comparisonSelection.length){
         const own=report.companies.findIndex(c=>c.role==='own');
@@ -136,7 +125,7 @@ function comparison(){
         table.append(tr);
     }
     wrap.append(table);wrap.tabIndex=0;wrap.setAttribute('aria-label','Таблица сравнения компаний');
-    const tableBlock=el('section',undefined,'comparison-table-block');tableBlock.append(tableNavigation(wrap,table),wrap);
+    const tableBlock=el('section',undefined,'comparison-table-block');tableBlock.append(wrap);
     const overview=el('div',undefined,'cards');
     const ids=new Set(selected.map(c=>c.analysis?.id).filter(Boolean));
     for(const row of report.ai_analysis?.comparisons||[]){

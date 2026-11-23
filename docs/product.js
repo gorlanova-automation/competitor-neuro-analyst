@@ -171,6 +171,7 @@ function actions(){
  }else{
   for(const row of report.ai_analysis?.comparisons||[]){const card=el('article',undefined,'card');card.append(el('h3',report.dimensions[row.category]),el('p',row.summary));area.append(card);}
  }
+ if(!report.recommendations.length&&assessment?.criteria?.some(r=>r.verdict==='own_strength')&&!assessment.criteria.some(r=>r.verdict==='competitor_strength'))area.append(el('p','По сопоставленным предложениям менять свой подход вслед за конкурентами не требуется. Сохраняйте отмеченные преимущества.','notice'));
  if(report.recommendations.length)area.append(el('h3','Приоритетные действия'));
  const groups={adapt:'Адаптировать подход конкурента',keep:'Сохранить и усилить своё',check:'Проверить и при необходимости исправить',market:'Проверить возможность отстройки'};for(const [kind,label] of Object.entries(groups)){const items=report.recommendations.filter(r=>r.kind===kind);if(!items.length)continue;const section=el('section',undefined,'action-group');section.append(el('h3',label));const cards=el('div',undefined,'cards');for(const r of items){const box=el('article',undefined,'card');box.append(el('h3',r.title),el('p',r.action),el('p',r.reason||'','hint'),el('p','Проверка результата: '+r.success_check,'hint'));if(r.priority)box.append(el('p','Приоритет: '+r.priority+' · Срок: '+(r.timeframe||'уточнить'),'hint'));
 if(r.deliverable)box.append(el('p','Результат работы: '+r.deliverable));

@@ -51,7 +51,7 @@ async function openExample(){try{error('');const response=await fetch('product-e
 function publishedMode(){
     const notice=$('connection');
     const launch=el('a','Открыть приложение','secondary');
-    launch.href='https://youtube.fghk.ru/neuroanalyst/';
+    launch.href='https://neuroanalyst.fghk.ru/';
     notice.replaceChildren(el('p','Исследование от начала до результата — в одном приложении.'),launch,
         el('p','Введите сайт, подтвердите профиль и выберите конкурентов. Анализ и сохранение результата выполняются автоматически.','hint'));
     notice.className='notice';

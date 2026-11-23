@@ -7,6 +7,54 @@ from stage_4.workflow import observations,WorkflowError
 
 
 class SemanticProductTests(unittest.TestCase):
+    def test_repeated_long_menu_does_not_replace_actual_page_content(self):
+        from app.ai_analysis import company_input
+        menu='Shared menu of services and locations. '*180
+        body_a='Unique catalogue description and methodology. '*25
+        body_b='Unique expertise and delivery process. '*25
+        common={'status':'ok','sha256_text':'hash','collected_at':'date','method':'test'}
+        pages=[{**common,'url':'https://example.com/'+str(i),'text':menu+body,'text_blocks':[menu,body]} for i,body in enumerate((body_a,body_b))]
+        sources=company_input({'url':'https://example.com/','role':'own','sources':pages},max_characters=6000)
+        self.assertTrue(any(body_a[:120] in s['text'] for s in sources))
+        self.assertTrue(any(body_b[:120] in s['text'] for s in sources))
+        self.assertTrue(all(s['text'] in next(p['text'] for p in pages if p['url']==s['url']) for s in sources))
+
+    def test_telegram_posts_do_not_crowd_out_the_service_catalogue(self):
+        from app.ai_analysis import company_input
+        base={'status':'ok','sha256_text':'hash','collected_at':'date','method':'test'}
+        page={**base,'url':'https://example.com/','text':'s'*30000}
+        posts=[{**base,'url':'https://t.me/example/'+str(i),'source_kind':'publication','text':'p'*3000} for i in range(20)]
+        sources=company_input({'url':page['url'],'role':'own','sources':[page]+posts})
+        self.assertEqual(len(sources[0]['text']),30000)
+        self.assertLessEqual(sum(len(s['text']) for s in sources),45000)
+        self.assertEqual(len({s['source_id'] for s in sources}),len(sources))
+
+    def test_strengths_require_own_company_and_same_criterion_evidence(self):
+        from app.assessment import assess
+        cell={'status':'observed','summary':'Service package','refs':[{'quote':'A full service package','url':'https://example.com/','sha256_text':'hash'}]}
+        profiles=[{'id':'c0','name':'Own','url':'https://own.example/','role':'own','dimensions':{'assortment':cell,'pricing':cell}},
+                  {'id':'c1','name':'Rival','url':'https://rival.example/','role':'competitor','dimensions':{'assortment':cell,'pricing':cell}}]
+        rows=[{'category':'assortment','verdict':'own_strength','summary':'Broader published package','evidence_ids':['c0:assortment','c1:assortment']},
+              {'category':'pricing','verdict':'own_strength','summary':'Mixed criteria must be rejected','evidence_ids':['c0:assortment','c1:pricing']}]
+        with patch('app.assessment.call_model',return_value=({'criteria':rows},{})):
+            value,_=assess(profiles,'test-key',None)
+        self.assertEqual(len(value['criteria']),1)
+        self.assertEqual(len(value['criteria'][0]['evidence']),2)
+        self.assertNotIn('всем',value['title'])
+
+    def test_leading_conclusion_requires_every_studied_rival(self):
+        from app.assessment import assess
+        cell={'status':'observed','summary':'Published offer','refs':[{'quote':'Published offer details','url':'https://example.com/'}]}
+        profiles=[{'id':'c'+str(i),'name':str(i),'url':'https://example.com/','role':'own' if i==0 else 'competitor','dimensions':{'assortment':cell,'pricing':cell}} for i in range(3)]
+        rows=[{'category':category,'verdict':'own_strength','summary':'Observed advantage','evidence_ids':['c0:'+category,'c1:'+category]} for category in ('assortment','pricing')]
+        with patch('app.assessment.call_model',return_value=({'criteria':rows},{})):
+            value,_=assess(profiles,'test-key',None)
+        self.assertNotIn('всем',value['title'])
+        for row in rows:row['evidence_ids'].append('c2:'+row['category'])
+        with patch('app.assessment.call_model',return_value=({'criteria':rows},{})):
+            value,_=assess(profiles,'test-key',None)
+        self.assertIn('всем сопоставленным',value['title'])
+
     def test_one_invalid_comparison_does_not_discard_other_comparisons(self):
         from app.ai_analysis import partial_synthesis
         cell={'status':'observed','summary':'Confirmed','refs':[]}

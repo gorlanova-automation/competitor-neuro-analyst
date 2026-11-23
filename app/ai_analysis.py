@@ -195,13 +195,43 @@ def partial_profile(value,sources):
     return safe,rejected
 
 
+def company_input(raw,max_characters=45000):
+    if not raw:return []
+    pages=[s for s in raw['sources'] if s.get('source_kind')!='publication']
+    posts=[s for s in raw['sources'] if s.get('source_kind')=='publication']
+    # Long shared menus must not consume every page's entire model allowance.
+    # Use contiguous excerpts, so a quoted passage still exists in the original.
+    selected=[];catalogue=None
+    readable=[p for p in pages if p['status']=='ok']
+    for page in pages:
+        original=page.get('text','');offset=0
+        for block in page.get('text_blocks',[]):
+            if not isinstance(block,str) or len(block)<120:continue
+            position=original.find(block)
+            if position<0 or any(block in other.get('text','') for other in readable if other is not page):continue
+            if position>=1500:offset=position
+            break
+        if offset:
+            if catalogue is None:catalogue={**page,'text':original[:4000]}
+            selected.append({**page,'text':original[offset:]})
+        else:selected.append(page)
+    if catalogue:selected.append(catalogue)
+    pages=selected
+    if not posts:return model_input([{**raw,'sources':pages}],max_characters=max_characters)
+    sources=model_input([{**raw,'sources':pages}],max_characters=int(max_characters*.7))
+    remaining=max_characters-sum(len(s['text']) for s in sources)
+    sources+=model_input([{**raw,'sources':posts}],max_characters=remaining)
+    for index,source in enumerate(sources):source['source_id']='s'+str(index)
+    return sources
+
+
 def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progress=lambda _:None,cached_dir=None):
     if not api_key and not transport:raise WorkflowError('Нужен PROXYAPI_KEY в серверном окружении или Colab Secrets.')
     out=Path(output_dir);out.mkdir(parents=True,exist_ok=False)
     profiles=[];attempts=0;usages=[];reused=0;result=json.loads(json.dumps(report,ensure_ascii=False))
     for i,company in enumerate(result['companies']):
         raw=next((r for r in raw_sources if r['url']==company['url']),None)
-        sources=model_input([raw],max_characters=45000) if raw else []
+        sources=company_input(raw)
         # Retain source kind/date so the model can separate posts from web pages.
         for s in sources:
             original=next(x for x in raw['sources'] if x.get('sha256_text')==s['sha256_text'])
@@ -212,12 +242,14 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
             progress('ИИ анализирует '+company['name'])
             payload={'company':profile,'market':result['profile'],'sources':sources,'telegram':company.get('publication_samples',[])}
             cached=Path(cached_dir)/('c'+str(i)) if cached_dir else None
-            if cached and (cached/'response.json').is_file():
+            cached_value=None
+            if cached and (cached/'response.json').is_file() and (cached/'request.json').is_file():
                 old_request=json.loads((cached/'request.json').read_text(encoding='utf-8'))
-                if json.loads(old_request['messages'][1]['content'])!=payload:raise WorkflowError('Сохранённый ответ относится к другому корпусу.')
                 old=json.loads((cached/'response.json').read_text(encoding='utf-8'))
-                if old['choices'][0].get('finish_reason')!='stop':raise WorkflowError('Сохранённый ответ обрезан.')
-                value=json.loads(old['choices'][0]['message']['content']);usage=None;reused+=1
+                if json.loads(old_request['messages'][1]['content'])==payload and old['choices'][0].get('finish_reason')=='stop':
+                    cached_value=json.loads(old['choices'][0]['message']['content'])
+            if cached_value is not None:
+                value=cached_value;usage=None;reused+=1
                 save(out/('reused_'+str(i)+'.json'),{'source':str(cached),'request_sha256':digest(json.dumps(old_request,ensure_ascii=False))})
             else:
                 attempts+=1
@@ -229,11 +261,19 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
             profile.update(status='unavailable',dimensions={k:{'status':'insufficient','summary':'Смысловой анализ не получен. '+str(exc),'refs':[]} for k in DIMENSIONS},gaps=[str(exc)])
         profile['coverage']={'sources':len(sources),'input_characters':sum(len(s['text']) for s in sources),'source_dates':sorted({s['collected_at'] for s in sources})}
         company['analysis']=profile;profiles.append(profile);save(out/('profile_'+str(i)+'.json'),profile)
+    from .assessment import assess
+    assessment={'status':'unavailable','criteria':[]}
+    if sum(p['status']=='ai_draft' for p in profiles)>=2:
+        progress('Определяем преимущества своей компании относительно конкурентов');attempts+=1
+        try:
+            assessment,usage=assess(profiles,api_key,out/'assessment',transport);usages.append(usage)
+        except WorkflowError:pass
+    result['assessment']=assessment
     synthesis=None;rejected_findings=[];synthesis_error=None
     if sum(p['status']=='ai_draft' for p in profiles)>=2:
         progress('ИИ сопоставляет одинаковые критерии всех компаний');attempts+=1
         try:
-            value,usage=call_model(SYNTHESIS_PROMPT,{'profiles':profiles,'market':result['profile']},api_key,out/'comparison',transport)
+            value,usage=call_model(SYNTHESIS_PROMPT+' Не придумывай изменения, если у своей компании предложение сильнее. Учитывай сравнительную оценку. Если конкретного полезного изменения с достаточным основанием нет — верни пустой recommendations. Не превращай пробелы исследовательской выборки в список бизнес-задач клиенту.',{'profiles':profiles,'market':result['profile'],'assessment':assessment},api_key,out/'comparison',transport)
             synthesis,rejected_findings=partial_synthesis(value,profiles);usages.append(usage)
             save(out/'rejected_findings.json',rejected_findings)
         except WorkflowError as exc:

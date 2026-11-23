@@ -63,7 +63,7 @@ class Competitor(BaseModel):
 
 class Command(BaseModel):
     model_config=ConfigDict(extra='forbid')
-    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|investigate|search|import_search|analyze|discover_telegram|confirm_telegram)$')
+    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|investigate|search|import_search|analyze|assess|discover_telegram|confirm_telegram)$')
     website_url:str=Field(default='',max_length=2000)
     profile:dict[str,str]|None=None
     competitors:list[Competitor]|None=Field(default=None,max_length=20)
@@ -159,6 +159,22 @@ def install(api,storage,project_root):
                         save(directory/'sources.json',raw);save(directory/'result.json',base)
                         (directory/'report.html').write_text(render_report(base),encoding='utf-8')
                         state['report']={**state['report'],'run_id':run_id};state['report'].pop('ai_status',None)
+                elif body.action=='assess':
+                    import os
+                    from .assessment import assess
+                    state=read(identifier)
+                    if not state.get('report'):raise WorkflowError('Сначала выполните анализ компаний.')
+                    directory=storage/'projects'/state['id']/'runs'/state['report']['run_id']
+                    analyzed=directory/'product_analysis.json'
+                    if not analyzed.is_file():raise WorkflowError('Сначала выполните анализ компаний.')
+                    value=json.loads(analyzed.read_text(encoding='utf-8'))
+                    profiles=[c['analysis'] for c in value['companies'] if c.get('analysis')]
+                    progress('Сравниваем преимущества и специализацию компаний')
+                    assessment,usage=assess(profiles,os.environ.get('PROXYAPI_KEY'),directory/'assessment_runs'/str(uuid4()))
+                    value['assessment']=assessment
+                    value['new_llm_calls']=value.get('new_llm_calls',0)+1
+                    value['ai_analysis']['attempts']+=1;value['ai_analysis']['usage'].append(usage)
+                    save(analyzed,value)
                 elif body.action=='analyze':
                     import os
                     from .ai_analysis import analyze_product
@@ -263,7 +279,11 @@ def install(api,storage,project_root):
                 save(storage/'projects'/state['id']/'state.json',state)
                 job.update(status='succeeded',step='Готово')
             except WorkflowError as error:job.update(status='failed',error=str(error))
-            except Exception:job.update(status='failed',error='Не удалось завершить действие. История сохранена; проверьте адрес и повторите.')
+            except Exception as error:
+                import traceback
+                diagnostics=jobs/'diagnostics';diagnostics.mkdir(exist_ok=True)
+                save(diagnostics/(job_id+'.json'),{'type':type(error).__name__,'frames':[{'file':Path(f.filename).name,'line':f.lineno,'function':f.name} for f in traceback.extract_tb(error.__traceback__)]})
+                job.update(status='failed',error='Не удалось завершить действие. История сохранена; проверьте адрес и повторите.')
             finally:
                 job['updated_at']=timestamp();job_save(file,job)
                 with guard:active.discard(key)

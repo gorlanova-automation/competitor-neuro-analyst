@@ -45,7 +45,7 @@ async function command(body,id=state?.id){
  finally{busy=false;}
 }
 function evidence(parent,e){const box=el('div',undefined,'evidence');box.append(el('small',e.company||''),el('blockquote',e.quote),link('Источник ↗',e.url));if(e.source_method==='user_uploaded_text')box.append(el('small',' · Текст предоставлен пользователем'));parent.append(box);}
-function showResult(value,saved=false){report=value;comparisonSelection=[];panel('results');$('rerun').hidden=saved;$('result-summary').textContent=(saved?'Загруженный результат · ':'')+'Компаний: '+report.companies.length+' · '+report.companies.reduce((n,c)=>n+c.pages_ok,0)+' полученных страниц. Предварительный обзор: проверьте смысл цитат и актуальность предложений.';if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'}));$('download').href=exportUrl;$('download').download='research-result.json';$('download').textContent='Скачать копию результата';comparison();companyCards();actions();if(!saved&&report.ai_analysis?.synthesis_error){const retry=el('button','Повторить итоговый анализ','secondary');retry.onclick=()=>command({action:'analyze'});$('actions').append(retry);}if(report.ai_analysis)$('result-summary').textContent='Смысловой анализ ИИ: '+report.ai_analysis.profiles_ok+' из '+report.companies.length+' компаний · '+report.companies.reduce((n,c)=>n+c.pages_ok,0)+' страниц · '+report.companies.reduce((n,c)=>n+c.posts_collected,0)+' сообщений Telegram. Черновик выводов: основания раскрываются под каждым пунктом.';}
+function showResult(value,saved=false){report=value;comparisonSelection=[];panel('results');$('rerun').hidden=saved;$('result-summary').textContent=(saved?'Загруженный результат · ':'')+'Компаний: '+report.companies.length+' · '+report.companies.reduce((n,c)=>n+c.pages_ok,0)+' полученных страниц. Предварительный обзор: проверьте смысл цитат и актуальность предложений.';if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'}));$('download').href=exportUrl;$('download').download='research-result.json';$('download').textContent='Скачать копию результата';comparison();companyCards();actions();if(!saved&&report.ai_analysis?.synthesis_error){const retry=el('button','Повторить итоговый анализ','secondary');retry.onclick=()=>command({action:'analyze'});$('actions').append(retry);}if(report.ai_analysis)$('result-summary').textContent='Компаний: '+report.companies.length+' · '+report.companies.reduce((n,c)=>n+c.pages_ok,0)+' страниц · '+report.companies.reduce((n,c)=>n+c.posts_collected,0)+' публикаций Telegram. Источники раскрываются под выводами.';}
 async function loadReport(){try{showResult(await api('research/'+state.id+'/result'));}catch(e){error(e.message);showCollect();}}
 async function openExample(){try{error('');const response=await fetch('product-example.json?v=20261122-plan');if(!response.ok)throw Error('Сохранённый пример недоступен.');const value=await response.json();$('intro').hidden=true;$('project').hidden=false;$('project-name').textContent=value.profile.company_name;$('saved').textContent='Пример исследования';location.hash='example';showResult(value,true);}catch(e){error(e.message);}}
 function publishedMode(){
@@ -62,7 +62,18 @@ function publishedMode(){
 function aiEvidence(parent,cell){if(!cell.refs?.length)return;const d=el('details');d.append(el('summary','Основания · '+cell.refs.length));cell.refs.forEach(r=>evidence(d,r));parent.append(d);}
 function telegramCoverage(parent,c){const samples=c.publication_samples||[];parent.append(el('p','Прочитано сообщений: '+c.posts_collected+'. Частота и эффективность по неполному превью не оцениваются.','hint'));if(!samples.length)parent.append(el('p','Telegram-ссылка не обнаружена в полученных страницах. Это не доказательство отсутствия канала.','hint'));const labels={sample_collected:'Публикации получены',not_a_public_feed:'Контакт, приглашение или бот',no_public_messages_observed:'В превью нет доступных сообщений',not_sampled_limit:'Не проверено: лимит выборки',robots_disallowed:'Загрузка ограничена robots.txt',challenge_page:'Защитная проверка'};for(const f of samples){const box=el('div',undefined,'evidence');box.append(link(f.url,f.url),el('p',(labels[f.status]||'Источник недоступен: '+f.status)+' · сообщений: '+f.posts));if(f.first_published_at)box.append(el('p','Период полученной выборки: '+f.first_published_at.slice(0,10)+' — '+f.last_published_at.slice(0,10)));if(f.found_on)box.append(link('Ссылка найдена на сайте ↗',f.found_on));parent.append(box);}if(c.telegram_discovery){const d=c.telegram_discovery;parent.append(el('p','Дополнительный поиск: публичные t.me-страницы через Tavily. Это не поиск внутри приложения Telegram.','hint'));for(const r of d.ai_review||[]){const box=el('div',undefined,'evidence');box.append(link(r.url,r.url),el('p',({likely:'Вероятный кандидат · подтвердите принадлежность',uncertain:'Принадлежность не установлена',reject:'ИИ отклонил совпадение'})[r.verdict]),el('p',r.reason));parent.append(box);}const details=el('details');details.append(el('summary','Вся поисковая выдача · '+d.candidates.length));for(const x of d.candidates){details.append(link(x.label,x.url),el('p',x.snippet||''));}parent.append(details);if(!d.candidates.length)parent.append(el('p','В этой проверенной выдаче кандидатов нет. Канал может существовать.'));}}
 
-let comparisonSelection=[];
+let comparisonSelection=[],comparisonResize=null;
+function tableNavigation(wrap,table){
+ if(comparisonResize)comparisonResize.disconnect();
+ const bar=el('div',undefined,'table-navigation'),label=el('label','Прокрутка таблицы'),slider=el('input');
+ slider.type='range';slider.min='0';slider.max='100';slider.step='0.1';slider.setAttribute('aria-label','Горизонтальная прокрутка сравнения');label.append(slider);
+ const left=el('button','Влево','secondary'),right=el('button','Вправо','secondary');left.type=right.type='button';
+ const update=()=>{const max=wrap.scrollWidth-wrap.clientWidth;bar.hidden=max<=1;slider.value=max>0?String(wrap.scrollLeft/max*100):'0';left.disabled=wrap.scrollLeft<=1;right.disabled=wrap.scrollLeft>=max-1;};
+ slider.oninput=()=>{wrap.scrollLeft=(wrap.scrollWidth-wrap.clientWidth)*Number(slider.value)/100;};
+ left.onclick=()=>{wrap.scrollLeft-=wrap.clientWidth*.75;};right.onclick=()=>{wrap.scrollLeft+=wrap.clientWidth*.75;};
+ wrap.addEventListener('scroll',update,{passive:true});bar.append(left,label,right);comparisonResize=new ResizeObserver(update);comparisonResize.observe(wrap);comparisonResize.observe(table);requestAnimationFrame(update);return bar;
+}
+
 function comparison(){
     if(!comparisonSelection.length){
         const own=report.companies.findIndex(c=>c.role==='own');
@@ -124,9 +135,8 @@ function comparison(){
         }
         table.append(tr);
     }
-    const visual=el('tr');visual.append(el('th','Визуал'));
-    selected.forEach(()=>visual.append(el('td','Изображения в этом исследовании ещё не анализировались.')));
-    table.append(visual);wrap.append(table);
+    wrap.append(table);wrap.tabIndex=0;wrap.setAttribute('aria-label','Таблица сравнения компаний');
+    const tableBlock=el('section',undefined,'comparison-table-block');tableBlock.append(tableNavigation(wrap,table),wrap);
     const overview=el('div',undefined,'cards');
     const ids=new Set(selected.map(c=>c.analysis?.id).filter(Boolean));
     for(const row of report.ai_analysis?.comparisons||[]){
@@ -137,7 +147,7 @@ function comparison(){
     $('comparison').replaceChildren(
         el('h2','Сравнение компаний'),controls,add,
         el('p','В базе '+report.companies.length+' компаний. Одновременно показано '+count+'. Выберите компании в списках. Переключение использует уже собранные данные.','hint'),
-        overview,wrap
+        overview,tableBlock
     );
     const tg=el('div',undefined,'cards');
     for(const company of report.companies){
@@ -149,8 +159,20 @@ function comparison(){
     $('telegram').replaceChildren(el('h2','Telegram: ссылки, доступ и прочитанные публикации'),tg);
 }
 function companyCards(){const cards=el('div',undefined,'cards');report.companies.forEach((c,i)=>{const box=el('article',undefined,'card');box.append(el('span',c.role==='own'?'Ваша компания':'Конкурент','tag'),el('h3',c.name),el('p',c.pages_ok+' страниц · '+c.posts_collected+' сообщений'),el('p',c.pages_ok?'Данные получены частично; проверьте разделы.':'Источник не получен. Оценка предложения невозможна.','hint'));const b=el('button','Открыть компанию','secondary');b.onclick=()=>companyDetails(i);box.append(b);cards.append(box);});$('companies').replaceChildren(cards);}
-function companyDetails(i){const c=report.companies[i];$('dialog-title').textContent=c.name;const area=$('dialog-content');area.replaceChildren(link(c.url,c.url),el('p','Получено страниц: '+c.pages_ok+' · сообщений Telegram: '+c.posts_collected));for(const [key,label] of Object.entries(report.dimensions)){const section=el('section');section.append(el('h3',label));const cell=c.analysis?.dimensions?.[key];section.append(el('p',cell?.summary||'Смысловой анализ не выполнен.'));if(cell)aiEvidence(section,cell);area.append(section);}area.append(el('h3','Telegram'));telegramCoverage(area,c);area.append(el('h3','Пробелы'));for(const gap of c.analysis?.gaps||c.gaps)area.append(el('p',gap,'hint'));for(const f of c.failures)area.append(el('p',f.url+' · '+f.status+' · '+(f.next_action||'Проверьте страницу или предоставьте текст.')));$('company-dialog').showModal();}
-function actions(){const area=$('actions');area.replaceChildren(el('h2','План действий с основаниями'),el('p','Это проверяемые эксперименты по собранным материалам. Они не доказывают сильную или слабую сторону бизнеса без проверки.','hint'));if(!report.ai_analysis)area.append(el('p','Смысловой анализ ИИ не выполнен. Автоматические советы по наличию ключевых слов отключены. Запустите повторное исследование, чтобы выполнить ИИ-анализ.','notice'));if(report.ai_analysis&&!report.recommendations.length)area.append(el('p',report.ai_analysis.synthesis_error?'Итоговый анализ не завершился. Профили компаний и источники сохранены. Повторите итоговый анализ.':'По полученным материалам нет рекомендаций, прошедших проверку. Откройте сравнение и пробелы в карточках компаний; отсутствие совета не означает отсутствие возможностей.','notice'));if(report.ai_analysis?.gaps?.length){const research=el('section',undefined,'action-group');research.append(el('h3','Что проверить перед решением'));const tasks=el('ol');for(const question of report.ai_analysis.gaps)tasks.append(el('li',question));research.append(tasks);area.append(research);}const groups={adapt:'Адаптировать подход конкурента',keep:'Сохранить и усилить своё',check:'Проверить и при необходимости исправить',market:'Проверить возможность отстройки'};for(const [kind,label] of Object.entries(groups)){const items=report.recommendations.filter(r=>r.kind===kind);if(!items.length)continue;const section=el('section',undefined,'action-group');section.append(el('h3',label));const cards=el('div',undefined,'cards');for(const r of items){const box=el('article',undefined,'card');box.append(el('span',r.status,'tag'),el('h3',r.title),el('p',r.action),el('p',r.reason||'','hint'),el('p','Проверка результата: '+r.success_check,'hint'));if(r.priority)box.append(el('p','Приоритет: '+r.priority+' · Срок: '+(r.timeframe||'уточнить'),'hint'));
+function companyDetails(i){const c=report.companies[i];$('dialog-title').textContent=c.name;const area=$('dialog-content');area.replaceChildren(link(c.url,c.url),el('p','Получено страниц: '+c.pages_ok+' · сообщений Telegram: '+c.posts_collected));for(const [key,label] of Object.entries(report.dimensions)){const section=el('section');section.append(el('h3',label));const cell=c.analysis?.dimensions?.[key];section.append(el('p',cell?.summary||'Смысловой анализ не выполнен.'));if(cell)aiEvidence(section,cell);area.append(section);}area.append(el('h3','Telegram'));telegramCoverage(area,c);area.append(el('h3','Пробелы'));for(const gap of c.analysis?.gaps||c.gaps)if(!gap.startsWith('Визуал:'))area.append(el('p',gap,'hint'));for(const f of c.failures)area.append(el('p',f.url+' · '+f.status+' · '+(f.next_action||'Проверьте страницу или предоставьте текст.')));$('company-dialog').showModal();}
+function actions(){
+ const area=$('actions');area.replaceChildren(el('h2','Итог и дальнейшие действия'));
+ const assessment=report.assessment;
+ if(assessment?.criteria?.length){
+  area.append(el('h3',assessment.title),el('p',assessment.scope,'hint'));
+  const labels={own_strength:'Ваше преимущество',parity:'На уровне конкурентов',competitor_strength:'Преимущество конкурента',different_focus:'Разный фокус'};
+  const cards=el('div',undefined,'cards');
+  for(const row of assessment.criteria){const card=el('article',undefined,'card');card.append(el('span',labels[row.verdict],'tag'),el('h3',report.dimensions[row.category]),el('p',row.summary));const details=el('details');details.append(el('summary','Основания'));row.evidence.forEach(ref=>evidence(details,ref));card.append(details);cards.append(card);}area.append(cards);
+ }else{
+  for(const row of report.ai_analysis?.comparisons||[]){const card=el('article',undefined,'card');card.append(el('h3',report.dimensions[row.category]),el('p',row.summary));area.append(card);}
+ }
+ if(report.recommendations.length)area.append(el('h3','Приоритетные действия'));
+ const groups={adapt:'Адаптировать подход конкурента',keep:'Сохранить и усилить своё',check:'Проверить и при необходимости исправить',market:'Проверить возможность отстройки'};for(const [kind,label] of Object.entries(groups)){const items=report.recommendations.filter(r=>r.kind===kind);if(!items.length)continue;const section=el('section',undefined,'action-group');section.append(el('h3',label));const cards=el('div',undefined,'cards');for(const r of items){const box=el('article',undefined,'card');box.append(el('h3',r.title),el('p',r.action),el('p',r.reason||'','hint'),el('p','Проверка результата: '+r.success_check,'hint'));if(r.priority)box.append(el('p','Приоритет: '+r.priority+' · Срок: '+(r.timeframe||'уточнить'),'hint'));
 if(r.deliverable)box.append(el('p','Результат работы: '+r.deliverable));
 if(r.steps?.length){const steps=el('ol');r.steps.forEach(step=>steps.append(el('li',step)));box.append(steps);}
 if(r.owner_role)box.append(el('p','Ответственный: '+r.owner_role,'hint'));

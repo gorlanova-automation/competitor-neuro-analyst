@@ -255,6 +255,19 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
                 attempts+=1
                 value,usage=call_model(PROFILE_PROMPT,payload,api_key,out/('c'+str(i)),transport)
             value,rejected=partial_profile(value,sources)
+            if rejected:
+                # One bounded grounding pass, not a retry of a failed API call.
+                progress('Уточняем выводы и точные цитаты: '+company['name']);attempts+=1
+                try:
+                    repaired,repair_usage=call_model(PROFILE_PROMPT+' Дополнительная проверка: исправь только перечисленные категории. Предыдущие выводы не прошли проверку точных цитат. Не придумывай отсутствующие сведения. Копируй короткую НЕПРЕРЫВНУЮ цитату буквально из sources.text, сохраняя пунктуацию и пробелы. В остальных категориях допустим insufficient. Верни стандартную структуру dimensions/gaps.',{**payload,'categories_to_check':rejected},api_key,out/('c'+str(i)+'_grounding'),transport)
+                    checked,_=partial_profile(repaired,sources);usages.append(repair_usage)
+                    restored=[]
+                    for category in rejected:
+                        if checked['dimensions'][category]['status']=='observed':
+                            value['dimensions'][category]=checked['dimensions'][category];restored.append(category)
+                    rejected=[category for category in rejected if category not in restored]
+                    value['gaps']=[gap for gap in value['gaps'] if not any(gap.startswith(DIMENSIONS[category]+': ответ отклонён') for category in restored)]
+                except WorkflowError:pass
             if not any(c['status']=='observed' for c in value['dimensions'].values()):raise WorkflowError('Нет проверенных наблюдений модели.')
             profile.update(value,status='ai_draft',rejected_categories=rejected);usages.append(usage)
         except WorkflowError as exc:

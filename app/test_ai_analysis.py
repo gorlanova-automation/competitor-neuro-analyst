@@ -1,4 +1,6 @@
 import copy
+import json
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -7,6 +9,24 @@ from stage_4.workflow import observations,WorkflowError
 
 
 class SemanticProductTests(unittest.TestCase):
+    def test_invalid_catalogue_quote_gets_one_automatic_grounding_pass(self):
+        from app.ai_analysis import analyze_product,DIMENSIONS
+        text='We provide search engine optimization and clear delivery terms.'
+        good={'dimensions':{k:{'status':'insufficient','summary':'No comparable data','refs':[]} for k in DIMENSIONS},'gaps':[]}
+        good['dimensions']['assortment']={'status':'observed','summary':'Search engine optimization service','refs':[{'source_id':'s0','quote':'search engine optimization'}]}
+        bad=copy.deepcopy(good);bad['dimensions']['assortment']['refs'][0]['quote']='A fabricated description of a service'
+        responses=iter([bad,good]);calls=[]
+        def transport(body):
+            calls.append(body)
+            return {'choices':[{'finish_reason':'stop','message':{'content':json.dumps(next(responses))}}]}
+        report={'profile':{},'companies':[{'url':'https://own.example/','role':'own','name':'Own'}]}
+        raw=[{'url':'https://own.example/','role':'own','sources':[{'url':'https://own.example/','status':'ok','text':text,'sha256_text':'hash','collected_at':'date','method':'test'}]}]
+        with tempfile.TemporaryDirectory() as folder:
+            value=analyze_product(report,raw,'test-key',Path(folder)/'analysis',transport=transport)
+        self.assertEqual(len(calls),2)
+        self.assertEqual(value['companies'][0]['analysis']['dimensions']['assortment']['status'],'observed')
+        self.assertEqual(value['companies'][0]['analysis']['rejected_categories'],[])
+
     def test_repeated_long_menu_does_not_replace_actual_page_content(self):
         from app.ai_analysis import company_input
         menu='Shared menu of services and locations. '*180

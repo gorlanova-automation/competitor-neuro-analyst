@@ -96,13 +96,12 @@ def draft(source):
 
 def queries(profile):
     terms=profile.get('search_terms') or profile['company_name']
-    scope=profile.get('market_scope','')
-    words=re.findall(r'[\w-]+',terms+' '+scope,flags=re.UNICODE)
+    words=re.findall(r'[\w-]+',terms,flags=re.UNICODE)
     unique=[];seen=set()
     for word in words:
         if word.casefold() not in seen:unique.append(word);seen.add(word.casefold())
-    base=' '.join(unique[:14])
-    return [base+' компании услуги цены -site:youtube.com -site:reddit.com',
+    base=' '.join(unique[:9])
+    return [base+' -site:youtube.com -site:reddit.com -site:instagram.com -site:t.me',
             base+' компании услуги официальный сайт',base+' альтернативы сервисы цены']
 
 

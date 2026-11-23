@@ -63,7 +63,7 @@ class Competitor(BaseModel):
 
 class Command(BaseModel):
     model_config=ConfigDict(extra='forbid')
-    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|search|import_search|analyze|discover_telegram|confirm_telegram)$')
+    action:str=Field(pattern='^(start|confirm_profile|confirm_competitors|collect|investigate|search|import_search|analyze|discover_telegram|confirm_telegram)$')
     website_url:str=Field(default='',max_length=2000)
     profile:dict[str,str]|None=None
     competitors:list[Competitor]|None=Field(default=None,max_length=20)
@@ -71,6 +71,9 @@ class Command(BaseModel):
     max_pages:int=Field(default=4,ge=1,le=8)
     search_text:str=Field(default='',max_length=100000)
     telegram_channels:dict[str,str]|None=Field(default=None,max_length=20)
+
+class Lookup(BaseModel):
+    name:str=Field(min_length=2,max_length=200)
 
 
 def install(api,storage,project_root):
@@ -187,15 +190,70 @@ def install(api,storage,project_root):
                     state['search']=search
                     state['updated_at']=timestamp();state['events'].append({'action':'import_search','at':state['updated_at']})
                 else:
-                    state=run_project(action=body.action,website_url=body.website_url,profile=body.profile,
+                    if body.action=='investigate':
+                        import os
+                        if not os.environ.get('PROXYAPI_KEY'):
+                            raise WorkflowError('ИИ-анализ временно недоступен. Администратору нужно подключить модель на сервере.')
+                    state=run_project(action='collect' if body.action=='investigate' else body.action,website_url=body.website_url,profile=body.profile,
                         competitor_urls=[c.url for c in body.competitors] if body.competitors is not None else None,
                         uploads=body.uploads,max_pages=body.max_pages,project_id=str(identifier) if identifier else None,
                         output_dir=storage/'projects',progress=progress)
                 job['project_id']=state['id']
+                if body.action=='start' and state.get('profile'):
+                    import os
+                    if os.environ.get('PROXYAPI_KEY'):
+                        from .profile_draft import prepare
+                        progress('Готовим профиль компании для подтверждения')
+                        folder=storage/'projects'/state['id']
+                        source=json.loads((folder/'own_source.json').read_text(encoding='utf-8'))
+                        try:
+                            draft,usage=prepare(source,os.environ['PROXYAPI_KEY'],folder/'profile_ai'/str(uuid4()))
+                            state['profile'].update(draft)
+                            state['profile_draft_method']='ai_from_collected_source'
+                            state['profile_draft_usage']=usage
+                        except WorkflowError:
+                            state['profile_draft_method']='metadata_fallback'
+                if body.action=='investigate':
+                    from stage_4.workflow import new_session,compare,render_report
+                    from .telegram_discovery import enrich,collect_verified_candidates
+                    from .ai_analysis import analyze_product
+                    directory=storage/'projects'/state['id']/'runs'/state['report']['run_id']
+                    raw=json.loads((directory/'sources.json').read_text(encoding='utf-8'))
+                    base=json.loads((directory/'result.json').read_text(encoding='utf-8'))
+                    prepared=product_report(base,state,raw)
+                    progress('Проверяем публичные Telegram-каналы')
+                    discovered=enrich(prepared,directory/'telegram_search',os.environ.get('PROXYAPI_KEY'))
+                    with new_session() as session:
+                        raw=collect_verified_candidates(discovered,raw,session)
+                    base=compare(raw,state['profile']);base['run_id']=state['report']['run_id']
+                    save(directory/'sources.json',raw);save(directory/'result.json',base)
+                    (directory/'report.html').write_text(render_report(base),encoding='utf-8')
+                    prepared=product_report(base,state,raw)
+                    discoveries={c['url']:c.get('telegram_discovery') for c in discovered['companies']}
+                    for company in prepared['companies']:
+                        if discoveries.get(company['url']):company['telegram_discovery']=discoveries[company['url']]
+                    for field in ('discovery_usage','telegram_review_status'):
+                        if field in discovered:prepared[field]=discovered[field]
+                    save(directory/'telegram_candidates.json',prepared)
+                    progress('Сравниваем компании и проверяем рекомендации')
+                    value=analyze_product(prepared,raw,os.environ.get('PROXYAPI_KEY'),directory/'ai_runs'/str(uuid4()),progress=progress)
+                    save(directory/'product_analysis.json',value)
+                    state['report']['ai_status']=value['ai_analysis']['status']
                 if body.action=='confirm_profile':
                     progress('Ищем кандидатов по подтверждённому профилю')
                     state=run_project(action='search',project_id=state['id'],output_dir=storage/'projects')
                 if body.action in ('confirm_profile','search','import_search'):
+                    import os
+                    if body.action!='import_search' and os.environ.get('PROXYAPI_KEY') and state.get('search',{}).get('candidates'):
+                        from .profile_draft import shortlist
+                        progress('Проверяем, какие результаты являются компаниями-конкурентами')
+                        try:
+                            selected,usage=shortlist(state['profile'],state['search']['candidates'],os.environ['PROXYAPI_KEY'],storage/'projects'/state['id']/'search_review'/str(uuid4()))
+                            state['search']['unfiltered_candidates']=state['search']['candidates']
+                            state['search']['candidates']=selected
+                            state['search']['review_usage']=usage
+                        except WorkflowError:
+                            state['search']['review_status']='unavailable'
                     state['suggestions']=[{'name':c['label'],'url':c['url'],'origin':'Результат из браузера, добавлен пользователем' if c.get('added_by')=='user_provided_search_result' else ('Кандидат официального поиска: '+c['provider'] if c.get('provider') in ('tavily','brave') else 'Кандидат веб-поиска'),'snippet':c.get('snippet','')} for c in state.get('search',{}).get('candidates',[])]+suggest(state)
                     state['competitors_confirmed']=False
                 if body.action=='confirm_competitors':
@@ -239,6 +297,15 @@ def install(api,storage,project_root):
 
     @router.get('/research/{identifier}')
     def detail(identifier:UUID):return read(identifier)
+
+    @router.post('/research/{identifier}/lookup')
+    def lookup(identifier:UUID,body:Lookup):
+        from .search import official_search
+        read(identifier)
+        value=official_search('"'+body.name.strip()+'" official website')
+        folder=storage/'projects'/str(identifier)/'name_resolution';folder.mkdir(exist_ok=True)
+        save(folder/(str(uuid4())+'.json'),value)
+        return {'status':value['status'],'candidates':[{'name':body.name.strip(),'url':c['url'],'label':c['label'],'snippet':c.get('snippet','')[:220]} for c in value.get('candidates',[])[:5]]}
 
     @router.get('/research/{identifier}/result')
     def report(identifier:UUID):

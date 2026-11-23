@@ -10,6 +10,48 @@ from app.product import product_report
 
 
 class ProductTests(unittest.TestCase):
+    def test_search_review_cannot_invent_a_company_or_url(self):
+        from app.profile_draft import shortlist
+        from stage_4.workflow import WorkflowError
+        candidates=[{'label':'An article','url':'https://news.example/post'},{'label':'Provider product','url':'https://provider.example/features'}]
+        with patch('app.profile_draft.call_model',return_value=({'candidates':[{'id':'1','name':'Provider','reason':'Offers a comparable product'}]},{})):
+            value,_=shortlist({},candidates,'test',Path('unused'))
+            self.assertEqual(value[0]['url'],'https://provider.example/features')
+            self.assertEqual(value[0]['label'],'Provider')
+        with patch('app.profile_draft.call_model',return_value=({'candidates':[{'id':'9','name':'Invented','reason':'Unknown'}]},{})):
+            with self.assertRaises(WorkflowError):shortlist({},candidates,'test',Path('unused'))
+
+    def test_web_investigation_runs_collection_telegram_and_ai_in_one_job(self):
+        text='Public consulting service. Clear package costs and useful client guides. '*10
+        uploads={url:{'text':text} for url in ('https://own.example/','https://rival.example/')}
+        def analyzed(report,raw,key,directory,**kwargs):
+            self.assertEqual(key,'test-model-key')
+            self.assertEqual(len(raw),2)
+            return {**report,'ai_analysis':{'status':'draft','profiles_ok':2},'recommendations':[{'title':'Reviewed action'}]}
+        draft={'company_name':'Own','summary':'Consulting','market_scope':'EU','search_terms':'consulting providers'}
+        with tempfile.TemporaryDirectory() as folder,patch.dict('os.environ',{'PROXYAPI_KEY':'test-model-key'}),patch('app.profile_draft.prepare',return_value=(draft,{})),patch('app.profile_draft.shortlist',side_effect=lambda profile,candidates,*a:(candidates,{})),TestClient(create_app(folder)) as client:
+            def run(body,identifier=None):
+                response=client.post('/api/research'+('/'+identifier if identifier else ''),json=body)
+                self.assertEqual(response.status_code,202,response.text)
+                for _ in range(600):
+                    job=client.get('/api/jobs/'+response.json()['id']).json()
+                    if job['status'] not in ('queued','running'):break
+                    time.sleep(.01)
+                self.assertEqual(job['status'],'succeeded',job)
+                return client.get('/api/research/'+job['project_id']).json()
+            state=run({'action':'start','website_url':'https://own.example/','uploads':uploads})
+            with patch('stage_4.workflow.discover',return_value={'status':'ok','candidates':[]}):
+                state=run({'action':'confirm_profile','profile':{'company_name':'Own','summary':'Consulting','market_scope':'EU','search_terms':'consulting providers'}},state['id'])
+            state=run({'action':'confirm_competitors','competitors':[{'name':'Rival','url':'https://rival.example/'}]},state['id'])
+            with patch('app.telegram_discovery.enrich',side_effect=lambda report,*a,**k:report) as discovery,patch('app.telegram_discovery.collect_verified_candidates',side_effect=lambda report,raw,session:raw),patch('app.ai_analysis.analyze_product',side_effect=analyzed) as model:
+                state=run({'action':'investigate','uploads':uploads,'max_pages':1},state['id'])
+            self.assertEqual(discovery.call_count,1);self.assertEqual(model.call_count,1)
+            self.assertEqual(state['report']['ai_status'],'draft')
+            result=client.get('/api/research/'+state['id']+'/result').json()
+            self.assertEqual(result['recommendations'][0]['title'],'Reviewed action')
+            identifier=state['id']
+        # Result is persisted in the application, with no download/import step.
+
     def test_colab_confirmation_reprompts_and_accepts_keyboard_layout(self):
         from app.colab_product import confirm_choice
         for answer,expected in [('lf',True),('YES',True),('да',True),('ytn',False),('нет',False)]:
@@ -120,6 +162,27 @@ class ProductTests(unittest.TestCase):
                 self.assertEqual(client.get('/api/research',auth=('analyst','wrong')).status_code,401)
                 self.assertEqual(client.get('/api/research',auth=('analyst','test-only-password')).status_code,200)
                 self.assertEqual(client.get('/api/research',auth=('analyst','test-only-password'),headers={'Host':'unapproved.example'}).status_code,400)
+
+    def test_workspace_login_and_prefixed_same_origin(self):
+        with tempfile.TemporaryDirectory() as folder,patch.dict('os.environ',{'ANALYST_PASSWORD':'workspace-test'}):
+            with TestClient(create_app(folder),base_url='https://testserver',root_path='/neuroanalyst') as client:
+                page=client.get('/auth/login')
+                self.assertEqual(page.status_code,200)
+                self.assertIn('/neuroanalyst/stand/product.html',page.text)
+                self.assertEqual(client.post('/auth/login',json={'password':'workspace-test'},headers={'Origin':'https://other.example'}).status_code,403)
+                response=client.post('/auth/login',json={'password':'workspace-test'},headers={'Origin':'https://testserver'})
+                self.assertEqual(response.status_code,200,response.text)
+                cookie=response.cookies.get('neuro_workspace')
+                self.assertTrue(cookie)
+                client.cookies.set('neuro_workspace',cookie,path='/')
+                self.assertEqual(client.get('/api/research').status_code,200)
+                response=client.post('/api/research',json={'action':'start','website_url':'https://own.example/','uploads':{'https://own.example/':{'text':'Public consulting company services and pricing. '*10}}},headers={'Origin':'https://testserver'})
+                self.assertEqual(response.status_code,202,response.text)
+                for _ in range(400):
+                    job=client.get('/api/jobs/'+response.json()['id']).json()
+                    if job['status'] not in ('running','queued'):break
+                    time.sleep(.01)
+                self.assertEqual(job['status'],'succeeded',job)
 
     def test_job_workflow_keeps_names_provenance_and_report(self):
         with tempfile.TemporaryDirectory() as folder,TestClient(create_app(folder)) as client:

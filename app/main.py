@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Literal
 from uuid import UUID, uuid4
 from threading import RLock
+from urllib.parse import urlsplit
 
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse
@@ -76,16 +77,24 @@ def create_app(data_dir=None, stage_root=None):
     async def same_origin(request: Request, call_next):
         password=os.environ.get('ANALYST_PASSWORD')
         if password:
+            from .access import login,valid_cookie
+            route=request.scope['path'].removeprefix(request.scope.get('root_path',''))
+            if route=='/auth/login' and request.method in ('GET','POST'):
+                return await login(request,password)
+            if route=='/stand/product.css':return await call_next(request)
             expected='analyst:'+password
             try:
                 scheme,encoded=request.headers.get('authorization','').split(' ',1)
                 supplied=base64.b64decode(encoded,validate=True).decode('utf-8') if scheme.lower()=='basic' else ''
             except (ValueError,UnicodeError):supplied=''
-            if not secrets.compare_digest(supplied.encode(),expected.encode()):
+            if not valid_cookie(request,password) and not secrets.compare_digest(supplied.encode(),expected.encode()):
                 from fastapi.responses import JSONResponse
+                if request.method=='GET' and 'text/html' in request.headers.get('accept',''):
+                    return RedirectResponse(request.scope.get('root_path','')+'/auth/login')
                 return JSONResponse({'detail':'Войдите в рабочее пространство.'},status_code=401,headers={'WWW-Authenticate':'Basic realm="Neuroanalyst", charset="UTF-8"'})
         origin = request.headers.get('origin')
-        if request.method not in ('GET', 'HEAD', 'OPTIONS') and origin and origin != str(request.base_url).rstrip('/'):
+        base=urlsplit(str(request.base_url))
+        if request.method not in ('GET', 'HEAD', 'OPTIONS') and origin and origin != base.scheme+'://'+base.netloc:
             from fastapi.responses import JSONResponse
             return JSONResponse({'detail': 'Cross-origin writes are disabled'}, status_code=403)
         return await call_next(request)
@@ -102,7 +111,7 @@ def create_app(data_dir=None, stage_root=None):
 
     @api.get('/health')
     def health():
-        return {'status': 'ok', 'mode': 'local_application', 'live_llm_enabled': False,'workflow_available':True}
+        return {'status':'ok','mode':'web_application','live_llm_enabled':bool(os.environ.get('PROXYAPI_KEY')),'workflow_available':True}
 
     def project_action(body,project_id=None):
         try:
@@ -194,8 +203,15 @@ def create_app(data_dir=None, stage_root=None):
         return FileResponse(path, filename=filename)
 
     @api.get('/', include_in_schema=False)
-    def home():
-        return RedirectResponse('/stand/product.html')
+    def home(request:Request):
+        return RedirectResponse(request.scope.get('root_path','')+'/stand/product.html')
+
+    @api.post('/auth/logout',include_in_schema=False)
+    def logout(request:Request):
+        from fastapi.responses import JSONResponse
+        response=JSONResponse({'status':'ok'})
+        response.delete_cookie('neuro_workspace',path=request.scope.get('root_path','') or '/')
+        return response
 
     from .product import install
     install(api,storage,PROJECT)

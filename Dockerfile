@@ -7,6 +7,7 @@ COPY app ./app
 COPY stage_4 ./stage_4
 COPY stage_3/code ./stage_3/code
 COPY stage_3/input ./stage_3/input
+COPY stage_3/config.json ./stage_3/config.json
 COPY docs ./docs
 RUN useradd --uid 10001 --create-home analyst && mkdir /data && chown analyst:analyst /data
 USER analyst

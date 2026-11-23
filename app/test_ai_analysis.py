@@ -7,6 +7,18 @@ from stage_4.workflow import observations,WorkflowError
 
 
 class SemanticProductTests(unittest.TestCase):
+    def test_one_invalid_comparison_does_not_discard_other_comparisons(self):
+        from app.ai_analysis import partial_synthesis
+        cell={'status':'observed','summary':'Confirmed','refs':[]}
+        profiles=[{'id':'c0','role':'own','dimensions':{'assortment':cell,'conversion':cell}},
+                  {'id':'c1','role':'competitor','dimensions':{'assortment':cell,'conversion':cell}}]
+        good={'category':'assortment','summary':'Different products','evidence_ids':['c0:assortment','c1:assortment']}
+        bad={'category':'conversion','summary':'Mixed criteria','evidence_ids':['c0:assortment','c1:conversion']}
+        result,rejected=partial_synthesis({'comparisons':[good,bad],'recommendations':[],'gaps':[]},profiles)
+        self.assertEqual(result['comparisons'],[good])
+        self.assertEqual(len(rejected),1)
+        self.assertEqual(rejected[0]['index'],1)
+
     def test_search_channel_is_collected_only_with_name_and_profile_backlink(self):
         from app.telegram_discovery import collect_verified_candidates
         report={'companies':[{'name':'Brand','url':'https://brand.example/','telegram_discovery':{

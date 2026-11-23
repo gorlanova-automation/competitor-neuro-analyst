@@ -158,6 +158,25 @@ def validate_synthesis(value,profiles):
     return value
 
 
+def partial_synthesis(value,profiles):
+    """Reject individual unsupported findings without discarding independent ones."""
+    if not isinstance(value,dict) or set(value)!={'comparisons','recommendations','gaps'}:
+        raise WorkflowError('Неверная структура сравнения.')
+    if not isinstance(value['comparisons'],list) or len(value['comparisons'])>8 or not isinstance(value['recommendations'],list) or len(value['recommendations'])>5:
+        raise WorkflowError('Лимит выводов превышен.')
+    if not isinstance(value['gaps'],list) or not all(isinstance(x,str) for x in value['gaps']):raise WorkflowError('Неверные ограничения сравнения.')
+    safe={'comparisons':[],'recommendations':[],'gaps':value['gaps']};rejected=[]
+    for kind in ('comparisons','recommendations'):
+        for index,row in enumerate(value[kind]):
+            candidate={'comparisons':[],'recommendations':[],'gaps':[]};candidate[kind]=[row]
+            try:
+                validate_synthesis(candidate,profiles)
+                safe[kind].append(row)
+            except (WorkflowError,TypeError,AttributeError) as exc:
+                rejected.append({'type':kind,'index':index,'reason':str(exc) if isinstance(exc,WorkflowError) else 'Неверная структура пункта.'})
+    return safe,rejected
+
+
 def partial_profile(value,sources):
     """Quarantine unsupported cells, retaining independently valid categories."""
     try:return validate_profile(json.loads(json.dumps(value)),sources),[]
@@ -210,13 +229,16 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
             profile.update(status='unavailable',dimensions={k:{'status':'insufficient','summary':'Смысловой анализ не получен. '+str(exc),'refs':[]} for k in DIMENSIONS},gaps=[str(exc)])
         profile['coverage']={'sources':len(sources),'input_characters':sum(len(s['text']) for s in sources),'source_dates':sorted({s['collected_at'] for s in sources})}
         company['analysis']=profile;profiles.append(profile);save(out/('profile_'+str(i)+'.json'),profile)
-    synthesis=None
+    synthesis=None;rejected_findings=[];synthesis_error=None
     if sum(p['status']=='ai_draft' for p in profiles)>=2:
         progress('ИИ сопоставляет одинаковые критерии всех компаний');attempts+=1
         try:
             value,usage=call_model(SYNTHESIS_PROMPT,{'profiles':profiles,'market':result['profile']},api_key,out/'comparison',transport)
-            synthesis=validate_synthesis(value,profiles);usages.append(usage)
-        except WorkflowError as exc:save(out/'comparison_failure.json',{'status':'quarantined','reason':str(exc)})
+            synthesis,rejected_findings=partial_synthesis(value,profiles);usages.append(usage)
+            save(out/'rejected_findings.json',rejected_findings)
+        except WorkflowError as exc:
+            synthesis_error=str(exc)
+            save(out/'comparison_failure.json',{'status':'quarantined','reason':str(exc)})
     cells={p['id']+':'+k:(p,v) for p in profiles for k,v in p['dimensions'].items()}
     result['recommendations']=[];result['quarantined_recommendations']=[]
     candidates = []
@@ -250,6 +272,6 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
         method='Смысловые профили компаний и межфирменное сравнение ИИ; цитаты проверены кодом.',
         ai_analysis={'status':'draft' if synthesis else 'partial','model':'openai/gpt-6-luna','profiles_ok':sum(p['status']=='ai_draft' for p in profiles),
             'companies_total':len(profiles),'comparisons':(synthesis or {}).get('comparisons',[]),'gaps':(synthesis or {}).get('gaps',[]),
-            'recommendation_review':review_status,'usage':usages,'attempts':attempts,'reused_company_responses':reused,'actual_billed_amount':None,'source_report_sha256':digest(json.dumps(report,ensure_ascii=False))})
+            'recommendation_review':review_status,'rejected_findings':rejected_findings,'synthesis_error':synthesis_error,'usage':usages,'attempts':attempts,'reused_company_responses':reused,'actual_billed_amount':None,'source_report_sha256':digest(json.dumps(report,ensure_ascii=False))})
     save(out/'product-result.json',result)
     return result

@@ -171,7 +171,8 @@ def install(api,storage,project_root):
                     if (directory/'telegram_candidates.json').is_file():
                         prepared=json.loads((directory/'telegram_candidates.json').read_text(encoding='utf-8'))
                     analysis_dir=directory/'ai_runs'/str(uuid4())
-                    value=analyze_product(prepared,raw,os.environ.get('PROXYAPI_KEY'),analysis_dir,progress=progress)
+                    previous=sorted((directory/'ai_runs').glob('*/profile_0.json'),key=lambda p:p.stat().st_mtime,reverse=True)
+                    value=analyze_product(prepared,raw,os.environ.get('PROXYAPI_KEY'),analysis_dir,progress=progress,cached_dir=previous[0].parent if previous else None)
                     save(directory/'product_analysis.json',value)
                     state['report']['ai_status']=value['ai_analysis']['status']
                 elif body.action=='import_search':

@@ -283,7 +283,7 @@ def install(api,storage,project_root):
                 import traceback
                 diagnostics=jobs/'diagnostics';diagnostics.mkdir(exist_ok=True)
                 save(diagnostics/(job_id+'.json'),{'type':type(error).__name__,'frames':[{'file':Path(f.filename).name,'line':f.lineno,'function':f.name} for f in traceback.extract_tb(error.__traceback__)]})
-                job.update(status='failed',error='Не удалось завершить действие. История сохранена; проверьте адрес и повторите.')
+                job.update(status='failed',error='Не удалось завершить действие. История сохранена; проверьте адрес и повторите.',error_code=type(error).__name__)
             finally:
                 job['updated_at']=timestamp();job_save(file,job)
                 with guard:active.discard(key)

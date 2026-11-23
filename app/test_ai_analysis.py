@@ -14,7 +14,7 @@ class SemanticProductTests(unittest.TestCase):
         text='We provide search engine optimization and clear delivery terms.'
         good={'dimensions':{k:{'status':'insufficient','summary':'No comparable data','refs':[]} for k in DIMENSIONS},'gaps':[]}
         good['dimensions']['assortment']={'status':'observed','summary':'Search engine optimization service','refs':[{'source_id':'s0','quote':'search engine optimization'}]}
-        bad=copy.deepcopy(good);bad['dimensions']['assortment']['refs'][0]['quote']='A fabricated description of a service'
+        bad=copy.deepcopy(good);bad['dimensions']['assortment']['refs'].append({'source_id':'s0','quote':'A fabricated description of a service'})
         responses=iter([bad,good]);calls=[]
         def transport(body):
             calls.append(body)
@@ -24,6 +24,9 @@ class SemanticProductTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             value=analyze_product(report,raw,'test-key',Path(folder)/'analysis',transport=transport)
         self.assertEqual(len(calls),2)
+        repair_payload=json.loads(calls[1]['messages'][1]['content'])
+        self.assertEqual(repair_payload['verified_quotes']['assortment'],[{'source_id':'s0','quote':'search engine optimization'}])
+        self.assertEqual(repair_payload['sources_without_verified_quotes'],[])
         self.assertEqual(value['companies'][0]['analysis']['dimensions']['assortment']['status'],'observed')
         self.assertEqual(value['companies'][0]['analysis']['rejected_categories'],[])
 

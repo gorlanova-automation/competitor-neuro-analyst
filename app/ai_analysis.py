@@ -254,12 +254,25 @@ def analyze_product(report,raw_sources,api_key,output_dir,transport=None,progres
             else:
                 attempts+=1
                 value,usage=call_model(PROFILE_PROMPT,payload,api_key,out/('c'+str(i)),transport)
+            draft_value=value
             value,rejected=partial_profile(value,sources)
             if rejected:
                 # One bounded grounding pass, not a retry of a failed API call.
                 progress('Уточняем выводы и точные цитаты: '+company['name']);attempts+=1
                 try:
-                    repaired,repair_usage=call_model(PROFILE_PROMPT+' Дополнительная проверка: исправь только перечисленные категории. Предыдущие выводы не прошли проверку точных цитат. Не придумывай отсутствующие сведения. Копируй короткую НЕПРЕРЫВНУЮ цитату буквально из sources.text, сохраняя пунктуацию и пробелы. В остальных категориях допустим insufficient. Верни стандартную структуру dimensions/gaps.',{**payload,'categories_to_check':rejected},api_key,out/('c'+str(i)+'_grounding'),transport)
+                    available={s['source_id']:s for s in sources};verified={}
+                    for category in rejected:
+                        verified[category]=[]
+                        cell=draft_value.get('dimensions',{}).get(category,{}) if isinstance(draft_value,dict) else {}
+                        for ref in cell.get('refs',[]) if isinstance(cell,dict) else []:
+                            if not isinstance(ref,dict):continue
+                            source=available.get(ref.get('source_id')) if isinstance(ref.get('source_id'),str) else None
+                            quote=ref.get('quote')
+                            if source and isinstance(quote,str) and 15<=len(quote)<=300 and quote in source['text']:
+                                verified[category].append({'source_id':ref['source_id'],'quote':quote})
+                    repair_payload={'company':profile,'market':result['profile'],'categories_to_check':rejected,'verified_quotes':verified,
+                                    'sources_without_verified_quotes':sources if any(not v for v in verified.values()) else []}
+                    repaired,repair_usage=call_model(PROFILE_PROMPT+' Дополнительная проверка: исправь только перечисленные категории. Если в verified_quotes есть цитата для категории, используй РОВНО ОДНУ из них: скопируй source_id и quote без изменений. Summary должен описывать только то, что подтверждает эта цитата, без добавления услуг из памяти или других фрагментов. Если проверенных цитат нет, выбери одну короткую непрерывную цитату из sources_without_verified_quotes. Не добавляй второй ref. Для остальных категорий используй insufficient. Верни стандартную структуру dimensions/gaps.',repair_payload,api_key,out/('c'+str(i)+'_grounding'),transport)
                     checked,_=partial_profile(repaired,sources);usages.append(repair_usage)
                     restored=[]
                     for category in rejected:
